@@ -1,5 +1,0 @@
-[0.029s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
-[0.118s] CMake Error: The source directory "/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub" does not exist.
-[0.120s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.126s] make: *** [Makefile:266: cmake_check_build_system] Error 1
-[0.137s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
