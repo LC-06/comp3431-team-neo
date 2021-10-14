@@ -1,0 +1,67 @@
+[0.060s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[0.529s] [35m[1mScanning dependencies of target point_tf[0m
+[0.783s] [ 50%] [32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o[0m
+[14.149s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:56:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::msg::PointStamped[m[K’ has not been declared
+[14.155s]    56 |   visualization_msgs::msg::Marker convert(geometry_msgs::msg::[01;31m[KPointStamped[m[K & ball)
+[14.158s]       |                                                               [01;31m[K^~~~~~~~~~~~[m[K
+[14.272s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:83:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kms[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kmsg[m[K’?
+[14.272s]    83 |     rclcpp::Publisher<geometry_msgs::[01;31m[Kms[m[K::PointStamped::SharedPtr subscriber_;
+[14.273s]       |                                      [01;31m[K^~[m[K
+[14.273s]       |                                      [32m[Kmsg[m[K
+[14.273s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:83:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kms[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kmsg[m[K’?
+[14.274s]    83 |     rclcpp::Publisher<geometry_msgs::[01;31m[Kms[m[K::PointStamped::SharedPtr subscriber_;
+[14.274s]       |                                      [01;31m[K^~[m[K
+[14.274s]       |                                      [32m[Kmsg[m[K
+[14.275s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:83:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.288s]    83 |     rclcpp::Publisher<geometry_msgs::ms::PointStamped::SharedPtr [01;31m[Ksubscriber_[m[K;
+[14.289s]       |                                                                  [01;31m[K^~~~~~~~~~~[m[K
+[14.300s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KPointTf::PointTf()[m[K’:
+[14.301s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber_[m[K’ was not declared in this scope
+[14.303s]    22 |     [01;31m[Ksubscriber_[m[K = this->create_subscription<geometry_msgs::msg::PointStamped>(
+[14.314s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[14.319s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:22:65:[m[K [01;31m[Kerror: [m[K‘[01m[KPointStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[14.320s]    22 |     subscriber_ = this->create_subscription<geometry_msgs::msg::[01;31m[KPointStamped[m[K>(
+[14.320s]       |                                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[14.329s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:22:65:[m[K [01;31m[Kerror: [m[K‘[01m[KPointStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[14.329s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:24:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksoccer_vision_msgs[m[K’ has not been declared
+[14.329s]    24 |       [this]([01;31m[Ksoccer_vision_msgs[m[K::msg::Ball::SharedPtr point) {
+[14.329s]       |              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[14.329s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:24:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kpoint[m[K’
+[14.330s]    24 |       [this](soccer_vision_msgs::msg::Ball::SharedPtr [01;31m[Kpoint[m[K) {
+[14.330s]       |                                                       [01;31m[K^~~~~[m[K
+[14.337s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In lambda function:
+[14.337s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:25:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoint[m[K’ was not declared in this scope
+[14.337s]    25 |         publisher_->publish(convert(*[01;31m[Kpoint[m[K));
+[14.337s]       |                                      [01;31m[K^~~~~[m[K
+[14.337s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:24:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSharedPtr[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.337s]    24 |       [this]([01;35m[Ksoccer_vision_msgs::msg::Ball::SharedPtr[m[K point) {
+[14.337s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[14.337s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KPointTf::PointTf()[m[K’:
+[14.338s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:26:8:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPointTf::create_subscription<<expression error> >(const char [11], int, PointTf::PointTf()::<lambda(int)>)[m[K’
+[14.338s]    26 |       }[01;31m[K)[m[K;
+[14.338s]       |        [01;31m[K^[m[K
+[14.338s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[14.338s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[14.338s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[14.338s]                  from [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:4[m[K:
+[14.339s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[14.339s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[14.339s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.339s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.339s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:26:8:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[14.340s]    26 |       }[01;31m[K)[m[K;
+[14.340s]       |        [01;31m[K^[m[K
+[14.443s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker PointTf::convert(int&)[m[K’:
+[14.444s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:64:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpoint[m[K’ in ‘[01m[Kball[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[14.444s]    64 |     marker.pose.position.x = ball.[01;31m[Kpoint[m[K.x;
+[14.444s]       |                                   [01;31m[K^~~~~[m[K
+[14.444s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:65:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpoint[m[K’ in ‘[01m[Kball[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[14.444s]    65 |     marker.pose.position.y = ball.[01;31m[Kpoint[m[K.y;
+[14.445s]       |                                   [01;31m[K^~~~~[m[K
+[14.445s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:66:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpoint[m[K’ in ‘[01m[Kball[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[14.445s]    66 |     marker.pose.position.z = ball.[01;31m[Kpoint[m[K.z;
+[14.445s]       |                                   [01;31m[K^~~~~[m[K
+[20.649s] make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1
+[20.657s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2
+[20.662s] make: *** [Makefile:141: all] Error 2
+[20.668s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3

@@ -1,0 +1,311 @@
+[0.000000] (-) TimerEvent: {}
+[0.002885] (-) JobUnselected: {'identifier': 'comp3431_starter'}
+[0.003090] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.003193] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.100026] (-) TimerEvent: {}
+[0.110227] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.120044] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.120181] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.201428] (-) TimerEvent: {}
+[0.303407] (-) TimerEvent: {}
+[0.404751] (-) TimerEvent: {}
+[0.507027] (-) TimerEvent: {}
+[0.611519] (-) TimerEvent: {}
+[0.712683] (-) TimerEvent: {}
+[0.813979] (-) TimerEvent: {}
+[0.915723] (-) TimerEvent: {}
+[1.016855] (-) TimerEvent: {}
+[1.118751] (-) TimerEvent: {}
+[1.221666] (-) TimerEvent: {}
+[1.322540] (-) TimerEvent: {}
+[1.424100] (-) TimerEvent: {}
+[1.444598] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[1.524524] (-) TimerEvent: {}
+[1.625262] (-) TimerEvent: {}
+[1.726737] (-) TimerEvent: {}
+[1.827612] (-) TimerEvent: {}
+[1.928774] (-) TimerEvent: {}
+[1.998224] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[2.029532] (-) TimerEvent: {}
+[2.130653] (-) TimerEvent: {}
+[2.231181] (-) TimerEvent: {}
+[2.332567] (-) TimerEvent: {}
+[2.433164] (-) TimerEvent: {}
+[2.535140] (-) TimerEvent: {}
+[2.649218] (-) TimerEvent: {}
+[2.750783] (-) TimerEvent: {}
+[2.851623] (-) TimerEvent: {}
+[2.952683] (-) TimerEvent: {}
+[3.053292] (-) TimerEvent: {}
+[3.154152] (-) TimerEvent: {}
+[3.256658] (-) TimerEvent: {}
+[3.357470] (-) TimerEvent: {}
+[3.459885] (-) TimerEvent: {}
+[3.561608] (-) TimerEvent: {}
+[3.662576] (-) TimerEvent: {}
+[3.764343] (-) TimerEvent: {}
+[3.865394] (-) TimerEvent: {}
+[3.967289] (-) TimerEvent: {}
+[4.069364] (-) TimerEvent: {}
+[4.170606] (-) TimerEvent: {}
+[4.271858] (-) TimerEvent: {}
+[4.373157] (-) TimerEvent: {}
+[4.474016] (-) TimerEvent: {}
+[4.575177] (-) TimerEvent: {}
+[4.676357] (-) TimerEvent: {}
+[4.777575] (-) TimerEvent: {}
+[4.880373] (-) TimerEvent: {}
+[4.981296] (-) TimerEvent: {}
+[5.084579] (-) TimerEvent: {}
+[5.186703] (-) TimerEvent: {}
+[5.288321] (-) TimerEvent: {}
+[5.389441] (-) TimerEvent: {}
+[5.491436] (-) TimerEvent: {}
+[5.594927] (-) TimerEvent: {}
+[5.697803] (-) TimerEvent: {}
+[5.801801] (-) TimerEvent: {}
+[5.904023] (-) TimerEvent: {}
+[6.004923] (-) TimerEvent: {}
+[6.106651] (-) TimerEvent: {}
+[6.207742] (-) TimerEvent: {}
+[6.309831] (-) TimerEvent: {}
+[6.412322] (-) TimerEvent: {}
+[6.514991] (-) TimerEvent: {}
+[6.616631] (-) TimerEvent: {}
+[6.721819] (-) TimerEvent: {}
+[6.823723] (-) TimerEvent: {}
+[6.929725] (-) TimerEvent: {}
+[7.032785] (-) TimerEvent: {}
+[7.133730] (-) TimerEvent: {}
+[7.234337] (-) TimerEvent: {}
+[7.335663] (-) TimerEvent: {}
+[7.436392] (-) TimerEvent: {}
+[7.538226] (-) TimerEvent: {}
+[7.640741] (-) TimerEvent: {}
+[7.741549] (-) TimerEvent: {}
+[7.842710] (-) TimerEvent: {}
+[7.944552] (-) TimerEvent: {}
+[8.052220] (-) TimerEvent: {}
+[8.159465] (-) TimerEvent: {}
+[8.261665] (-) TimerEvent: {}
+[8.362862] (-) TimerEvent: {}
+[8.464594] (-) TimerEvent: {}
+[8.565675] (-) TimerEvent: {}
+[8.666596] (-) TimerEvent: {}
+[8.767187] (-) TimerEvent: {}
+[8.868355] (-) TimerEvent: {}
+[8.969379] (-) TimerEvent: {}
+[9.071112] (-) TimerEvent: {}
+[9.172278] (-) TimerEvent: {}
+[9.273146] (-) TimerEvent: {}
+[9.374236] (-) TimerEvent: {}
+[9.475225] (-) TimerEvent: {}
+[9.576112] (-) TimerEvent: {}
+[9.677379] (-) TimerEvent: {}
+[9.787212] (-) TimerEvent: {}
+[9.888315] (-) TimerEvent: {}
+[9.989186] (-) TimerEvent: {}
+[10.090447] (-) TimerEvent: {}
+[10.195360] (-) TimerEvent: {}
+[10.302344] (-) TimerEvent: {}
+[10.403851] (-) TimerEvent: {}
+[10.505739] (-) TimerEvent: {}
+[10.607058] (-) TimerEvent: {}
+[10.712035] (-) TimerEvent: {}
+[10.814706] (-) TimerEvent: {}
+[10.916929] (-) TimerEvent: {}
+[11.018126] (-) TimerEvent: {}
+[11.121890] (-) TimerEvent: {}
+[11.223047] (-) TimerEvent: {}
+[11.323998] (-) TimerEvent: {}
+[11.458518] (-) TimerEvent: {}
+[11.567117] (-) TimerEvent: {}
+[11.668022] (-) TimerEvent: {}
+[11.769310] (-) TimerEvent: {}
+[11.871323] (-) TimerEvent: {}
+[11.986314] (-) TimerEvent: {}
+[12.091012] (-) TimerEvent: {}
+[12.192261] (-) TimerEvent: {}
+[12.293594] (-) TimerEvent: {}
+[12.395496] (-) TimerEvent: {}
+[12.500079] (-) TimerEvent: {}
+[12.601664] (-) TimerEvent: {}
+[12.703975] (-) TimerEvent: {}
+[12.806050] (-) TimerEvent: {}
+[12.908137] (-) TimerEvent: {}
+[13.009526] (-) TimerEvent: {}
+[13.111919] (-) TimerEvent: {}
+[13.214204] (-) TimerEvent: {}
+[13.317044] (-) TimerEvent: {}
+[13.419443] (-) TimerEvent: {}
+[13.520420] (-) TimerEvent: {}
+[13.621156] (-) TimerEvent: {}
+[13.722403] (-) TimerEvent: {}
+[13.824335] (-) TimerEvent: {}
+[13.926088] (-) TimerEvent: {}
+[14.026992] (-) TimerEvent: {}
+[14.128452] (-) TimerEvent: {}
+[14.231001] (-) TimerEvent: {}
+[14.334035] (-) TimerEvent: {}
+[14.435168] (-) TimerEvent: {}
+[14.536127] (-) TimerEvent: {}
+[14.646162] (-) TimerEvent: {}
+[14.748500] (-) TimerEvent: {}
+[14.854520] (-) TimerEvent: {}
+[14.955400] (-) TimerEvent: {}
+[15.057264] (-) TimerEvent: {}
+[15.160448] (-) TimerEvent: {}
+[15.270317] (-) TimerEvent: {}
+[15.375995] (-) TimerEvent: {}
+[15.478111] (-) TimerEvent: {}
+[15.579203] (-) TimerEvent: {}
+[15.680955] (-) TimerEvent: {}
+[15.782848] (-) TimerEvent: {}
+[15.884278] (-) TimerEvent: {}
+[15.985247] (-) TimerEvent: {}
+[16.086217] (-) TimerEvent: {}
+[16.187459] (-) TimerEvent: {}
+[16.289972] (-) TimerEvent: {}
+[16.392262] (-) TimerEvent: {}
+[16.493510] (-) TimerEvent: {}
+[16.595480] (-) TimerEvent: {}
+[16.704935] (-) TimerEvent: {}
+[16.814305] (-) TimerEvent: {}
+[16.916811] (-) TimerEvent: {}
+[17.022694] (-) TimerEvent: {}
+[17.124584] (-) TimerEvent: {}
+[17.225496] (-) TimerEvent: {}
+[17.327445] (-) TimerEvent: {}
+[17.428344] (-) TimerEvent: {}
+[17.529361] (-) TimerEvent: {}
+[17.635356] (-) TimerEvent: {}
+[17.736485] (-) TimerEvent: {}
+[17.837817] (-) TimerEvent: {}
+[17.942752] (-) TimerEvent: {}
+[18.047110] (-) TimerEvent: {}
+[18.148606] (-) TimerEvent: {}
+[18.249628] (-) TimerEvent: {}
+[18.350528] (-) TimerEvent: {}
+[18.451513] (-) TimerEvent: {}
+[18.552549] (-) TimerEvent: {}
+[18.653561] (-) TimerEvent: {}
+[18.754676] (-) TimerEvent: {}
+[18.855367] (-) TimerEvent: {}
+[18.956683] (-) TimerEvent: {}
+[19.058083] (-) TimerEvent: {}
+[19.160027] (-) TimerEvent: {}
+[19.263031] (-) TimerEvent: {}
+[19.363623] (-) TimerEvent: {}
+[19.464741] (-) TimerEvent: {}
+[19.566001] (-) TimerEvent: {}
+[19.667946] (-) TimerEvent: {}
+[19.768940] (-) TimerEvent: {}
+[19.871204] (-) TimerEvent: {}
+[19.972872] (-) TimerEvent: {}
+[20.073968] (-) TimerEvent: {}
+[20.175207] (-) TimerEvent: {}
+[20.276129] (-) TimerEvent: {}
+[20.377963] (-) TimerEvent: {}
+[20.479010] (-) TimerEvent: {}
+[20.580571] (-) TimerEvent: {}
+[20.682081] (-) TimerEvent: {}
+[20.782924] (-) TimerEvent: {}
+[20.884466] (-) TimerEvent: {}
+[20.987045] (-) TimerEvent: {}
+[21.098058] (-) TimerEvent: {}
+[21.199340] (-) TimerEvent: {}
+[21.301115] (-) TimerEvent: {}
+[21.401986] (-) TimerEvent: {}
+[21.414033] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointTf::PointTf()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.418507] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:28:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksubscriber_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.418897] (point_pubsub) StderrLine: {'line': b'   28 |     \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::PointStamped>(\n'}
+[21.419209] (point_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.420103] (point_pubsub) StderrLine: {'line': b'      |     \x1b[32m\x1b[Ksubscriber_\x1b[m\x1b[K\n'}
+[21.420262] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:29:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.420416] (point_pubsub) StderrLine: {'line': b'   29 |       "/testPoint", 10, std::bind(&PointTf::convert, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K))\n'}
+[21.420550] (point_pubsub) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[21.420690] (point_pubsub) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[21.420946] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/context.hpp:19\x1b[m\x1b[K,\n'}
+[21.421082] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[21.421211] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[21.421334] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[21.421454] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.421580] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.421772] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:4\x1b[m\x1b[K:\n'}
+[21.422216] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:211:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[21.422362] (point_pubsub) StderrLine: {'line': b'  211 |     extern const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[21.422487] (point_pubsub) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[21.503172] (-) TimerEvent: {}
+[21.604412] (-) TimerEvent: {}
+[21.705672] (-) TimerEvent: {}
+[21.807145] (-) TimerEvent: {}
+[21.908862] (-) TimerEvent: {}
+[22.009992] (-) TimerEvent: {}
+[22.110743] (-) TimerEvent: {}
+[22.211697] (-) TimerEvent: {}
+[22.312747] (-) TimerEvent: {}
+[22.413969] (-) TimerEvent: {}
+[22.515904] (-) TimerEvent: {}
+[22.616901] (-) TimerEvent: {}
+[22.719397] (-) TimerEvent: {}
+[22.823382] (-) TimerEvent: {}
+[22.924686] (-) TimerEvent: {}
+[23.025847] (-) TimerEvent: {}
+[23.126983] (-) TimerEvent: {}
+[23.228827] (-) TimerEvent: {}
+[23.330145] (-) TimerEvent: {}
+[23.431087] (-) TimerEvent: {}
+[23.532668] (-) TimerEvent: {}
+[23.635699] (-) TimerEvent: {}
+[23.738337] (-) TimerEvent: {}
+[23.840063] (-) TimerEvent: {}
+[23.941031] (-) TimerEvent: {}
+[24.041990] (-) TimerEvent: {}
+[24.143034] (-) TimerEvent: {}
+[24.245353] (-) TimerEvent: {}
+[24.349503] (-) TimerEvent: {}
+[24.458084] (-) TimerEvent: {}
+[24.559030] (-) TimerEvent: {}
+[24.659967] (-) TimerEvent: {}
+[24.761289] (-) TimerEvent: {}
+[24.863102] (-) TimerEvent: {}
+[24.963992] (-) TimerEvent: {}
+[25.065929] (-) TimerEvent: {}
+[25.166962] (-) TimerEvent: {}
+[25.272386] (-) TimerEvent: {}
+[25.377556] (-) TimerEvent: {}
+[25.479102] (-) TimerEvent: {}
+[25.582916] (-) TimerEvent: {}
+[25.684379] (-) TimerEvent: {}
+[25.787615] (-) TimerEvent: {}
+[25.889151] (-) TimerEvent: {}
+[25.991225] (-) TimerEvent: {}
+[26.101848] (-) TimerEvent: {}
+[26.203948] (-) TimerEvent: {}
+[26.305105] (-) TimerEvent: {}
+[26.407279] (-) TimerEvent: {}
+[26.508719] (-) TimerEvent: {}
+[26.610338] (-) TimerEvent: {}
+[26.711590] (-) TimerEvent: {}
+[26.813268] (-) TimerEvent: {}
+[26.914794] (-) TimerEvent: {}
+[27.016991] (-) TimerEvent: {}
+[27.118226] (-) TimerEvent: {}
+[27.220760] (-) TimerEvent: {}
+[27.321646] (-) TimerEvent: {}
+[27.422660] (-) TimerEvent: {}
+[27.523735] (-) TimerEvent: {}
+[27.627473] (-) TimerEvent: {}
+[27.728740] (-) TimerEvent: {}
+[27.829760] (-) TimerEvent: {}
+[27.930625] (-) TimerEvent: {}
+[27.994730] (point_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1\n'}
+[28.001932] (point_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2\n'}
+[28.003008] (point_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[28.028923] (point_pubsub) CommandEnded: {'returncode': 2}
+[28.044567] (-) TimerEvent: {}
+[28.145985] (-) TimerEvent: {}
+[28.247497] (-) TimerEvent: {}
+[28.349507] (-) TimerEvent: {}
+[28.409468] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 2}
+[28.424019] (-) EventReactorShutdown: {}

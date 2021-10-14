@@ -1,0 +1,21 @@
+[0.082s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[0.452s] [35m[1mScanning dependencies of target point_tf[0m
+[0.685s] [ 50%] [32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o[0m
+[7.785s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KPointTf::PointTf()[m[K’:
+[7.786s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[7.786s]    30 |     [01;31m[Ktf_buffer_[m[K =
+[7.786s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.810s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_listener_[m[K’ was not declared in this scope
+[7.810s]    32 |     [01;31m[Ktransform_listener_[m[K =
+[7.810s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[7.828s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker PointTf::convert(geometry_msgs::msg::PointStamped)[m[K’:
+[7.828s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:75:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[7.832s]    75 |       transformStamped = [01;31m[Ktf_buffer_[m[K->lookupTransform(
+[7.832s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[7.833s] [01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:81:7:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kvisualization_msgs::msg::Marker[m[K’ {aka ‘[01m[Kvisualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} [[01;31m[K-fpermissive[m[K]
+[7.833s]    81 |       [01;31m[Kreturn[m[K;
+[7.833s]       |       [01;31m[K^~~~~~[m[K
+[15.593s] make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1
+[15.603s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2
+[15.603s] make: *** [Makefile:141: all] Error 2
+[15.625s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3

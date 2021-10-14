@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000499] (-) JobUnselected: {'identifier': 'comp3431_starter'}
+[0.000563] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.000638] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.066332] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.071742] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.082111] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.108083] (-) TimerEvent: {}
+[0.211019] (-) TimerEvent: {}
+[0.312117] (-) TimerEvent: {}
+[0.412815] (-) TimerEvent: {}
+[0.513994] (-) TimerEvent: {}
+[0.595241] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[0.614947] (-) TimerEvent: {}
+[0.713398] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[0.716300] (-) TimerEvent: {}
+[0.818427] (-) TimerEvent: {}
+[0.922003] (-) TimerEvent: {}
+[1.025429] (-) TimerEvent: {}
+[1.126273] (-) TimerEvent: {}
+[1.228870] (-) TimerEvent: {}
+[1.330162] (-) TimerEvent: {}
+[1.436897] (-) TimerEvent: {}
+[1.537599] (-) TimerEvent: {}
+[1.638312] (-) TimerEvent: {}
+[1.741331] (-) TimerEvent: {}
+[1.843783] (-) TimerEvent: {}
+[1.948744] (-) TimerEvent: {}
+[2.050074] (-) TimerEvent: {}
+[2.152443] (-) TimerEvent: {}
+[2.253762] (-) TimerEvent: {}
+[2.354840] (-) TimerEvent: {}
+[2.457915] (-) TimerEvent: {}
+[2.559750] (-) TimerEvent: {}
+[2.660524] (-) TimerEvent: {}
+[2.761546] (-) TimerEvent: {}
+[2.863029] (-) TimerEvent: {}
+[2.967478] (-) TimerEvent: {}
+[3.070165] (-) TimerEvent: {}
+[3.178669] (-) TimerEvent: {}
+[3.280626] (-) TimerEvent: {}
+[3.381969] (-) TimerEvent: {}
+[3.484889] (-) TimerEvent: {}
+[3.588809] (-) TimerEvent: {}
+[3.692293] (-) TimerEvent: {}
+[3.795805] (-) TimerEvent: {}
+[3.909332] (-) TimerEvent: {}
+[4.014160] (-) TimerEvent: {}
+[4.115705] (-) TimerEvent: {}
+[4.217016] (-) TimerEvent: {}
+[4.321740] (-) TimerEvent: {}
+[4.422550] (-) TimerEvent: {}
+[4.523262] (-) TimerEvent: {}
+[4.624698] (-) TimerEvent: {}
+[4.725572] (-) TimerEvent: {}
+[4.826750] (-) TimerEvent: {}
+[4.928036] (-) TimerEvent: {}
+[5.028504] (-) TimerEvent: {}
+[5.129779] (-) TimerEvent: {}
+[5.230563] (-) TimerEvent: {}
+[5.333693] (-) TimerEvent: {}
+[5.435799] (-) TimerEvent: {}
+[5.537706] (-) TimerEvent: {}
+[5.638695] (-) TimerEvent: {}
+[5.739694] (-) TimerEvent: {}
+[5.840563] (-) TimerEvent: {}
+[5.941624] (-) TimerEvent: {}
+[6.043058] (-) TimerEvent: {}
+[6.144851] (-) TimerEvent: {}
+[6.245777] (-) TimerEvent: {}
+[6.346499] (-) TimerEvent: {}
+[6.450430] (-) TimerEvent: {}
+[6.552775] (-) TimerEvent: {}
+[6.654617] (-) TimerEvent: {}
+[6.755411] (-) TimerEvent: {}
+[6.856380] (-) TimerEvent: {}
+[6.957601] (-) TimerEvent: {}
+[7.058446] (-) TimerEvent: {}
+[7.159474] (-) TimerEvent: {}
+[7.262603] (-) TimerEvent: {}
+[7.364356] (-) TimerEvent: {}
+[7.466464] (-) TimerEvent: {}
+[7.567473] (-) TimerEvent: {}
+[7.669706] (-) TimerEvent: {}
+[7.775082] (-) TimerEvent: {}
+[7.876126] (-) TimerEvent: {}
+[7.977213] (-) TimerEvent: {}
+[8.042300] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_topics_interface.hpp:32\x1b[m\x1b[K,\n'}
+[8.056557] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:55\x1b[m\x1b[K,\n'}
+[8.057681] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[8.057784] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[8.057912] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[8.057983] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:4\x1b[m\x1b[K:\n'}
+[8.058057] (point_pubsub) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/subscription_factory.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; CallbackT = std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.058147] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_subscription.hpp:144:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::create_subscription(NodeT&&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; CallbackT = std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node&; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.058227] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:98:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; CallbackT = std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.058349] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:32:152:\x1b[m\x1b[K   required from here\n'}
+[8.058414] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_factory.hpp:97:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >::set(std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.058482] (point_pubsub) StderrLine: {'line': b'   97 |   \x1b[01;31m\x1b[Kany_subscription_callback\x1b[m\x1b[K.set(std::forward<CallbackT>(callback));\n'}
+[8.058544] (point_pubsub) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.058697] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:29\x1b[m\x1b[K,\n'}
+[8.058806] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26\x1b[m\x1b[K,\n'}
+[8.058891] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[8.058956] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[8.059019] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[8.059081] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[8.059143] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[8.059206] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[8.059269] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[8.059330] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[8.059392] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:4\x1b[m\x1b[K:\n'}
+[8.059454] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<geometry_msgs::msg::PointStamped_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.059534] (point_pubsub) StderrLine: {'line': b'   83 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.059596] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.059657] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.059720] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:81:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.059815] (point_pubsub) StderrLine: {'line': b'   81 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.059896] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.059961] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<geometry_msgs::msg::PointStamped_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.060050] (point_pubsub) StderrLine: {'line': b'   97 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.060115] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.060176] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.060245] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:95:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.060384] (point_pubsub) StderrLine: {'line': b'   95 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.060505] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.060649] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const geometry_msgs::msg::PointStamped_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.060741] (point_pubsub) StderrLine: {'line': b'  111 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.060830] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.070973] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.071292] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:109:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.071397] (point_pubsub) StderrLine: {'line': b'  109 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.071475] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.071567] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const geometry_msgs::msg::PointStamped_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.071661] (point_pubsub) StderrLine: {'line': b'  125 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.071735] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.072088] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.072318] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:123:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.072439] (point_pubsub) StderrLine: {'line': b'  123 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.072556] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.072655] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.074812] (point_pubsub) StderrLine: {'line': b'  139 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.075115] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.075230] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.075323] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:137:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.075413] (point_pubsub) StderrLine: {'line': b'  137 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.075485] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.075573] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.075672] (point_pubsub) StderrLine: {'line': b'  153 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[8.075739] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[8.075962] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.076042] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:151:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.076107] (point_pubsub) StderrLine: {'line': b'  151 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[8.076168] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.082560] (-) TimerEvent: {}
+[8.184155] (-) TimerEvent: {}
+[8.285458] (-) TimerEvent: {}
+[8.387133] (-) TimerEvent: {}
+[8.488177] (-) TimerEvent: {}
+[8.589198] (-) TimerEvent: {}
+[8.689964] (-) TimerEvent: {}
+[8.791057] (-) TimerEvent: {}
+[8.892079] (-) TimerEvent: {}
+[8.993301] (-) TimerEvent: {}
+[9.094730] (-) TimerEvent: {}
+[9.196000] (-) TimerEvent: {}
+[9.297751] (-) TimerEvent: {}
+[9.401749] (-) TimerEvent: {}
+[9.502975] (-) TimerEvent: {}
+[9.603965] (-) TimerEvent: {}
+[9.705362] (-) TimerEvent: {}
+[9.807059] (-) TimerEvent: {}
+[9.908030] (-) TimerEvent: {}
+[10.009878] (-) TimerEvent: {}
+[10.113246] (-) TimerEvent: {}
+[10.215947] (-) TimerEvent: {}
+[10.322586] (-) TimerEvent: {}
+[10.424445] (-) TimerEvent: {}
+[10.529648] (-) TimerEvent: {}
+[10.630399] (-) TimerEvent: {}
+[10.731873] (-) TimerEvent: {}
+[10.833541] (-) TimerEvent: {}
+[10.935101] (-) TimerEvent: {}
+[11.036854] (-) TimerEvent: {}
+[11.137360] (-) TimerEvent: {}
+[11.238305] (-) TimerEvent: {}
+[11.339314] (-) TimerEvent: {}
+[11.443654] (-) TimerEvent: {}
+[11.549318] (-) TimerEvent: {}
+[11.650081] (-) TimerEvent: {}
+[11.763629] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/future:48\x1b[m\x1b[K,\n'}
+[11.790341] (-) TimerEvent: {}
+[11.790789] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[11.791021] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[11.791106] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:4\x1b[m\x1b[K:\n'}
+[11.791191] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:667:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; CallbackT = std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = std::shared_ptr<rclcpp::SubscriptionBase>; _ArgTypes = {rclcpp::node_interfaces::NodeBaseInterface*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&}]\x1b[m\x1b[K\xe2\x80\x99, declared using local type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; CallbackT = std::_Bind<visualization_msgs::msg::Marker_<std::allocator<void> > (PointTf::*(PointTf*, std::_Placeholder<1>))(geometry_msgs::msg::PointStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PointStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>\x1b[m\x1b[K\xe2\x80\x99, is used but never defined [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[11.791564] (point_pubsub) StderrLine: {'line': b'  667 |       \x1b[01;31m\x1b[Kfunction<_Res(_ArgTypes...)>\x1b[m\x1b[K::\n'}
+[11.791766] (point_pubsub) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.890609] (-) TimerEvent: {}
+[11.992120] (-) TimerEvent: {}
+[12.093363] (-) TimerEvent: {}
+[12.194829] (-) TimerEvent: {}
+[12.312827] (-) TimerEvent: {}
+[12.415286] (-) TimerEvent: {}
+[12.516797] (-) TimerEvent: {}
+[12.618373] (-) TimerEvent: {}
+[12.721860] (-) TimerEvent: {}
+[12.822715] (-) TimerEvent: {}
+[12.913192] (point_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1\n'}
+[12.915051] (point_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2\n'}
+[12.915176] (point_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[12.923819] (-) TimerEvent: {}
+[13.025065] (-) TimerEvent: {}
+[13.150260] (point_pubsub) CommandEnded: {'returncode': 2}
+[13.208600] (-) TimerEvent: {}
+[13.312368] (-) TimerEvent: {}
+[13.413499] (-) TimerEvent: {}
+[13.517389] (-) TimerEvent: {}
+[13.618426] (-) TimerEvent: {}
+[13.722932] (-) TimerEvent: {}
+[13.820798] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 2}
+[13.834871] (-) TimerEvent: {}
+[13.843208] (-) EventReactorShutdown: {}

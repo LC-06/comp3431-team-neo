@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.009495] (-) JobUnselected: {'identifier': 'comp3431_starter'}
+[0.010453] (-) JobUnselected: {'identifier': 'point_pubsub'}
+[0.012070] (-) EventReactorShutdown: {}

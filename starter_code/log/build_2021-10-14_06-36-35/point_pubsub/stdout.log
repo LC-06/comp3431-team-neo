@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target point_tf[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o[0m
+[100%] [32m[1mLinking CXX executable point_tf[0m
+[100%] Built target point_tf
+-- Install configuration: ""
+-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf
+-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf" to ""
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.bash
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.zsh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.dsv
+-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.xml

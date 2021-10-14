@@ -1,0 +1,17 @@
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KPointTf::PointTf()[m[K’:
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   30 |     [01;31m[Ktf_buffer_[m[K =
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_listener_[m[K’ was not declared in this scope
+   32 |     [01;31m[Ktransform_listener_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker PointTf::convert(geometry_msgs::msg::PointStamped)[m[K’:
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:75:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   75 |       transformStamped = [01;31m[Ktf_buffer_[m[K->lookupTransform(
+      |                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:81:7:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kvisualization_msgs::msg::Marker[m[K’ {aka ‘[01m[Kvisualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} [[01;31m[K-fpermissive[m[K]
+   81 |       [01;31m[Kreturn[m[K;
+      |       [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

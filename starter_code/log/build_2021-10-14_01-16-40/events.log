@@ -1,0 +1,658 @@
+[0.000000] (-) TimerEvent: {}
+[0.004299] (comp3431_starter) JobQueued: {'identifier': 'comp3431_starter', 'dependencies': OrderedDict()}
+[0.004417] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.004493] (comp3431_starter) JobStarted: {'identifier': 'comp3431_starter'}
+[0.082858] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.101562] (-) TimerEvent: {}
+[0.122444] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'cmake'}
+[0.132277] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/comp3431_starter', '-DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/src'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.208429] (-) TimerEvent: {}
+[0.262245] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.337134] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub', '-DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/src'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.368150] (-) TimerEvent: {}
+[0.481749] (-) TimerEvent: {}
+[0.580678] (comp3431_starter) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.581239] (-) TimerEvent: {}
+[0.682991] (-) TimerEvent: {}
+[0.799652] (-) TimerEvent: {}
+[0.907803] (-) TimerEvent: {}
+[1.009219] (-) TimerEvent: {}
+[1.115968] (-) TimerEvent: {}
+[1.224737] (-) TimerEvent: {}
+[1.380072] (-) TimerEvent: {}
+[1.411238] (comp3431_starter) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.480913] (-) TimerEvent: {}
+[1.589820] (-) TimerEvent: {}
+[1.693382] (-) TimerEvent: {}
+[1.798958] (-) TimerEvent: {}
+[1.902994] (-) TimerEvent: {}
+[2.009642] (-) TimerEvent: {}
+[2.130167] (-) TimerEvent: {}
+[2.240881] (-) TimerEvent: {}
+[2.347004] (-) TimerEvent: {}
+[2.456691] (-) TimerEvent: {}
+[2.560724] (-) TimerEvent: {}
+[2.692798] (-) TimerEvent: {}
+[2.801940] (-) TimerEvent: {}
+[2.907560] (-) TimerEvent: {}
+[3.014241] (-) TimerEvent: {}
+[3.143192] (-) TimerEvent: {}
+[3.259589] (-) TimerEvent: {}
+[3.362835] (-) TimerEvent: {}
+[3.464495] (-) TimerEvent: {}
+[3.565540] (-) TimerEvent: {}
+[3.666981] (-) TimerEvent: {}
+[3.769022] (-) TimerEvent: {}
+[3.871778] (-) TimerEvent: {}
+[3.981560] (-) TimerEvent: {}
+[4.082658] (-) TimerEvent: {}
+[4.184863] (-) TimerEvent: {}
+[4.287366] (-) TimerEvent: {}
+[4.395592] (-) TimerEvent: {}
+[4.521485] (-) TimerEvent: {}
+[4.634635] (-) TimerEvent: {}
+[4.752146] (-) TimerEvent: {}
+[4.853359] (-) TimerEvent: {}
+[4.955718] (-) TimerEvent: {}
+[5.060837] (-) TimerEvent: {}
+[5.162227] (-) TimerEvent: {}
+[5.263948] (-) TimerEvent: {}
+[5.323570] (comp3431_starter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.364798] (-) TimerEvent: {}
+[5.466186] (-) TimerEvent: {}
+[5.477848] (point_pubsub) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[5.568623] (-) TimerEvent: {}
+[5.604095] (comp3431_starter) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.669563] (-) TimerEvent: {}
+[5.780205] (-) TimerEvent: {}
+[5.887100] (-) TimerEvent: {}
+[5.988311] (-) TimerEvent: {}
+[6.089540] (comp3431_starter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.089850] (-) TimerEvent: {}
+[6.131818] (comp3431_starter) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.191117] (-) TimerEvent: {}
+[6.292648] (-) TimerEvent: {}
+[6.401044] (-) TimerEvent: {}
+[6.506100] (-) TimerEvent: {}
+[6.613864] (-) TimerEvent: {}
+[6.744806] (-) TimerEvent: {}
+[6.794179] (point_pubsub) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[6.846272] (-) TimerEvent: {}
+[6.936216] (point_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[6.947303] (-) TimerEvent: {}
+[7.051845] (-) TimerEvent: {}
+[7.162774] (-) TimerEvent: {}
+[7.264753] (-) TimerEvent: {}
+[7.372210] (-) TimerEvent: {}
+[7.480531] (-) TimerEvent: {}
+[7.588409] (-) TimerEvent: {}
+[7.696422] (-) TimerEvent: {}
+[7.799297] (-) TimerEvent: {}
+[7.901534] (-) TimerEvent: {}
+[7.975280] (comp3431_starter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.003887] (-) TimerEvent: {}
+[8.122660] (-) TimerEvent: {}
+[8.234944] (point_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[8.235786] (-) TimerEvent: {}
+[8.244512] (point_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.337769] (-) TimerEvent: {}
+[8.440556] (-) TimerEvent: {}
+[8.555495] (-) TimerEvent: {}
+[8.656974] (-) TimerEvent: {}
+[8.689764] (comp3431_starter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[8.710837] (comp3431_starter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.855152] (-) TimerEvent: {}
+[8.957186] (-) TimerEvent: {}
+[9.069054] (-) TimerEvent: {}
+[9.170802] (-) TimerEvent: {}
+[9.271987] (-) TimerEvent: {}
+[9.374362] (-) TimerEvent: {}
+[9.475275] (-) TimerEvent: {}
+[9.583599] (-) TimerEvent: {}
+[9.685934] (-) TimerEvent: {}
+[9.789942] (-) TimerEvent: {}
+[9.892925] (-) TimerEvent: {}
+[10.001386] (-) TimerEvent: {}
+[10.105096] (-) TimerEvent: {}
+[10.213196] (-) TimerEvent: {}
+[10.301813] (point_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.314272] (-) TimerEvent: {}
+[10.396508] (point_pubsub) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.407498] (point_pubsub) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.415325] (-) TimerEvent: {}
+[10.447767] (point_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.519839] (-) TimerEvent: {}
+[10.627336] (-) TimerEvent: {}
+[10.729813] (-) TimerEvent: {}
+[10.833870] (-) TimerEvent: {}
+[10.947267] (-) TimerEvent: {}
+[11.054225] (-) TimerEvent: {}
+[11.155845] (-) TimerEvent: {}
+[11.260838] (-) TimerEvent: {}
+[11.368977] (-) TimerEvent: {}
+[11.484619] (-) TimerEvent: {}
+[11.593537] (-) TimerEvent: {}
+[11.723570] (-) TimerEvent: {}
+[11.734881] (comp3431_starter) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[11.826055] (-) TimerEvent: {}
+[11.943920] (-) TimerEvent: {}
+[12.080888] (point_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[12.098626] (-) TimerEvent: {}
+[12.103619] (point_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[12.180989] (comp3431_starter) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[12.199690] (-) TimerEvent: {}
+[12.324964] (-) TimerEvent: {}
+[12.430775] (-) TimerEvent: {}
+[12.534119] (-) TimerEvent: {}
+[12.639014] (-) TimerEvent: {}
+[12.742402] (-) TimerEvent: {}
+[12.843668] (-) TimerEvent: {}
+[12.946333] (-) TimerEvent: {}
+[13.059343] (-) TimerEvent: {}
+[13.164304] (-) TimerEvent: {}
+[13.270087] (comp3431_starter) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.10 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[13.271400] (-) TimerEvent: {}
+[13.372788] (-) TimerEvent: {}
+[13.478281] (-) TimerEvent: {}
+[13.589968] (-) TimerEvent: {}
+[13.662892] (point_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.695587] (-) TimerEvent: {}
+[13.762268] (point_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.776462] (point_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.796251] (-) TimerEvent: {}
+[13.859237] (point_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[13.899356] (-) TimerEvent: {}
+[14.055572] (-) TimerEvent: {}
+[14.157168] (-) TimerEvent: {}
+[14.259715] (-) TimerEvent: {}
+[14.364746] (-) TimerEvent: {}
+[14.475307] (-) TimerEvent: {}
+[14.559294] (point_pubsub) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[14.559855] (point_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.576868] (-) TimerEvent: {}
+[14.680154] (-) TimerEvent: {}
+[14.782837] (-) TimerEvent: {}
+[14.886790] (-) TimerEvent: {}
+[14.990881] (-) TimerEvent: {}
+[15.092540] (-) TimerEvent: {}
+[15.194396] (-) TimerEvent: {}
+[15.297716] (-) TimerEvent: {}
+[15.400634] (-) TimerEvent: {}
+[15.504909] (-) TimerEvent: {}
+[15.611003] (-) TimerEvent: {}
+[15.714251] (-) TimerEvent: {}
+[15.814869] (-) TimerEvent: {}
+[15.915586] (-) TimerEvent: {}
+[16.016685] (-) TimerEvent: {}
+[16.119029] (-) TimerEvent: {}
+[16.219719] (-) TimerEvent: {}
+[16.320745] (-) TimerEvent: {}
+[16.426662] (-) TimerEvent: {}
+[16.530998] (-) TimerEvent: {}
+[16.634733] (-) TimerEvent: {}
+[16.739606] (-) TimerEvent: {}
+[16.845464] (-) TimerEvent: {}
+[16.946467] (-) TimerEvent: {}
+[17.048889] (-) TimerEvent: {}
+[17.152333] (-) TimerEvent: {}
+[17.254295] (-) TimerEvent: {}
+[17.354971] (-) TimerEvent: {}
+[17.456581] (-) TimerEvent: {}
+[17.486928] (point_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[17.557459] (-) TimerEvent: {}
+[17.659252] (-) TimerEvent: {}
+[17.762263] (-) TimerEvent: {}
+[17.863651] (point_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.864205] (-) TimerEvent: {}
+[17.941027] (comp3431_starter) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[17.965388] (point_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[17.965709] (-) TimerEvent: {}
+[18.068059] (-) TimerEvent: {}
+[18.183126] (-) TimerEvent: {}
+[18.292897] (-) TimerEvent: {}
+[18.394004] (-) TimerEvent: {}
+[18.495603] (-) TimerEvent: {}
+[18.598677] (-) TimerEvent: {}
+[18.706142] (-) TimerEvent: {}
+[18.809368] (-) TimerEvent: {}
+[18.913332] (-) TimerEvent: {}
+[18.946642] (point_pubsub) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[19.018980] (-) TimerEvent: {}
+[19.131726] (-) TimerEvent: {}
+[19.287954] (-) TimerEvent: {}
+[19.414374] (-) TimerEvent: {}
+[19.455165] (point_pubsub) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[19.523901] (-) TimerEvent: {}
+[19.627063] (-) TimerEvent: {}
+[19.680180] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[19.717617] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[19.720162] (comp3431_starter) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[19.720482] (comp3431_starter) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[19.728963] (-) TimerEvent: {}
+[19.730512] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[19.730765] (comp3431_starter) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[19.751993] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.796148] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[19.797868] (comp3431_starter) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[19.815316] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.830344] (-) TimerEvent: {}
+[19.898161] (comp3431_starter) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.931404] (-) TimerEvent: {}
+[20.036889] (-) TimerEvent: {}
+[20.141491] (-) TimerEvent: {}
+[20.197913] (comp3431_starter) StdoutLine: {'line': b'-- Generating done\n'}
+[20.203457] (comp3431_starter) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter\n'}
+[20.242206] (-) TimerEvent: {}
+[20.350827] (-) TimerEvent: {}
+[20.468672] (comp3431_starter) CommandEnded: {'returncode': 0}
+[20.554404] (-) TimerEvent: {}
+[20.663619] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'build'}
+[20.663802] (-) TimerEvent: {}
+[20.664032] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/src'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[20.665459] (point_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.766280] (-) TimerEvent: {}
+[20.868731] (-) TimerEvent: {}
+[20.970642] (-) TimerEvent: {}
+[21.074222] (-) TimerEvent: {}
+[21.179361] (-) TimerEvent: {}
+[21.192628] (point_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[21.198588] (point_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[21.231610] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[21.280445] (-) TimerEvent: {}
+[21.387002] (-) TimerEvent: {}
+[21.492440] (-) TimerEvent: {}
+[21.612380] (-) TimerEvent: {}
+[21.719394] (-) TimerEvent: {}
+[21.825423] (-) TimerEvent: {}
+[21.933947] (-) TimerEvent: {}
+[21.986601] (comp3431_starter) StdoutLine: {'line': b'[100%] Built target wallFollower\n'}
+[22.036448] (-) TimerEvent: {}
+[22.163763] (comp3431_starter) CommandEnded: {'returncode': 0}
+[22.189566] (-) TimerEvent: {}
+[22.330724] (-) TimerEvent: {}
+[22.401945] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[22.415518] (point_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[22.434757] (-) TimerEvent: {}
+[22.473433] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'install'}
+[22.539262] (-) TimerEvent: {}
+[22.607793] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/src'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[22.676946] (-) TimerEvent: {}
+[22.782188] (-) TimerEvent: {}
+[22.786152] (comp3431_starter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.789169] (comp3431_starter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.791378] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/package_run_dependencies/comp3431_starter\n'}
+[22.792327] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/parent_prefix_path/comp3431_starter\n'}
+[22.795524] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/ament_prefix_path.sh\n'}
+[22.798172] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/ament_prefix_path.dsv\n'}
+[22.798591] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/path.sh\n'}
+[22.798743] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/path.dsv\n'}
+[22.802209] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.bash\n'}
+[22.802542] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.sh\n'}
+[22.802782] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.zsh\n'}
+[22.805914] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.dsv\n'}
+[22.806295] (comp3431_starter) StdoutLine: {'line': b'-- Symlinking: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.dsv\n'}
+[22.874801] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/packages/comp3431_starter\n'}
+[22.883753] (-) TimerEvent: {}
+[22.907106] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/cmake/comp3431_starterConfig.cmake\n'}
+[22.913819] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/cmake/comp3431_starterConfig-version.cmake\n'}
+[22.914687] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.xml\n'}
+[22.914910] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/comp3431_starter/wallFollower\n'}
+[22.930046] (comp3431_starter) CommandEnded: {'returncode': 0}
+[22.995362] (-) TimerEvent: {}
+[23.101074] (-) TimerEvent: {}
+[23.208063] (-) TimerEvent: {}
+[23.240128] (point_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[23.240982] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[23.310563] (-) TimerEvent: {}
+[23.429856] (-) TimerEvent: {}
+[23.533410] (-) TimerEvent: {}
+[23.645074] (-) TimerEvent: {}
+[23.719464] (comp3431_starter) JobEnded: {'identifier': 'comp3431_starter', 'rc': 0}
+[23.746830] (-) TimerEvent: {}
+[23.850132] (-) TimerEvent: {}
+[23.951504] (-) TimerEvent: {}
+[23.983634] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[23.986871] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[24.052662] (-) TimerEvent: {}
+[24.175339] (-) TimerEvent: {}
+[24.302431] (-) TimerEvent: {}
+[24.403066] (-) TimerEvent: {}
+[24.505591] (-) TimerEvent: {}
+[24.608444] (-) TimerEvent: {}
+[24.713174] (-) TimerEvent: {}
+[24.814634] (-) TimerEvent: {}
+[24.868662] (point_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[24.869110] (point_pubsub) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[24.918720] (-) TimerEvent: {}
+[25.020178] (-) TimerEvent: {}
+[25.123485] (-) TimerEvent: {}
+[25.225125] (-) TimerEvent: {}
+[25.329042] (-) TimerEvent: {}
+[25.432273] (-) TimerEvent: {}
+[25.542979] (-) TimerEvent: {}
+[25.644346] (-) TimerEvent: {}
+[25.746306] (-) TimerEvent: {}
+[25.790523] (point_pubsub) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[25.847623] (-) TimerEvent: {}
+[25.949179] (-) TimerEvent: {}
+[26.050767] (-) TimerEvent: {}
+[26.153980] (-) TimerEvent: {}
+[26.263653] (-) TimerEvent: {}
+[26.364733] (-) TimerEvent: {}
+[26.442438] (point_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[26.464939] (-) TimerEvent: {}
+[26.567064] (-) TimerEvent: {}
+[26.671262] (-) TimerEvent: {}
+[26.774530] (-) TimerEvent: {}
+[26.901147] (-) TimerEvent: {}
+[27.020770] (-) TimerEvent: {}
+[27.145804] (-) TimerEvent: {}
+[27.238465] (point_pubsub) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[27.246227] (-) TimerEvent: {}
+[27.253423] (point_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[27.255846] (point_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[27.257734] (point_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[27.265562] (point_pubsub) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[27.266715] (point_pubsub) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[27.272483] (point_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[27.280510] (point_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[27.283100] (point_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[27.285219] (point_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[27.308260] (point_pubsub) StdoutLine: {'line': b'-- Configuring done\n'}
+[27.331152] (point_pubsub) StdoutLine: {'line': b'-- Generating done\n'}
+[27.343634] (point_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub\n'}
+[27.347041] (-) TimerEvent: {}
+[27.395839] (point_pubsub) CommandEnded: {'returncode': 0}
+[27.397429] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[27.420106] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/src'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[27.448600] (-) TimerEvent: {}
+[27.550596] (-) TimerEvent: {}
+[27.652940] (-) TimerEvent: {}
+[27.715225] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[27.754603] (-) TimerEvent: {}
+[27.856982] (-) TimerEvent: {}
+[27.959709] (-) TimerEvent: {}
+[28.060773] (-) TimerEvent: {}
+[28.161488] (-) TimerEvent: {}
+[28.162643] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[28.261685] (-) TimerEvent: {}
+[28.362950] (-) TimerEvent: {}
+[28.475009] (-) TimerEvent: {}
+[28.578264] (-) TimerEvent: {}
+[28.679546] (-) TimerEvent: {}
+[28.781784] (-) TimerEvent: {}
+[28.885703] (-) TimerEvent: {}
+[28.997496] (-) TimerEvent: {}
+[29.105537] (-) TimerEvent: {}
+[29.208449] (-) TimerEvent: {}
+[29.309602] (-) TimerEvent: {}
+[29.410981] (-) TimerEvent: {}
+[29.512349] (-) TimerEvent: {}
+[29.613299] (-) TimerEvent: {}
+[29.714400] (-) TimerEvent: {}
+[29.816903] (-) TimerEvent: {}
+[29.917860] (-) TimerEvent: {}
+[30.019791] (-) TimerEvent: {}
+[30.121205] (-) TimerEvent: {}
+[30.227407] (-) TimerEvent: {}
+[30.335768] (-) TimerEvent: {}
+[30.439205] (-) TimerEvent: {}
+[30.543196] (-) TimerEvent: {}
+[30.644730] (-) TimerEvent: {}
+[30.749607] (-) TimerEvent: {}
+[30.851294] (-) TimerEvent: {}
+[30.959102] (-) TimerEvent: {}
+[31.060691] (-) TimerEvent: {}
+[31.176447] (-) TimerEvent: {}
+[31.282833] (-) TimerEvent: {}
+[31.385482] (-) TimerEvent: {}
+[31.497635] (-) TimerEvent: {}
+[31.645554] (-) TimerEvent: {}
+[31.750684] (-) TimerEvent: {}
+[31.853948] (-) TimerEvent: {}
+[32.017021] (-) TimerEvent: {}
+[32.152908] (-) TimerEvent: {}
+[32.275360] (-) TimerEvent: {}
+[32.384272] (-) TimerEvent: {}
+[32.487569] (-) TimerEvent: {}
+[32.590497] (-) TimerEvent: {}
+[32.694723] (-) TimerEvent: {}
+[32.800894] (-) TimerEvent: {}
+[32.919366] (-) TimerEvent: {}
+[33.033354] (-) TimerEvent: {}
+[33.136035] (-) TimerEvent: {}
+[33.239605] (-) TimerEvent: {}
+[33.343654] (-) TimerEvent: {}
+[33.453412] (-) TimerEvent: {}
+[33.588513] (-) TimerEvent: {}
+[33.759668] (-) TimerEvent: {}
+[34.002518] (-) TimerEvent: {}
+[34.153878] (-) TimerEvent: {}
+[34.265003] (-) TimerEvent: {}
+[34.377656] (-) TimerEvent: {}
+[34.480928] (-) TimerEvent: {}
+[34.584615] (-) TimerEvent: {}
+[34.695076] (-) TimerEvent: {}
+[34.889742] (-) TimerEvent: {}
+[34.994527] (-) TimerEvent: {}
+[35.099644] (-) TimerEvent: {}
+[35.236225] (-) TimerEvent: {}
+[35.391484] (-) TimerEvent: {}
+[35.510893] (-) TimerEvent: {}
+[35.612701] (-) TimerEvent: {}
+[35.715629] (-) TimerEvent: {}
+[35.819021] (-) TimerEvent: {}
+[35.926023] (-) TimerEvent: {}
+[36.035944] (-) TimerEvent: {}
+[36.167159] (-) TimerEvent: {}
+[36.272417] (-) TimerEvent: {}
+[36.375950] (-) TimerEvent: {}
+[36.493206] (-) TimerEvent: {}
+[36.616481] (-) TimerEvent: {}
+[36.737882] (-) TimerEvent: {}
+[36.907532] (-) TimerEvent: {}
+[37.011759] (-) TimerEvent: {}
+[37.145729] (-) TimerEvent: {}
+[37.264412] (-) TimerEvent: {}
+[37.368578] (-) TimerEvent: {}
+[37.471575] (-) TimerEvent: {}
+[37.575970] (-) TimerEvent: {}
+[37.723301] (-) TimerEvent: {}
+[37.887571] (-) TimerEvent: {}
+[38.015272] (-) TimerEvent: {}
+[38.128001] (-) TimerEvent: {}
+[38.230743] (-) TimerEvent: {}
+[38.337797] (-) TimerEvent: {}
+[38.452473] (-) TimerEvent: {}
+[38.565071] (-) TimerEvent: {}
+[38.667183] (-) TimerEvent: {}
+[38.773160] (-) TimerEvent: {}
+[38.876016] (-) TimerEvent: {}
+[38.979287] (-) TimerEvent: {}
+[39.083920] (-) TimerEvent: {}
+[39.192083] (-) TimerEvent: {}
+[39.298379] (-) TimerEvent: {}
+[39.418991] (-) TimerEvent: {}
+[39.553684] (-) TimerEvent: {}
+[39.701090] (-) TimerEvent: {}
+[39.835017] (-) TimerEvent: {}
+[39.941410] (-) TimerEvent: {}
+[40.043458] (-) TimerEvent: {}
+[40.147407] (-) TimerEvent: {}
+[40.293419] (-) TimerEvent: {}
+[40.415197] (-) TimerEvent: {}
+[40.517129] (-) TimerEvent: {}
+[40.618965] (-) TimerEvent: {}
+[40.720877] (-) TimerEvent: {}
+[40.823820] (-) TimerEvent: {}
+[40.926290] (-) TimerEvent: {}
+[41.027999] (-) TimerEvent: {}
+[41.140731] (-) TimerEvent: {}
+[41.284428] (-) TimerEvent: {}
+[41.416264] (-) TimerEvent: {}
+[41.520975] (-) TimerEvent: {}
+[41.643464] (-) TimerEvent: {}
+[41.750036] (-) TimerEvent: {}
+[41.873146] (-) TimerEvent: {}
+[41.987307] (-) TimerEvent: {}
+[42.088948] (-) TimerEvent: {}
+[42.198592] (-) TimerEvent: {}
+[42.312900] (-) TimerEvent: {}
+[42.443515] (-) TimerEvent: {}
+[42.554430] (-) TimerEvent: {}
+[42.659398] (-) TimerEvent: {}
+[42.760294] (-) TimerEvent: {}
+[42.861578] (-) TimerEvent: {}
+[42.964112] (-) TimerEvent: {}
+[43.080032] (-) TimerEvent: {}
+[43.190846] (-) TimerEvent: {}
+[43.295326] (-) TimerEvent: {}
+[43.399434] (-) TimerEvent: {}
+[43.503659] (-) TimerEvent: {}
+[43.605635] (-) TimerEvent: {}
+[43.708709] (-) TimerEvent: {}
+[43.811412] (-) TimerEvent: {}
+[43.915711] (-) TimerEvent: {}
+[44.018641] (-) TimerEvent: {}
+[44.122054] (-) TimerEvent: {}
+[44.227246] (-) TimerEvent: {}
+[44.328880] (-) TimerEvent: {}
+[44.429787] (-) TimerEvent: {}
+[44.531348] (-) TimerEvent: {}
+[44.632545] (-) TimerEvent: {}
+[44.736586] (-) TimerEvent: {}
+[44.851299] (-) TimerEvent: {}
+[44.954826] (-) TimerEvent: {}
+[45.057561] (-) TimerEvent: {}
+[45.163674] (-) TimerEvent: {}
+[45.272630] (-) TimerEvent: {}
+[45.376206] (-) TimerEvent: {}
+[45.478356] (-) TimerEvent: {}
+[45.579767] (-) TimerEvent: {}
+[45.702627] (-) TimerEvent: {}
+[45.807960] (-) TimerEvent: {}
+[45.927693] (-) TimerEvent: {}
+[46.047294] (-) TimerEvent: {}
+[46.183899] (-) TimerEvent: {}
+[46.407265] (-) TimerEvent: {}
+[46.513485] (-) TimerEvent: {}
+[46.615936] (-) TimerEvent: {}
+[46.718497] (-) TimerEvent: {}
+[46.820585] (-) TimerEvent: {}
+[46.944000] (-) TimerEvent: {}
+[47.052642] (-) TimerEvent: {}
+[47.156253] (-) TimerEvent: {}
+[47.260585] (-) TimerEvent: {}
+[47.361813] (-) TimerEvent: {}
+[47.463722] (-) TimerEvent: {}
+[47.564822] (-) TimerEvent: {}
+[47.667642] (-) TimerEvent: {}
+[47.785761] (-) TimerEvent: {}
+[47.894498] (-) TimerEvent: {}
+[47.997049] (-) TimerEvent: {}
+[48.099329] (-) TimerEvent: {}
+[48.204822] (-) TimerEvent: {}
+[48.306582] (-) TimerEvent: {}
+[48.409551] (-) TimerEvent: {}
+[48.510314] (-) TimerEvent: {}
+[48.611004] (-) TimerEvent: {}
+[48.712532] (-) TimerEvent: {}
+[48.813469] (-) TimerEvent: {}
+[48.915004] (-) TimerEvent: {}
+[49.017499] (-) TimerEvent: {}
+[49.118592] (-) TimerEvent: {}
+[49.219938] (-) TimerEvent: {}
+[49.320965] (-) TimerEvent: {}
+[49.422336] (-) TimerEvent: {}
+[49.523023] (-) TimerEvent: {}
+[49.624581] (-) TimerEvent: {}
+[49.725941] (-) TimerEvent: {}
+[49.826548] (-) TimerEvent: {}
+[49.927227] (-) TimerEvent: {}
+[50.028795] (-) TimerEvent: {}
+[50.130370] (-) TimerEvent: {}
+[50.231005] (-) TimerEvent: {}
+[50.331513] (-) TimerEvent: {}
+[50.433308] (-) TimerEvent: {}
+[50.535877] (-) TimerEvent: {}
+[50.637444] (-) TimerEvent: {}
+[50.687243] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointTf::PointTf()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[50.687540] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:18:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to find numeric literal operator \xe2\x80\x98\x1b[01m\x1b[Koperator""ms\x1b[m\x1b[K\xe2\x80\x99\n'}
+[50.687663] (point_pubsub) StderrLine: {'line': b'   18 |     timer_ = this->create_wall_timer(\x1b[01;31m\x1b[K500ms\x1b[m\x1b[K, std::bind(&PointTf::timer_callback, this);\n'}
+[50.687733] (point_pubsub) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[50.733875] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:18:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[50.734232] (point_pubsub) StderrLine: {'line': b'   18 |     timer_ = this->create_wall_timer\x1b[34m\x1b[K(\x1b[m\x1b[K500ms, std::bind(&PointTf::timer_callback, this)\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[50.734328] (point_pubsub) StderrLine: {'line': b'      |                                     \x1b[34m\x1b[K~\x1b[m\x1b[K                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[50.734399] (point_pubsub) StderrLine: {'line': b'      |                                                                                      \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[50.737322] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointTf::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[50.737570] (-) TimerEvent: {}
+[50.737749] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:36:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kball\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[50.738075] (point_pubsub) StderrLine: {'line': b'   36 |       marker.pose.position.x = \x1b[01;31m\x1b[Kball\x1b[m\x1b[K.center.x;\n'}
+[50.738193] (point_pubsub) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[50.755654] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[50.756009] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:89:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBallToMarker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[50.756110] (point_pubsub) StderrLine: {'line': b'   89 |   rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KBallToMarker\x1b[m\x1b[K>());\n'}
+[50.756175] (point_pubsub) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[50.756237] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:89:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[50.756302] (point_pubsub) StderrLine: {'line': b'   89 |   rclcpp::spin(std::make_shared<BallToMarker>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[50.756363] (point_pubsub) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[50.756673] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[50.756854] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:2\x1b[m\x1b[K:\n'}
+[50.756928] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[50.756994] (point_pubsub) StderrLine: {'line': b'  714 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[50.757069] (point_pubsub) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[50.757130] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[50.757192] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/point_pubsub/src/publisher_member_function.cpp:89:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[50.757253] (point_pubsub) StderrLine: {'line': b'   89 |   rclcpp::spin(std::make_shared<BallToMarker>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[50.757312] (point_pubsub) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[50.837778] (-) TimerEvent: {}
+[50.938395] (-) TimerEvent: {}
+[51.039236] (-) TimerEvent: {}
+[51.140534] (-) TimerEvent: {}
+[51.243197] (-) TimerEvent: {}
+[51.344808] (-) TimerEvent: {}
+[51.446702] (-) TimerEvent: {}
+[51.548062] (-) TimerEvent: {}
+[51.649578] (-) TimerEvent: {}
+[51.750750] (-) TimerEvent: {}
+[51.851697] (-) TimerEvent: {}
+[51.952389] (-) TimerEvent: {}
+[52.053141] (-) TimerEvent: {}
+[52.154564] (-) TimerEvent: {}
+[52.255231] (-) TimerEvent: {}
+[52.355775] (-) TimerEvent: {}
+[52.456572] (-) TimerEvent: {}
+[52.558967] (-) TimerEvent: {}
+[52.661734] (-) TimerEvent: {}
+[52.763622] (-) TimerEvent: {}
+[52.866128] (-) TimerEvent: {}
+[52.966990] (-) TimerEvent: {}
+[53.068198] (-) TimerEvent: {}
+[53.168935] (-) TimerEvent: {}
+[53.270502] (-) TimerEvent: {}
+[53.372079] (-) TimerEvent: {}
+[53.472973] (-) TimerEvent: {}
+[53.574234] (-) TimerEvent: {}
+[53.675166] (-) TimerEvent: {}
+[53.776427] (-) TimerEvent: {}
+[53.877003] (-) TimerEvent: {}
+[53.977668] (-) TimerEvent: {}
+[54.078303] (-) TimerEvent: {}
+[54.179893] (-) TimerEvent: {}
+[54.281241] (-) TimerEvent: {}
+[54.382501] (-) TimerEvent: {}
+[54.483456] (-) TimerEvent: {}
+[54.584269] (-) TimerEvent: {}
+[54.685243] (-) TimerEvent: {}
+[54.786306] (-) TimerEvent: {}
+[54.886821] (-) TimerEvent: {}
+[54.988434] (-) TimerEvent: {}
+[55.089977] (-) TimerEvent: {}
+[55.190469] (-) TimerEvent: {}
+[55.245909] (point_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1\n'}
+[55.250776] (point_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2\n'}
+[55.255748] (point_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[55.261072] (point_pubsub) CommandEnded: {'returncode': 2}
+[55.291125] (-) TimerEvent: {}
+[55.366716] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 2}
+[55.372241] (-) EventReactorShutdown: {}
