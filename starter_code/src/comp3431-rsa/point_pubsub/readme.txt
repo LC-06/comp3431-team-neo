@@ -42,7 +42,12 @@ ros2 interface proto geometry_msgs/msg/PointStamped
 
 ---------------------------------------------------------------------------
 
-5. Run created node
+5. 
+~/comp3431-team-neo/starter_code
+. install/setup.bash 
+
+
+6. Run created node
 
 ros2 run point_pubsub point_tf
 
