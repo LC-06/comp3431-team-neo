@@ -6,6 +6,9 @@
 #include "visualization_msgs/msg/marker.hpp"
 #include "geometry_msgs/msg/point_stamped.hpp"
 #include <tf2_ros/transform_listener.h>
+#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
+#include <tf2_ros/buffer.h>
+
 
 #define VISUALISATION_BALL_DIAMETER 1  // m
 
@@ -22,68 +25,34 @@ public:
       "visualization/ball", 10);
     // basic publisher
     //timer_ = this->create_wall_timer(500ms, std::bind(&PointTf::timer_callback, this));
-    subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
-      "/testPoint", 1,
-      [this](geometry_msgs::msg::PointStamped::SharedPtr ball) {
-        publisher_->publish(convert(*ball));
-      });
-
-    // transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
-    tf_buffer_ =
-      std::make_unique<tf2_ros::Buffer>(this->get_clock());
-
-    transform_listener_ =
-      std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
     // subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
-    //   "testPoint", 10, std::bind(&PointTf::convert, this, _1));
+    //   "/testPoint", 1,
+    //   [this](geometry_msgs::msg::PointStamped::SharedPtr ball) {
+    //     publisher_->publish(convert(ball));
+    //   });
 
-    //subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>("testPoint", 1, std::bind(&PointTf::convert, this, std::placeholders::_1));
+    subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>("/testPoint", 1, std::bind(&PointTf::convert, this, std::placeholders::_1));
+
+    tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+
+    tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
   }
 
 private:
-  void timer_callback()
-    {
-      RCLCPP_INFO(this->get_logger(), "Publishing: Point");
-      visualization_msgs::msg::Marker marker;
-      marker.header.frame_id = "odom";
-      marker.ns = "";
-      marker.id = 0;
-      marker.type = visualization_msgs::msg::Marker::SPHERE;
-      marker.action = visualization_msgs::msg::Marker::ADD;
-      marker.pose.position.x = 0;
-      marker.pose.position.y = 0;
-      marker.pose.position.z = 0;
-      marker.pose.orientation.x = 0.0;
-      marker.pose.orientation.y = 0.0;
-      marker.pose.orientation.z = 0.0;
-      marker.pose.orientation.w = 1.0;
-      marker.scale.x = VISUALISATION_BALL_DIAMETER;
-      marker.scale.y = VISUALISATION_BALL_DIAMETER;
-      marker.scale.z = VISUALISATION_BALL_DIAMETER;
-      marker.color.a = 1.0; 
-      marker.color.r = 1.0;
-      marker.color.g = 1.0;
-      marker.color.b = 1.0;
-      publisher_->publish(marker);
-    }
     
-  visualization_msgs::msg::Marker convert(const geometry_msgs::msg::PointStamped point)
+  void convert(const geometry_msgs::msg::PointStamped::SharedPtr point)
   {
     visualization_msgs::msg::Marker marker;
 
     // Check if subscriber is being run
     RCLCPP_INFO(this->get_logger(), "Subscriber: Point");
 
-    geometry_msgs::msg::TransformStamped transformStamped;
-    // Look up for the transformation between target_frame and original frame
+    geometry_msgs::msg::PointStamped translatedPoint;
     try {
-      transformStamped = tf_buffer_->lookupTransform(
-        "map", point.header.frame_id,
-        tf2::TimePointZero);
+      tf2_buffer_->transform(*point, translatedPoint, "map");
     } catch (tf2::TransformException & ex) {
       RCLCPP_INFO(
         this->get_logger(), "Could not transform");
-      return marker;
     }
 
     marker.header.frame_id = "map";
@@ -91,9 +60,9 @@ private:
     marker.id = 0;
     marker.type = visualization_msgs::msg::Marker::SPHERE;
     marker.action = visualization_msgs::msg::Marker::ADD;
-    marker.pose.position.x = transformStamped.transform.translation.x;
-    marker.pose.position.y = transformStamped.transform.translation.y;
-    marker.pose.position.z = transformStamped.transform.translation.z;
+    marker.pose.position.x = translatedPoint.point.x;
+    marker.pose.position.y = translatedPoint.point.y;
+    marker.pose.position.z = translatedPoint.point.z;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
     marker.pose.orientation.z = 0.0;
@@ -105,17 +74,17 @@ private:
     marker.color.r = 1.0;
     marker.color.g = 1.0;
     marker.color.b = 1.0;
-    return marker;
+    
+    publisher_->publish(marker);
+    //return marker;
   }
     
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_;
   rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr subscriber_;
-  std::shared_ptr<tf2_ros::TransformListener> transform_listener_{nullptr};
-  std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
+  std::shared_ptr<tf2_ros::Buffer> tf2_buffer_;
+  std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
 };
-
-
 
 int main(int argc, char * argv[])
 {
