@@ -311,3 +311,58 @@
 [12.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
 [12.922s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
 [13.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
+[135.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
+[136.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros
+[137.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros
+[137.717s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zbar_ros)
+[138.512s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros' for CMake module files
+[138.532s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros' for CMake config files
+[138.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros', 'cmake_prefix_path')
+[138.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.ps1'
+[138.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.dsv'
+[138.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.sh'
+[138.944s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib'
+[138.948s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/bin'
+[138.951s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/pkgconfig/zbar_ros.pc'
+[138.970s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/python3.8/site-packages'
+[138.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.ps1'
+[138.994s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv'
+[139.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.sh'
+[139.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.bash'
+[139.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.zsh'
+[139.086s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/colcon-core/packages/zbar_ros)
+[140.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zbar_ros)
+[140.108s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros' for CMake module files
+[140.116s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros' for CMake config files
+[140.117s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros', 'cmake_prefix_path')
+[140.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.ps1'
+[140.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.dsv'
+[140.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/hook/cmake_prefix_path.sh'
+[140.154s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib'
+[140.154s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/bin'
+[140.155s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/pkgconfig/zbar_ros.pc'
+[140.156s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/python3.8/site-packages'
+[140.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.ps1'
+[140.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv'
+[140.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.sh'
+[140.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.bash'
+[140.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.zsh'
+[140.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/colcon-core/packages/zbar_ros)
+[140.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[140.308s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[140.338s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[140.360s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[140.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[140.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[140.892s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[141.940s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[141.945s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rsa2021/comp3431-team-neo/starter_code/install/local_setup.ps1'
+[141.981s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rsa2021/comp3431-team-neo/starter_code/install/_local_setup_util_ps1.py'
+[141.998s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rsa2021/comp3431-team-neo/starter_code/install/setup.ps1'
+[142.076s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rsa2021/comp3431-team-neo/starter_code/install/local_setup.sh'
+[142.081s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rsa2021/comp3431-team-neo/starter_code/install/_local_setup_util_sh.py'
+[142.085s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rsa2021/comp3431-team-neo/starter_code/install/setup.sh'
+[142.117s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rsa2021/comp3431-team-neo/starter_code/install/local_setup.bash'
+[142.123s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rsa2021/comp3431-team-neo/starter_code/install/setup.bash'
+[142.132s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rsa2021/comp3431-team-neo/starter_code/install/local_setup.zsh'
+[142.139s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rsa2021/comp3431-team-neo/starter_code/install/setup.zsh'

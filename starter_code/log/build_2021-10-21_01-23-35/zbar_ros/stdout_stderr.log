@@ -1,2 +1,28 @@
 [35m[1mScanning dependencies of target barcode_reader_node[0m
 [ 25%] [32mBuilding CXX object CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libbarcode_reader_node.a[0m
+[ 50%] Built target barcode_reader_node
+[ 75%] [32m[1mLinking CXX executable barcode_reader[0m
+[100%] Built target barcode_reader
+-- Install configuration: ""
+-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader
+-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader" to ""
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include/
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros/barcode_reader_node.hpp
+-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/libbarcode_reader_node.a
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/package_run_dependencies/zbar_ros
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/parent_prefix_path/zbar_ros
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.bash
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.sh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.zsh
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.dsv
+-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/packages/zbar_ros
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig.cmake
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig-version.cmake
+-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.xml

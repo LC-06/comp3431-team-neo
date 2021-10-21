@@ -1,3 +1,32 @@
 [0.189s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
 [0.543s] [35m[1mScanning dependencies of target barcode_reader_node[0m
 [0.826s] [ 25%] [32mBuilding CXX object CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o[0m
+[95.859s] [ 50%] [32m[1mLinking CXX static library libbarcode_reader_node.a[0m
+[96.578s] [ 50%] Built target barcode_reader_node
+[97.465s] [ 75%] [32m[1mLinking CXX executable barcode_reader[0m
+[118.746s] [100%] Built target barcode_reader
+[121.516s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
+[122.084s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros
+[122.207s] -- Install configuration: ""
+[122.218s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader
+[122.460s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader" to ""
+[122.461s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include/
+[122.463s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros
+[122.464s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros/barcode_reader_node.hpp
+[122.465s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/libbarcode_reader_node.a
+[123.415s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/package_run_dependencies/zbar_ros
+[123.427s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/parent_prefix_path/zbar_ros
+[123.453s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.sh
+[123.460s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.dsv
+[123.460s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.sh
+[123.469s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.dsv
+[123.476s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.bash
+[123.476s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.sh
+[123.483s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.zsh
+[123.488s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.dsv
+[123.489s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv
+[123.506s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/packages/zbar_ros
+[123.512s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig.cmake
+[123.517s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig-version.cmake
+[123.517s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.xml
+[123.568s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros
