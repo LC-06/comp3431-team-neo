@@ -1,0 +1,45 @@
+[0.192s] Invoking command in '/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher -- -j3 -l3
+[1.053s] [35m[1mScanning dependencies of target image_publisher[0m
+[1.385s] [ 25%] [32mBuilding CXX object CMakeFiles/image_publisher.dir/src/image_publisher.cpp.o[0m
+[56.302s] [ 50%] [32m[1mLinking CXX shared library libimage_publisher.so[0m
+[59.333s] [ 50%] Built target image_publisher
+[59.679s] [ 75%] [32m[1mLinking CXX executable image_publisher_node[0m
+[63.180s] [100%] Built target image_publisher_node
+[63.612s] Invoked command in '/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher -- -j3 -l3
+[64.203s] Invoking command in '/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher
+[64.328s] -- Install configuration: ""
+[64.336s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/include
+[64.337s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/include/image_publisher
+[64.337s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/include/image_publisher/visibility.h
+[64.338s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/include/image_publisher/image_publisher.hpp
+[64.341s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/library_path.sh
+[64.341s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/library_path.dsv
+[64.351s] -- Installing: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/lib/libimage_publisher.so
+[64.361s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/lib/libimage_publisher.so" to ""
+[64.365s] -- Installing: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/lib/image_publisher/image_publisher_node
+[64.366s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/lib/image_publisher/image_publisher_node" to ""
+[64.366s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/launch
+[64.369s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/launch/image_publisher_file.launch.py
+[64.372s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/launch/image_publisher_mono.launch.py
+[64.373s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/launch/image_publisher_stereo.launch.py
+[64.373s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/launch/splash.png
+[64.379s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/ament_index/resource_index/package_run_dependencies/image_publisher
+[64.382s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/ament_index/resource_index/parent_prefix_path/image_publisher
+[64.389s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/ament_prefix_path.sh
+[64.390s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/ament_prefix_path.dsv
+[64.390s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/path.sh
+[64.392s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/environment/path.dsv
+[64.392s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/local_setup.bash
+[64.392s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/local_setup.sh
+[64.392s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/local_setup.zsh
+[64.393s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/local_setup.dsv
+[64.395s] -- Installing: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/package.dsv
+[64.416s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/ament_index/resource_index/packages/image_publisher
+[64.416s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/ament_index/resource_index/rclcpp_components/image_publisher
+[64.418s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/cmake/ament_cmake_export_dependencies-extras.cmake
+[64.424s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/cmake/ament_cmake_export_include_directories-extras.cmake
+[64.425s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/cmake/ament_cmake_export_libraries-extras.cmake
+[64.425s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/cmake/image_publisherConfig.cmake
+[64.426s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/cmake/image_publisherConfig-version.cmake
+[64.426s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/install/image_publisher/share/image_publisher/package.xml
+[64.447s] Invoked command in '/home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/image_pipeline/image_publisher/build/image_publisher
