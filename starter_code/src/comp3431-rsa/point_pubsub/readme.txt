@@ -17,7 +17,7 @@ ros2 topic pub /testPoint geometry_msgs/msg/PointStamped  "header:
 
   nanosec: 0
 
- frame_id: 'camera_view'
+ frame_id: 'camera_link'
 
 point:
 
