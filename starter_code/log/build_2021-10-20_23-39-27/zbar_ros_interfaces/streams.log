@@ -1,0 +1,214 @@
+[0.283s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces -DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces
+[5.497s] -- The C compiler identification is GNU 9.3.0
+[7.663s] -- The CXX compiler identification is GNU 9.3.0
+[7.697s] -- Check for working C compiler: /usr/bin/cc
+[9.143s] -- Check for working C compiler: /usr/bin/cc -- works
+[9.167s] -- Detecting C compiler ABI info
+[10.652s] -- Detecting C compiler ABI info - done
+[10.769s] -- Detecting C compile features
+[10.771s] -- Detecting C compile features - done
+[10.791s] -- Check for working CXX compiler: /usr/bin/c++
+[11.771s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[11.774s] -- Detecting CXX compiler ABI info
+[12.674s] -- Detecting CXX compiler ABI info - done
+[12.777s] -- Detecting CXX compile features
+[12.788s] -- Detecting CXX compile features - done
+[12.826s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[12.999s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[13.000s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[15.705s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[15.771s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.831s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[16.617s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[16.800s] -- Found FastRTPS: /opt/ros/foxy/include  
+[17.238s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[17.364s] -- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[17.834s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[20.205s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[21.953s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[22.696s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[23.228s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[23.250s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[23.615s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[23.616s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[23.616s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[23.616s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[24.003s] -- Found PythonExtra: .so  
+[24.810s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[25.031s] -- Added test 'copyright' to check source files copyright and LICENSE
+[25.035s] -- Added test 'lint_cmake' to check CMake code style
+[25.046s] -- Added test 'xmllint' to check XML markup files
+[25.105s] -- Configuring done
+[26.262s] -- Generating done
+[26.314s] -- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces
+[26.444s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces -DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces
+[26.462s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces -- -j3 -l3
+[27.319s] [35m[1mScanning dependencies of target zbar_ros_interfaces__cpp[0m
+[27.511s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[30.633s] [  3%] Built target zbar_ros_interfaces__cpp
+[30.857s] [  6%] [34m[1mGenerating C code for ROS interfaces[0m
+[33.946s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_generator_c[0m
+[34.058s] [  9%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zbar_ros_interfaces/msg/detail/symbol__functions.c.o[0m
+[36.667s] [ 12%] [32m[1mLinking C shared library libzbar_ros_interfaces__rosidl_generator_c.so[0m
+[38.748s] [ 12%] Built target zbar_ros_interfaces__rosidl_generator_c
+[38.897s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[41.167s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[41.458s] [ 19%] [32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zbar_ros_interfaces/msg/detail/dds_fastrtps/symbol__type_support.cpp.o[0m
+[51.739s] [ 22%] [32m[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[52.946s] [ 22%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp
+[53.092s] [ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[55.213s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_cpp[0m
+[55.377s] [ 29%] [32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zbar_ros_interfaces/msg/detail/symbol__type_support.cpp.o[0m
+[60.643s] [ 32%] [32m[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[61.350s] [ 32%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_cpp
+[61.546s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[63.162s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_c[0m
+[63.285s] [ 38%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zbar_ros_interfaces/msg/detail/symbol__type_support.c.o[0m
+[63.960s] [ 41%] [32m[1mLinking C shared library libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so[0m
+[64.217s] [ 41%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c
+[64.375s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[65.927s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_c[0m
+[66.119s] [ 48%] [32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zbar_ros_interfaces/msg/symbol__type_support.cpp.o[0m
+[66.703s] [ 51%] [32m[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_c.so[0m
+[67.451s] [ 51%] Built target zbar_ros_interfaces__rosidl_typesupport_c
+[67.945s] [ 54%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[70.354s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c[0m
+[70.629s] [ 58%] [32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zbar_ros_interfaces/msg/detail/symbol__type_support_c.cpp.o[0m
+[78.120s] [ 61%] [32m[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[79.078s] [ 61%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c
+[79.209s] [ 64%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[81.582s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_cpp[0m
+[81.748s] [ 67%] [32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zbar_ros_interfaces/msg/symbol__type_support.cpp.o[0m
+[87.198s] [ 70%] [32m[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_cpp.so[0m
+[87.641s] [ 70%] Built target zbar_ros_interfaces__rosidl_typesupport_cpp
+[87.726s] [35m[1mScanning dependencies of target zbar_ros_interfaces[0m
+[87.882s] [ 70%] Built target zbar_ros_interfaces
+[88.004s] [35m[1mScanning dependencies of target zbar_ros_interfaces__py[0m
+[88.091s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[94.247s] [ 74%] Built target zbar_ros_interfaces__py
+[94.366s] [35m[1mScanning dependencies of target zbar_ros_interfaces__python[0m
+[94.981s] [ 77%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__python.dir/rosidl_generator_py/zbar_ros_interfaces/msg/_symbol_s.c.o[0m
+[97.071s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/libzbar_ros_interfaces__python.so[0m
+[97.538s] [ 80%] Built target zbar_ros_interfaces__python
+[97.612s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[97.860s] [ 83%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[98.636s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[99.133s] [ 87%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext
+[99.224s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_c__pyext[0m
+[99.347s] [ 90%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[99.846s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[100.220s] [ 93%] Built target zbar_ros_interfaces__rosidl_typesupport_c__pyext
+[100.373s] [35m[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[100.743s] [ 96%] [32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[101.469s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[102.046s] [100%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[102.499s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces -- -j3 -l3
+[102.957s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces
+[103.036s] -- Install configuration: ""
+[103.048s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/rosidl_interfaces/zbar_ros_interfaces
+[103.050s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.051s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.053s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.h
+[103.059s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.070s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.h
+[103.071s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.c
+[103.074s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.h
+[103.074s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.h
+[103.077s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_generator_c__visibility_control.h
+[103.082s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.sh
+[103.084s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.dsv
+[103.089s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_generator_c.so
+[103.089s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_generator_c.so" to ""
+[103.090s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.092s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.094s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.095s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_c.h
+[103.095s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[103.096s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so
+[103.103s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[103.111s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.113s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.113s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[103.115s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.115s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/dds_fastrtps
+[103.117s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_cpp.hpp
+[103.117s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[103.127s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[103.127s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.127s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.128s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.129s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_c.h
+[103.129s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.c
+[103.132s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[103.135s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so
+[103.148s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[103.148s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_c.so
+[103.149s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_c.so" to ""
+[103.151s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.151s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.152s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.hpp
+[103.153s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.153s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__traits.hpp
+[103.153s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__builder.hpp
+[103.153s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.hpp
+[103.154s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces
+[103.157s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg
+[103.157s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail
+[103.157s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.cpp
+[103.157s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_cpp.hpp
+[103.158s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so
+[103.161s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[103.164s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_cpp.so
+[103.173s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_cpp.so" to ""
+[103.173s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.sh
+[103.173s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.dsv
+[103.180s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/__init__.py
+[103.378s] Compiling '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/__init__.py'...
+[103.392s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg
+[103.393s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/__init__.py
+[103.393s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol.py
+[103.393s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol_s.c
+[103.393s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[103.393s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[103.394s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[103.395s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[103.399s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[103.401s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[103.409s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__python.so
+[103.410s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__python.so" to ""
+[103.410s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.idl
+[103.411s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.msg
+[103.414s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/package_run_dependencies/zbar_ros_interfaces
+[103.415s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/parent_prefix_path/zbar_ros_interfaces
+[103.416s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.sh
+[103.416s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.dsv
+[103.421s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.sh
+[103.423s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.dsv
+[103.423s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.bash
+[103.427s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.sh
+[103.429s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.zsh
+[103.440s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.dsv
+[103.443s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.dsv
+[103.443s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/packages/zbar_ros_interfaces
+[103.450s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport.cmake
+[103.450s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport-noconfig.cmake
+[103.453s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[103.455s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[103.456s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport.cmake
+[103.458s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[103.460s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cppExport.cmake
+[103.463s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[103.470s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[103.472s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport.cmake
+[103.474s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[103.476s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake-extras.cmake
+[103.479s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[103.481s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[103.484s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[103.489s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[103.491s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[103.491s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[103.494s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig.cmake
+[103.496s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig-version.cmake
+[103.496s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.xml
+[103.525s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces

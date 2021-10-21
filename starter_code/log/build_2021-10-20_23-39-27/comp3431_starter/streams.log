@@ -1,0 +1,32 @@
+[0.309s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter -- -j3 -l3
+[1.494s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.065s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.887s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.037s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.548s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[6.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.364s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.401s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.934s] -- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[9.135s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[10.108s] -- Found tf2_ros: 0.13.10 (/opt/ros/foxy/share/tf2_ros/cmake)
+[12.827s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.477s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.493s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.494s] -- Configured cppcheck include dirs: 
+[14.494s] -- Configured cppcheck exclude dirs and/or files: 
+[14.501s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.501s] -- Configured cpplint exclude dirs and/or files: 
+[14.502s] -- Added test 'lint_cmake' to check CMake code style
+[14.520s] -- Added test 'uncrustify' to check C / C++ code style
+[14.521s] -- Configured uncrustify additional arguments: 
+[14.521s] -- Added test 'xmllint' to check XML markup files
+[14.552s] -- Configuring done
+[14.658s] -- Generating done
+[14.672s] -- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter
+[15.121s] [35m[1mScanning dependencies of target wallFollower[0m
+[15.311s] [ 33%] [32mBuilding CXX object CMakeFiles/wallFollower.dir/src/wall_follower.cpp.o[0m
+[108.361s] [ 66%] [32mBuilding CXX object CMakeFiles/wallFollower.dir/src/wall_follower_node.cpp.o[0m
+[120.367s] [100%] [32m[1mLinking CXX executable wallFollower[0m
+[121.926s] [100%] Built target wallFollower

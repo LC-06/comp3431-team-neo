@@ -1,0 +1,1 @@
+rclcpp;zbar;cv_bridge;sensor_msgs;zbar_ros_interfaces;ament_lint_auto;ament_lint_common

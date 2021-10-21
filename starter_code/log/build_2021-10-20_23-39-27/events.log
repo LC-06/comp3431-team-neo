@@ -1,0 +1,1537 @@
+[0.000000] (-) TimerEvent: {}
+[0.001392] (comp3431_starter) JobQueued: {'identifier': 'comp3431_starter', 'dependencies': OrderedDict()}
+[0.001453] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.001485] (zbar_ros_interfaces) JobQueued: {'identifier': 'zbar_ros_interfaces', 'dependencies': OrderedDict()}
+[0.001507] (zbar_ros) JobQueued: {'identifier': 'zbar_ros', 'dependencies': OrderedDict([('zbar_ros_interfaces', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces')])}
+[0.001537] (zbar_ros_interfaces) JobStarted: {'identifier': 'zbar_ros_interfaces'}
+[0.116996] (-) TimerEvent: {}
+[0.141130] (comp3431_starter) JobStarted: {'identifier': 'comp3431_starter'}
+[0.199498] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.220255] (-) TimerEvent: {}
+[0.281915] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'cmake'}
+[0.282898] (zbar_ros_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.328249] (-) TimerEvent: {}
+[0.363917] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'cmake'}
+[0.405782] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'build'}
+[0.415551] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.480119] (-) TimerEvent: {}
+[0.506549] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.564453] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.564686] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.580499] (-) TimerEvent: {}
+[0.681425] (-) TimerEvent: {}
+[0.785765] (-) TimerEvent: {}
+[0.887213] (-) TimerEvent: {}
+[1.009499] (-) TimerEvent: {}
+[1.115305] (-) TimerEvent: {}
+[1.221592] (-) TimerEvent: {}
+[1.322757] (-) TimerEvent: {}
+[1.424409] (-) TimerEvent: {}
+[1.530233] (-) TimerEvent: {}
+[1.632852] (-) TimerEvent: {}
+[1.646269] (point_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.646964] (comp3431_starter) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.734661] (-) TimerEvent: {}
+[1.837474] (-) TimerEvent: {}
+[1.940044] (-) TimerEvent: {}
+[2.041794] (-) TimerEvent: {}
+[2.142719] (-) TimerEvent: {}
+[2.216665] (comp3431_starter) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.228462] (point_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.244469] (-) TimerEvent: {}
+[2.350257] (-) TimerEvent: {}
+[2.465264] (-) TimerEvent: {}
+[2.569719] (-) TimerEvent: {}
+[2.671566] (-) TimerEvent: {}
+[2.776719] (-) TimerEvent: {}
+[2.878194] (-) TimerEvent: {}
+[2.979826] (-) TimerEvent: {}
+[3.081676] (-) TimerEvent: {}
+[3.209565] (-) TimerEvent: {}
+[3.326501] (-) TimerEvent: {}
+[3.429026] (-) TimerEvent: {}
+[3.532501] (-) TimerEvent: {}
+[3.636707] (-) TimerEvent: {}
+[3.740227] (-) TimerEvent: {}
+[3.842847] (-) TimerEvent: {}
+[3.946696] (-) TimerEvent: {}
+[4.048725] (-) TimerEvent: {}
+[4.150990] (-) TimerEvent: {}
+[4.253520] (-) TimerEvent: {}
+[4.357897] (-) TimerEvent: {}
+[4.461627] (-) TimerEvent: {}
+[4.562615] (-) TimerEvent: {}
+[4.664909] (-) TimerEvent: {}
+[4.766210] (-) TimerEvent: {}
+[4.868031] (-) TimerEvent: {}
+[4.968929] (-) TimerEvent: {}
+[5.040693] (comp3431_starter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.072559] (-) TimerEvent: {}
+[5.174280] (-) TimerEvent: {}
+[5.189929] (comp3431_starter) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.274924] (-) TimerEvent: {}
+[5.375614] (-) TimerEvent: {}
+[5.476454] (-) TimerEvent: {}
+[5.498644] (zbar_ros_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[5.577370] (-) TimerEvent: {}
+[5.625207] (comp3431_starter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.680967] (-) TimerEvent: {}
+[5.701424] (comp3431_starter) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[5.781432] (-) TimerEvent: {}
+[5.886268] (-) TimerEvent: {}
+[5.894373] (point_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[5.988151] (-) TimerEvent: {}
+[6.094178] (-) TimerEvent: {}
+[6.183809] (point_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.196753] (-) TimerEvent: {}
+[6.200511] (point_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.301085] (-) TimerEvent: {}
+[6.403188] (-) TimerEvent: {}
+[6.509342] (-) TimerEvent: {}
+[6.610513] (-) TimerEvent: {}
+[6.717958] (-) TimerEvent: {}
+[6.818989] (-) TimerEvent: {}
+[6.930140] (-) TimerEvent: {}
+[6.988950] (point_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.009528] (comp3431_starter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.033971] (-) TimerEvent: {}
+[7.136665] (-) TimerEvent: {}
+[7.240088] (-) TimerEvent: {}
+[7.343717] (-) TimerEvent: {}
+[7.447377] (-) TimerEvent: {}
+[7.516905] (comp3431_starter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[7.518406] (point_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[7.548001] (-) TimerEvent: {}
+[7.550933] (point_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.553762] (comp3431_starter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.648948] (-) TimerEvent: {}
+[7.664001] (zbar_ros_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[7.698127] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[7.749968] (-) TimerEvent: {}
+[7.851539] (-) TimerEvent: {}
+[7.952463] (-) TimerEvent: {}
+[8.055249] (-) TimerEvent: {}
+[8.157346] (-) TimerEvent: {}
+[8.258090] (-) TimerEvent: {}
+[8.359541] (-) TimerEvent: {}
+[8.462365] (-) TimerEvent: {}
+[8.578188] (-) TimerEvent: {}
+[8.680425] (-) TimerEvent: {}
+[8.782358] (-) TimerEvent: {}
+[8.896376] (-) TimerEvent: {}
+[8.921997] (point_pubsub) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.4 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[8.997033] (-) TimerEvent: {}
+[9.086655] (comp3431_starter) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[9.098147] (-) TimerEvent: {}
+[9.144787] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[9.167844] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.198935] (-) TimerEvent: {}
+[9.288064] (comp3431_starter) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[9.305531] (-) TimerEvent: {}
+[9.412548] (-) TimerEvent: {}
+[9.515254] (-) TimerEvent: {}
+[9.617710] (-) TimerEvent: {}
+[9.731685] (-) TimerEvent: {}
+[9.841973] (-) TimerEvent: {}
+[9.969848] (-) TimerEvent: {}
+[10.075206] (-) TimerEvent: {}
+[10.179598] (-) TimerEvent: {}
+[10.260676] (comp3431_starter) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.10 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[10.271483] (point_pubsub) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.10 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[10.280087] (-) TimerEvent: {}
+[10.382606] (-) TimerEvent: {}
+[10.486366] (-) TimerEvent: {}
+[10.588825] (-) TimerEvent: {}
+[10.652408] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.689699] (-) TimerEvent: {}
+[10.770307] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.772107] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.792274] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[10.792778] (-) TimerEvent: {}
+[10.893934] (-) TimerEvent: {}
+[10.994872] (-) TimerEvent: {}
+[11.097256] (-) TimerEvent: {}
+[11.213470] (-) TimerEvent: {}
+[11.314919] (-) TimerEvent: {}
+[11.422860] (-) TimerEvent: {}
+[11.524367] (-) TimerEvent: {}
+[11.626783] (-) TimerEvent: {}
+[11.728438] (-) TimerEvent: {}
+[11.772812] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[11.775085] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.828639] (-) TimerEvent: {}
+[11.929720] (-) TimerEvent: {}
+[12.031188] (-) TimerEvent: {}
+[12.137268] (-) TimerEvent: {}
+[12.238647] (-) TimerEvent: {}
+[12.343182] (-) TimerEvent: {}
+[12.447243] (-) TimerEvent: {}
+[12.548489] (-) TimerEvent: {}
+[12.650922] (-) TimerEvent: {}
+[12.675540] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[12.751387] (-) TimerEvent: {}
+[12.777837] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[12.789004] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.827018] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[12.858102] (-) TimerEvent: {}
+[12.959168] (-) TimerEvent: {}
+[12.979926] (comp3431_starter) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[13.000092] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[13.000965] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[13.027618] (point_pubsub) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[13.060183] (-) TimerEvent: {}
+[13.161780] (-) TimerEvent: {}
+[13.287225] (-) TimerEvent: {}
+[13.395616] (-) TimerEvent: {}
+[13.504127] (-) TimerEvent: {}
+[13.606009] (-) TimerEvent: {}
+[13.718807] (-) TimerEvent: {}
+[13.848647] (-) TimerEvent: {}
+[13.967161] (-) TimerEvent: {}
+[14.073226] (-) TimerEvent: {}
+[14.174347] (-) TimerEvent: {}
+[14.275981] (-) TimerEvent: {}
+[14.387678] (-) TimerEvent: {}
+[14.491449] (-) TimerEvent: {}
+[14.593743] (-) TimerEvent: {}
+[14.597900] (point_pubsub) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.617553] (point_pubsub) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.617856] (point_pubsub) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[14.618073] (point_pubsub) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.630510] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.631236] (point_pubsub) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[14.631723] (point_pubsub) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[14.633060] (point_pubsub) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.644719] (point_pubsub) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.645172] (point_pubsub) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.645488] (point_pubsub) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.646743] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.647472] (comp3431_starter) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[14.647681] (comp3431_starter) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.654032] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[14.654480] (comp3431_starter) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[14.655058] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.673282] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.674121] (comp3431_starter) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.674323] (comp3431_starter) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.691400] (point_pubsub) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.695252] (-) TimerEvent: {}
+[14.704919] (comp3431_starter) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.796312] (-) TimerEvent: {}
+[14.811170] (comp3431_starter) StdoutLine: {'line': b'-- Generating done\n'}
+[14.825159] (comp3431_starter) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter\n'}
+[14.896821] (-) TimerEvent: {}
+[14.999006] (-) TimerEvent: {}
+[15.040380] (point_pubsub) StdoutLine: {'line': b'-- Generating done\n'}
+[15.101738] (-) TimerEvent: {}
+[15.148372] (point_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub\n'}
+[15.202427] (-) TimerEvent: {}
+[15.273786] (comp3431_starter) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target wallFollower\x1b[0m\n'}
+[15.303776] (-) TimerEvent: {}
+[15.407214] (-) TimerEvent: {}
+[15.463713] (comp3431_starter) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/wallFollower.dir/src/wall_follower.cpp.o\x1b[0m\n'}
+[15.470722] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[15.511356] (-) TimerEvent: {}
+[15.612425] (-) TimerEvent: {}
+[15.706552] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[15.719257] (-) TimerEvent: {}
+[15.772770] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.779652] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[15.820569] (-) TimerEvent: {}
+[15.832173] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[15.921661] (-) TimerEvent: {}
+[16.023449] (-) TimerEvent: {}
+[16.124554] (-) TimerEvent: {}
+[16.226248] (-) TimerEvent: {}
+[16.332355] (-) TimerEvent: {}
+[16.434164] (-) TimerEvent: {}
+[16.534899] (-) TimerEvent: {}
+[16.618157] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[16.635897] (-) TimerEvent: {}
+[16.737604] (-) TimerEvent: {}
+[16.801358] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[16.837892] (-) TimerEvent: {}
+[16.940504] (-) TimerEvent: {}
+[17.046236] (-) TimerEvent: {}
+[17.146796] (-) TimerEvent: {}
+[17.239415] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.249689] (-) TimerEvent: {}
+[17.353684] (-) TimerEvent: {}
+[17.365352] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.4 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[17.454278] (-) TimerEvent: {}
+[17.554991] (-) TimerEvent: {}
+[17.655891] (-) TimerEvent: {}
+[17.757379] (-) TimerEvent: {}
+[17.835453] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[17.857899] (-) TimerEvent: {}
+[17.961157] (-) TimerEvent: {}
+[18.066322] (-) TimerEvent: {}
+[18.171285] (-) TimerEvent: {}
+[18.274833] (-) TimerEvent: {}
+[18.384909] (-) TimerEvent: {}
+[18.488462] (-) TimerEvent: {}
+[18.590319] (-) TimerEvent: {}
+[18.691100] (-) TimerEvent: {}
+[18.794087] (-) TimerEvent: {}
+[18.897135] (-) TimerEvent: {}
+[18.998847] (-) TimerEvent: {}
+[19.101380] (-) TimerEvent: {}
+[19.202658] (-) TimerEvent: {}
+[19.304169] (-) TimerEvent: {}
+[19.407266] (-) TimerEvent: {}
+[19.509046] (-) TimerEvent: {}
+[19.615359] (-) TimerEvent: {}
+[19.718290] (-) TimerEvent: {}
+[19.820202] (-) TimerEvent: {}
+[19.926982] (-) TimerEvent: {}
+[20.027703] (-) TimerEvent: {}
+[20.130263] (-) TimerEvent: {}
+[20.206189] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[20.231651] (-) TimerEvent: {}
+[20.333835] (-) TimerEvent: {}
+[20.437841] (-) TimerEvent: {}
+[20.545782] (-) TimerEvent: {}
+[20.650598] (-) TimerEvent: {}
+[20.752898] (-) TimerEvent: {}
+[20.853886] (-) TimerEvent: {}
+[20.956536] (-) TimerEvent: {}
+[21.061984] (-) TimerEvent: {}
+[21.163592] (-) TimerEvent: {}
+[21.266939] (-) TimerEvent: {}
+[21.374180] (-) TimerEvent: {}
+[21.476519] (-) TimerEvent: {}
+[21.579535] (-) TimerEvent: {}
+[21.681990] (-) TimerEvent: {}
+[21.782520] (-) TimerEvent: {}
+[21.886762] (-) TimerEvent: {}
+[21.954383] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.988311] (-) TimerEvent: {}
+[22.114400] (-) TimerEvent: {}
+[22.215413] (-) TimerEvent: {}
+[22.317192] (-) TimerEvent: {}
+[22.424586] (-) TimerEvent: {}
+[22.527001] (-) TimerEvent: {}
+[22.628892] (-) TimerEvent: {}
+[22.697505] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[22.734900] (-) TimerEvent: {}
+[22.842016] (-) TimerEvent: {}
+[22.947931] (-) TimerEvent: {}
+[23.060774] (-) TimerEvent: {}
+[23.166055] (-) TimerEvent: {}
+[23.229786] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[23.251487] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[23.267136] (-) TimerEvent: {}
+[23.374124] (-) TimerEvent: {}
+[23.488212] (-) TimerEvent: {}
+[23.594655] (-) TimerEvent: {}
+[23.616364] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[23.616785] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[23.617347] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[23.617459] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[23.699227] (-) TimerEvent: {}
+[23.800588] (-) TimerEvent: {}
+[23.903548] (-) TimerEvent: {}
+[24.004298] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[24.004585] (-) TimerEvent: {}
+[24.105522] (-) TimerEvent: {}
+[24.207089] (-) TimerEvent: {}
+[24.309810] (-) TimerEvent: {}
+[24.411120] (-) TimerEvent: {}
+[24.513692] (-) TimerEvent: {}
+[24.615390] (-) TimerEvent: {}
+[24.722199] (-) TimerEvent: {}
+[24.811510] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[24.825288] (-) TimerEvent: {}
+[24.933569] (-) TimerEvent: {}
+[25.031959] (zbar_ros_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[25.035943] (zbar_ros_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[25.036713] (-) TimerEvent: {}
+[25.047139] (zbar_ros_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[25.106043] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[25.139296] (-) TimerEvent: {}
+[25.242747] (-) TimerEvent: {}
+[25.348160] (-) TimerEvent: {}
+[25.458305] (-) TimerEvent: {}
+[25.593518] (-) TimerEvent: {}
+[25.697749] (-) TimerEvent: {}
+[25.806930] (-) TimerEvent: {}
+[25.910658] (-) TimerEvent: {}
+[26.011924] (-) TimerEvent: {}
+[26.115023] (-) TimerEvent: {}
+[26.220569] (-) TimerEvent: {}
+[26.263233] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[26.315268] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces\n'}
+[26.325543] (-) TimerEvent: {}
+[26.428553] (-) TimerEvent: {}
+[26.444457] (zbar_ros_interfaces) CommandEnded: {'returncode': 0}
+[26.461618] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'build'}
+[26.463309] (zbar_ros_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[26.530270] (-) TimerEvent: {}
+[26.633714] (-) TimerEvent: {}
+[26.736406] (-) TimerEvent: {}
+[26.842638] (-) TimerEvent: {}
+[26.953742] (-) TimerEvent: {}
+[27.066226] (-) TimerEvent: {}
+[27.186719] (-) TimerEvent: {}
+[27.288561] (-) TimerEvent: {}
+[27.320791] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__cpp\x1b[0m\n'}
+[27.389480] (-) TimerEvent: {}
+[27.490190] (-) TimerEvent: {}
+[27.512834] (zbar_ros_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[27.590946] (-) TimerEvent: {}
+[27.694268] (-) TimerEvent: {}
+[27.795480] (-) TimerEvent: {}
+[27.897323] (-) TimerEvent: {}
+[27.997983] (-) TimerEvent: {}
+[28.105552] (-) TimerEvent: {}
+[28.207801] (-) TimerEvent: {}
+[28.310239] (-) TimerEvent: {}
+[28.416285] (-) TimerEvent: {}
+[28.517844] (-) TimerEvent: {}
+[28.620402] (-) TimerEvent: {}
+[28.722095] (-) TimerEvent: {}
+[28.823429] (-) TimerEvent: {}
+[28.927220] (-) TimerEvent: {}
+[29.029906] (-) TimerEvent: {}
+[29.132294] (-) TimerEvent: {}
+[29.234555] (-) TimerEvent: {}
+[29.335196] (-) TimerEvent: {}
+[29.437712] (-) TimerEvent: {}
+[29.540646] (-) TimerEvent: {}
+[29.642721] (-) TimerEvent: {}
+[29.746234] (-) TimerEvent: {}
+[29.848912] (-) TimerEvent: {}
+[29.951898] (-) TimerEvent: {}
+[30.057406] (-) TimerEvent: {}
+[30.162081] (-) TimerEvent: {}
+[30.262863] (-) TimerEvent: {}
+[30.364227] (-) TimerEvent: {}
+[30.471839] (-) TimerEvent: {}
+[30.574561] (-) TimerEvent: {}
+[30.634142] (zbar_ros_interfaces) StdoutLine: {'line': b'[  3%] Built target zbar_ros_interfaces__cpp\n'}
+[30.677751] (-) TimerEvent: {}
+[30.784421] (-) TimerEvent: {}
+[30.858251] (zbar_ros_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[30.885211] (-) TimerEvent: {}
+[30.995631] (-) TimerEvent: {}
+[31.109102] (-) TimerEvent: {}
+[31.219802] (-) TimerEvent: {}
+[31.321047] (-) TimerEvent: {}
+[31.442935] (-) TimerEvent: {}
+[31.545245] (-) TimerEvent: {}
+[31.652903] (-) TimerEvent: {}
+[31.778064] (-) TimerEvent: {}
+[31.881512] (-) TimerEvent: {}
+[31.994385] (-) TimerEvent: {}
+[32.097195] (-) TimerEvent: {}
+[32.202641] (-) TimerEvent: {}
+[32.303483] (-) TimerEvent: {}
+[32.413562] (-) TimerEvent: {}
+[32.514498] (-) TimerEvent: {}
+[32.615220] (-) TimerEvent: {}
+[32.717722] (-) TimerEvent: {}
+[32.819232] (-) TimerEvent: {}
+[32.941752] (-) TimerEvent: {}
+[33.107070] (-) TimerEvent: {}
+[33.221252] (-) TimerEvent: {}
+[33.324415] (-) TimerEvent: {}
+[33.427396] (-) TimerEvent: {}
+[33.558703] (-) TimerEvent: {}
+[33.665539] (-) TimerEvent: {}
+[33.773952] (-) TimerEvent: {}
+[33.877040] (-) TimerEvent: {}
+[33.947291] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_generator_c\x1b[0m\n'}
+[33.981985] (-) TimerEvent: {}
+[34.059298] (zbar_ros_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zbar_ros_interfaces/msg/detail/symbol__functions.c.o\x1b[0m\n'}
+[34.082881] (-) TimerEvent: {}
+[34.186036] (-) TimerEvent: {}
+[34.289059] (-) TimerEvent: {}
+[34.397269] (-) TimerEvent: {}
+[34.498771] (-) TimerEvent: {}
+[34.601772] (-) TimerEvent: {}
+[34.705479] (-) TimerEvent: {}
+[34.808677] (-) TimerEvent: {}
+[34.910485] (-) TimerEvent: {}
+[35.011838] (-) TimerEvent: {}
+[35.115238] (-) TimerEvent: {}
+[35.252700] (-) TimerEvent: {}
+[35.360751] (-) TimerEvent: {}
+[35.473277] (-) TimerEvent: {}
+[35.576102] (-) TimerEvent: {}
+[35.677497] (-) TimerEvent: {}
+[35.780880] (-) TimerEvent: {}
+[35.882741] (-) TimerEvent: {}
+[35.984442] (-) TimerEvent: {}
+[36.085938] (-) TimerEvent: {}
+[36.221408] (-) TimerEvent: {}
+[36.327638] (-) TimerEvent: {}
+[36.431703] (-) TimerEvent: {}
+[36.541109] (-) TimerEvent: {}
+[36.650696] (-) TimerEvent: {}
+[36.667329] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libzbar_ros_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[36.752097] (-) TimerEvent: {}
+[36.865505] (-) TimerEvent: {}
+[36.980951] (-) TimerEvent: {}
+[37.085777] (-) TimerEvent: {}
+[37.207004] (-) TimerEvent: {}
+[37.311584] (-) TimerEvent: {}
+[37.413403] (-) TimerEvent: {}
+[37.529581] (-) TimerEvent: {}
+[37.643178] (-) TimerEvent: {}
+[37.746691] (-) TimerEvent: {}
+[37.855481] (-) TimerEvent: {}
+[37.987901] (-) TimerEvent: {}
+[38.130680] (-) TimerEvent: {}
+[38.232462] (-) TimerEvent: {}
+[38.338020] (-) TimerEvent: {}
+[38.442582] (-) TimerEvent: {}
+[38.543589] (-) TimerEvent: {}
+[38.647895] (-) TimerEvent: {}
+[38.749598] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 12%] Built target zbar_ros_interfaces__rosidl_generator_c\n'}
+[38.749959] (-) TimerEvent: {}
+[38.851307] (-) TimerEvent: {}
+[38.898398] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[38.957847] (-) TimerEvent: {}
+[39.062069] (-) TimerEvent: {}
+[39.163658] (-) TimerEvent: {}
+[39.265260] (-) TimerEvent: {}
+[39.371963] (-) TimerEvent: {}
+[39.477150] (-) TimerEvent: {}
+[39.580489] (-) TimerEvent: {}
+[39.688711] (-) TimerEvent: {}
+[39.790055] (-) TimerEvent: {}
+[39.903810] (-) TimerEvent: {}
+[40.011302] (-) TimerEvent: {}
+[40.132241] (-) TimerEvent: {}
+[40.236123] (-) TimerEvent: {}
+[40.337267] (-) TimerEvent: {}
+[40.445301] (-) TimerEvent: {}
+[40.548462] (-) TimerEvent: {}
+[40.650194] (-) TimerEvent: {}
+[40.751283] (-) TimerEvent: {}
+[40.894818] (-) TimerEvent: {}
+[41.001416] (-) TimerEvent: {}
+[41.106019] (-) TimerEvent: {}
+[41.168157] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[41.217945] (-) TimerEvent: {}
+[41.322312] (-) TimerEvent: {}
+[41.433960] (-) TimerEvent: {}
+[41.458832] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zbar_ros_interfaces/msg/detail/dds_fastrtps/symbol__type_support.cpp.o\x1b[0m\n'}
+[41.536425] (-) TimerEvent: {}
+[41.638109] (-) TimerEvent: {}
+[41.739346] (-) TimerEvent: {}
+[41.839948] (-) TimerEvent: {}
+[41.943777] (-) TimerEvent: {}
+[42.056555] (-) TimerEvent: {}
+[42.157871] (-) TimerEvent: {}
+[42.259472] (-) TimerEvent: {}
+[42.372852] (-) TimerEvent: {}
+[42.474838] (-) TimerEvent: {}
+[42.576588] (-) TimerEvent: {}
+[42.681359] (-) TimerEvent: {}
+[42.784671] (-) TimerEvent: {}
+[42.885977] (-) TimerEvent: {}
+[42.988036] (-) TimerEvent: {}
+[43.088983] (-) TimerEvent: {}
+[43.215011] (-) TimerEvent: {}
+[43.316322] (-) TimerEvent: {}
+[43.440378] (-) TimerEvent: {}
+[43.547741] (-) TimerEvent: {}
+[43.663046] (-) TimerEvent: {}
+[43.764323] (-) TimerEvent: {}
+[43.945701] (-) TimerEvent: {}
+[44.058172] (-) TimerEvent: {}
+[44.173636] (-) TimerEvent: {}
+[44.275607] (-) TimerEvent: {}
+[44.404325] (-) TimerEvent: {}
+[44.505898] (-) TimerEvent: {}
+[44.607188] (-) TimerEvent: {}
+[44.710260] (-) TimerEvent: {}
+[44.811986] (-) TimerEvent: {}
+[44.919214] (-) TimerEvent: {}
+[45.026681] (-) TimerEvent: {}
+[45.127305] (-) TimerEvent: {}
+[45.231014] (-) TimerEvent: {}
+[45.332498] (-) TimerEvent: {}
+[45.434442] (-) TimerEvent: {}
+[45.536176] (-) TimerEvent: {}
+[45.638557] (-) TimerEvent: {}
+[45.745315] (-) TimerEvent: {}
+[45.848050] (-) TimerEvent: {}
+[45.949547] (-) TimerEvent: {}
+[46.051813] (-) TimerEvent: {}
+[46.152367] (-) TimerEvent: {}
+[46.270016] (-) TimerEvent: {}
+[46.375507] (-) TimerEvent: {}
+[46.478827] (-) TimerEvent: {}
+[46.582109] (-) TimerEvent: {}
+[46.683851] (-) TimerEvent: {}
+[46.785334] (-) TimerEvent: {}
+[46.885773] (-) TimerEvent: {}
+[46.986359] (-) TimerEvent: {}
+[47.087493] (-) TimerEvent: {}
+[47.189994] (-) TimerEvent: {}
+[47.290695] (-) TimerEvent: {}
+[47.394912] (-) TimerEvent: {}
+[47.496015] (-) TimerEvent: {}
+[47.602101] (-) TimerEvent: {}
+[47.703781] (-) TimerEvent: {}
+[47.805049] (-) TimerEvent: {}
+[47.906971] (-) TimerEvent: {}
+[48.016154] (-) TimerEvent: {}
+[48.120865] (-) TimerEvent: {}
+[48.231329] (-) TimerEvent: {}
+[48.337867] (-) TimerEvent: {}
+[48.447602] (-) TimerEvent: {}
+[48.568453] (-) TimerEvent: {}
+[48.672637] (-) TimerEvent: {}
+[48.795753] (-) TimerEvent: {}
+[48.898632] (-) TimerEvent: {}
+[49.042074] (-) TimerEvent: {}
+[49.178448] (-) TimerEvent: {}
+[49.297872] (-) TimerEvent: {}
+[49.413404] (-) TimerEvent: {}
+[49.533667] (-) TimerEvent: {}
+[49.690959] (-) TimerEvent: {}
+[49.831150] (-) TimerEvent: {}
+[49.949360] (-) TimerEvent: {}
+[50.081335] (-) TimerEvent: {}
+[50.183043] (-) TimerEvent: {}
+[50.284285] (-) TimerEvent: {}
+[50.387725] (-) TimerEvent: {}
+[50.489270] (-) TimerEvent: {}
+[50.590712] (-) TimerEvent: {}
+[50.693656] (-) TimerEvent: {}
+[50.796652] (-) TimerEvent: {}
+[50.920687] (-) TimerEvent: {}
+[51.024779] (-) TimerEvent: {}
+[51.127883] (-) TimerEvent: {}
+[51.232527] (-) TimerEvent: {}
+[51.343824] (-) TimerEvent: {}
+[51.453926] (-) TimerEvent: {}
+[51.556971] (-) TimerEvent: {}
+[51.659897] (-) TimerEvent: {}
+[51.739311] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[51.761820] (-) TimerEvent: {}
+[51.864190] (-) TimerEvent: {}
+[51.966018] (-) TimerEvent: {}
+[52.067640] (-) TimerEvent: {}
+[52.169032] (-) TimerEvent: {}
+[52.270987] (-) TimerEvent: {}
+[52.374457] (-) TimerEvent: {}
+[52.477017] (-) TimerEvent: {}
+[52.579835] (-) TimerEvent: {}
+[52.681542] (-) TimerEvent: {}
+[52.786122] (-) TimerEvent: {}
+[52.893726] (-) TimerEvent: {}
+[52.947365] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 22%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[52.997101] (-) TimerEvent: {}
+[53.090381] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[53.099548] (-) TimerEvent: {}
+[53.205606] (-) TimerEvent: {}
+[53.306448] (-) TimerEvent: {}
+[53.408370] (-) TimerEvent: {}
+[53.511345] (-) TimerEvent: {}
+[53.614716] (-) TimerEvent: {}
+[53.716383] (-) TimerEvent: {}
+[53.825785] (-) TimerEvent: {}
+[53.943380] (-) TimerEvent: {}
+[54.062537] (-) TimerEvent: {}
+[54.163977] (-) TimerEvent: {}
+[54.265839] (-) TimerEvent: {}
+[54.370236] (-) TimerEvent: {}
+[54.473819] (-) TimerEvent: {}
+[54.574766] (-) TimerEvent: {}
+[54.681002] (-) TimerEvent: {}
+[54.789895] (-) TimerEvent: {}
+[54.891221] (-) TimerEvent: {}
+[55.004620] (-) TimerEvent: {}
+[55.106528] (-) TimerEvent: {}
+[55.207857] (-) TimerEvent: {}
+[55.213874] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[55.309796] (-) TimerEvent: {}
+[55.378196] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zbar_ros_interfaces/msg/detail/symbol__type_support.cpp.o\x1b[0m\n'}
+[55.409811] (-) TimerEvent: {}
+[55.515673] (-) TimerEvent: {}
+[55.617284] (-) TimerEvent: {}
+[55.741063] (-) TimerEvent: {}
+[55.842734] (-) TimerEvent: {}
+[55.944254] (-) TimerEvent: {}
+[56.045709] (-) TimerEvent: {}
+[56.146447] (-) TimerEvent: {}
+[56.249203] (-) TimerEvent: {}
+[56.355601] (-) TimerEvent: {}
+[56.456623] (-) TimerEvent: {}
+[56.560942] (-) TimerEvent: {}
+[56.684027] (-) TimerEvent: {}
+[56.800997] (-) TimerEvent: {}
+[56.968665] (-) TimerEvent: {}
+[57.117892] (-) TimerEvent: {}
+[57.218493] (-) TimerEvent: {}
+[57.329223] (-) TimerEvent: {}
+[57.443583] (-) TimerEvent: {}
+[57.548839] (-) TimerEvent: {}
+[57.687252] (-) TimerEvent: {}
+[57.789822] (-) TimerEvent: {}
+[57.892131] (-) TimerEvent: {}
+[57.994074] (-) TimerEvent: {}
+[58.097484] (-) TimerEvent: {}
+[58.202254] (-) TimerEvent: {}
+[58.309379] (-) TimerEvent: {}
+[58.411312] (-) TimerEvent: {}
+[58.512916] (-) TimerEvent: {}
+[58.615451] (-) TimerEvent: {}
+[58.716879] (-) TimerEvent: {}
+[58.820620] (-) TimerEvent: {}
+[58.923570] (-) TimerEvent: {}
+[59.025318] (-) TimerEvent: {}
+[59.126813] (-) TimerEvent: {}
+[59.228978] (-) TimerEvent: {}
+[59.329955] (-) TimerEvent: {}
+[59.431977] (-) TimerEvent: {}
+[59.533866] (-) TimerEvent: {}
+[59.638311] (-) TimerEvent: {}
+[59.741930] (-) TimerEvent: {}
+[59.845126] (-) TimerEvent: {}
+[59.947288] (-) TimerEvent: {}
+[60.069580] (-) TimerEvent: {}
+[60.175002] (-) TimerEvent: {}
+[60.278355] (-) TimerEvent: {}
+[60.381212] (-) TimerEvent: {}
+[60.483559] (-) TimerEvent: {}
+[60.585501] (-) TimerEvent: {}
+[60.642850] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32m\x1b[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[60.686032] (-) TimerEvent: {}
+[60.787570] (-) TimerEvent: {}
+[60.891095] (-) TimerEvent: {}
+[61.001507] (-) TimerEvent: {}
+[61.103141] (-) TimerEvent: {}
+[61.205423] (-) TimerEvent: {}
+[61.305906] (-) TimerEvent: {}
+[61.351836] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 32%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[61.410068] (-) TimerEvent: {}
+[61.512287] (-) TimerEvent: {}
+[61.546970] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[61.613764] (-) TimerEvent: {}
+[61.715962] (-) TimerEvent: {}
+[61.817477] (-) TimerEvent: {}
+[61.923941] (-) TimerEvent: {}
+[62.025927] (-) TimerEvent: {}
+[62.128975] (-) TimerEvent: {}
+[62.233363] (-) TimerEvent: {}
+[62.334715] (-) TimerEvent: {}
+[62.439409] (-) TimerEvent: {}
+[62.542344] (-) TimerEvent: {}
+[62.644280] (-) TimerEvent: {}
+[62.751629] (-) TimerEvent: {}
+[62.852705] (-) TimerEvent: {}
+[62.961731] (-) TimerEvent: {}
+[63.063185] (-) TimerEvent: {}
+[63.161345] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[63.164023] (-) TimerEvent: {}
+[63.266190] (-) TimerEvent: {}
+[63.286708] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zbar_ros_interfaces/msg/detail/symbol__type_support.c.o\x1b[0m\n'}
+[63.370393] (-) TimerEvent: {}
+[63.473326] (-) TimerEvent: {}
+[63.576924] (-) TimerEvent: {}
+[63.680173] (-) TimerEvent: {}
+[63.783777] (-) TimerEvent: {}
+[63.888006] (-) TimerEvent: {}
+[63.961452] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[63.989754] (-) TimerEvent: {}
+[64.091798] (-) TimerEvent: {}
+[64.194376] (-) TimerEvent: {}
+[64.218811] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 41%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c\n'}
+[64.297580] (-) TimerEvent: {}
+[64.376341] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[64.401008] (-) TimerEvent: {}
+[64.507469] (-) TimerEvent: {}
+[64.610068] (-) TimerEvent: {}
+[64.712960] (-) TimerEvent: {}
+[64.814081] (-) TimerEvent: {}
+[64.916757] (-) TimerEvent: {}
+[65.018147] (-) TimerEvent: {}
+[65.121609] (-) TimerEvent: {}
+[65.223283] (-) TimerEvent: {}
+[65.325596] (-) TimerEvent: {}
+[65.430234] (-) TimerEvent: {}
+[65.602507] (-) TimerEvent: {}
+[65.705906] (-) TimerEvent: {}
+[65.815722] (-) TimerEvent: {}
+[65.928688] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[65.929202] (-) TimerEvent: {}
+[66.034582] (-) TimerEvent: {}
+[66.119724] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zbar_ros_interfaces/msg/symbol__type_support.cpp.o\x1b[0m\n'}
+[66.138342] (-) TimerEvent: {}
+[66.239494] (-) TimerEvent: {}
+[66.342046] (-) TimerEvent: {}
+[66.444408] (-) TimerEvent: {}
+[66.545840] (-) TimerEvent: {}
+[66.654430] (-) TimerEvent: {}
+[66.703906] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[66.754619] (-) TimerEvent: {}
+[66.857867] (-) TimerEvent: {}
+[66.959140] (-) TimerEvent: {}
+[67.062918] (-) TimerEvent: {}
+[67.174567] (-) TimerEvent: {}
+[67.278657] (-) TimerEvent: {}
+[67.387659] (-) TimerEvent: {}
+[67.452434] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 51%] Built target zbar_ros_interfaces__rosidl_typesupport_c\n'}
+[67.488882] (-) TimerEvent: {}
+[67.591201] (-) TimerEvent: {}
+[67.694363] (-) TimerEvent: {}
+[67.803938] (-) TimerEvent: {}
+[67.911714] (-) TimerEvent: {}
+[67.946692] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[68.014468] (-) TimerEvent: {}
+[68.123262] (-) TimerEvent: {}
+[68.225788] (-) TimerEvent: {}
+[68.332541] (-) TimerEvent: {}
+[68.443631] (-) TimerEvent: {}
+[68.547928] (-) TimerEvent: {}
+[68.657536] (-) TimerEvent: {}
+[68.760557] (-) TimerEvent: {}
+[68.872687] (-) TimerEvent: {}
+[68.980900] (-) TimerEvent: {}
+[69.090991] (-) TimerEvent: {}
+[69.192688] (-) TimerEvent: {}
+[69.313290] (-) TimerEvent: {}
+[69.417390] (-) TimerEvent: {}
+[69.539389] (-) TimerEvent: {}
+[69.650986] (-) TimerEvent: {}
+[69.823811] (-) TimerEvent: {}
+[69.942498] (-) TimerEvent: {}
+[70.133810] (-) TimerEvent: {}
+[70.235221] (-) TimerEvent: {}
+[70.341813] (-) TimerEvent: {}
+[70.355124] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[70.449711] (-) TimerEvent: {}
+[70.553565] (-) TimerEvent: {}
+[70.630052] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zbar_ros_interfaces/msg/detail/symbol__type_support_c.cpp.o\x1b[0m\n'}
+[70.656325] (-) TimerEvent: {}
+[70.759578] (-) TimerEvent: {}
+[70.860842] (-) TimerEvent: {}
+[70.963207] (-) TimerEvent: {}
+[71.066048] (-) TimerEvent: {}
+[71.171426] (-) TimerEvent: {}
+[71.272322] (-) TimerEvent: {}
+[71.374747] (-) TimerEvent: {}
+[71.482050] (-) TimerEvent: {}
+[71.594955] (-) TimerEvent: {}
+[71.705617] (-) TimerEvent: {}
+[71.807760] (-) TimerEvent: {}
+[71.924283] (-) TimerEvent: {}
+[72.029549] (-) TimerEvent: {}
+[72.178924] (-) TimerEvent: {}
+[72.281827] (-) TimerEvent: {}
+[72.455649] (-) TimerEvent: {}
+[72.602772] (-) TimerEvent: {}
+[72.762696] (-) TimerEvent: {}
+[72.912038] (-) TimerEvent: {}
+[73.018734] (-) TimerEvent: {}
+[73.119946] (-) TimerEvent: {}
+[73.238031] (-) TimerEvent: {}
+[73.346166] (-) TimerEvent: {}
+[73.462648] (-) TimerEvent: {}
+[73.564789] (-) TimerEvent: {}
+[73.687064] (-) TimerEvent: {}
+[73.795246] (-) TimerEvent: {}
+[73.902073] (-) TimerEvent: {}
+[74.004059] (-) TimerEvent: {}
+[74.125674] (-) TimerEvent: {}
+[74.248026] (-) TimerEvent: {}
+[74.359202] (-) TimerEvent: {}
+[74.469366] (-) TimerEvent: {}
+[74.583613] (-) TimerEvent: {}
+[74.691036] (-) TimerEvent: {}
+[74.792295] (-) TimerEvent: {}
+[74.925581] (-) TimerEvent: {}
+[75.071066] (-) TimerEvent: {}
+[75.174654] (-) TimerEvent: {}
+[75.312079] (-) TimerEvent: {}
+[75.420196] (-) TimerEvent: {}
+[75.548793] (-) TimerEvent: {}
+[75.658545] (-) TimerEvent: {}
+[75.776138] (-) TimerEvent: {}
+[75.885426] (-) TimerEvent: {}
+[75.987838] (-) TimerEvent: {}
+[76.090967] (-) TimerEvent: {}
+[76.197874] (-) TimerEvent: {}
+[76.300624] (-) TimerEvent: {}
+[76.402518] (-) TimerEvent: {}
+[76.503181] (-) TimerEvent: {}
+[76.604232] (-) TimerEvent: {}
+[76.706091] (-) TimerEvent: {}
+[76.807663] (-) TimerEvent: {}
+[76.915508] (-) TimerEvent: {}
+[77.020643] (-) TimerEvent: {}
+[77.123835] (-) TimerEvent: {}
+[77.224585] (-) TimerEvent: {}
+[77.325452] (-) TimerEvent: {}
+[77.426154] (-) TimerEvent: {}
+[77.527783] (-) TimerEvent: {}
+[77.629365] (-) TimerEvent: {}
+[77.730958] (-) TimerEvent: {}
+[77.832627] (-) TimerEvent: {}
+[77.934430] (-) TimerEvent: {}
+[78.035909] (-) TimerEvent: {}
+[78.121188] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[78.136795] (-) TimerEvent: {}
+[78.242952] (-) TimerEvent: {}
+[78.347988] (-) TimerEvent: {}
+[78.453773] (-) TimerEvent: {}
+[78.555487] (-) TimerEvent: {}
+[78.656474] (-) TimerEvent: {}
+[78.761815] (-) TimerEvent: {}
+[78.864142] (-) TimerEvent: {}
+[78.966424] (-) TimerEvent: {}
+[79.073678] (-) TimerEvent: {}
+[79.079038] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 61%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[79.174976] (-) TimerEvent: {}
+[79.210210] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[79.280329] (-) TimerEvent: {}
+[79.391106] (-) TimerEvent: {}
+[79.494669] (-) TimerEvent: {}
+[79.596718] (-) TimerEvent: {}
+[79.703072] (-) TimerEvent: {}
+[79.804753] (-) TimerEvent: {}
+[79.909965] (-) TimerEvent: {}
+[80.024559] (-) TimerEvent: {}
+[80.140175] (-) TimerEvent: {}
+[80.242425] (-) TimerEvent: {}
+[80.346000] (-) TimerEvent: {}
+[80.448330] (-) TimerEvent: {}
+[80.562394] (-) TimerEvent: {}
+[80.665380] (-) TimerEvent: {}
+[80.766376] (-) TimerEvent: {}
+[80.870202] (-) TimerEvent: {}
+[80.976977] (-) TimerEvent: {}
+[81.087125] (-) TimerEvent: {}
+[81.193686] (-) TimerEvent: {}
+[81.296620] (-) TimerEvent: {}
+[81.398670] (-) TimerEvent: {}
+[81.501069] (-) TimerEvent: {}
+[81.582504] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[81.601930] (-) TimerEvent: {}
+[81.704959] (-) TimerEvent: {}
+[81.749160] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zbar_ros_interfaces/msg/symbol__type_support.cpp.o\x1b[0m\n'}
+[81.807029] (-) TimerEvent: {}
+[81.914502] (-) TimerEvent: {}
+[82.015466] (-) TimerEvent: {}
+[82.118179] (-) TimerEvent: {}
+[82.221357] (-) TimerEvent: {}
+[82.327115] (-) TimerEvent: {}
+[82.434181] (-) TimerEvent: {}
+[82.542183] (-) TimerEvent: {}
+[82.646809] (-) TimerEvent: {}
+[82.778274] (-) TimerEvent: {}
+[82.896120] (-) TimerEvent: {}
+[83.016329] (-) TimerEvent: {}
+[83.139415] (-) TimerEvent: {}
+[83.246604] (-) TimerEvent: {}
+[83.353870] (-) TimerEvent: {}
+[83.490533] (-) TimerEvent: {}
+[83.601972] (-) TimerEvent: {}
+[83.728663] (-) TimerEvent: {}
+[83.840727] (-) TimerEvent: {}
+[84.049843] (-) TimerEvent: {}
+[84.162065] (-) TimerEvent: {}
+[84.290621] (-) TimerEvent: {}
+[84.417394] (-) TimerEvent: {}
+[84.537452] (-) TimerEvent: {}
+[84.643159] (-) TimerEvent: {}
+[84.779124] (-) TimerEvent: {}
+[84.958782] (-) TimerEvent: {}
+[85.071931] (-) TimerEvent: {}
+[85.175989] (-) TimerEvent: {}
+[85.277104] (-) TimerEvent: {}
+[85.382013] (-) TimerEvent: {}
+[85.486044] (-) TimerEvent: {}
+[85.587840] (-) TimerEvent: {}
+[85.690155] (-) TimerEvent: {}
+[85.797535] (-) TimerEvent: {}
+[85.906090] (-) TimerEvent: {}
+[86.007764] (-) TimerEvent: {}
+[86.114589] (-) TimerEvent: {}
+[86.221958] (-) TimerEvent: {}
+[86.325828] (-) TimerEvent: {}
+[86.426772] (-) TimerEvent: {}
+[86.530217] (-) TimerEvent: {}
+[86.634295] (-) TimerEvent: {}
+[86.740051] (-) TimerEvent: {}
+[86.841727] (-) TimerEvent: {}
+[86.946782] (-) TimerEvent: {}
+[87.047299] (-) TimerEvent: {}
+[87.151345] (-) TimerEvent: {}
+[87.198663] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libzbar_ros_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[87.252142] (-) TimerEvent: {}
+[87.357564] (-) TimerEvent: {}
+[87.461350] (-) TimerEvent: {}
+[87.562669] (-) TimerEvent: {}
+[87.642049] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 70%] Built target zbar_ros_interfaces__rosidl_typesupport_cpp\n'}
+[87.663955] (-) TimerEvent: {}
+[87.726226] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces\x1b[0m\n'}
+[87.768842] (-) TimerEvent: {}
+[87.875586] (-) TimerEvent: {}
+[87.882777] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 70%] Built target zbar_ros_interfaces\n'}
+[87.981233] (-) TimerEvent: {}
+[88.005267] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__py\x1b[0m\n'}
+[88.082487] (-) TimerEvent: {}
+[88.092217] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[88.182927] (-) TimerEvent: {}
+[88.283870] (-) TimerEvent: {}
+[88.386393] (-) TimerEvent: {}
+[88.489698] (-) TimerEvent: {}
+[88.590690] (-) TimerEvent: {}
+[88.691823] (-) TimerEvent: {}
+[88.799342] (-) TimerEvent: {}
+[88.905320] (-) TimerEvent: {}
+[89.010140] (-) TimerEvent: {}
+[89.114144] (-) TimerEvent: {}
+[89.217492] (-) TimerEvent: {}
+[89.318821] (-) TimerEvent: {}
+[89.419923] (-) TimerEvent: {}
+[89.521251] (-) TimerEvent: {}
+[89.627184] (-) TimerEvent: {}
+[89.735630] (-) TimerEvent: {}
+[89.837035] (-) TimerEvent: {}
+[89.937676] (-) TimerEvent: {}
+[90.038905] (-) TimerEvent: {}
+[90.140595] (-) TimerEvent: {}
+[90.253288] (-) TimerEvent: {}
+[90.355521] (-) TimerEvent: {}
+[90.458131] (-) TimerEvent: {}
+[90.560142] (-) TimerEvent: {}
+[90.661522] (-) TimerEvent: {}
+[90.770083] (-) TimerEvent: {}
+[90.871598] (-) TimerEvent: {}
+[90.976716] (-) TimerEvent: {}
+[91.084995] (-) TimerEvent: {}
+[91.220139] (-) TimerEvent: {}
+[91.328853] (-) TimerEvent: {}
+[91.433021] (-) TimerEvent: {}
+[91.595714] (-) TimerEvent: {}
+[91.696750] (-) TimerEvent: {}
+[91.833778] (-) TimerEvent: {}
+[91.938674] (-) TimerEvent: {}
+[92.040852] (-) TimerEvent: {}
+[92.151474] (-) TimerEvent: {}
+[92.255200] (-) TimerEvent: {}
+[92.362072] (-) TimerEvent: {}
+[92.492017] (-) TimerEvent: {}
+[92.601075] (-) TimerEvent: {}
+[92.701928] (-) TimerEvent: {}
+[92.803578] (-) TimerEvent: {}
+[92.911964] (-) TimerEvent: {}
+[93.014678] (-) TimerEvent: {}
+[93.118221] (-) TimerEvent: {}
+[93.221104] (-) TimerEvent: {}
+[93.328464] (-) TimerEvent: {}
+[93.429563] (-) TimerEvent: {}
+[93.532889] (-) TimerEvent: {}
+[93.633846] (-) TimerEvent: {}
+[93.734531] (-) TimerEvent: {}
+[93.836176] (-) TimerEvent: {}
+[93.936956] (-) TimerEvent: {}
+[94.040466] (-) TimerEvent: {}
+[94.142578] (-) TimerEvent: {}
+[94.245968] (-) TimerEvent: {}
+[94.248532] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 74%] Built target zbar_ros_interfaces__py\n'}
+[94.346646] (-) TimerEvent: {}
+[94.367599] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__python\x1b[0m\n'}
+[94.448808] (-) TimerEvent: {}
+[94.552093] (-) TimerEvent: {}
+[94.653970] (-) TimerEvent: {}
+[94.755752] (-) TimerEvent: {}
+[94.857555] (-) TimerEvent: {}
+[94.961011] (-) TimerEvent: {}
+[94.981600] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__python.dir/rosidl_generator_py/zbar_ros_interfaces/msg/_symbol_s.c.o\x1b[0m\n'}
+[95.062110] (-) TimerEvent: {}
+[95.165167] (-) TimerEvent: {}
+[95.267074] (-) TimerEvent: {}
+[95.374338] (-) TimerEvent: {}
+[95.479451] (-) TimerEvent: {}
+[95.580899] (-) TimerEvent: {}
+[95.690432] (-) TimerEvent: {}
+[95.797277] (-) TimerEvent: {}
+[95.898871] (-) TimerEvent: {}
+[96.002433] (-) TimerEvent: {}
+[96.103434] (-) TimerEvent: {}
+[96.212432] (-) TimerEvent: {}
+[96.318437] (-) TimerEvent: {}
+[96.420918] (-) TimerEvent: {}
+[96.523485] (-) TimerEvent: {}
+[96.625532] (-) TimerEvent: {}
+[96.660417] (point_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable point_tf\x1b[0m\n'}
+[96.727088] (-) TimerEvent: {}
+[96.828381] (-) TimerEvent: {}
+[96.933704] (-) TimerEvent: {}
+[97.036127] (-) TimerEvent: {}
+[97.071678] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/libzbar_ros_interfaces__python.so\x1b[0m\n'}
+[97.138001] (-) TimerEvent: {}
+[97.241745] (-) TimerEvent: {}
+[97.343901] (-) TimerEvent: {}
+[97.448117] (-) TimerEvent: {}
+[97.538381] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 80%] Built target zbar_ros_interfaces__python\n'}
+[97.548893] (-) TimerEvent: {}
+[97.613516] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[97.653574] (-) TimerEvent: {}
+[97.758460] (-) TimerEvent: {}
+[97.860101] (-) TimerEvent: {}
+[97.861170] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[97.963489] (-) TimerEvent: {}
+[98.064600] (-) TimerEvent: {}
+[98.165912] (-) TimerEvent: {}
+[98.268174] (-) TimerEvent: {}
+[98.369801] (-) TimerEvent: {}
+[98.471638] (-) TimerEvent: {}
+[98.575249] (-) TimerEvent: {}
+[98.635897] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[98.675910] (-) TimerEvent: {}
+[98.781793] (-) TimerEvent: {}
+[98.889319] (-) TimerEvent: {}
+[98.990506] (-) TimerEvent: {}
+[99.093355] (-) TimerEvent: {}
+[99.134187] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 87%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[99.193548] (-) TimerEvent: {}
+[99.225469] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[99.294216] (-) TimerEvent: {}
+[99.348245] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[99.395416] (-) TimerEvent: {}
+[99.508534] (-) TimerEvent: {}
+[99.615944] (-) TimerEvent: {}
+[99.718043] (-) TimerEvent: {}
+[99.819817] (-) TimerEvent: {}
+[99.845734] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[99.920844] (-) TimerEvent: {}
+[99.943526] (point_pubsub) StdoutLine: {'line': b'[100%] Built target point_tf\n'}
+[100.022011] (-) TimerEvent: {}
+[100.124433] (-) TimerEvent: {}
+[100.221480] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 93%] Built target zbar_ros_interfaces__rosidl_typesupport_c__pyext\n'}
+[100.225071] (-) TimerEvent: {}
+[100.340021] (-) TimerEvent: {}
+[100.374449] (zbar_ros_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[100.450710] (-) TimerEvent: {}
+[100.503623] (point_pubsub) CommandEnded: {'returncode': 0}
+[100.671424] (-) TimerEvent: {}
+[100.695656] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/zbar_ros_interfaces/_zbar_ros_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[100.782934] (-) TimerEvent: {}
+[100.890778] (-) TimerEvent: {}
+[100.995750] (-) TimerEvent: {}
+[101.098226] (-) TimerEvent: {}
+[101.174772] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'install'}
+[101.204775] (-) TimerEvent: {}
+[101.322271] (-) TimerEvent: {}
+[101.451740] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[101.455024] (-) TimerEvent: {}
+[101.468800] (zbar_ros_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[101.555713] (-) TimerEvent: {}
+[101.559414] (point_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[101.581284] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf\n'}
+[101.618607] (point_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf" to ""\n'}
+[101.640164] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub\n'}
+[101.640530] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub\n'}
+[101.649322] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh\n'}
+[101.653864] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv\n'}
+[101.654157] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.sh\n'}
+[101.654882] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.dsv\n'}
+[101.656216] (-) TimerEvent: {}
+[101.665423] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.bash\n'}
+[101.665866] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.sh\n'}
+[101.669815] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.zsh\n'}
+[101.673897] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.dsv\n'}
+[101.674431] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv\n'}
+[101.685861] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub\n'}
+[101.692509] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake\n'}
+[101.695927] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake\n'}
+[101.707308] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.xml\n'}
+[101.737146] (point_pubsub) CommandEnded: {'returncode': 0}
+[101.770022] (-) TimerEvent: {}
+[101.903698] (-) TimerEvent: {}
+[102.006532] (-) TimerEvent: {}
+[102.047309] (zbar_ros_interfaces) StdoutLine: {'line': b'[100%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[102.106770] (-) TimerEvent: {}
+[102.207616] (-) TimerEvent: {}
+[102.318919] (-) TimerEvent: {}
+[102.421281] (-) TimerEvent: {}
+[102.491137] (zbar_ros_interfaces) CommandEnded: {'returncode': 0}
+[102.522589] (-) TimerEvent: {}
+[102.628038] (-) TimerEvent: {}
+[102.645569] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 0}
+[102.728152] (-) TimerEvent: {}
+[102.831404] (-) TimerEvent: {}
+[102.933091] (-) TimerEvent: {}
+[102.957078] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'install'}
+[102.957930] (zbar_ros_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[103.034053] (-) TimerEvent: {}
+[103.036729] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[103.048676] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/rosidl_interfaces/zbar_ros_interfaces\n'}
+[103.050844] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.052804] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.054202] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.h\n'}
+[103.059488] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.071229] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.h\n'}
+[103.072346] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.c\n'}
+[103.075406] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.h\n'}
+[103.075630] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.h\n'}
+[103.078407] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[103.080131] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.sh\n'}
+[103.084697] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.dsv\n'}
+[103.090204] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_generator_c.so\n'}
+[103.090811] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_generator_c.so" to ""\n'}
+[103.090941] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.093590] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.094686] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.095699] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_c.h\n'}
+[103.096906] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[103.097063] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[103.103963] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[103.112285] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.113734] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.114348] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[103.115180] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.116246] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/dds_fastrtps\n'}
+[103.118096] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[103.118509] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[103.127325] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[103.128334] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.128685] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.129124] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.130198] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_c.h\n'}
+[103.130579] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.c\n'}
+[103.132098] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[103.133222] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[103.137254] (-) TimerEvent: {}
+[103.148928] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[103.149822] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_c.so\n'}
+[103.150021] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[103.150367] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.152901] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.153041] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.hpp\n'}
+[103.154000] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.154248] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__traits.hpp\n'}
+[103.154483] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__builder.hpp\n'}
+[103.154823] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.hpp\n'}
+[103.155069] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[103.155303] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[103.158320] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[103.158425] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.cpp\n'}
+[103.158505] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_cpp.hpp\n'}
+[103.159854] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[103.161623] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[103.162331] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_cpp.so\n'}
+[103.173549] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[103.174234] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.sh\n'}
+[103.174350] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.dsv\n'}
+[103.181382] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/__init__.py\n'}
+[103.237854] (-) TimerEvent: {}
+[103.340435] (-) TimerEvent: {}
+[103.379263] (zbar_ros_interfaces) StdoutLine: {'line': b"Compiling '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/__init__.py'...\n"}
+[103.393695] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg\n'}
+[103.393991] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/__init__.py\n'}
+[103.394089] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol.py\n'}
+[103.394341] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol_s.c\n'}
+[103.394433] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[103.394512] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[103.395562] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[103.396821] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[103.400564] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[103.402609] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[103.410547] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__python.so\n'}
+[103.411415] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__python.so" to ""\n'}
+[103.411681] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.idl\n'}
+[103.412406] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.msg\n'}
+[103.415004] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/package_run_dependencies/zbar_ros_interfaces\n'}
+[103.416010] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/parent_prefix_path/zbar_ros_interfaces\n'}
+[103.417200] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.sh\n'}
+[103.417849] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.dsv\n'}
+[103.422277] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.sh\n'}
+[103.424072] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.dsv\n'}
+[103.424744] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.bash\n'}
+[103.428789] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.sh\n'}
+[103.430352] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.zsh\n'}
+[103.439604] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.dsv\n'}
+[103.443964] (-) TimerEvent: {}
+[103.444290] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.dsv\n'}
+[103.444722] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/packages/zbar_ros_interfaces\n'}
+[103.450954] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport.cmake\n'}
+[103.451258] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[103.454105] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[103.456209] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[103.457897] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[103.459564] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[103.461505] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cppExport.cmake\n'}
+[103.464111] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[103.470985] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[103.473551] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[103.475132] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[103.477394] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[103.480819] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[103.482436] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[103.485527] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[103.489854] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[103.492070] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[103.492557] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[103.495032] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig.cmake\n'}
+[103.496721] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig-version.cmake\n'}
+[103.497629] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.xml\n'}
+[103.526730] (zbar_ros_interfaces) CommandEnded: {'returncode': 0}
+[103.544168] (-) TimerEvent: {}
+[103.649824] (-) TimerEvent: {}
+[103.752159] (-) TimerEvent: {}
+[103.852794] (-) TimerEvent: {}
+[103.953431] (-) TimerEvent: {}
+[104.055294] (-) TimerEvent: {}
+[104.157935] (-) TimerEvent: {}
+[104.265718] (-) TimerEvent: {}
+[104.369753] (-) TimerEvent: {}
+[104.434490] (zbar_ros_interfaces) JobEnded: {'identifier': 'zbar_ros_interfaces', 'rc': 0}
+[104.459924] (zbar_ros) JobStarted: {'identifier': 'zbar_ros'}
+[104.479401] (-) TimerEvent: {}
+[104.581213] (-) TimerEvent: {}
+[104.684537] (zbar_ros) JobProgress: {'identifier': 'zbar_ros', 'progress': 'cmake'}
+[104.684750] (-) TimerEvent: {}
+[104.716958] (zbar_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros', '-DCMAKE_INSTALL_PREFIX=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[104.785262] (-) TimerEvent: {}
+[104.894983] (-) TimerEvent: {}
+[104.997459] (-) TimerEvent: {}
+[105.098585] (-) TimerEvent: {}
+[105.199259] (-) TimerEvent: {}
+[105.300128] (-) TimerEvent: {}
+[105.402440] (-) TimerEvent: {}
+[105.420123] (zbar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[105.503308] (-) TimerEvent: {}
+[105.604604] (-) TimerEvent: {}
+[105.706277] (-) TimerEvent: {}
+[105.772398] (zbar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[105.808528] (-) TimerEvent: {}
+[105.870852] (zbar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[105.908900] (-) TimerEvent: {}
+[106.009914] (-) TimerEvent: {}
+[106.125819] (-) TimerEvent: {}
+[106.233241] (-) TimerEvent: {}
+[106.346594] (-) TimerEvent: {}
+[106.453565] (-) TimerEvent: {}
+[106.517724] (zbar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[106.526461] (zbar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[106.553687] (-) TimerEvent: {}
+[106.654428] (-) TimerEvent: {}
+[106.755968] (-) TimerEvent: {}
+[106.856693] (-) TimerEvent: {}
+[106.947894] (zbar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[106.958989] (-) TimerEvent: {}
+[107.026750] (zbar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[107.027750] (zbar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[107.046951] (zbar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[107.061399] (-) TimerEvent: {}
+[107.164464] (-) TimerEvent: {}
+[107.267129] (-) TimerEvent: {}
+[107.368929] (-) TimerEvent: {}
+[107.470117] (-) TimerEvent: {}
+[107.551948] (zbar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[107.553243] (zbar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[107.570731] (-) TimerEvent: {}
+[107.673754] (-) TimerEvent: {}
+[107.775660] (-) TimerEvent: {}
+[107.877385] (-) TimerEvent: {}
+[107.979166] (-) TimerEvent: {}
+[108.002289] (zbar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[108.079435] (-) TimerEvent: {}
+[108.092339] (zbar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[108.094137] (zbar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[108.148618] (zbar_ros) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[108.180316] (-) TimerEvent: {}
+[108.282412] (-) TimerEvent: {}
+[108.386435] (-) TimerEvent: {}
+[108.396022] (zbar_ros) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[108.396712] (zbar_ros) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[108.487392] (-) TimerEvent: {}
+[108.510058] (comp3431_starter) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/wallFollower.dir/src/wall_follower_node.cpp.o\x1b[0m\n'}
+[108.588667] (-) TimerEvent: {}
+[108.689869] (-) TimerEvent: {}
+[108.791310] (-) TimerEvent: {}
+[108.892562] (-) TimerEvent: {}
+[108.993227] (-) TimerEvent: {}
+[109.094927] (-) TimerEvent: {}
+[109.197053] (-) TimerEvent: {}
+[109.298152] (-) TimerEvent: {}
+[109.399116] (-) TimerEvent: {}
+[109.501010] (-) TimerEvent: {}
+[109.601639] (-) TimerEvent: {}
+[109.702160] (-) TimerEvent: {}
+[109.802820] (-) TimerEvent: {}
+[109.905186] (-) TimerEvent: {}
+[110.007927] (-) TimerEvent: {}
+[110.109174] (-) TimerEvent: {}
+[110.175846] (zbar_ros) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[110.209263] (-) TimerEvent: {}
+[110.310656] (-) TimerEvent: {}
+[110.411680] (-) TimerEvent: {}
+[110.513102] (-) TimerEvent: {}
+[110.569024] (zbar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[110.612927] (zbar_ros) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[110.617227] (-) TimerEvent: {}
+[110.725000] (-) TimerEvent: {}
+[110.826213] (-) TimerEvent: {}
+[110.930474] (-) TimerEvent: {}
+[111.032541] (-) TimerEvent: {}
+[111.134386] (-) TimerEvent: {}
+[111.236749] (-) TimerEvent: {}
+[111.337747] (-) TimerEvent: {}
+[111.381529] (zbar_ros) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[111.439130] (-) TimerEvent: {}
+[111.489160] (zbar_ros) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[111.540133] (-) TimerEvent: {}
+[111.641513] (-) TimerEvent: {}
+[111.742076] (-) TimerEvent: {}
+[111.838938] (zbar_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[111.842759] (-) TimerEvent: {}
+[111.959011] (-) TimerEvent: {}
+[112.059783] (-) TimerEvent: {}
+[112.161109] (-) TimerEvent: {}
+[112.174205] (zbar_ros) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[112.189290] (zbar_ros) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[112.194803] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[112.262122] (-) TimerEvent: {}
+[112.364299] (-) TimerEvent: {}
+[112.465577] (-) TimerEvent: {}
+[112.566678] (-) TimerEvent: {}
+[112.654160] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[112.657311] (zbar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[112.667301] (-) TimerEvent: {}
+[112.768906] (-) TimerEvent: {}
+[112.869909] (-) TimerEvent: {}
+[112.971393] (-) TimerEvent: {}
+[113.072849] (-) TimerEvent: {}
+[113.177113] (-) TimerEvent: {}
+[113.178753] (zbar_ros) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[113.193400] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[113.280920] (-) TimerEvent: {}
+[113.383040] (-) TimerEvent: {}
+[113.484142] (-) TimerEvent: {}
+[113.586797] (-) TimerEvent: {}
+[113.624616] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[113.625432] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[113.689695] (-) TimerEvent: {}
+[113.791742] (-) TimerEvent: {}
+[113.894210] (-) TimerEvent: {}
+[113.995744] (-) TimerEvent: {}
+[114.097869] (-) TimerEvent: {}
+[114.199344] (-) TimerEvent: {}
+[114.214822] (zbar_ros) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[114.216457] (zbar_ros) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[114.300346] (-) TimerEvent: {}
+[114.405533] (-) TimerEvent: {}
+[114.506274] (-) TimerEvent: {}
+[114.607318] (-) TimerEvent: {}
+[114.708665] (-) TimerEvent: {}
+[114.809250] (-) TimerEvent: {}
+[114.910405] (-) TimerEvent: {}
+[114.995171] (zbar_ros) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[115.011062] (-) TimerEvent: {}
+[115.118232] (-) TimerEvent: {}
+[115.218679] (-) TimerEvent: {}
+[115.320010] (-) TimerEvent: {}
+[115.422232] (-) TimerEvent: {}
+[115.523074] (-) TimerEvent: {}
+[115.562570] (zbar_ros) StdoutLine: {'line': b'-- Found zbar_ros_interfaces: 0.0.0 (/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake)\n'}
+[115.623377] (-) TimerEvent: {}
+[115.724594] (-) TimerEvent: {}
+[115.825790] (-) TimerEvent: {}
+[115.833969] (zbar_ros) StdoutLine: {'line': b'-- Found cv_bridge: 2.2.1 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[115.926212] (-) TimerEvent: {}
+[115.999613] (zbar_ros) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[116.026499] (-) TimerEvent: {}
+[116.128255] (-) TimerEvent: {}
+[116.228829] (-) TimerEvent: {}
+[116.329542] (-) TimerEvent: {}
+[116.431485] (-) TimerEvent: {}
+[116.533746] (-) TimerEvent: {}
+[116.636506] (-) TimerEvent: {}
+[116.681369] (zbar_ros) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[116.681669] (zbar_ros) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros/include\n'}
+[116.681918] (zbar_ros) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[116.688578] (zbar_ros) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[116.691030] (zbar_ros) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[116.704368] (zbar_ros) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[116.707208] (zbar_ros) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[116.707412] (zbar_ros) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[116.709517] (zbar_ros) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[116.726997] (zbar_ros) StdoutLine: {'line': b'-- Configuring done\n'}
+[116.737109] (-) TimerEvent: {}
+[116.838279] (-) TimerEvent: {}
+[116.863577] (zbar_ros) StdoutLine: {'line': b'-- Generating done\n'}
+[116.885841] (zbar_ros) StdoutLine: {'line': b'-- Build files have been written to: /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros\n'}
+[116.949839] (zbar_ros) CommandEnded: {'returncode': 0}
+[116.950890] (-) TimerEvent: {}
+[116.951430] (zbar_ros) JobProgress: {'identifier': 'zbar_ros', 'progress': 'build'}
+[116.951611] (zbar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[117.054107] (-) TimerEvent: {}
+[117.155059] (-) TimerEvent: {}
+[117.256150] (-) TimerEvent: {}
+[117.304699] (zbar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target barcode_reader_node\x1b[0m\n'}
+[117.356789] (-) TimerEvent: {}
+[117.458613] (-) TimerEvent: {}
+[117.560416] (-) TimerEvent: {}
+[117.661688] (-) TimerEvent: {}
+[117.763125] (-) TimerEvent: {}
+[117.864384] (-) TimerEvent: {}
+[117.965899] (-) TimerEvent: {}
+[118.066821] (-) TimerEvent: {}
+[118.101905] (zbar_ros) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o\x1b[0m\n'}
+[118.169870] (-) TimerEvent: {}
+[118.278298] (-) TimerEvent: {}
+[118.381005] (-) TimerEvent: {}
+[118.485527] (-) TimerEvent: {}
+[118.587136] (-) TimerEvent: {}
+[118.688868] (-) TimerEvent: {}
+[118.790354] (-) TimerEvent: {}
+[118.891248] (-) TimerEvent: {}
+[118.998198] (-) TimerEvent: {}
+[119.099897] (-) TimerEvent: {}
+[119.201100] (-) TimerEvent: {}
+[119.256106] (zbar_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros/src/barcode_reader_node.cpp:33\x1b[m\x1b[K:\n'}
+[119.257264] (zbar_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros/include/zbar_ros/barcode_reader_node.hpp:35:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[K./zbar.h: No such file or directory\n'}
+[119.263510] (zbar_ros) StderrLine: {'line': b'   35 | #include \x1b[01;31m\x1b[K"./zbar.h"\x1b[m\x1b[K\n'}
+[119.266481] (zbar_ros) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[119.266831] (zbar_ros) StderrLine: {'line': b'compilation terminated.\n'}
+[119.270390] (zbar_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/barcode_reader_node.dir/build.make:63: CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o] Error 1\n'}
+[119.272245] (zbar_ros) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/barcode_reader_node.dir/all] Error 2\n'}
+[119.272659] (zbar_ros) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[119.275846] (zbar_ros) CommandEnded: {'returncode': 2}
+[119.302444] (-) TimerEvent: {}
+[119.409797] (-) TimerEvent: {}
+[119.500285] (zbar_ros) JobEnded: {'identifier': 'zbar_ros', 'rc': 2}
+[119.514496] (-) TimerEvent: {}
+[119.615204] (-) TimerEvent: {}
+[119.716542] (-) TimerEvent: {}
+[119.817580] (-) TimerEvent: {}
+[119.919097] (-) TimerEvent: {}
+[120.019742] (-) TimerEvent: {}
+[120.120838] (-) TimerEvent: {}
+[120.221979] (-) TimerEvent: {}
+[120.322459] (-) TimerEvent: {}
+[120.423996] (-) TimerEvent: {}
+[120.520416] (comp3431_starter) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wallFollower\x1b[0m\n'}
+[120.525168] (-) TimerEvent: {}
+[120.629924] (-) TimerEvent: {}
+[120.731783] (-) TimerEvent: {}
+[120.833602] (-) TimerEvent: {}
+[120.934804] (-) TimerEvent: {}
+[121.036044] (-) TimerEvent: {}
+[121.140030] (-) TimerEvent: {}
+[121.241695] (-) TimerEvent: {}
+[121.342941] (-) TimerEvent: {}
+[121.444244] (-) TimerEvent: {}
+[121.545760] (-) TimerEvent: {}
+[121.646741] (-) TimerEvent: {}
+[121.748367] (-) TimerEvent: {}
+[121.849903] (-) TimerEvent: {}
+[121.951161] (-) TimerEvent: {}
+[122.051734] (-) TimerEvent: {}
+[122.076243] (comp3431_starter) StdoutLine: {'line': b'[100%] Built target wallFollower\n'}
+[122.152028] (-) TimerEvent: {}
+[122.253405] (-) TimerEvent: {}
+[122.357953] (-) TimerEvent: {}
+[122.394554] (comp3431_starter) JobEnded: {'identifier': 'comp3431_starter', 'rc': 'SIGINT'}
+[122.423765] (-) EventReactorShutdown: {}

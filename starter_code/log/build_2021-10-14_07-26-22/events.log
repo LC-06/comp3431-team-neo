@@ -1,0 +1,337 @@
+[0.000000] (-) TimerEvent: {}
+[0.000289] (-) JobUnselected: {'identifier': 'comp3431_starter'}
+[0.000379] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.000418] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.025412] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.026668] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.027747] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.087232] (-) TimerEvent: {}
+[0.188592] (-) TimerEvent: {}
+[0.293449] (-) TimerEvent: {}
+[0.394188] (-) TimerEvent: {}
+[0.407187] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[0.500438] (-) TimerEvent: {}
+[0.602189] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[0.602516] (-) TimerEvent: {}
+[0.702906] (-) TimerEvent: {}
+[0.804208] (-) TimerEvent: {}
+[0.905731] (-) TimerEvent: {}
+[1.007166] (-) TimerEvent: {}
+[1.108615] (-) TimerEvent: {}
+[1.209789] (-) TimerEvent: {}
+[1.311833] (-) TimerEvent: {}
+[1.413459] (-) TimerEvent: {}
+[1.515184] (-) TimerEvent: {}
+[1.618445] (-) TimerEvent: {}
+[1.719471] (-) TimerEvent: {}
+[1.820312] (-) TimerEvent: {}
+[1.921943] (-) TimerEvent: {}
+[2.023365] (-) TimerEvent: {}
+[2.124980] (-) TimerEvent: {}
+[2.227031] (-) TimerEvent: {}
+[2.328075] (-) TimerEvent: {}
+[2.428981] (-) TimerEvent: {}
+[2.531142] (-) TimerEvent: {}
+[2.632548] (-) TimerEvent: {}
+[2.733716] (-) TimerEvent: {}
+[2.834861] (-) TimerEvent: {}
+[2.935748] (-) TimerEvent: {}
+[3.037476] (-) TimerEvent: {}
+[3.138541] (-) TimerEvent: {}
+[3.240099] (-) TimerEvent: {}
+[3.341401] (-) TimerEvent: {}
+[3.442264] (-) TimerEvent: {}
+[3.543273] (-) TimerEvent: {}
+[3.644362] (-) TimerEvent: {}
+[3.749006] (-) TimerEvent: {}
+[3.850320] (-) TimerEvent: {}
+[3.951420] (-) TimerEvent: {}
+[4.052400] (-) TimerEvent: {}
+[4.157224] (-) TimerEvent: {}
+[4.258649] (-) TimerEvent: {}
+[4.360714] (-) TimerEvent: {}
+[4.463187] (-) TimerEvent: {}
+[4.569916] (-) TimerEvent: {}
+[4.671761] (-) TimerEvent: {}
+[4.772757] (-) TimerEvent: {}
+[4.874483] (-) TimerEvent: {}
+[4.975683] (-) TimerEvent: {}
+[5.076936] (-) TimerEvent: {}
+[5.186398] (-) TimerEvent: {}
+[5.288946] (-) TimerEvent: {}
+[5.393254] (-) TimerEvent: {}
+[5.494265] (-) TimerEvent: {}
+[5.595424] (-) TimerEvent: {}
+[5.696330] (-) TimerEvent: {}
+[5.798968] (-) TimerEvent: {}
+[5.900568] (-) TimerEvent: {}
+[6.001963] (-) TimerEvent: {}
+[6.103521] (-) TimerEvent: {}
+[6.204827] (-) TimerEvent: {}
+[6.305824] (-) TimerEvent: {}
+[6.406809] (-) TimerEvent: {}
+[6.507740] (-) TimerEvent: {}
+[6.609542] (-) TimerEvent: {}
+[6.711063] (-) TimerEvent: {}
+[6.814717] (-) TimerEvent: {}
+[6.916395] (-) TimerEvent: {}
+[7.017421] (-) TimerEvent: {}
+[7.118231] (-) TimerEvent: {}
+[7.220299] (-) TimerEvent: {}
+[7.323087] (-) TimerEvent: {}
+[7.423953] (-) TimerEvent: {}
+[7.525504] (-) TimerEvent: {}
+[7.632268] (-) TimerEvent: {}
+[7.757982] (-) TimerEvent: {}
+[7.859085] (-) TimerEvent: {}
+[7.961452] (-) TimerEvent: {}
+[8.063826] (-) TimerEvent: {}
+[8.167873] (-) TimerEvent: {}
+[8.268912] (-) TimerEvent: {}
+[8.372070] (-) TimerEvent: {}
+[8.473485] (-) TimerEvent: {}
+[8.574735] (-) TimerEvent: {}
+[8.675550] (-) TimerEvent: {}
+[8.777083] (-) TimerEvent: {}
+[8.881115] (-) TimerEvent: {}
+[8.982947] (-) TimerEvent: {}
+[9.085192] (-) TimerEvent: {}
+[9.194297] (-) TimerEvent: {}
+[9.296043] (-) TimerEvent: {}
+[9.399210] (-) TimerEvent: {}
+[9.501702] (-) TimerEvent: {}
+[9.602898] (-) TimerEvent: {}
+[9.708461] (-) TimerEvent: {}
+[9.810079] (-) TimerEvent: {}
+[9.911288] (-) TimerEvent: {}
+[10.012521] (-) TimerEvent: {}
+[10.114248] (-) TimerEvent: {}
+[10.216084] (-) TimerEvent: {}
+[10.317606] (-) TimerEvent: {}
+[10.419137] (-) TimerEvent: {}
+[10.522626] (-) TimerEvent: {}
+[10.624641] (-) TimerEvent: {}
+[10.725530] (-) TimerEvent: {}
+[10.832349] (-) TimerEvent: {}
+[10.949861] (-) TimerEvent: {}
+[11.051415] (-) TimerEvent: {}
+[11.152148] (-) TimerEvent: {}
+[11.255458] (-) TimerEvent: {}
+[11.364614] (-) TimerEvent: {}
+[11.468676] (-) TimerEvent: {}
+[11.575619] (-) TimerEvent: {}
+[11.676992] (-) TimerEvent: {}
+[11.779367] (-) TimerEvent: {}
+[11.886070] (-) TimerEvent: {}
+[11.989766] (-) TimerEvent: {}
+[12.091252] (-) TimerEvent: {}
+[12.192467] (-) TimerEvent: {}
+[12.293598] (-) TimerEvent: {}
+[12.395615] (-) TimerEvent: {}
+[12.496741] (-) TimerEvent: {}
+[12.597731] (-) TimerEvent: {}
+[12.698612] (-) TimerEvent: {}
+[12.799345] (-) TimerEvent: {}
+[12.900242] (-) TimerEvent: {}
+[13.015977] (-) TimerEvent: {}
+[13.128554] (-) TimerEvent: {}
+[13.234188] (-) TimerEvent: {}
+[13.342706] (-) TimerEvent: {}
+[13.452189] (-) TimerEvent: {}
+[13.559990] (-) TimerEvent: {}
+[13.675854] (-) TimerEvent: {}
+[13.796473] (-) TimerEvent: {}
+[13.898137] (-) TimerEvent: {}
+[14.000396] (-) TimerEvent: {}
+[14.110205] (-) TimerEvent: {}
+[14.224618] (-) TimerEvent: {}
+[14.325740] (-) TimerEvent: {}
+[14.430775] (-) TimerEvent: {}
+[14.540766] (-) TimerEvent: {}
+[14.675989] (-) TimerEvent: {}
+[14.809987] (-) TimerEvent: {}
+[14.925223] (-) TimerEvent: {}
+[15.026613] (-) TimerEvent: {}
+[15.148983] (-) TimerEvent: {}
+[15.273504] (-) TimerEvent: {}
+[15.398826] (-) TimerEvent: {}
+[15.505368] (-) TimerEvent: {}
+[15.606753] (-) TimerEvent: {}
+[15.707935] (-) TimerEvent: {}
+[15.811068] (-) TimerEvent: {}
+[15.913197] (-) TimerEvent: {}
+[16.016643] (-) TimerEvent: {}
+[16.121973] (-) TimerEvent: {}
+[16.224054] (-) TimerEvent: {}
+[16.325576] (-) TimerEvent: {}
+[16.428537] (-) TimerEvent: {}
+[16.535171] (-) TimerEvent: {}
+[16.636731] (-) TimerEvent: {}
+[16.738906] (-) TimerEvent: {}
+[16.840339] (-) TimerEvent: {}
+[16.942136] (-) TimerEvent: {}
+[17.044350] (-) TimerEvent: {}
+[17.148728] (-) TimerEvent: {}
+[17.250351] (-) TimerEvent: {}
+[17.351608] (-) TimerEvent: {}
+[17.453571] (-) TimerEvent: {}
+[17.555830] (-) TimerEvent: {}
+[17.659819] (-) TimerEvent: {}
+[17.761119] (-) TimerEvent: {}
+[17.862562] (-) TimerEvent: {}
+[17.963904] (-) TimerEvent: {}
+[18.065523] (-) TimerEvent: {}
+[18.167777] (-) TimerEvent: {}
+[18.268631] (-) TimerEvent: {}
+[18.373162] (-) TimerEvent: {}
+[18.480463] (-) TimerEvent: {}
+[18.581968] (-) TimerEvent: {}
+[18.687533] (-) TimerEvent: {}
+[18.789708] (-) TimerEvent: {}
+[18.891407] (-) TimerEvent: {}
+[19.013956] (-) TimerEvent: {}
+[19.116683] (-) TimerEvent: {}
+[19.233313] (-) TimerEvent: {}
+[19.343848] (-) TimerEvent: {}
+[19.446354] (-) TimerEvent: {}
+[19.553100] (-) TimerEvent: {}
+[19.656473] (-) TimerEvent: {}
+[19.758531] (-) TimerEvent: {}
+[19.861945] (-) TimerEvent: {}
+[19.985074] (-) TimerEvent: {}
+[20.086654] (-) TimerEvent: {}
+[20.188537] (-) TimerEvent: {}
+[20.290932] (-) TimerEvent: {}
+[20.392346] (-) TimerEvent: {}
+[20.493539] (-) TimerEvent: {}
+[20.597190] (-) TimerEvent: {}
+[20.700790] (-) TimerEvent: {}
+[20.804224] (-) TimerEvent: {}
+[20.907978] (-) TimerEvent: {}
+[21.009600] (-) TimerEvent: {}
+[21.111025] (-) TimerEvent: {}
+[21.215043] (-) TimerEvent: {}
+[21.316223] (-) TimerEvent: {}
+[21.417217] (-) TimerEvent: {}
+[21.518452] (-) TimerEvent: {}
+[21.626900] (-) TimerEvent: {}
+[21.728447] (-) TimerEvent: {}
+[21.829606] (-) TimerEvent: {}
+[21.932884] (-) TimerEvent: {}
+[22.039811] (-) TimerEvent: {}
+[22.140975] (-) TimerEvent: {}
+[22.242504] (-) TimerEvent: {}
+[22.355217] (-) TimerEvent: {}
+[22.465725] (-) TimerEvent: {}
+[22.583186] (-) TimerEvent: {}
+[22.692736] (-) TimerEvent: {}
+[22.801655] (-) TimerEvent: {}
+[22.915629] (-) TimerEvent: {}
+[23.016889] (-) TimerEvent: {}
+[23.118005] (-) TimerEvent: {}
+[23.220188] (-) TimerEvent: {}
+[23.323527] (-) TimerEvent: {}
+[23.426485] (-) TimerEvent: {}
+[23.527654] (-) TimerEvent: {}
+[23.628737] (-) TimerEvent: {}
+[23.731802] (-) TimerEvent: {}
+[23.837412] (-) TimerEvent: {}
+[23.940221] (-) TimerEvent: {}
+[24.042269] (-) TimerEvent: {}
+[24.148774] (-) TimerEvent: {}
+[24.250689] (-) TimerEvent: {}
+[24.351941] (-) TimerEvent: {}
+[24.453059] (-) TimerEvent: {}
+[24.553903] (-) TimerEvent: {}
+[24.655273] (-) TimerEvent: {}
+[24.757096] (-) TimerEvent: {}
+[24.858433] (-) TimerEvent: {}
+[24.959270] (-) TimerEvent: {}
+[25.060508] (-) TimerEvent: {}
+[25.167310] (-) TimerEvent: {}
+[25.268410] (-) TimerEvent: {}
+[25.370762] (-) TimerEvent: {}
+[25.476132] (-) TimerEvent: {}
+[25.594713] (-) TimerEvent: {}
+[25.705368] (-) TimerEvent: {}
+[25.809799] (-) TimerEvent: {}
+[25.910880] (-) TimerEvent: {}
+[26.012503] (-) TimerEvent: {}
+[26.160911] (-) TimerEvent: {}
+[26.290589] (-) TimerEvent: {}
+[26.394718] (-) TimerEvent: {}
+[26.498275] (-) TimerEvent: {}
+[26.605191] (-) TimerEvent: {}
+[26.706175] (-) TimerEvent: {}
+[26.809550] (-) TimerEvent: {}
+[26.912853] (-) TimerEvent: {}
+[27.017390] (-) TimerEvent: {}
+[27.121901] (-) TimerEvent: {}
+[27.224437] (-) TimerEvent: {}
+[27.325583] (-) TimerEvent: {}
+[27.426571] (-) TimerEvent: {}
+[27.527666] (-) TimerEvent: {}
+[27.628933] (-) TimerEvent: {}
+[27.731999] (-) TimerEvent: {}
+[27.833043] (-) TimerEvent: {}
+[27.936091] (-) TimerEvent: {}
+[28.039461] (-) TimerEvent: {}
+[28.141245] (-) TimerEvent: {}
+[28.243147] (-) TimerEvent: {}
+[28.345105] (-) TimerEvent: {}
+[28.392226] (point_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable point_tf\x1b[0m\n'}
+[28.446263] (-) TimerEvent: {}
+[28.547306] (-) TimerEvent: {}
+[28.648423] (-) TimerEvent: {}
+[28.749335] (-) TimerEvent: {}
+[28.851590] (-) TimerEvent: {}
+[28.952474] (-) TimerEvent: {}
+[29.054458] (-) TimerEvent: {}
+[29.157573] (-) TimerEvent: {}
+[29.263552] (-) TimerEvent: {}
+[29.365234] (-) TimerEvent: {}
+[29.468677] (-) TimerEvent: {}
+[29.570721] (-) TimerEvent: {}
+[29.672824] (-) TimerEvent: {}
+[29.773978] (-) TimerEvent: {}
+[29.876866] (-) TimerEvent: {}
+[29.978749] (-) TimerEvent: {}
+[30.081254] (-) TimerEvent: {}
+[30.201198] (-) TimerEvent: {}
+[30.305105] (-) TimerEvent: {}
+[30.407830] (-) TimerEvent: {}
+[30.509993] (-) TimerEvent: {}
+[30.610839] (-) TimerEvent: {}
+[30.645371] (point_pubsub) StdoutLine: {'line': b'[100%] Built target point_tf\n'}
+[30.710499] (point_pubsub) CommandEnded: {'returncode': 0}
+[30.719108] (-) TimerEvent: {}
+[30.825664] (-) TimerEvent: {}
+[30.911390] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'install'}
+[30.928344] (-) TimerEvent: {}
+[30.990150] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[31.029603] (-) TimerEvent: {}
+[31.077015] (point_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.083412] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf\n'}
+[31.106608] (point_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf" to ""\n'}
+[31.112454] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub\n'}
+[31.115431] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub\n'}
+[31.121790] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh\n'}
+[31.122042] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv\n'}
+[31.125126] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.sh\n'}
+[31.125386] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.dsv\n'}
+[31.127572] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.bash\n'}
+[31.128384] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.sh\n'}
+[31.128595] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.zsh\n'}
+[31.129526] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.dsv\n'}
+[31.131667] (-) TimerEvent: {}
+[31.136594] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv\n'}
+[31.139035] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub\n'}
+[31.139408] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake\n'}
+[31.139588] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake\n'}
+[31.139738] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.xml\n'}
+[31.163024] (point_pubsub) CommandEnded: {'returncode': 0}
+[31.235451] (-) TimerEvent: {}
+[31.339941] (-) TimerEvent: {}
+[31.443503] (-) TimerEvent: {}
+[31.527468] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 0}
+[31.535589] (-) EventReactorShutdown: {}

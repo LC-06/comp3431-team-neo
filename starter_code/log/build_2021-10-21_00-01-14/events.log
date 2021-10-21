@@ -1,0 +1,1964 @@
+[0.000000] (-) TimerEvent: {}
+[0.001385] (comp3431_starter) JobQueued: {'identifier': 'comp3431_starter', 'dependencies': OrderedDict()}
+[0.007873] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.014673] (zbar_ros_interfaces) JobQueued: {'identifier': 'zbar_ros_interfaces', 'dependencies': OrderedDict()}
+[0.014760] (zbar_ros) JobQueued: {'identifier': 'zbar_ros', 'dependencies': OrderedDict([('zbar_ros_interfaces', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces')])}
+[0.014808] (zbar_ros_interfaces) JobStarted: {'identifier': 'zbar_ros_interfaces'}
+[0.101453] (-) TimerEvent: {}
+[0.204157] (-) TimerEvent: {}
+[0.290009] (comp3431_starter) JobStarted: {'identifier': 'comp3431_starter'}
+[0.306295] (-) TimerEvent: {}
+[0.393459] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.428502] (-) TimerEvent: {}
+[0.554621] (-) TimerEvent: {}
+[0.649690] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'cmake'}
+[0.673831] (-) TimerEvent: {}
+[0.689346] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'build'}
+[0.692286] (zbar_ros_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.808018] (-) TimerEvent: {}
+[0.830880] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'cmake'}
+[0.849012] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'build'}
+[0.849153] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.935814] (-) TimerEvent: {}
+[0.985757] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.985950] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.985987] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[1.037667] (-) TimerEvent: {}
+[1.140153] (-) TimerEvent: {}
+[1.249071] (-) TimerEvent: {}
+[1.355456] (-) TimerEvent: {}
+[1.456727] (-) TimerEvent: {}
+[1.559961] (-) TimerEvent: {}
+[1.671781] (-) TimerEvent: {}
+[1.834049] (-) TimerEvent: {}
+[1.940381] (-) TimerEvent: {}
+[2.044653] (-) TimerEvent: {}
+[2.156561] (-) TimerEvent: {}
+[2.268652] (-) TimerEvent: {}
+[2.371740] (-) TimerEvent: {}
+[2.477026] (-) TimerEvent: {}
+[2.608807] (-) TimerEvent: {}
+[2.717468] (-) TimerEvent: {}
+[2.828864] (-) TimerEvent: {}
+[2.949111] (-) TimerEvent: {}
+[3.051442] (-) TimerEvent: {}
+[3.168590] (-) TimerEvent: {}
+[3.278585] (-) TimerEvent: {}
+[3.379957] (-) TimerEvent: {}
+[3.481530] (-) TimerEvent: {}
+[3.582793] (-) TimerEvent: {}
+[3.683514] (-) TimerEvent: {}
+[3.784748] (-) TimerEvent: {}
+[3.885513] (-) TimerEvent: {}
+[3.999200] (-) TimerEvent: {}
+[4.105502] (-) TimerEvent: {}
+[4.206402] (-) TimerEvent: {}
+[4.310342] (-) TimerEvent: {}
+[4.418577] (-) TimerEvent: {}
+[4.556205] (-) TimerEvent: {}
+[4.679033] (-) TimerEvent: {}
+[4.785471] (-) TimerEvent: {}
+[4.903175] (-) TimerEvent: {}
+[5.004956] (-) TimerEvent: {}
+[5.110318] (-) TimerEvent: {}
+[5.213667] (-) TimerEvent: {}
+[5.326082] (-) TimerEvent: {}
+[5.339123] (zbar_ros_interfaces) StdoutLine: {'line': b'[  3%] Built target zbar_ros_interfaces__cpp\n'}
+[5.433202] (-) TimerEvent: {}
+[5.472474] (comp3431_starter) StdoutLine: {'line': b'[100%] Built target wallFollower\n'}
+[5.516129] (point_pubsub) StdoutLine: {'line': b'[100%] Built target point_tf\n'}
+[5.794175] (point_pubsub) CommandEnded: {'returncode': 0}
+[5.829880] (-) TimerEvent: {}
+[5.875916] (comp3431_starter) CommandEnded: {'returncode': 0}
+[5.930575] (-) TimerEvent: {}
+[5.974751] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 12%] Built target zbar_ros_interfaces__rosidl_generator_c\n'}
+[6.033154] (-) TimerEvent: {}
+[6.135402] (-) TimerEvent: {}
+[6.179707] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'install'}
+[6.242954] (-) TimerEvent: {}
+[6.298925] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[6.343845] (-) TimerEvent: {}
+[6.436048] (point_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.444711] (-) TimerEvent: {}
+[6.458820] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf\n'}
+[6.495773] (comp3431_starter) JobProgress: {'identifier': 'comp3431_starter', 'progress': 'install'}
+[6.497471] (comp3431_starter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[6.525135] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub\n'}
+[6.525412] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub\n'}
+[6.525560] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh\n'}
+[6.525684] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv\n'}
+[6.525814] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.sh\n'}
+[6.525934] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.dsv\n'}
+[6.526051] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.bash\n'}
+[6.526166] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.sh\n'}
+[6.526591] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.zsh\n'}
+[6.526788] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.dsv\n'}
+[6.532508] (point_pubsub) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv\n'}
+[6.533762] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub\n'}
+[6.544329] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake\n'}
+[6.544836] (-) TimerEvent: {}
+[6.545257] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake\n'}
+[6.550681] (point_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.xml\n'}
+[6.560908] (point_pubsub) CommandEnded: {'returncode': 0}
+[6.589713] (comp3431_starter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.596083] (comp3431_starter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.618846] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 22%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[6.627220] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/package_run_dependencies/comp3431_starter\n'}
+[6.630154] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/parent_prefix_path/comp3431_starter\n'}
+[6.633392] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/ament_prefix_path.sh\n'}
+[6.636554] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/ament_prefix_path.dsv\n'}
+[6.645654] (-) TimerEvent: {}
+[6.654254] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/path.sh\n'}
+[6.655546] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/environment/path.dsv\n'}
+[6.666361] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.bash\n'}
+[6.666903] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.sh\n'}
+[6.667187] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.zsh\n'}
+[6.672049] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/local_setup.dsv\n'}
+[6.689692] (comp3431_starter) StdoutLine: {'line': b'-- Symlinking: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.dsv\n'}
+[6.746891] (-) TimerEvent: {}
+[6.856566] (-) TimerEvent: {}
+[6.864252] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/ament_index/resource_index/packages/comp3431_starter\n'}
+[6.868119] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/cmake/comp3431_starterConfig.cmake\n'}
+[6.868394] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/cmake/comp3431_starterConfig-version.cmake\n'}
+[6.872683] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.xml\n'}
+[6.879413] (comp3431_starter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/comp3431_starter/wallFollower\n'}
+[6.893523] (comp3431_starter) CommandEnded: {'returncode': 0}
+[6.967022] (-) TimerEvent: {}
+[7.027706] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 32%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.067272] (-) TimerEvent: {}
+[7.168480] (-) TimerEvent: {}
+[7.273635] (-) TimerEvent: {}
+[7.376005] (-) TimerEvent: {}
+[7.479333] (-) TimerEvent: {}
+[7.582572] (-) TimerEvent: {}
+[7.588716] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 41%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c\n'}
+[7.713743] (-) TimerEvent: {}
+[7.751655] (comp3431_starter) JobEnded: {'identifier': 'comp3431_starter', 'rc': 0}
+[7.833182] (-) TimerEvent: {}
+[7.915094] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 0}
+[7.933723] (-) TimerEvent: {}
+[8.035117] (-) TimerEvent: {}
+[8.136054] (-) TimerEvent: {}
+[8.226702] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 51%] Built target zbar_ros_interfaces__rosidl_typesupport_c\n'}
+[8.237312] (-) TimerEvent: {}
+[8.338444] (-) TimerEvent: {}
+[8.362593] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 61%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[8.439716] (-) TimerEvent: {}
+[8.558273] (-) TimerEvent: {}
+[8.618428] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 70%] Built target zbar_ros_interfaces__rosidl_typesupport_cpp\n'}
+[8.661390] (-) TimerEvent: {}
+[8.762350] (-) TimerEvent: {}
+[8.770754] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 70%] Built target zbar_ros_interfaces\n'}
+[8.863072] (-) TimerEvent: {}
+[8.964630] (-) TimerEvent: {}
+[8.978761] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 74%] Built target zbar_ros_interfaces__py\n'}
+[9.065036] (-) TimerEvent: {}
+[9.165200] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 80%] Built target zbar_ros_interfaces__python\n'}
+[9.165606] (-) TimerEvent: {}
+[9.269182] (-) TimerEvent: {}
+[9.410150] (-) TimerEvent: {}
+[9.511514] (-) TimerEvent: {}
+[9.553679] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 87%] Built target zbar_ros_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[9.612043] (-) TimerEvent: {}
+[9.713200] (-) TimerEvent: {}
+[9.726253] (zbar_ros_interfaces) StdoutLine: {'line': b'[ 93%] Built target zbar_ros_interfaces__rosidl_typesupport_c__pyext\n'}
+[9.813868] (-) TimerEvent: {}
+[9.915253] (-) TimerEvent: {}
+[10.020298] (-) TimerEvent: {}
+[10.030518] (zbar_ros_interfaces) StdoutLine: {'line': b'[100%] Built target zbar_ros_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.089825] (zbar_ros_interfaces) CommandEnded: {'returncode': 0}
+[10.127767] (-) TimerEvent: {}
+[10.229808] (-) TimerEvent: {}
+[10.335236] (-) TimerEvent: {}
+[10.463116] (-) TimerEvent: {}
+[10.565013] (-) TimerEvent: {}
+[10.671263] (-) TimerEvent: {}
+[10.773031] (-) TimerEvent: {}
+[10.788749] (zbar_ros_interfaces) JobProgress: {'identifier': 'zbar_ros_interfaces', 'progress': 'install'}
+[10.789451] (zbar_ros_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[11.012310] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.012705] (-) TimerEvent: {}
+[11.013074] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/rosidl_interfaces/zbar_ros_interfaces\n'}
+[11.013253] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.013422] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.013550] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.h\n'}
+[11.013632] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.016231] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.h\n'}
+[11.017431] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.c\n'}
+[11.017628] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.h\n'}
+[11.017740] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__functions.h\n'}
+[11.017831] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.018226] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.sh\n'}
+[11.018469] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/library_path.dsv\n'}
+[11.018593] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_generator_c.so\n'}
+[11.018707] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.018815] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.018968] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.019100] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_c.h\n'}
+[11.019213] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.019322] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[11.019427] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.019532] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.019636] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.019762] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.019920] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/dds_fastrtps\n'}
+[11.020031] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.020138] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.020241] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.020350] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.020446] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.020544] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_c.h\n'}
+[11.020676] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.c\n'}
+[11.020792] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.030689] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[11.031102] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_c.so\n'}
+[11.031357] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.031566] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.031770] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/symbol.hpp\n'}
+[11.032049] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.032270] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__traits.hpp\n'}
+[11.032489] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__builder.hpp\n'}
+[11.033060] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__struct.hpp\n'}
+[11.033392] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces\n'}
+[11.046778] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg\n'}
+[11.058312] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail\n'}
+[11.058798] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__type_support.cpp\n'}
+[11.059010] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include/zbar_ros_interfaces/msg/detail/symbol__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.059180] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[11.059443] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__rosidl_typesupport_cpp.so\n'}
+[11.059629] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.sh\n'}
+[11.059816] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/pythonpath.dsv\n'}
+[11.059972] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/__init__.py\n'}
+[11.068623] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg\n'}
+[11.071842] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/__init__.py\n'}
+[11.072148] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol.py\n'}
+[11.072310] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/msg/_symbol_s.c\n'}
+[11.082607] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[11.086836] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[11.095620] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages/zbar_ros_interfaces/zbar_ros_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[11.099057] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/libzbar_ros_interfaces__python.so\n'}
+[11.101695] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.idl\n'}
+[11.103175] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/msg/Symbol.msg\n'}
+[11.105159] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/package_run_dependencies/zbar_ros_interfaces\n'}
+[11.108198] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/parent_prefix_path/zbar_ros_interfaces\n'}
+[11.109071] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.sh\n'}
+[11.110335] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/ament_prefix_path.dsv\n'}
+[11.113117] (-) TimerEvent: {}
+[11.114348] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.sh\n'}
+[11.120946] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/environment/path.dsv\n'}
+[11.123765] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.bash\n'}
+[11.124479] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.sh\n'}
+[11.125028] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.zsh\n'}
+[11.128856] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/local_setup.dsv\n'}
+[11.129731] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.dsv\n'}
+[11.130023] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/ament_index/resource_index/packages/zbar_ros_interfaces\n'}
+[11.131866] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport.cmake\n'}
+[11.132526] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.137466] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.145096] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.146062] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[11.146883] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.151131] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_generator_cppExport.cmake\n'}
+[11.156192] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.156938] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.160366] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[11.167720] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.171422] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[11.174097] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.174595] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.175634] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.179744] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.180599] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.181797] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.182122] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig.cmake\n'}
+[11.183541] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/cmake/zbar_ros_interfacesConfig-version.cmake\n'}
+[11.185282] (zbar_ros_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.xml\n'}
+[11.204318] (zbar_ros_interfaces) CommandEnded: {'returncode': 0}
+[11.223290] (-) TimerEvent: {}
+[11.324462] (-) TimerEvent: {}
+[11.429357] (-) TimerEvent: {}
+[11.533729] (-) TimerEvent: {}
+[11.634986] (-) TimerEvent: {}
+[11.736204] (-) TimerEvent: {}
+[11.775568] (zbar_ros_interfaces) JobEnded: {'identifier': 'zbar_ros_interfaces', 'rc': 0}
+[11.784283] (zbar_ros) JobStarted: {'identifier': 'zbar_ros'}
+[11.843235] (-) TimerEvent: {}
+[11.891441] (zbar_ros) JobProgress: {'identifier': 'zbar_ros', 'progress': 'cmake'}
+[11.899206] (zbar_ros) JobProgress: {'identifier': 'zbar_ros', 'progress': 'build'}
+[11.918168] (zbar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[11.998433] (-) TimerEvent: {}
+[12.100014] (-) TimerEvent: {}
+[12.202321] (-) TimerEvent: {}
+[12.303545] (-) TimerEvent: {}
+[12.405079] (-) TimerEvent: {}
+[12.465581] (zbar_ros) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target barcode_reader_node\x1b[0m\n'}
+[12.505994] (-) TimerEvent: {}
+[12.610723] (-) TimerEvent: {}
+[12.647387] (zbar_ros) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o\x1b[0m\n'}
+[12.712272] (-) TimerEvent: {}
+[12.813214] (-) TimerEvent: {}
+[12.914922] (-) TimerEvent: {}
+[13.016815] (-) TimerEvent: {}
+[13.118726] (-) TimerEvent: {}
+[13.220316] (-) TimerEvent: {}
+[13.323185] (-) TimerEvent: {}
+[13.424596] (-) TimerEvent: {}
+[13.527352] (-) TimerEvent: {}
+[13.641341] (-) TimerEvent: {}
+[13.760830] (-) TimerEvent: {}
+[13.862422] (-) TimerEvent: {}
+[13.964037] (-) TimerEvent: {}
+[14.067018] (-) TimerEvent: {}
+[14.168084] (-) TimerEvent: {}
+[14.273503] (-) TimerEvent: {}
+[14.403302] (-) TimerEvent: {}
+[14.506706] (-) TimerEvent: {}
+[14.629277] (-) TimerEvent: {}
+[14.731164] (-) TimerEvent: {}
+[14.838788] (-) TimerEvent: {}
+[14.951812] (-) TimerEvent: {}
+[15.053921] (-) TimerEvent: {}
+[15.155409] (-) TimerEvent: {}
+[15.270631] (-) TimerEvent: {}
+[15.390144] (-) TimerEvent: {}
+[15.492181] (-) TimerEvent: {}
+[15.594517] (-) TimerEvent: {}
+[15.696144] (-) TimerEvent: {}
+[15.797920] (-) TimerEvent: {}
+[15.902611] (-) TimerEvent: {}
+[16.003908] (-) TimerEvent: {}
+[16.104699] (-) TimerEvent: {}
+[16.206163] (-) TimerEvent: {}
+[16.306915] (-) TimerEvent: {}
+[16.409125] (-) TimerEvent: {}
+[16.510191] (-) TimerEvent: {}
+[16.611382] (-) TimerEvent: {}
+[16.712371] (-) TimerEvent: {}
+[16.813977] (-) TimerEvent: {}
+[16.914900] (-) TimerEvent: {}
+[17.015553] (-) TimerEvent: {}
+[17.116721] (-) TimerEvent: {}
+[17.218087] (-) TimerEvent: {}
+[17.319043] (-) TimerEvent: {}
+[17.428059] (-) TimerEvent: {}
+[17.528717] (-) TimerEvent: {}
+[17.629835] (-) TimerEvent: {}
+[17.731057] (-) TimerEvent: {}
+[17.832207] (-) TimerEvent: {}
+[17.932804] (-) TimerEvent: {}
+[18.033651] (-) TimerEvent: {}
+[18.135042] (-) TimerEvent: {}
+[18.235654] (-) TimerEvent: {}
+[18.336820] (-) TimerEvent: {}
+[18.437431] (-) TimerEvent: {}
+[18.538983] (-) TimerEvent: {}
+[18.640002] (-) TimerEvent: {}
+[18.746549] (-) TimerEvent: {}
+[18.847100] (-) TimerEvent: {}
+[18.948922] (-) TimerEvent: {}
+[19.049713] (-) TimerEvent: {}
+[19.152596] (-) TimerEvent: {}
+[19.253431] (-) TimerEvent: {}
+[19.354173] (-) TimerEvent: {}
+[19.455148] (-) TimerEvent: {}
+[19.556336] (-) TimerEvent: {}
+[19.669994] (-) TimerEvent: {}
+[19.783135] (-) TimerEvent: {}
+[19.884002] (-) TimerEvent: {}
+[19.995096] (-) TimerEvent: {}
+[20.108716] (-) TimerEvent: {}
+[20.212349] (-) TimerEvent: {}
+[20.325306] (-) TimerEvent: {}
+[20.456618] (-) TimerEvent: {}
+[20.561320] (-) TimerEvent: {}
+[20.684177] (-) TimerEvent: {}
+[20.802271] (-) TimerEvent: {}
+[20.928226] (-) TimerEvent: {}
+[21.046897] (-) TimerEvent: {}
+[21.151444] (-) TimerEvent: {}
+[21.256881] (-) TimerEvent: {}
+[21.359138] (-) TimerEvent: {}
+[21.494086] (-) TimerEvent: {}
+[21.596173] (-) TimerEvent: {}
+[21.703305] (-) TimerEvent: {}
+[21.807533] (-) TimerEvent: {}
+[21.908913] (-) TimerEvent: {}
+[22.015109] (-) TimerEvent: {}
+[22.116858] (-) TimerEvent: {}
+[22.231193] (-) TimerEvent: {}
+[22.338647] (-) TimerEvent: {}
+[22.448486] (-) TimerEvent: {}
+[22.549869] (-) TimerEvent: {}
+[22.652848] (-) TimerEvent: {}
+[22.779598] (-) TimerEvent: {}
+[22.904903] (-) TimerEvent: {}
+[23.006776] (-) TimerEvent: {}
+[23.138705] (-) TimerEvent: {}
+[23.260982] (-) TimerEvent: {}
+[23.372382] (-) TimerEvent: {}
+[23.505393] (-) TimerEvent: {}
+[23.610272] (-) TimerEvent: {}
+[23.715147] (-) TimerEvent: {}
+[23.818583] (-) TimerEvent: {}
+[24.175758] (-) TimerEvent: {}
+[24.338942] (-) TimerEvent: {}
+[24.440919] (-) TimerEvent: {}
+[24.542143] (-) TimerEvent: {}
+[24.643397] (-) TimerEvent: {}
+[24.752139] (-) TimerEvent: {}
+[24.853061] (-) TimerEvent: {}
+[24.953609] (-) TimerEvent: {}
+[25.055122] (-) TimerEvent: {}
+[25.156995] (-) TimerEvent: {}
+[25.258095] (-) TimerEvent: {}
+[25.358680] (-) TimerEvent: {}
+[25.459279] (-) TimerEvent: {}
+[25.562545] (-) TimerEvent: {}
+[25.683306] (-) TimerEvent: {}
+[25.787825] (-) TimerEvent: {}
+[25.923820] (-) TimerEvent: {}
+[26.053924] (-) TimerEvent: {}
+[26.154938] (-) TimerEvent: {}
+[26.302103] (-) TimerEvent: {}
+[26.416426] (-) TimerEvent: {}
+[26.528299] (-) TimerEvent: {}
+[26.630581] (-) TimerEvent: {}
+[26.862008] (-) TimerEvent: {}
+[27.009508] (-) TimerEvent: {}
+[27.140111] (-) TimerEvent: {}
+[27.303252] (-) TimerEvent: {}
+[27.476463] (-) TimerEvent: {}
+[27.578113] (-) TimerEvent: {}
+[27.687032] (-) TimerEvent: {}
+[27.803588] (-) TimerEvent: {}
+[27.944336] (-) TimerEvent: {}
+[28.051629] (-) TimerEvent: {}
+[28.153903] (-) TimerEvent: {}
+[28.283551] (-) TimerEvent: {}
+[28.391772] (-) TimerEvent: {}
+[28.493241] (-) TimerEvent: {}
+[28.595356] (-) TimerEvent: {}
+[28.696410] (-) TimerEvent: {}
+[28.797337] (-) TimerEvent: {}
+[28.905242] (-) TimerEvent: {}
+[29.005957] (-) TimerEvent: {}
+[29.107146] (-) TimerEvent: {}
+[29.209115] (-) TimerEvent: {}
+[29.312159] (-) TimerEvent: {}
+[29.419048] (-) TimerEvent: {}
+[29.525336] (-) TimerEvent: {}
+[29.626008] (-) TimerEvent: {}
+[29.762394] (-) TimerEvent: {}
+[29.871917] (-) TimerEvent: {}
+[29.986777] (-) TimerEvent: {}
+[30.088122] (-) TimerEvent: {}
+[30.189648] (-) TimerEvent: {}
+[30.299789] (-) TimerEvent: {}
+[30.400919] (-) TimerEvent: {}
+[30.518604] (-) TimerEvent: {}
+[30.640640] (-) TimerEvent: {}
+[30.761747] (-) TimerEvent: {}
+[30.907079] (-) TimerEvent: {}
+[31.008070] (-) TimerEvent: {}
+[31.119713] (-) TimerEvent: {}
+[31.220618] (-) TimerEvent: {}
+[31.322114] (-) TimerEvent: {}
+[31.436042] (-) TimerEvent: {}
+[31.561270] (-) TimerEvent: {}
+[31.682645] (-) TimerEvent: {}
+[31.796923] (-) TimerEvent: {}
+[31.915472] (-) TimerEvent: {}
+[32.021777] (-) TimerEvent: {}
+[32.124071] (-) TimerEvent: {}
+[32.285864] (-) TimerEvent: {}
+[32.406488] (-) TimerEvent: {}
+[32.518831] (-) TimerEvent: {}
+[32.619825] (-) TimerEvent: {}
+[32.721531] (-) TimerEvent: {}
+[32.826634] (-) TimerEvent: {}
+[32.928152] (-) TimerEvent: {}
+[33.028887] (-) TimerEvent: {}
+[33.131175] (-) TimerEvent: {}
+[33.232673] (-) TimerEvent: {}
+[33.333220] (-) TimerEvent: {}
+[33.434053] (-) TimerEvent: {}
+[33.536011] (-) TimerEvent: {}
+[33.642734] (-) TimerEvent: {}
+[33.744077] (-) TimerEvent: {}
+[33.846762] (-) TimerEvent: {}
+[33.947305] (-) TimerEvent: {}
+[34.048000] (-) TimerEvent: {}
+[34.148722] (-) TimerEvent: {}
+[34.251748] (-) TimerEvent: {}
+[34.353746] (-) TimerEvent: {}
+[34.455307] (-) TimerEvent: {}
+[34.556957] (-) TimerEvent: {}
+[34.658528] (-) TimerEvent: {}
+[34.759620] (-) TimerEvent: {}
+[34.860367] (-) TimerEvent: {}
+[34.961215] (-) TimerEvent: {}
+[35.062559] (-) TimerEvent: {}
+[35.163111] (-) TimerEvent: {}
+[35.263638] (-) TimerEvent: {}
+[35.365309] (-) TimerEvent: {}
+[35.466774] (-) TimerEvent: {}
+[35.568364] (-) TimerEvent: {}
+[35.669519] (-) TimerEvent: {}
+[35.770586] (-) TimerEvent: {}
+[35.871613] (-) TimerEvent: {}
+[35.973284] (-) TimerEvent: {}
+[36.074606] (-) TimerEvent: {}
+[36.182857] (-) TimerEvent: {}
+[36.285746] (-) TimerEvent: {}
+[36.387148] (-) TimerEvent: {}
+[36.495860] (-) TimerEvent: {}
+[36.610595] (-) TimerEvent: {}
+[36.711697] (-) TimerEvent: {}
+[36.830834] (-) TimerEvent: {}
+[36.937818] (-) TimerEvent: {}
+[37.045428] (-) TimerEvent: {}
+[37.231180] (-) TimerEvent: {}
+[37.356107] (-) TimerEvent: {}
+[37.470709] (-) TimerEvent: {}
+[37.573239] (-) TimerEvent: {}
+[37.686307] (-) TimerEvent: {}
+[37.788321] (-) TimerEvent: {}
+[37.906800] (-) TimerEvent: {}
+[38.018895] (-) TimerEvent: {}
+[38.123066] (-) TimerEvent: {}
+[38.225684] (-) TimerEvent: {}
+[38.340482] (-) TimerEvent: {}
+[38.441813] (-) TimerEvent: {}
+[38.576602] (-) TimerEvent: {}
+[38.677226] (-) TimerEvent: {}
+[38.778508] (-) TimerEvent: {}
+[38.896110] (-) TimerEvent: {}
+[39.005133] (-) TimerEvent: {}
+[39.107795] (-) TimerEvent: {}
+[39.270002] (-) TimerEvent: {}
+[39.377356] (-) TimerEvent: {}
+[39.482715] (-) TimerEvent: {}
+[39.600417] (-) TimerEvent: {}
+[39.796455] (-) TimerEvent: {}
+[39.898490] (-) TimerEvent: {}
+[40.021849] (-) TimerEvent: {}
+[40.128910] (-) TimerEvent: {}
+[40.230890] (-) TimerEvent: {}
+[40.529128] (-) TimerEvent: {}
+[40.632592] (-) TimerEvent: {}
+[40.738182] (-) TimerEvent: {}
+[40.849071] (-) TimerEvent: {}
+[40.950899] (-) TimerEvent: {}
+[41.052124] (-) TimerEvent: {}
+[41.156322] (-) TimerEvent: {}
+[41.298243] (-) TimerEvent: {}
+[41.399435] (-) TimerEvent: {}
+[41.502836] (-) TimerEvent: {}
+[41.604560] (-) TimerEvent: {}
+[41.706163] (-) TimerEvent: {}
+[41.812406] (-) TimerEvent: {}
+[41.913619] (-) TimerEvent: {}
+[42.014909] (-) TimerEvent: {}
+[42.123231] (-) TimerEvent: {}
+[42.225229] (-) TimerEvent: {}
+[42.327440] (-) TimerEvent: {}
+[42.428799] (-) TimerEvent: {}
+[42.529328] (-) TimerEvent: {}
+[42.630083] (-) TimerEvent: {}
+[42.733444] (-) TimerEvent: {}
+[42.837757] (-) TimerEvent: {}
+[43.098930] (-) TimerEvent: {}
+[43.199706] (-) TimerEvent: {}
+[43.308515] (-) TimerEvent: {}
+[43.419317] (-) TimerEvent: {}
+[43.542562] (-) TimerEvent: {}
+[43.656102] (-) TimerEvent: {}
+[43.757456] (-) TimerEvent: {}
+[43.864712] (-) TimerEvent: {}
+[43.967519] (-) TimerEvent: {}
+[44.068312] (-) TimerEvent: {}
+[44.169044] (-) TimerEvent: {}
+[44.280095] (-) TimerEvent: {}
+[44.388834] (-) TimerEvent: {}
+[44.491114] (-) TimerEvent: {}
+[44.616934] (-) TimerEvent: {}
+[44.745796] (-) TimerEvent: {}
+[44.855453] (-) TimerEvent: {}
+[44.970593] (-) TimerEvent: {}
+[45.074039] (-) TimerEvent: {}
+[45.175294] (-) TimerEvent: {}
+[45.533319] (-) TimerEvent: {}
+[45.653855] (-) TimerEvent: {}
+[45.754815] (-) TimerEvent: {}
+[45.859371] (-) TimerEvent: {}
+[45.967908] (-) TimerEvent: {}
+[46.068963] (-) TimerEvent: {}
+[46.171181] (-) TimerEvent: {}
+[46.274403] (-) TimerEvent: {}
+[46.384855] (-) TimerEvent: {}
+[46.486746] (-) TimerEvent: {}
+[46.587961] (-) TimerEvent: {}
+[46.700559] (-) TimerEvent: {}
+[46.814385] (-) TimerEvent: {}
+[46.924583] (-) TimerEvent: {}
+[47.039976] (-) TimerEvent: {}
+[47.152312] (-) TimerEvent: {}
+[47.286201] (-) TimerEvent: {}
+[47.409196] (-) TimerEvent: {}
+[47.511540] (-) TimerEvent: {}
+[47.637282] (-) TimerEvent: {}
+[47.739690] (-) TimerEvent: {}
+[47.845536] (-) TimerEvent: {}
+[47.948481] (-) TimerEvent: {}
+[48.059448] (-) TimerEvent: {}
+[48.165498] (-) TimerEvent: {}
+[48.269020] (-) TimerEvent: {}
+[48.371902] (-) TimerEvent: {}
+[48.473253] (-) TimerEvent: {}
+[48.573950] (-) TimerEvent: {}
+[48.674630] (-) TimerEvent: {}
+[48.778559] (-) TimerEvent: {}
+[48.880542] (-) TimerEvent: {}
+[48.982013] (-) TimerEvent: {}
+[49.084303] (-) TimerEvent: {}
+[49.188908] (-) TimerEvent: {}
+[49.295670] (-) TimerEvent: {}
+[49.398271] (-) TimerEvent: {}
+[49.504733] (-) TimerEvent: {}
+[49.605633] (-) TimerEvent: {}
+[49.707325] (-) TimerEvent: {}
+[49.808795] (-) TimerEvent: {}
+[49.929028] (-) TimerEvent: {}
+[50.030631] (-) TimerEvent: {}
+[50.146417] (-) TimerEvent: {}
+[50.266757] (-) TimerEvent: {}
+[50.388556] (-) TimerEvent: {}
+[50.494627] (-) TimerEvent: {}
+[50.598679] (-) TimerEvent: {}
+[50.702619] (-) TimerEvent: {}
+[50.814031] (-) TimerEvent: {}
+[50.932667] (-) TimerEvent: {}
+[51.041466] (-) TimerEvent: {}
+[51.150201] (-) TimerEvent: {}
+[51.264248] (-) TimerEvent: {}
+[51.375302] (-) TimerEvent: {}
+[51.477489] (-) TimerEvent: {}
+[51.590090] (-) TimerEvent: {}
+[51.693777] (-) TimerEvent: {}
+[51.811775] (-) TimerEvent: {}
+[51.916141] (-) TimerEvent: {}
+[52.021614] (-) TimerEvent: {}
+[52.171854] (-) TimerEvent: {}
+[52.289546] (-) TimerEvent: {}
+[52.390837] (-) TimerEvent: {}
+[52.492777] (-) TimerEvent: {}
+[52.596703] (-) TimerEvent: {}
+[52.699651] (-) TimerEvent: {}
+[52.802711] (-) TimerEvent: {}
+[52.904317] (-) TimerEvent: {}
+[53.005881] (-) TimerEvent: {}
+[53.108236] (-) TimerEvent: {}
+[53.211713] (-) TimerEvent: {}
+[53.314169] (-) TimerEvent: {}
+[53.416385] (-) TimerEvent: {}
+[53.521281] (-) TimerEvent: {}
+[53.622014] (-) TimerEvent: {}
+[53.723965] (-) TimerEvent: {}
+[53.826321] (-) TimerEvent: {}
+[53.931294] (-) TimerEvent: {}
+[54.037471] (-) TimerEvent: {}
+[54.141188] (-) TimerEvent: {}
+[54.244439] (-) TimerEvent: {}
+[54.345169] (-) TimerEvent: {}
+[54.447557] (-) TimerEvent: {}
+[54.559841] (-) TimerEvent: {}
+[54.663117] (-) TimerEvent: {}
+[54.778087] (-) TimerEvent: {}
+[54.949255] (-) TimerEvent: {}
+[55.051362] (-) TimerEvent: {}
+[55.161413] (-) TimerEvent: {}
+[55.266022] (-) TimerEvent: {}
+[55.368524] (-) TimerEvent: {}
+[55.472504] (-) TimerEvent: {}
+[55.606992] (-) TimerEvent: {}
+[55.745827] (-) TimerEvent: {}
+[55.875591] (-) TimerEvent: {}
+[55.990012] (-) TimerEvent: {}
+[56.094475] (-) TimerEvent: {}
+[56.216029] (-) TimerEvent: {}
+[56.318377] (-) TimerEvent: {}
+[56.420165] (-) TimerEvent: {}
+[56.565143] (-) TimerEvent: {}
+[56.667321] (-) TimerEvent: {}
+[56.768784] (-) TimerEvent: {}
+[56.869721] (-) TimerEvent: {}
+[56.972255] (-) TimerEvent: {}
+[57.087894] (-) TimerEvent: {}
+[57.228193] (-) TimerEvent: {}
+[57.330804] (-) TimerEvent: {}
+[57.432576] (-) TimerEvent: {}
+[57.535470] (-) TimerEvent: {}
+[57.637144] (-) TimerEvent: {}
+[57.738270] (-) TimerEvent: {}
+[57.846790] (-) TimerEvent: {}
+[57.951107] (-) TimerEvent: {}
+[58.095737] (-) TimerEvent: {}
+[58.240350] (-) TimerEvent: {}
+[58.344878] (-) TimerEvent: {}
+[58.446274] (-) TimerEvent: {}
+[58.581005] (-) TimerEvent: {}
+[58.691173] (-) TimerEvent: {}
+[58.793158] (-) TimerEvent: {}
+[58.903274] (-) TimerEvent: {}
+[59.008529] (-) TimerEvent: {}
+[59.111045] (-) TimerEvent: {}
+[59.366197] (-) TimerEvent: {}
+[59.472266] (-) TimerEvent: {}
+[59.626697] (-) TimerEvent: {}
+[59.777025] (-) TimerEvent: {}
+[59.914051] (-) TimerEvent: {}
+[60.085535] (-) TimerEvent: {}
+[60.233305] (-) TimerEvent: {}
+[60.361412] (-) TimerEvent: {}
+[60.492485] (-) TimerEvent: {}
+[60.593141] (-) TimerEvent: {}
+[60.695567] (-) TimerEvent: {}
+[60.799678] (-) TimerEvent: {}
+[60.922370] (-) TimerEvent: {}
+[61.062824] (-) TimerEvent: {}
+[61.164945] (-) TimerEvent: {}
+[61.274778] (-) TimerEvent: {}
+[61.379864] (-) TimerEvent: {}
+[61.487645] (-) TimerEvent: {}
+[61.621620] (-) TimerEvent: {}
+[61.732019] (-) TimerEvent: {}
+[61.893514] (-) TimerEvent: {}
+[62.088654] (-) TimerEvent: {}
+[62.229453] (-) TimerEvent: {}
+[62.333536] (-) TimerEvent: {}
+[62.436184] (-) TimerEvent: {}
+[62.551985] (-) TimerEvent: {}
+[62.662516] (-) TimerEvent: {}
+[62.769260] (-) TimerEvent: {}
+[62.967946] (-) TimerEvent: {}
+[63.133854] (-) TimerEvent: {}
+[63.249329] (-) TimerEvent: {}
+[63.352465] (-) TimerEvent: {}
+[63.531103] (-) TimerEvent: {}
+[63.664172] (-) TimerEvent: {}
+[63.807494] (-) TimerEvent: {}
+[63.909552] (-) TimerEvent: {}
+[64.024984] (-) TimerEvent: {}
+[64.169256] (-) TimerEvent: {}
+[64.270971] (-) TimerEvent: {}
+[64.373625] (-) TimerEvent: {}
+[64.507082] (-) TimerEvent: {}
+[64.615299] (-) TimerEvent: {}
+[64.726800] (-) TimerEvent: {}
+[64.831507] (-) TimerEvent: {}
+[64.979438] (-) TimerEvent: {}
+[65.164266] (-) TimerEvent: {}
+[65.360690] (-) TimerEvent: {}
+[65.483544] (-) TimerEvent: {}
+[65.600143] (-) TimerEvent: {}
+[65.701517] (-) TimerEvent: {}
+[65.804205] (-) TimerEvent: {}
+[65.909051] (-) TimerEvent: {}
+[66.011582] (-) TimerEvent: {}
+[66.113777] (-) TimerEvent: {}
+[66.218379] (-) TimerEvent: {}
+[66.323020] (-) TimerEvent: {}
+[66.425363] (-) TimerEvent: {}
+[66.528718] (-) TimerEvent: {}
+[66.631806] (-) TimerEvent: {}
+[66.759535] (-) TimerEvent: {}
+[66.928418] (-) TimerEvent: {}
+[67.044412] (-) TimerEvent: {}
+[67.146909] (-) TimerEvent: {}
+[67.248196] (-) TimerEvent: {}
+[67.354321] (-) TimerEvent: {}
+[67.461744] (-) TimerEvent: {}
+[67.564390] (-) TimerEvent: {}
+[67.665795] (-) TimerEvent: {}
+[67.769366] (-) TimerEvent: {}
+[67.871224] (-) TimerEvent: {}
+[67.973019] (-) TimerEvent: {}
+[68.076339] (-) TimerEvent: {}
+[68.177727] (-) TimerEvent: {}
+[68.320064] (-) TimerEvent: {}
+[68.420874] (-) TimerEvent: {}
+[68.527555] (-) TimerEvent: {}
+[68.678592] (-) TimerEvent: {}
+[68.785035] (-) TimerEvent: {}
+[70.295734] (-) TimerEvent: {}
+[70.400896] (-) TimerEvent: {}
+[70.518747] (-) TimerEvent: {}
+[70.621430] (-) TimerEvent: {}
+[70.725666] (-) TimerEvent: {}
+[70.834132] (-) TimerEvent: {}
+[70.938406] (-) TimerEvent: {}
+[71.045402] (-) TimerEvent: {}
+[71.147738] (-) TimerEvent: {}
+[71.256309] (-) TimerEvent: {}
+[71.363505] (-) TimerEvent: {}
+[71.465298] (-) TimerEvent: {}
+[71.580649] (-) TimerEvent: {}
+[71.688211] (-) TimerEvent: {}
+[71.798737] (-) TimerEvent: {}
+[72.240932] (-) TimerEvent: {}
+[72.356520] (-) TimerEvent: {}
+[72.469425] (-) TimerEvent: {}
+[72.571047] (-) TimerEvent: {}
+[72.682534] (-) TimerEvent: {}
+[72.801192] (-) TimerEvent: {}
+[72.907830] (-) TimerEvent: {}
+[73.018458] (-) TimerEvent: {}
+[73.119499] (-) TimerEvent: {}
+[73.224179] (-) TimerEvent: {}
+[73.325726] (-) TimerEvent: {}
+[73.428070] (-) TimerEvent: {}
+[73.547178] (-) TimerEvent: {}
+[73.648681] (-) TimerEvent: {}
+[73.749452] (-) TimerEvent: {}
+[73.879504] (-) TimerEvent: {}
+[73.983492] (-) TimerEvent: {}
+[74.140330] (-) TimerEvent: {}
+[74.241144] (-) TimerEvent: {}
+[74.387543] (-) TimerEvent: {}
+[74.488929] (-) TimerEvent: {}
+[74.601032] (-) TimerEvent: {}
+[74.702160] (-) TimerEvent: {}
+[74.802946] (-) TimerEvent: {}
+[74.905149] (-) TimerEvent: {}
+[75.007912] (-) TimerEvent: {}
+[75.110331] (-) TimerEvent: {}
+[75.246844] (-) TimerEvent: {}
+[75.348587] (-) TimerEvent: {}
+[75.464700] (-) TimerEvent: {}
+[75.742241] (-) TimerEvent: {}
+[75.861234] (-) TimerEvent: {}
+[76.164574] (-) TimerEvent: {}
+[76.282680] (-) TimerEvent: {}
+[76.388596] (-) TimerEvent: {}
+[76.507822] (-) TimerEvent: {}
+[76.610809] (-) TimerEvent: {}
+[76.725589] (-) TimerEvent: {}
+[76.826866] (-) TimerEvent: {}
+[76.928743] (-) TimerEvent: {}
+[77.035340] (-) TimerEvent: {}
+[77.136578] (-) TimerEvent: {}
+[77.237188] (-) TimerEvent: {}
+[77.338563] (-) TimerEvent: {}
+[77.441529] (-) TimerEvent: {}
+[77.546408] (-) TimerEvent: {}
+[77.647755] (-) TimerEvent: {}
+[77.748451] (-) TimerEvent: {}
+[77.849264] (-) TimerEvent: {}
+[77.950718] (-) TimerEvent: {}
+[78.052995] (-) TimerEvent: {}
+[78.154533] (-) TimerEvent: {}
+[78.255881] (-) TimerEvent: {}
+[78.357262] (-) TimerEvent: {}
+[78.458254] (-) TimerEvent: {}
+[78.576373] (-) TimerEvent: {}
+[78.699440] (-) TimerEvent: {}
+[78.800837] (-) TimerEvent: {}
+[78.902542] (-) TimerEvent: {}
+[79.003980] (-) TimerEvent: {}
+[79.104617] (-) TimerEvent: {}
+[79.205674] (-) TimerEvent: {}
+[79.307374] (-) TimerEvent: {}
+[79.409629] (-) TimerEvent: {}
+[79.510076] (-) TimerEvent: {}
+[79.610821] (-) TimerEvent: {}
+[79.711282] (-) TimerEvent: {}
+[79.813348] (-) TimerEvent: {}
+[79.916675] (-) TimerEvent: {}
+[80.017745] (-) TimerEvent: {}
+[80.118996] (-) TimerEvent: {}
+[80.228500] (-) TimerEvent: {}
+[80.339172] (-) TimerEvent: {}
+[80.443294] (-) TimerEvent: {}
+[80.547486] (-) TimerEvent: {}
+[80.674871] (-) TimerEvent: {}
+[80.781339] (-) TimerEvent: {}
+[80.890973] (-) TimerEvent: {}
+[81.047465] (-) TimerEvent: {}
+[81.151816] (-) TimerEvent: {}
+[81.254771] (-) TimerEvent: {}
+[81.543714] (-) TimerEvent: {}
+[81.703339] (-) TimerEvent: {}
+[81.819772] (-) TimerEvent: {}
+[81.945727] (-) TimerEvent: {}
+[82.075525] (-) TimerEvent: {}
+[82.176789] (-) TimerEvent: {}
+[82.282847] (-) TimerEvent: {}
+[82.387853] (-) TimerEvent: {}
+[82.510690] (-) TimerEvent: {}
+[82.621721] (-) TimerEvent: {}
+[82.744977] (-) TimerEvent: {}
+[82.846310] (-) TimerEvent: {}
+[82.952439] (-) TimerEvent: {}
+[83.067514] (-) TimerEvent: {}
+[83.195946] (-) TimerEvent: {}
+[83.300189] (-) TimerEvent: {}
+[83.402666] (-) TimerEvent: {}
+[83.504472] (-) TimerEvent: {}
+[83.605584] (-) TimerEvent: {}
+[83.709050] (-) TimerEvent: {}
+[83.812905] (-) TimerEvent: {}
+[83.933082] (-) TimerEvent: {}
+[84.034076] (-) TimerEvent: {}
+[84.136078] (-) TimerEvent: {}
+[84.238593] (-) TimerEvent: {}
+[84.340133] (-) TimerEvent: {}
+[84.441372] (-) TimerEvent: {}
+[84.543010] (-) TimerEvent: {}
+[84.644691] (-) TimerEvent: {}
+[84.745849] (-) TimerEvent: {}
+[84.847824] (-) TimerEvent: {}
+[84.967422] (-) TimerEvent: {}
+[85.072680] (-) TimerEvent: {}
+[85.186186] (-) TimerEvent: {}
+[85.392794] (-) TimerEvent: {}
+[85.501970] (-) TimerEvent: {}
+[85.604445] (-) TimerEvent: {}
+[85.707362] (-) TimerEvent: {}
+[85.834695] (-) TimerEvent: {}
+[85.935948] (-) TimerEvent: {}
+[86.045541] (-) TimerEvent: {}
+[86.147148] (-) TimerEvent: {}
+[86.278359] (-) TimerEvent: {}
+[86.401236] (-) TimerEvent: {}
+[86.505715] (-) TimerEvent: {}
+[86.624266] (-) TimerEvent: {}
+[86.736093] (-) TimerEvent: {}
+[86.842667] (-) TimerEvent: {}
+[86.944056] (-) TimerEvent: {}
+[87.045072] (-) TimerEvent: {}
+[87.147317] (-) TimerEvent: {}
+[87.252242] (-) TimerEvent: {}
+[87.355266] (-) TimerEvent: {}
+[87.457812] (-) TimerEvent: {}
+[87.562352] (-) TimerEvent: {}
+[87.664770] (-) TimerEvent: {}
+[87.775094] (-) TimerEvent: {}
+[87.875802] (-) TimerEvent: {}
+[87.977169] (-) TimerEvent: {}
+[88.078243] (-) TimerEvent: {}
+[88.181311] (-) TimerEvent: {}
+[88.282730] (-) TimerEvent: {}
+[88.384464] (-) TimerEvent: {}
+[88.485687] (-) TimerEvent: {}
+[88.586336] (-) TimerEvent: {}
+[88.686986] (-) TimerEvent: {}
+[88.787775] (-) TimerEvent: {}
+[88.888864] (-) TimerEvent: {}
+[88.989327] (-) TimerEvent: {}
+[89.105804] (-) TimerEvent: {}
+[89.206570] (-) TimerEvent: {}
+[89.308160] (-) TimerEvent: {}
+[89.408740] (-) TimerEvent: {}
+[89.510089] (-) TimerEvent: {}
+[89.610954] (-) TimerEvent: {}
+[89.712317] (-) TimerEvent: {}
+[89.813881] (-) TimerEvent: {}
+[89.914982] (-) TimerEvent: {}
+[90.021993] (-) TimerEvent: {}
+[90.150293] (-) TimerEvent: {}
+[90.251708] (-) TimerEvent: {}
+[90.354701] (-) TimerEvent: {}
+[90.483870] (-) TimerEvent: {}
+[90.589709] (-) TimerEvent: {}
+[90.710392] (-) TimerEvent: {}
+[90.812502] (-) TimerEvent: {}
+[90.914938] (-) TimerEvent: {}
+[91.018365] (-) TimerEvent: {}
+[91.130523] (-) TimerEvent: {}
+[91.238871] (-) TimerEvent: {}
+[91.342951] (-) TimerEvent: {}
+[91.455331] (-) TimerEvent: {}
+[91.560636] (-) TimerEvent: {}
+[91.662531] (-) TimerEvent: {}
+[91.764044] (-) TimerEvent: {}
+[91.865937] (-) TimerEvent: {}
+[91.967219] (-) TimerEvent: {}
+[92.068563] (-) TimerEvent: {}
+[92.169621] (-) TimerEvent: {}
+[92.272609] (-) TimerEvent: {}
+[92.376479] (-) TimerEvent: {}
+[92.497729] (-) TimerEvent: {}
+[92.599053] (-) TimerEvent: {}
+[92.702163] (-) TimerEvent: {}
+[92.812330] (-) TimerEvent: {}
+[92.913399] (-) TimerEvent: {}
+[93.016520] (-) TimerEvent: {}
+[93.128635] (-) TimerEvent: {}
+[93.239560] (-) TimerEvent: {}
+[93.347109] (-) TimerEvent: {}
+[93.449537] (-) TimerEvent: {}
+[93.551820] (-) TimerEvent: {}
+[93.655425] (-) TimerEvent: {}
+[93.757039] (-) TimerEvent: {}
+[93.866996] (-) TimerEvent: {}
+[93.969140] (-) TimerEvent: {}
+[94.083738] (-) TimerEvent: {}
+[94.185873] (-) TimerEvent: {}
+[94.300187] (-) TimerEvent: {}
+[94.402000] (-) TimerEvent: {}
+[94.507464] (-) TimerEvent: {}
+[94.611179] (-) TimerEvent: {}
+[94.713805] (-) TimerEvent: {}
+[94.821358] (-) TimerEvent: {}
+[94.927845] (-) TimerEvent: {}
+[95.030785] (-) TimerEvent: {}
+[95.139682] (-) TimerEvent: {}
+[95.243637] (-) TimerEvent: {}
+[95.366221] (-) TimerEvent: {}
+[95.467957] (-) TimerEvent: {}
+[95.586359] (-) TimerEvent: {}
+[95.692628] (-) TimerEvent: {}
+[95.801272] (-) TimerEvent: {}
+[95.909242] (-) TimerEvent: {}
+[96.018689] (-) TimerEvent: {}
+[96.122833] (-) TimerEvent: {}
+[96.240819] (-) TimerEvent: {}
+[96.349839] (-) TimerEvent: {}
+[96.452773] (-) TimerEvent: {}
+[96.562056] (-) TimerEvent: {}
+[96.667015] (-) TimerEvent: {}
+[96.769629] (-) TimerEvent: {}
+[96.875686] (-) TimerEvent: {}
+[96.986591] (-) TimerEvent: {}
+[97.090926] (-) TimerEvent: {}
+[97.192408] (-) TimerEvent: {}
+[97.295754] (-) TimerEvent: {}
+[97.399993] (-) TimerEvent: {}
+[97.507027] (-) TimerEvent: {}
+[97.609821] (-) TimerEvent: {}
+[97.716864] (-) TimerEvent: {}
+[97.820404] (-) TimerEvent: {}
+[97.932528] (-) TimerEvent: {}
+[98.033415] (-) TimerEvent: {}
+[98.151743] (-) TimerEvent: {}
+[98.271027] (-) TimerEvent: {}
+[98.374047] (-) TimerEvent: {}
+[98.474785] (-) TimerEvent: {}
+[98.576036] (-) TimerEvent: {}
+[98.677606] (-) TimerEvent: {}
+[98.781790] (-) TimerEvent: {}
+[98.884193] (-) TimerEvent: {}
+[98.988332] (-) TimerEvent: {}
+[99.096138] (-) TimerEvent: {}
+[99.204755] (-) TimerEvent: {}
+[99.316536] (-) TimerEvent: {}
+[99.418875] (-) TimerEvent: {}
+[99.519572] (-) TimerEvent: {}
+[99.628352] (-) TimerEvent: {}
+[99.729442] (-) TimerEvent: {}
+[99.830924] (-) TimerEvent: {}
+[99.938790] (-) TimerEvent: {}
+[100.042363] (-) TimerEvent: {}
+[100.145075] (-) TimerEvent: {}
+[100.357760] (-) TimerEvent: {}
+[100.463445] (-) TimerEvent: {}
+[100.564780] (-) TimerEvent: {}
+[100.667100] (-) TimerEvent: {}
+[100.769171] (-) TimerEvent: {}
+[100.874555] (-) TimerEvent: {}
+[100.977957] (-) TimerEvent: {}
+[101.080374] (-) TimerEvent: {}
+[101.181390] (-) TimerEvent: {}
+[101.282723] (-) TimerEvent: {}
+[101.383978] (-) TimerEvent: {}
+[101.484472] (-) TimerEvent: {}
+[101.615031] (-) TimerEvent: {}
+[101.716395] (-) TimerEvent: {}
+[101.818744] (-) TimerEvent: {}
+[101.922540] (-) TimerEvent: {}
+[102.042683] (-) TimerEvent: {}
+[102.162866] (-) TimerEvent: {}
+[102.267092] (-) TimerEvent: {}
+[102.407518] (-) TimerEvent: {}
+[102.554109] (-) TimerEvent: {}
+[102.660178] (-) TimerEvent: {}
+[102.765747] (-) TimerEvent: {}
+[102.866403] (-) TimerEvent: {}
+[102.982683] (-) TimerEvent: {}
+[103.089075] (-) TimerEvent: {}
+[103.196786] (-) TimerEvent: {}
+[103.300223] (-) TimerEvent: {}
+[103.403575] (-) TimerEvent: {}
+[103.511464] (-) TimerEvent: {}
+[103.624503] (-) TimerEvent: {}
+[103.758583] (-) TimerEvent: {}
+[103.861682] (-) TimerEvent: {}
+[103.968510] (-) TimerEvent: {}
+[104.072936] (-) TimerEvent: {}
+[104.202085] (-) TimerEvent: {}
+[104.308472] (-) TimerEvent: {}
+[104.412770] (-) TimerEvent: {}
+[104.514450] (-) TimerEvent: {}
+[104.617759] (-) TimerEvent: {}
+[104.720429] (-) TimerEvent: {}
+[104.822356] (-) TimerEvent: {}
+[104.925527] (-) TimerEvent: {}
+[105.028417] (-) TimerEvent: {}
+[105.134694] (-) TimerEvent: {}
+[105.248654] (-) TimerEvent: {}
+[105.353072] (-) TimerEvent: {}
+[105.462316] (-) TimerEvent: {}
+[105.564674] (-) TimerEvent: {}
+[105.684456] (-) TimerEvent: {}
+[105.785203] (-) TimerEvent: {}
+[105.889274] (-) TimerEvent: {}
+[105.995188] (-) TimerEvent: {}
+[106.096468] (-) TimerEvent: {}
+[106.208107] (-) TimerEvent: {}
+[106.322637] (-) TimerEvent: {}
+[106.428120] (-) TimerEvent: {}
+[106.530532] (-) TimerEvent: {}
+[106.641492] (-) TimerEvent: {}
+[106.743427] (-) TimerEvent: {}
+[106.844817] (-) TimerEvent: {}
+[106.946167] (-) TimerEvent: {}
+[107.050035] (-) TimerEvent: {}
+[107.156443] (-) TimerEvent: {}
+[107.269373] (-) TimerEvent: {}
+[107.371271] (-) TimerEvent: {}
+[107.475440] (-) TimerEvent: {}
+[107.578553] (-) TimerEvent: {}
+[107.682399] (-) TimerEvent: {}
+[107.783317] (-) TimerEvent: {}
+[107.892860] (-) TimerEvent: {}
+[107.996585] (-) TimerEvent: {}
+[108.104344] (-) TimerEvent: {}
+[108.207150] (-) TimerEvent: {}
+[108.331244] (-) TimerEvent: {}
+[108.433348] (-) TimerEvent: {}
+[108.536600] (-) TimerEvent: {}
+[108.643740] (-) TimerEvent: {}
+[108.747459] (-) TimerEvent: {}
+[108.858781] (-) TimerEvent: {}
+[108.960258] (-) TimerEvent: {}
+[109.062011] (-) TimerEvent: {}
+[109.166179] (-) TimerEvent: {}
+[109.272349] (-) TimerEvent: {}
+[109.391732] (-) TimerEvent: {}
+[109.494251] (-) TimerEvent: {}
+[109.622725] (-) TimerEvent: {}
+[109.725245] (-) TimerEvent: {}
+[109.828262] (-) TimerEvent: {}
+[109.941657] (-) TimerEvent: {}
+[110.050010] (-) TimerEvent: {}
+[110.151431] (-) TimerEvent: {}
+[110.254755] (-) TimerEvent: {}
+[110.357738] (-) TimerEvent: {}
+[110.462595] (-) TimerEvent: {}
+[110.566290] (-) TimerEvent: {}
+[110.672611] (-) TimerEvent: {}
+[110.773644] (-) TimerEvent: {}
+[110.878996] (-) TimerEvent: {}
+[110.985698] (-) TimerEvent: {}
+[111.091368] (-) TimerEvent: {}
+[111.193429] (-) TimerEvent: {}
+[111.295530] (-) TimerEvent: {}
+[111.448066] (-) TimerEvent: {}
+[111.553516] (-) TimerEvent: {}
+[111.664238] (-) TimerEvent: {}
+[111.772285] (-) TimerEvent: {}
+[111.880317] (-) TimerEvent: {}
+[111.982506] (-) TimerEvent: {}
+[112.089519] (-) TimerEvent: {}
+[112.193410] (-) TimerEvent: {}
+[112.306800] (-) TimerEvent: {}
+[112.408785] (-) TimerEvent: {}
+[112.515094] (-) TimerEvent: {}
+[112.624469] (-) TimerEvent: {}
+[112.771496] (-) TimerEvent: {}
+[112.886703] (-) TimerEvent: {}
+[112.988813] (-) TimerEvent: {}
+[113.093476] (-) TimerEvent: {}
+[113.196693] (-) TimerEvent: {}
+[113.298918] (-) TimerEvent: {}
+[113.412312] (-) TimerEvent: {}
+[113.520041] (-) TimerEvent: {}
+[113.648568] (-) TimerEvent: {}
+[113.767343] (-) TimerEvent: {}
+[113.879118] (-) TimerEvent: {}
+[114.015348] (-) TimerEvent: {}
+[114.117210] (-) TimerEvent: {}
+[114.219404] (-) TimerEvent: {}
+[114.321731] (-) TimerEvent: {}
+[114.431565] (-) TimerEvent: {}
+[114.540968] (-) TimerEvent: {}
+[114.643580] (-) TimerEvent: {}
+[114.781125] (-) TimerEvent: {}
+[114.884719] (-) TimerEvent: {}
+[114.993991] (-) TimerEvent: {}
+[115.160078] (-) TimerEvent: {}
+[115.285768] (-) TimerEvent: {}
+[115.404142] (-) TimerEvent: {}
+[115.739868] (-) TimerEvent: {}
+[115.843094] (-) TimerEvent: {}
+[115.947240] (-) TimerEvent: {}
+[116.048421] (-) TimerEvent: {}
+[116.149168] (-) TimerEvent: {}
+[116.258587] (-) TimerEvent: {}
+[116.442363] (-) TimerEvent: {}
+[116.547069] (-) TimerEvent: {}
+[116.827826] (-) TimerEvent: {}
+[117.012949] (-) TimerEvent: {}
+[117.134987] (-) TimerEvent: {}
+[117.260007] (-) TimerEvent: {}
+[117.413865] (-) TimerEvent: {}
+[117.626466] (-) TimerEvent: {}
+[117.758416] (-) TimerEvent: {}
+[117.859753] (-) TimerEvent: {}
+[117.962157] (-) TimerEvent: {}
+[118.065987] (-) TimerEvent: {}
+[118.167524] (-) TimerEvent: {}
+[118.269516] (-) TimerEvent: {}
+[118.377299] (-) TimerEvent: {}
+[118.478295] (-) TimerEvent: {}
+[118.579207] (-) TimerEvent: {}
+[118.680602] (-) TimerEvent: {}
+[118.789226] (-) TimerEvent: {}
+[118.892957] (-) TimerEvent: {}
+[118.998545] (-) TimerEvent: {}
+[119.114461] (-) TimerEvent: {}
+[119.216647] (-) TimerEvent: {}
+[119.319161] (-) TimerEvent: {}
+[119.426449] (-) TimerEvent: {}
+[119.528372] (-) TimerEvent: {}
+[119.630162] (-) TimerEvent: {}
+[119.736677] (-) TimerEvent: {}
+[119.844326] (-) TimerEvent: {}
+[119.946334] (-) TimerEvent: {}
+[120.047168] (-) TimerEvent: {}
+[120.153792] (-) TimerEvent: {}
+[120.256194] (-) TimerEvent: {}
+[120.358255] (-) TimerEvent: {}
+[120.462576] (-) TimerEvent: {}
+[120.570908] (-) TimerEvent: {}
+[120.674763] (-) TimerEvent: {}
+[120.779221] (-) TimerEvent: {}
+[120.888509] (-) TimerEvent: {}
+[120.995197] (-) TimerEvent: {}
+[121.098617] (-) TimerEvent: {}
+[121.201770] (-) TimerEvent: {}
+[121.302432] (-) TimerEvent: {}
+[121.409761] (-) TimerEvent: {}
+[121.511547] (-) TimerEvent: {}
+[121.612850] (-) TimerEvent: {}
+[121.713601] (-) TimerEvent: {}
+[121.814342] (-) TimerEvent: {}
+[121.915725] (-) TimerEvent: {}
+[122.020140] (-) TimerEvent: {}
+[122.121867] (-) TimerEvent: {}
+[122.225279] (-) TimerEvent: {}
+[122.326808] (-) TimerEvent: {}
+[122.427942] (-) TimerEvent: {}
+[122.529981] (-) TimerEvent: {}
+[122.630564] (-) TimerEvent: {}
+[122.732447] (-) TimerEvent: {}
+[122.834783] (-) TimerEvent: {}
+[122.935659] (-) TimerEvent: {}
+[123.039639] (-) TimerEvent: {}
+[123.146936] (-) TimerEvent: {}
+[123.249106] (-) TimerEvent: {}
+[123.357540] (-) TimerEvent: {}
+[123.462824] (-) TimerEvent: {}
+[123.573128] (-) TimerEvent: {}
+[123.685146] (-) TimerEvent: {}
+[123.811794] (-) TimerEvent: {}
+[123.918378] (-) TimerEvent: {}
+[124.025643] (-) TimerEvent: {}
+[124.162007] (-) TimerEvent: {}
+[124.263828] (-) TimerEvent: {}
+[124.366308] (-) TimerEvent: {}
+[124.516288] (-) TimerEvent: {}
+[124.623848] (-) TimerEvent: {}
+[124.728645] (-) TimerEvent: {}
+[124.835009] (-) TimerEvent: {}
+[124.952114] (-) TimerEvent: {}
+[125.059822] (-) TimerEvent: {}
+[125.165834] (-) TimerEvent: {}
+[125.268139] (-) TimerEvent: {}
+[125.370932] (-) TimerEvent: {}
+[125.474790] (-) TimerEvent: {}
+[125.577694] (-) TimerEvent: {}
+[125.681714] (-) TimerEvent: {}
+[125.818835] (-) TimerEvent: {}
+[125.962516] (-) TimerEvent: {}
+[126.064817] (-) TimerEvent: {}
+[126.182528] (-) TimerEvent: {}
+[126.329844] (-) TimerEvent: {}
+[126.449500] (-) TimerEvent: {}
+[126.555608] (-) TimerEvent: {}
+[126.666388] (-) TimerEvent: {}
+[126.767447] (-) TimerEvent: {}
+[126.868975] (-) TimerEvent: {}
+[126.970498] (-) TimerEvent: {}
+[127.071602] (-) TimerEvent: {}
+[127.173343] (-) TimerEvent: {}
+[127.274625] (-) TimerEvent: {}
+[127.388906] (-) TimerEvent: {}
+[127.492387] (-) TimerEvent: {}
+[127.593427] (-) TimerEvent: {}
+[127.694636] (-) TimerEvent: {}
+[127.795521] (-) TimerEvent: {}
+[127.897250] (-) TimerEvent: {}
+[128.013486] (-) TimerEvent: {}
+[128.114204] (-) TimerEvent: {}
+[128.215121] (-) TimerEvent: {}
+[128.317450] (-) TimerEvent: {}
+[128.445098] (-) TimerEvent: {}
+[128.560941] (-) TimerEvent: {}
+[128.661818] (-) TimerEvent: {}
+[128.764198] (-) TimerEvent: {}
+[128.866777] (-) TimerEvent: {}
+[128.967666] (-) TimerEvent: {}
+[129.068437] (-) TimerEvent: {}
+[129.169428] (-) TimerEvent: {}
+[129.274640] (-) TimerEvent: {}
+[129.376130] (-) TimerEvent: {}
+[129.478532] (-) TimerEvent: {}
+[129.581342] (-) TimerEvent: {}
+[129.706435] (-) TimerEvent: {}
+[129.807762] (-) TimerEvent: {}
+[129.918810] (-) TimerEvent: {}
+[130.034992] (-) TimerEvent: {}
+[130.137352] (-) TimerEvent: {}
+[130.240087] (-) TimerEvent: {}
+[130.344723] (-) TimerEvent: {}
+[130.446294] (-) TimerEvent: {}
+[130.548318] (-) TimerEvent: {}
+[130.652714] (-) TimerEvent: {}
+[130.753202] (-) TimerEvent: {}
+[130.853815] (-) TimerEvent: {}
+[130.954470] (-) TimerEvent: {}
+[131.055953] (-) TimerEvent: {}
+[131.159819] (-) TimerEvent: {}
+[131.260521] (-) TimerEvent: {}
+[131.362525] (-) TimerEvent: {}
+[131.463487] (-) TimerEvent: {}
+[131.566570] (-) TimerEvent: {}
+[131.668980] (-) TimerEvent: {}
+[131.776625] (-) TimerEvent: {}
+[131.879330] (-) TimerEvent: {}
+[131.990758] (-) TimerEvent: {}
+[132.118580] (-) TimerEvent: {}
+[132.219850] (-) TimerEvent: {}
+[132.324264] (-) TimerEvent: {}
+[132.441076] (-) TimerEvent: {}
+[132.543594] (-) TimerEvent: {}
+[132.652766] (-) TimerEvent: {}
+[132.767938] (-) TimerEvent: {}
+[132.888132] (-) TimerEvent: {}
+[132.990735] (-) TimerEvent: {}
+[133.093252] (-) TimerEvent: {}
+[133.193802] (-) TimerEvent: {}
+[133.296137] (-) TimerEvent: {}
+[133.397343] (-) TimerEvent: {}
+[133.499773] (-) TimerEvent: {}
+[133.601245] (-) TimerEvent: {}
+[133.703395] (-) TimerEvent: {}
+[133.804443] (-) TimerEvent: {}
+[133.955093] (-) TimerEvent: {}
+[134.092647] (-) TimerEvent: {}
+[134.660030] (-) TimerEvent: {}
+[134.788422] (-) TimerEvent: {}
+[134.898263] (-) TimerEvent: {}
+[135.034753] (-) TimerEvent: {}
+[135.178355] (-) TimerEvent: {}
+[135.334245] (-) TimerEvent: {}
+[135.648536] (-) TimerEvent: {}
+[135.788143] (-) TimerEvent: {}
+[135.991314] (-) TimerEvent: {}
+[136.112467] (-) TimerEvent: {}
+[136.318983] (-) TimerEvent: {}
+[136.432290] (-) TimerEvent: {}
+[136.538218] (-) TimerEvent: {}
+[136.639617] (-) TimerEvent: {}
+[136.740740] (-) TimerEvent: {}
+[136.848196] (-) TimerEvent: {}
+[136.951198] (-) TimerEvent: {}
+[137.052272] (-) TimerEvent: {}
+[137.159242] (-) TimerEvent: {}
+[137.260831] (-) TimerEvent: {}
+[137.364998] (-) TimerEvent: {}
+[137.466459] (-) TimerEvent: {}
+[137.576473] (-) TimerEvent: {}
+[137.683862] (-) TimerEvent: {}
+[137.787119] (-) TimerEvent: {}
+[137.888884] (-) TimerEvent: {}
+[137.990477] (-) TimerEvent: {}
+[138.096270] (-) TimerEvent: {}
+[138.197283] (-) TimerEvent: {}
+[138.298094] (-) TimerEvent: {}
+[138.398857] (-) TimerEvent: {}
+[138.500262] (-) TimerEvent: {}
+[138.601742] (-) TimerEvent: {}
+[138.703268] (-) TimerEvent: {}
+[138.805316] (-) TimerEvent: {}
+[138.906347] (-) TimerEvent: {}
+[139.007981] (-) TimerEvent: {}
+[139.108933] (-) TimerEvent: {}
+[139.210119] (-) TimerEvent: {}
+[139.311056] (-) TimerEvent: {}
+[139.412442] (-) TimerEvent: {}
+[139.513293] (-) TimerEvent: {}
+[139.614196] (-) TimerEvent: {}
+[139.715818] (-) TimerEvent: {}
+[139.816813] (-) TimerEvent: {}
+[139.917725] (-) TimerEvent: {}
+[140.018413] (-) TimerEvent: {}
+[140.120100] (-) TimerEvent: {}
+[140.223037] (-) TimerEvent: {}
+[140.326943] (-) TimerEvent: {}
+[140.427759] (-) TimerEvent: {}
+[140.528644] (-) TimerEvent: {}
+[140.629606] (-) TimerEvent: {}
+[140.730286] (-) TimerEvent: {}
+[140.830882] (-) TimerEvent: {}
+[140.931763] (-) TimerEvent: {}
+[141.032533] (-) TimerEvent: {}
+[141.133565] (-) TimerEvent: {}
+[141.235244] (-) TimerEvent: {}
+[141.336069] (-) TimerEvent: {}
+[141.437861] (-) TimerEvent: {}
+[141.538476] (-) TimerEvent: {}
+[141.640148] (-) TimerEvent: {}
+[141.741262] (-) TimerEvent: {}
+[141.842198] (-) TimerEvent: {}
+[141.942695] (-) TimerEvent: {}
+[142.044421] (-) TimerEvent: {}
+[142.145959] (-) TimerEvent: {}
+[142.246718] (-) TimerEvent: {}
+[142.347393] (-) TimerEvent: {}
+[142.450780] (-) TimerEvent: {}
+[142.551327] (-) TimerEvent: {}
+[142.652583] (-) TimerEvent: {}
+[142.753689] (-) TimerEvent: {}
+[142.857868] (-) TimerEvent: {}
+[142.959894] (-) TimerEvent: {}
+[143.062041] (-) TimerEvent: {}
+[143.162933] (-) TimerEvent: {}
+[143.266499] (-) TimerEvent: {}
+[143.367528] (-) TimerEvent: {}
+[143.470230] (-) TimerEvent: {}
+[143.571135] (-) TimerEvent: {}
+[143.672553] (-) TimerEvent: {}
+[143.780517] (-) TimerEvent: {}
+[143.882281] (-) TimerEvent: {}
+[143.983659] (-) TimerEvent: {}
+[144.086669] (-) TimerEvent: {}
+[144.204985] (-) TimerEvent: {}
+[144.316103] (-) TimerEvent: {}
+[144.430730] (-) TimerEvent: {}
+[144.531321] (-) TimerEvent: {}
+[144.633246] (-) TimerEvent: {}
+[144.735870] (-) TimerEvent: {}
+[144.838711] (-) TimerEvent: {}
+[144.944487] (-) TimerEvent: {}
+[145.053386] (-) TimerEvent: {}
+[145.157429] (-) TimerEvent: {}
+[145.269119] (-) TimerEvent: {}
+[145.402193] (-) TimerEvent: {}
+[145.503984] (-) TimerEvent: {}
+[145.605262] (-) TimerEvent: {}
+[145.707624] (-) TimerEvent: {}
+[145.809051] (-) TimerEvent: {}
+[145.909886] (-) TimerEvent: {}
+[146.011189] (-) TimerEvent: {}
+[146.116050] (-) TimerEvent: {}
+[146.219508] (-) TimerEvent: {}
+[146.321522] (-) TimerEvent: {}
+[146.424148] (-) TimerEvent: {}
+[146.531082] (-) TimerEvent: {}
+[146.635473] (-) TimerEvent: {}
+[146.749497] (-) TimerEvent: {}
+[146.871817] (-) TimerEvent: {}
+[146.991140] (-) TimerEvent: {}
+[147.108388] (-) TimerEvent: {}
+[147.209982] (-) TimerEvent: {}
+[147.392121] (-) TimerEvent: {}
+[147.494992] (-) TimerEvent: {}
+[147.602151] (-) TimerEvent: {}
+[147.800999] (-) TimerEvent: {}
+[147.905914] (-) TimerEvent: {}
+[148.006758] (-) TimerEvent: {}
+[148.120589] (-) TimerEvent: {}
+[148.241399] (-) TimerEvent: {}
+[148.342252] (-) TimerEvent: {}
+[148.448111] (-) TimerEvent: {}
+[148.560472] (-) TimerEvent: {}
+[148.694959] (-) TimerEvent: {}
+[148.796859] (-) TimerEvent: {}
+[148.899373] (-) TimerEvent: {}
+[149.001694] (-) TimerEvent: {}
+[149.103073] (-) TimerEvent: {}
+[149.204621] (-) TimerEvent: {}
+[149.306281] (-) TimerEvent: {}
+[149.407197] (-) TimerEvent: {}
+[149.508333] (-) TimerEvent: {}
+[149.610062] (-) TimerEvent: {}
+[149.716528] (-) TimerEvent: {}
+[149.817965] (-) TimerEvent: {}
+[149.921707] (-) TimerEvent: {}
+[150.022963] (-) TimerEvent: {}
+[150.124529] (-) TimerEvent: {}
+[150.227692] (-) TimerEvent: {}
+[150.328543] (-) TimerEvent: {}
+[150.429182] (-) TimerEvent: {}
+[150.530894] (-) TimerEvent: {}
+[150.638360] (-) TimerEvent: {}
+[150.739848] (-) TimerEvent: {}
+[150.844384] (-) TimerEvent: {}
+[150.945920] (-) TimerEvent: {}
+[151.050013] (-) TimerEvent: {}
+[151.155767] (-) TimerEvent: {}
+[151.256508] (-) TimerEvent: {}
+[151.359258] (-) TimerEvent: {}
+[151.472547] (-) TimerEvent: {}
+[151.573203] (-) TimerEvent: {}
+[151.673730] (-) TimerEvent: {}
+[151.775109] (-) TimerEvent: {}
+[151.875872] (-) TimerEvent: {}
+[151.977392] (-) TimerEvent: {}
+[152.078568] (-) TimerEvent: {}
+[152.179327] (-) TimerEvent: {}
+[152.279965] (-) TimerEvent: {}
+[152.380667] (-) TimerEvent: {}
+[152.482234] (-) TimerEvent: {}
+[152.583686] (-) TimerEvent: {}
+[152.685083] (-) TimerEvent: {}
+[152.788061] (-) TimerEvent: {}
+[152.889089] (-) TimerEvent: {}
+[152.990336] (-) TimerEvent: {}
+[153.092001] (-) TimerEvent: {}
+[153.201181] (-) TimerEvent: {}
+[153.302399] (-) TimerEvent: {}
+[153.402967] (-) TimerEvent: {}
+[153.504377] (-) TimerEvent: {}
+[153.608905] (-) TimerEvent: {}
+[153.711944] (-) TimerEvent: {}
+[153.813009] (-) TimerEvent: {}
+[153.913971] (-) TimerEvent: {}
+[154.016037] (-) TimerEvent: {}
+[154.116832] (-) TimerEvent: {}
+[154.218000] (-) TimerEvent: {}
+[154.319210] (-) TimerEvent: {}
+[154.430234] (-) TimerEvent: {}
+[154.531403] (-) TimerEvent: {}
+[154.632249] (-) TimerEvent: {}
+[154.733536] (-) TimerEvent: {}
+[154.838931] (-) TimerEvent: {}
+[154.942164] (-) TimerEvent: {}
+[155.043042] (-) TimerEvent: {}
+[155.143728] (-) TimerEvent: {}
+[155.245666] (-) TimerEvent: {}
+[155.346699] (-) TimerEvent: {}
+[155.447404] (-) TimerEvent: {}
+[155.548700] (-) TimerEvent: {}
+[155.650743] (-) TimerEvent: {}
+[155.776056] (-) TimerEvent: {}
+[155.877089] (-) TimerEvent: {}
+[155.978810] (-) TimerEvent: {}
+[156.080077] (-) TimerEvent: {}
+[156.180662] (-) TimerEvent: {}
+[156.282101] (-) TimerEvent: {}
+[156.382717] (-) TimerEvent: {}
+[156.484433] (-) TimerEvent: {}
+[156.585846] (-) TimerEvent: {}
+[156.687008] (-) TimerEvent: {}
+[156.787509] (-) TimerEvent: {}
+[156.890257] (-) TimerEvent: {}
+[156.991070] (-) TimerEvent: {}
+[157.091510] (-) TimerEvent: {}
+[157.194426] (-) TimerEvent: {}
+[157.298511] (-) TimerEvent: {}
+[157.399857] (-) TimerEvent: {}
+[157.502834] (-) TimerEvent: {}
+[157.606670] (-) TimerEvent: {}
+[157.707383] (-) TimerEvent: {}
+[157.808087] (-) TimerEvent: {}
+[157.909998] (-) TimerEvent: {}
+[158.013222] (-) TimerEvent: {}
+[158.115240] (-) TimerEvent: {}
+[158.215792] (-) TimerEvent: {}
+[158.316475] (-) TimerEvent: {}
+[158.416927] (-) TimerEvent: {}
+[158.517971] (-) TimerEvent: {}
+[158.619171] (-) TimerEvent: {}
+[158.719670] (-) TimerEvent: {}
+[158.820922] (-) TimerEvent: {}
+[158.922389] (-) TimerEvent: {}
+[159.022967] (-) TimerEvent: {}
+[159.124642] (-) TimerEvent: {}
+[159.226486] (-) TimerEvent: {}
+[159.328202] (-) TimerEvent: {}
+[159.429907] (-) TimerEvent: {}
+[159.532311] (-) TimerEvent: {}
+[159.634121] (-) TimerEvent: {}
+[159.740331] (-) TimerEvent: {}
+[159.843841] (-) TimerEvent: {}
+[159.945143] (-) TimerEvent: {}
+[160.045656] (-) TimerEvent: {}
+[160.147459] (-) TimerEvent: {}
+[160.277234] (-) TimerEvent: {}
+[160.402660] (-) TimerEvent: {}
+[160.505013] (-) TimerEvent: {}
+[160.628523] (-) TimerEvent: {}
+[160.730185] (-) TimerEvent: {}
+[160.840973] (-) TimerEvent: {}
+[160.944875] (-) TimerEvent: {}
+[161.046235] (-) TimerEvent: {}
+[161.147047] (-) TimerEvent: {}
+[161.248144] (-) TimerEvent: {}
+[161.349561] (-) TimerEvent: {}
+[161.451441] (-) TimerEvent: {}
+[161.552895] (-) TimerEvent: {}
+[161.653983] (-) TimerEvent: {}
+[161.754586] (-) TimerEvent: {}
+[161.856011] (-) TimerEvent: {}
+[161.957425] (-) TimerEvent: {}
+[162.058674] (-) TimerEvent: {}
+[162.159772] (-) TimerEvent: {}
+[162.260591] (-) TimerEvent: {}
+[162.361354] (-) TimerEvent: {}
+[162.462256] (-) TimerEvent: {}
+[162.563014] (-) TimerEvent: {}
+[162.663856] (-) TimerEvent: {}
+[162.765291] (-) TimerEvent: {}
+[162.871542] (-) TimerEvent: {}
+[162.974757] (-) TimerEvent: {}
+[163.076533] (-) TimerEvent: {}
+[163.179155] (-) TimerEvent: {}
+[163.280371] (-) TimerEvent: {}
+[163.380927] (-) TimerEvent: {}
+[163.481430] (-) TimerEvent: {}
+[163.582148] (-) TimerEvent: {}
+[163.682803] (-) TimerEvent: {}
+[163.784246] (-) TimerEvent: {}
+[163.885561] (-) TimerEvent: {}
+[163.986033] (-) TimerEvent: {}
+[164.086537] (-) TimerEvent: {}
+[164.189714] (-) TimerEvent: {}
+[164.294578] (-) TimerEvent: {}
+[164.395980] (-) TimerEvent: {}
+[164.497038] (-) TimerEvent: {}
+[164.598140] (-) TimerEvent: {}
+[164.699420] (-) TimerEvent: {}
+[164.800768] (-) TimerEvent: {}
+[164.902025] (-) TimerEvent: {}
+[165.003356] (-) TimerEvent: {}
+[165.104083] (-) TimerEvent: {}
+[165.205300] (-) TimerEvent: {}
+[165.307620] (-) TimerEvent: {}
+[165.410654] (-) TimerEvent: {}
+[165.531666] (-) TimerEvent: {}
+[165.663515] (-) TimerEvent: {}
+[165.768018] (-) TimerEvent: {}
+[165.871538] (-) TimerEvent: {}
+[165.972608] (-) TimerEvent: {}
+[166.073773] (-) TimerEvent: {}
+[166.175315] (-) TimerEvent: {}
+[166.278294] (-) TimerEvent: {}
+[166.379669] (-) TimerEvent: {}
+[166.480897] (-) TimerEvent: {}
+[166.582453] (-) TimerEvent: {}
+[166.688224] (-) TimerEvent: {}
+[166.790792] (-) TimerEvent: {}
+[166.891394] (-) TimerEvent: {}
+[166.995849] (-) TimerEvent: {}
+[167.096430] (-) TimerEvent: {}
+[167.197060] (-) TimerEvent: {}
+[167.298448] (-) TimerEvent: {}
+[167.401104] (-) TimerEvent: {}
+[167.502521] (-) TimerEvent: {}
+[167.603893] (-) TimerEvent: {}
+[167.707095] (-) TimerEvent: {}
+[167.813745] (-) TimerEvent: {}
+[167.915288] (-) TimerEvent: {}
+[168.017379] (-) TimerEvent: {}
+[168.121021] (-) TimerEvent: {}
+[168.222615] (-) TimerEvent: {}
+[168.324074] (-) TimerEvent: {}
+[168.425704] (-) TimerEvent: {}
+[168.528385] (-) TimerEvent: {}
+[168.630321] (-) TimerEvent: {}
+[168.731159] (-) TimerEvent: {}
+[168.832469] (-) TimerEvent: {}
+[168.933799] (-) TimerEvent: {}
+[169.034769] (-) TimerEvent: {}
+[169.139252] (-) TimerEvent: {}
+[169.246812] (-) TimerEvent: {}
+[169.355329] (-) TimerEvent: {}
+[169.456324] (-) TimerEvent: {}
+[169.559100] (-) TimerEvent: {}
+[169.661316] (-) TimerEvent: {}
+[169.762399] (-) TimerEvent: {}
+[169.864118] (-) TimerEvent: {}
+[169.965146] (-) TimerEvent: {}
+[170.066322] (-) TimerEvent: {}
+[170.169149] (-) TimerEvent: {}
+[170.274896] (-) TimerEvent: {}
+[170.375717] (-) TimerEvent: {}
+[170.478812] (-) TimerEvent: {}
+[170.579696] (-) TimerEvent: {}
+[170.682334] (-) TimerEvent: {}
+[170.785427] (-) TimerEvent: {}
+[170.887695] (-) TimerEvent: {}
+[170.989048] (-) TimerEvent: {}
+[171.089944] (-) TimerEvent: {}
+[171.190618] (-) TimerEvent: {}
+[171.292497] (-) TimerEvent: {}
+[171.394524] (-) TimerEvent: {}
+[171.497451] (-) TimerEvent: {}
+[171.600058] (-) TimerEvent: {}
+[171.702423] (-) TimerEvent: {}
+[171.804674] (-) TimerEvent: {}
+[171.907388] (-) TimerEvent: {}
+[172.014060] (-) TimerEvent: {}
+[172.114874] (-) TimerEvent: {}
+[172.216464] (-) TimerEvent: {}
+[172.317429] (-) TimerEvent: {}
+[172.421199] (-) TimerEvent: {}
+[172.523203] (-) TimerEvent: {}
+[172.626834] (-) TimerEvent: {}
+[172.727818] (-) TimerEvent: {}
+[172.829324] (-) TimerEvent: {}
+[172.930544] (-) TimerEvent: {}
+[173.032530] (-) TimerEvent: {}
+[173.137863] (-) TimerEvent: {}
+[173.242341] (-) TimerEvent: {}
+[173.346510] (-) TimerEvent: {}
+[173.447814] (-) TimerEvent: {}
+[173.549663] (-) TimerEvent: {}
+[173.650640] (-) TimerEvent: {}
+[173.752121] (-) TimerEvent: {}
+[173.854102] (-) TimerEvent: {}
+[173.960458] (-) TimerEvent: {}
+[174.061188] (-) TimerEvent: {}
+[174.162455] (-) TimerEvent: {}
+[174.263531] (-) TimerEvent: {}
+[174.364296] (-) TimerEvent: {}
+[174.470356] (-) TimerEvent: {}
+[174.572376] (-) TimerEvent: {}
+[174.674535] (-) TimerEvent: {}
+[174.776150] (-) TimerEvent: {}
+[174.878347] (-) TimerEvent: {}
+[174.979285] (-) TimerEvent: {}
+[175.080771] (-) TimerEvent: {}
+[175.182160] (-) TimerEvent: {}
+[175.285336] (-) TimerEvent: {}
+[175.385985] (-) TimerEvent: {}
+[175.486654] (-) TimerEvent: {}
+[175.587249] (-) TimerEvent: {}
+[175.688062] (-) TimerEvent: {}
+[175.789823] (-) TimerEvent: {}
+[175.890294] (-) TimerEvent: {}
+[175.991027] (-) TimerEvent: {}
+[176.091673] (-) TimerEvent: {}
+[176.193941] (-) TimerEvent: {}
+[176.297841] (-) TimerEvent: {}
+[176.400666] (-) TimerEvent: {}
+[176.503337] (-) TimerEvent: {}
+[176.603989] (-) TimerEvent: {}
+[176.704647] (-) TimerEvent: {}
+[176.805248] (-) TimerEvent: {}
+[176.906275] (-) TimerEvent: {}
+[177.006924] (-) TimerEvent: {}
+[177.107795] (-) TimerEvent: {}
+[177.208524] (-) TimerEvent: {}
+[177.309166] (-) TimerEvent: {}
+[177.409772] (-) TimerEvent: {}
+[177.510435] (-) TimerEvent: {}
+[177.611103] (-) TimerEvent: {}
+[177.713415] (-) TimerEvent: {}
+[177.814606] (-) TimerEvent: {}
+[177.919639] (-) TimerEvent: {}
+[178.020532] (-) TimerEvent: {}
+[178.122554] (-) TimerEvent: {}
+[178.230933] (-) TimerEvent: {}
+[178.331578] (-) TimerEvent: {}
+[178.433375] (-) TimerEvent: {}
+[178.534738] (-) TimerEvent: {}
+[178.636499] (-) TimerEvent: {}
+[178.737978] (-) TimerEvent: {}
+[178.838428] (-) TimerEvent: {}
+[178.940657] (-) TimerEvent: {}
+[179.041985] (-) TimerEvent: {}
+[179.145238] (-) TimerEvent: {}
+[179.246406] (-) TimerEvent: {}
+[179.347326] (-) TimerEvent: {}
+[179.448136] (-) TimerEvent: {}
+[179.554093] (-) TimerEvent: {}
+[179.655271] (-) TimerEvent: {}
+[179.755834] (-) TimerEvent: {}
+[179.878368] (-) TimerEvent: {}
+[179.979516] (-) TimerEvent: {}
+[180.080986] (-) TimerEvent: {}
+[180.184780] (-) TimerEvent: {}
+[180.295091] (-) TimerEvent: {}
+[180.396911] (-) TimerEvent: {}
+[180.499378] (-) TimerEvent: {}
+[180.602149] (-) TimerEvent: {}
+[180.703847] (-) TimerEvent: {}
+[180.806065] (-) TimerEvent: {}
+[180.906730] (-) TimerEvent: {}
+[181.007438] (-) TimerEvent: {}
+[181.107882] (-) TimerEvent: {}
+[181.208772] (-) TimerEvent: {}
+[181.310366] (-) TimerEvent: {}
+[181.411731] (-) TimerEvent: {}
+[181.513336] (-) TimerEvent: {}
+[181.614559] (-) TimerEvent: {}
+[181.716027] (-) TimerEvent: {}
+[181.817553] (-) TimerEvent: {}
+[181.922595] (-) TimerEvent: {}
+[182.040517] (-) TimerEvent: {}
+[182.143141] (-) TimerEvent: {}
+[182.245582] (-) TimerEvent: {}
+[182.347390] (-) TimerEvent: {}
+[182.449613] (-) TimerEvent: {}
+[182.550416] (-) TimerEvent: {}
+[182.651724] (-) TimerEvent: {}
+[182.753225] (-) TimerEvent: {}
+[182.853788] (-) TimerEvent: {}
+[182.958499] (-) TimerEvent: {}
+[183.059486] (-) TimerEvent: {}
+[183.160982] (-) TimerEvent: {}
+[183.264430] (-) TimerEvent: {}
+[183.366153] (-) TimerEvent: {}
+[183.467089] (-) TimerEvent: {}
+[183.567895] (-) TimerEvent: {}
+[183.669311] (-) TimerEvent: {}
+[183.786097] (zbar_ros) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libbarcode_reader_node.a\x1b[0m\n'}
+[183.899588] (-) TimerEvent: {}
+[184.002976] (-) TimerEvent: {}
+[184.147393] (-) TimerEvent: {}
+[184.850012] (-) TimerEvent: {}
+[184.968131] (-) TimerEvent: {}
+[185.104167] (-) TimerEvent: {}
+[185.216660] (-) TimerEvent: {}
+[185.343423] (-) TimerEvent: {}
+[185.473265] (-) TimerEvent: {}
+[185.586813] (-) TimerEvent: {}
+[185.693841] (-) TimerEvent: {}
+[185.891750] (-) TimerEvent: {}
+[186.003149] (-) TimerEvent: {}
+[186.122631] (-) TimerEvent: {}
+[186.235092] (-) TimerEvent: {}
+[186.347433] (-) TimerEvent: {}
+[186.449564] (-) TimerEvent: {}
+[186.589582] (-) TimerEvent: {}
+[186.717835] (-) TimerEvent: {}
+[186.822541] (-) TimerEvent: {}
+[186.943074] (-) TimerEvent: {}
+[187.047522] (-) TimerEvent: {}
+[187.149633] (-) TimerEvent: {}
+[187.252198] (zbar_ros) StdoutLine: {'line': b'[ 50%] Built target barcode_reader_node\n'}
+[187.252684] (-) TimerEvent: {}
+[187.354826] (-) TimerEvent: {}
+[187.456264] (-) TimerEvent: {}
+[187.557489] (-) TimerEvent: {}
+[187.658100] (-) TimerEvent: {}
+[187.758820] (-) TimerEvent: {}
+[187.762187] (zbar_ros) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable barcode_reader\x1b[0m\n'}
+[187.861059] (-) TimerEvent: {}
+[187.962700] (-) TimerEvent: {}
+[188.063768] (-) TimerEvent: {}
+[188.164547] (-) TimerEvent: {}
+[188.265135] (-) TimerEvent: {}
+[188.367635] (-) TimerEvent: {}
+[188.476197] (-) TimerEvent: {}
+[188.578669] (-) TimerEvent: {}
+[188.679217] (-) TimerEvent: {}
+[188.780033] (-) TimerEvent: {}
+[188.881611] (-) TimerEvent: {}
+[188.983066] (-) TimerEvent: {}
+[189.084411] (-) TimerEvent: {}
+[189.188142] (-) TimerEvent: {}
+[189.290244] (-) TimerEvent: {}
+[189.391829] (-) TimerEvent: {}
+[189.492539] (-) TimerEvent: {}
+[189.593785] (-) TimerEvent: {}
+[189.696984] (-) TimerEvent: {}
+[189.798809] (-) TimerEvent: {}
+[189.900452] (-) TimerEvent: {}
+[190.001103] (-) TimerEvent: {}
+[190.102359] (-) TimerEvent: {}
+[190.203031] (-) TimerEvent: {}
+[190.304477] (-) TimerEvent: {}
+[190.405876] (-) TimerEvent: {}
+[190.507313] (-) TimerEvent: {}
+[190.608771] (-) TimerEvent: {}
+[190.709627] (-) TimerEvent: {}
+[190.810165] (-) TimerEvent: {}
+[190.910970] (-) TimerEvent: {}
+[191.011891] (-) TimerEvent: {}
+[191.114443] (-) TimerEvent: {}
+[191.216106] (-) TimerEvent: {}
+[191.316784] (-) TimerEvent: {}
+[191.417382] (-) TimerEvent: {}
+[191.518085] (-) TimerEvent: {}
+[191.619796] (-) TimerEvent: {}
+[191.721301] (-) TimerEvent: {}
+[191.823699] (-) TimerEvent: {}
+[191.925655] (-) TimerEvent: {}
+[192.026994] (-) TimerEvent: {}
+[192.128645] (-) TimerEvent: {}
+[192.229951] (-) TimerEvent: {}
+[192.331471] (-) TimerEvent: {}
+[192.432789] (-) TimerEvent: {}
+[192.534118] (-) TimerEvent: {}
+[192.634925] (-) TimerEvent: {}
+[192.735746] (-) TimerEvent: {}
+[192.836747] (-) TimerEvent: {}
+[192.875636] (zbar_ros) StdoutLine: {'line': b'[100%] Built target barcode_reader\n'}
+[192.937782] (-) TimerEvent: {}
+[193.039405] (-) TimerEvent: {}
+[193.145768] (-) TimerEvent: {}
+[193.248611] (-) TimerEvent: {}
+[193.356816] (zbar_ros) CommandEnded: {'returncode': 0}
+[193.574778] (-) TimerEvent: {}
+[193.688707] (-) TimerEvent: {}
+[193.793107] (-) TimerEvent: {}
+[193.833177] (zbar_ros) JobProgress: {'identifier': 'zbar_ros', 'progress': 'install'}
+[193.880032] (zbar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1549'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1379'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:51531'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1584,unix/ubuntu:/tmp/.ICE-unix/1584'), ('INVOCATION_ID', 'ebba72c65a254dd4baae1083e6ea2048'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e77eb64_a3fa_426a_820d_4384edaa98fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[193.900471] (-) TimerEvent: {}
+[193.972837] (zbar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[193.981174] (zbar_ros) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader\n'}
+[193.989609] (zbar_ros) StdoutLine: {'line': b'-- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader" to ""\n'}
+[193.989842] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include/\n'}
+[193.990492] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros\n'}
+[193.991362] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros/barcode_reader_node.hpp\n'}
+[193.991630] (zbar_ros) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/libbarcode_reader_node.a\n'}
+[194.001125] (-) TimerEvent: {}
+[194.057169] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/package_run_dependencies/zbar_ros\n'}
+[194.060506] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/parent_prefix_path/zbar_ros\n'}
+[194.070094] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.sh\n'}
+[194.070755] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.dsv\n'}
+[194.071227] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.sh\n'}
+[194.071393] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.dsv\n'}
+[194.072114] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.bash\n'}
+[194.072762] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.sh\n'}
+[194.073016] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.zsh\n'}
+[194.073431] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.dsv\n'}
+[194.073618] (zbar_ros) StdoutLine: {'line': b'-- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv\n'}
+[194.077748] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/packages/zbar_ros\n'}
+[194.078837] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig.cmake\n'}
+[194.079211] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig-version.cmake\n'}
+[194.079564] (zbar_ros) StdoutLine: {'line': b'-- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.xml\n'}
+[194.091307] (zbar_ros) CommandEnded: {'returncode': 0}
+[194.107638] (-) TimerEvent: {}
+[194.208686] (-) TimerEvent: {}
+[194.317840] (-) TimerEvent: {}
+[194.419357] (-) TimerEvent: {}
+[194.520826] (-) TimerEvent: {}
+[194.605703] (zbar_ros) JobEnded: {'identifier': 'zbar_ros', 'rc': 0}
+[194.626134] (-) TimerEvent: {}
+[194.641850] (-) EventReactorShutdown: {}

@@ -1,0 +1,33 @@
+[0.056s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': AMENT_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy LD_LIBRARY_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
+[0.399s] [ 25%] [32mBuilding CXX object CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o[0m
+[36.547s] [ 50%] [32m[1mLinking CXX static library libbarcode_reader_node.a[0m
+[36.965s] [ 50%] Built target barcode_reader_node
+[37.027s] [35m[1mScanning dependencies of target barcode_reader[0m
+[37.191s] [ 75%] [32mBuilding CXX object CMakeFiles/barcode_reader.dir/src/barcode_reader_main.cpp.o[0m
+[43.373s] [100%] [32m[1mLinking CXX executable barcode_reader[0m
+[47.827s] [100%] Built target barcode_reader
+[47.868s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': AMENT_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy LD_LIBRARY_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3
+[48.118s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': AMENT_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy LD_LIBRARY_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros
+[48.164s] -- Install configuration: ""
+[48.173s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader
+[48.210s] -- Set runtime path of "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/zbar_ros/barcode_reader" to ""
+[48.210s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include/
+[48.210s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros
+[48.211s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/include//zbar_ros/barcode_reader_node.hpp
+[48.211s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/lib/libbarcode_reader_node.a
+[48.256s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/package_run_dependencies/zbar_ros
+[48.257s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/parent_prefix_path/zbar_ros
+[48.258s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.sh
+[48.259s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/ament_prefix_path.dsv
+[48.260s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.sh
+[48.261s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/environment/path.dsv
+[48.262s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.bash
+[48.285s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.sh
+[48.289s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.zsh
+[48.292s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/local_setup.dsv
+[48.292s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.dsv
+[48.299s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/ament_index/resource_index/packages/zbar_ros
+[48.300s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig.cmake
+[48.300s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/cmake/zbar_rosConfig-version.cmake
+[48.303s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros/share/zbar_ros/package.xml
+[48.318s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros' returned '0': AMENT_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy LD_LIBRARY_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros

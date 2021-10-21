@@ -1,0 +1,347 @@
+[0.000000] (-) TimerEvent: {}
+[0.000367] (-) JobUnselected: {'identifier': 'comp3431_starter'}
+[0.000430] (point_pubsub) JobQueued: {'identifier': 'point_pubsub', 'dependencies': OrderedDict()}
+[0.000464] (point_pubsub) JobStarted: {'identifier': 'point_pubsub'}
+[0.058555] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'cmake'}
+[0.063407] (point_pubsub) JobProgress: {'identifier': 'point_pubsub', 'progress': 'build'}
+[0.067804] (point_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', '--', '-j3', '-l3'], 'cwd': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'rsa2021'), ('SSH_AGENT_PID', '1572'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rsa2021'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('TERM_PROGRAM_VERSION', '1.60.2'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1403'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rsa2021'), ('JOURNAL_STREAM', '8:52870'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rsa2021'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1607,unix/ubuntu:/tmp/.ICE-unix/1607'), ('INVOCATION_ID', '05cd949e8e68423d865deb79eab316af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/408a882f_4478_4f78_83ca_347935f503a1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c57d02ae3c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('BREAKPAD_DUMP_LOCATION', '/home/rsa2021/.config/Code/exthost Crash Reports'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy')]), 'shell': False}
+[0.102001] (-) TimerEvent: {}
+[0.203303] (-) TimerEvent: {}
+[0.326575] (-) TimerEvent: {}
+[0.429980] (-) TimerEvent: {}
+[0.531177] (-) TimerEvent: {}
+[0.635772] (-) TimerEvent: {}
+[0.645288] (point_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target point_tf\x1b[0m\n'}
+[0.737242] (-) TimerEvent: {}
+[0.849962] (-) TimerEvent: {}
+[0.865559] (point_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[0.951979] (-) TimerEvent: {}
+[1.053235] (-) TimerEvent: {}
+[1.183068] (-) TimerEvent: {}
+[1.287979] (-) TimerEvent: {}
+[1.390296] (-) TimerEvent: {}
+[1.491004] (-) TimerEvent: {}
+[1.591726] (-) TimerEvent: {}
+[1.695077] (-) TimerEvent: {}
+[1.796109] (-) TimerEvent: {}
+[1.906540] (-) TimerEvent: {}
+[2.009113] (-) TimerEvent: {}
+[2.109847] (-) TimerEvent: {}
+[2.211419] (-) TimerEvent: {}
+[2.317963] (-) TimerEvent: {}
+[2.427120] (-) TimerEvent: {}
+[2.536182] (-) TimerEvent: {}
+[2.637918] (-) TimerEvent: {}
+[2.754870] (-) TimerEvent: {}
+[2.861272] (-) TimerEvent: {}
+[2.962324] (-) TimerEvent: {}
+[3.085546] (-) TimerEvent: {}
+[3.193376] (-) TimerEvent: {}
+[3.296217] (-) TimerEvent: {}
+[3.397319] (-) TimerEvent: {}
+[3.498727] (-) TimerEvent: {}
+[3.600850] (-) TimerEvent: {}
+[3.705301] (-) TimerEvent: {}
+[3.808307] (-) TimerEvent: {}
+[3.908934] (-) TimerEvent: {}
+[4.009717] (-) TimerEvent: {}
+[4.113155] (-) TimerEvent: {}
+[4.213981] (-) TimerEvent: {}
+[4.315158] (-) TimerEvent: {}
+[4.416109] (-) TimerEvent: {}
+[4.517702] (-) TimerEvent: {}
+[4.619476] (-) TimerEvent: {}
+[4.720830] (-) TimerEvent: {}
+[4.821909] (-) TimerEvent: {}
+[4.923289] (-) TimerEvent: {}
+[5.024763] (-) TimerEvent: {}
+[5.127074] (-) TimerEvent: {}
+[5.229462] (-) TimerEvent: {}
+[5.330528] (-) TimerEvent: {}
+[5.431574] (-) TimerEvent: {}
+[5.532539] (-) TimerEvent: {}
+[5.633754] (-) TimerEvent: {}
+[5.736008] (-) TimerEvent: {}
+[5.844707] (-) TimerEvent: {}
+[5.945778] (-) TimerEvent: {}
+[6.047384] (-) TimerEvent: {}
+[6.148846] (-) TimerEvent: {}
+[6.250131] (-) TimerEvent: {}
+[6.352779] (-) TimerEvent: {}
+[6.453841] (-) TimerEvent: {}
+[6.554964] (-) TimerEvent: {}
+[6.655994] (-) TimerEvent: {}
+[6.757691] (-) TimerEvent: {}
+[6.859144] (-) TimerEvent: {}
+[6.961108] (-) TimerEvent: {}
+[7.062143] (-) TimerEvent: {}
+[7.163166] (-) TimerEvent: {}
+[7.266053] (-) TimerEvent: {}
+[7.368779] (-) TimerEvent: {}
+[7.478374] (-) TimerEvent: {}
+[7.582345] (-) TimerEvent: {}
+[7.684236] (-) TimerEvent: {}
+[7.790927] (-) TimerEvent: {}
+[7.919283] (-) TimerEvent: {}
+[8.021399] (-) TimerEvent: {}
+[8.248609] (-) TimerEvent: {}
+[8.349891] (-) TimerEvent: {}
+[8.453022] (-) TimerEvent: {}
+[8.553793] (-) TimerEvent: {}
+[8.686862] (-) TimerEvent: {}
+[8.787747] (-) TimerEvent: {}
+[8.889419] (-) TimerEvent: {}
+[9.010351] (-) TimerEvent: {}
+[9.118842] (-) TimerEvent: {}
+[9.220135] (-) TimerEvent: {}
+[9.324426] (-) TimerEvent: {}
+[9.425687] (-) TimerEvent: {}
+[9.527025] (-) TimerEvent: {}
+[9.628718] (-) TimerEvent: {}
+[9.729721] (-) TimerEvent: {}
+[9.842863] (-) TimerEvent: {}
+[9.943873] (-) TimerEvent: {}
+[10.045559] (-) TimerEvent: {}
+[10.146945] (-) TimerEvent: {}
+[10.247995] (-) TimerEvent: {}
+[10.352572] (-) TimerEvent: {}
+[10.458474] (-) TimerEvent: {}
+[10.560888] (-) TimerEvent: {}
+[10.788137] (-) TimerEvent: {}
+[10.964719] (-) TimerEvent: {}
+[11.067051] (-) TimerEvent: {}
+[11.180328] (-) TimerEvent: {}
+[11.289292] (-) TimerEvent: {}
+[11.390404] (-) TimerEvent: {}
+[11.491598] (-) TimerEvent: {}
+[11.592707] (-) TimerEvent: {}
+[11.694423] (-) TimerEvent: {}
+[11.797148] (-) TimerEvent: {}
+[11.898072] (-) TimerEvent: {}
+[11.999207] (-) TimerEvent: {}
+[12.100208] (-) TimerEvent: {}
+[12.201943] (-) TimerEvent: {}
+[12.303196] (-) TimerEvent: {}
+[12.407190] (-) TimerEvent: {}
+[12.509307] (-) TimerEvent: {}
+[12.610475] (-) TimerEvent: {}
+[12.712358] (-) TimerEvent: {}
+[12.813972] (-) TimerEvent: {}
+[12.917707] (-) TimerEvent: {}
+[13.019494] (-) TimerEvent: {}
+[13.123091] (-) TimerEvent: {}
+[13.225764] (-) TimerEvent: {}
+[13.332407] (-) TimerEvent: {}
+[13.433323] (-) TimerEvent: {}
+[13.534399] (-) TimerEvent: {}
+[13.635443] (-) TimerEvent: {}
+[13.737335] (-) TimerEvent: {}
+[13.839740] (-) TimerEvent: {}
+[13.944308] (-) TimerEvent: {}
+[14.045528] (-) TimerEvent: {}
+[14.147005] (-) TimerEvent: {}
+[14.249557] (-) TimerEvent: {}
+[14.350512] (-) TimerEvent: {}
+[14.451587] (-) TimerEvent: {}
+[14.552785] (-) TimerEvent: {}
+[14.653577] (-) TimerEvent: {}
+[14.755037] (-) TimerEvent: {}
+[14.856620] (-) TimerEvent: {}
+[14.957661] (-) TimerEvent: {}
+[15.059907] (-) TimerEvent: {}
+[15.163054] (-) TimerEvent: {}
+[15.264750] (-) TimerEvent: {}
+[15.365786] (-) TimerEvent: {}
+[15.466738] (-) TimerEvent: {}
+[15.567832] (-) TimerEvent: {}
+[15.668752] (-) TimerEvent: {}
+[15.769668] (-) TimerEvent: {}
+[15.870535] (-) TimerEvent: {}
+[15.974470] (-) TimerEvent: {}
+[16.078518] (-) TimerEvent: {}
+[16.180146] (-) TimerEvent: {}
+[16.281375] (-) TimerEvent: {}
+[16.382174] (-) TimerEvent: {}
+[16.483273] (-) TimerEvent: {}
+[16.584341] (-) TimerEvent: {}
+[16.686154] (-) TimerEvent: {}
+[16.787800] (-) TimerEvent: {}
+[16.888878] (-) TimerEvent: {}
+[16.990401] (-) TimerEvent: {}
+[17.091975] (-) TimerEvent: {}
+[17.193400] (-) TimerEvent: {}
+[17.295538] (-) TimerEvent: {}
+[17.396837] (-) TimerEvent: {}
+[17.498035] (-) TimerEvent: {}
+[17.599008] (-) TimerEvent: {}
+[17.699846] (-) TimerEvent: {}
+[17.718688] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointTf::PointTf()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.743762] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:27:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[17.744143] (point_pubsub) StderrLine: {'line': b'   27 |       }\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[17.744333] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[17.744454] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[17.744551] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:2\x1b[m\x1b[K:\n'}
+[17.753445] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:309:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.753884] (point_pubsub) StderrLine: {'line': b'  309 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[17.754016] (point_pubsub) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.754128] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:309:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.754293] (point_pubsub) StderrLine: {'line': b'  309 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[17.754372] (point_pubsub) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.754623] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:313:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.754983] (point_pubsub) StderrLine: {'line': b'  313 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[17.755232] (point_pubsub) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.755492] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:313:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.758430] (point_pubsub) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.762078] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:313:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.770956] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:27:8:\x1b[m\x1b[K   required from here\n'}
+[17.771297] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:111:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.771435] (point_pubsub) StderrLine: {'line': b'  111 |  using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[17.771724] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.771884] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:324:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.772150] (point_pubsub) StderrLine: {'line': b'  324 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[17.772233] (point_pubsub) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.772349] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:324:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.772431] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:27:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::auto_ptr<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.772545] (point_pubsub) StderrLine: {'line': b'   27 |       }\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[17.772623] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[17.772755] (point_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[17.772846] (point_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:2\x1b[m\x1b[K:\n'}
+[17.772947] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:333:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.773032] (point_pubsub) StderrLine: {'line': b'  333 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[17.773173] (point_pubsub) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.773266] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:333:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.773386] (point_pubsub) StderrLine: {'line': b'  333 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[17.773491] (point_pubsub) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[17.773581] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:341:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.773712] (point_pubsub) StderrLine: {'line': b'  341 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[17.773846] (point_pubsub) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.773960] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:341:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.774037] (point_pubsub) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.774219] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:341:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.774797] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:27:8:\x1b[m\x1b[K   required from here\n'}
+[17.777100] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:111:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > > >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.778125] (point_pubsub) StderrLine: {'line': b'  111 |  using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[17.778383] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.778584] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:349:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Publisher<geometry_msgs::msg::PointStamped_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.789014] (point_pubsub) StderrLine: {'line': b'  349 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[17.789264] (point_pubsub) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.789541] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:349:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.789737] (point_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub/src/publisher_member_function.cpp:27:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PointStamped_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.789993] (point_pubsub) StderrLine: {'line': b'   27 |       }\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[17.790180] (point_pubsub) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[17.803086] (-) TimerEvent: {}
+[17.907961] (-) TimerEvent: {}
+[18.011131] (-) TimerEvent: {}
+[18.115165] (-) TimerEvent: {}
+[18.216340] (-) TimerEvent: {}
+[18.345044] (-) TimerEvent: {}
+[18.447908] (-) TimerEvent: {}
+[18.557767] (-) TimerEvent: {}
+[18.661948] (-) TimerEvent: {}
+[18.770645] (-) TimerEvent: {}
+[18.875635] (-) TimerEvent: {}
+[18.980060] (-) TimerEvent: {}
+[19.091085] (-) TimerEvent: {}
+[19.192766] (-) TimerEvent: {}
+[19.294570] (-) TimerEvent: {}
+[19.395699] (-) TimerEvent: {}
+[19.496426] (-) TimerEvent: {}
+[19.617036] (-) TimerEvent: {}
+[19.717508] (-) TimerEvent: {}
+[19.818391] (-) TimerEvent: {}
+[19.920135] (-) TimerEvent: {}
+[20.021708] (-) TimerEvent: {}
+[20.124384] (-) TimerEvent: {}
+[20.225852] (-) TimerEvent: {}
+[20.329406] (-) TimerEvent: {}
+[20.430507] (-) TimerEvent: {}
+[20.531406] (-) TimerEvent: {}
+[20.631890] (-) TimerEvent: {}
+[20.733121] (-) TimerEvent: {}
+[20.834355] (-) TimerEvent: {}
+[20.936449] (-) TimerEvent: {}
+[21.037429] (-) TimerEvent: {}
+[21.138565] (-) TimerEvent: {}
+[21.239348] (-) TimerEvent: {}
+[21.340352] (-) TimerEvent: {}
+[21.441634] (-) TimerEvent: {}
+[21.543399] (-) TimerEvent: {}
+[21.645980] (-) TimerEvent: {}
+[21.747601] (-) TimerEvent: {}
+[21.848508] (-) TimerEvent: {}
+[21.949640] (-) TimerEvent: {}
+[22.050902] (-) TimerEvent: {}
+[22.153494] (-) TimerEvent: {}
+[22.254821] (-) TimerEvent: {}
+[22.357217] (-) TimerEvent: {}
+[22.458649] (-) TimerEvent: {}
+[22.559601] (-) TimerEvent: {}
+[22.660520] (-) TimerEvent: {}
+[22.761738] (-) TimerEvent: {}
+[22.862631] (-) TimerEvent: {}
+[22.964089] (-) TimerEvent: {}
+[23.065269] (-) TimerEvent: {}
+[23.167772] (-) TimerEvent: {}
+[23.268717] (-) TimerEvent: {}
+[23.369688] (-) TimerEvent: {}
+[23.473745] (-) TimerEvent: {}
+[23.574794] (-) TimerEvent: {}
+[23.675715] (-) TimerEvent: {}
+[23.777095] (-) TimerEvent: {}
+[23.878582] (-) TimerEvent: {}
+[23.979969] (-) TimerEvent: {}
+[24.081537] (-) TimerEvent: {}
+[24.182925] (-) TimerEvent: {}
+[24.284613] (-) TimerEvent: {}
+[24.385540] (-) TimerEvent: {}
+[24.487931] (-) TimerEvent: {}
+[24.588632] (-) TimerEvent: {}
+[24.690192] (-) TimerEvent: {}
+[24.792569] (-) TimerEvent: {}
+[24.894785] (-) TimerEvent: {}
+[24.997921] (-) TimerEvent: {}
+[25.099196] (-) TimerEvent: {}
+[25.200811] (-) TimerEvent: {}
+[25.302179] (-) TimerEvent: {}
+[25.403801] (-) TimerEvent: {}
+[25.504915] (-) TimerEvent: {}
+[25.605978] (-) TimerEvent: {}
+[25.706801] (-) TimerEvent: {}
+[25.807984] (-) TimerEvent: {}
+[25.909283] (-) TimerEvent: {}
+[26.010270] (-) TimerEvent: {}
+[26.112758] (-) TimerEvent: {}
+[26.214228] (-) TimerEvent: {}
+[26.315227] (-) TimerEvent: {}
+[26.416240] (-) TimerEvent: {}
+[26.517354] (-) TimerEvent: {}
+[26.618433] (-) TimerEvent: {}
+[26.719228] (-) TimerEvent: {}
+[26.820293] (-) TimerEvent: {}
+[26.921483] (-) TimerEvent: {}
+[27.022486] (-) TimerEvent: {}
+[27.123279] (-) TimerEvent: {}
+[27.225509] (-) TimerEvent: {}
+[27.328154] (-) TimerEvent: {}
+[27.437796] (-) TimerEvent: {}
+[27.548957] (-) TimerEvent: {}
+[27.651597] (-) TimerEvent: {}
+[27.755126] (-) TimerEvent: {}
+[27.857105] (-) TimerEvent: {}
+[27.971566] (-) TimerEvent: {}
+[28.074379] (-) TimerEvent: {}
+[28.177455] (-) TimerEvent: {}
+[28.278491] (-) TimerEvent: {}
+[28.323813] (point_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/point_tf.dir/build.make:63: CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o] Error 1\n'}
+[28.331626] (point_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/point_tf.dir/all] Error 2\n'}
+[28.331958] (point_pubsub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[28.379533] (-) TimerEvent: {}
+[28.439868] (point_pubsub) CommandEnded: {'returncode': 2}
+[28.480187] (-) TimerEvent: {}
+[28.581458] (-) TimerEvent: {}
+[28.684997] (-) TimerEvent: {}
+[28.786945] (-) TimerEvent: {}
+[28.891373] (-) TimerEvent: {}
+[28.994171] (-) TimerEvent: {}
+[29.058903] (point_pubsub) JobEnded: {'identifier': 'point_pubsub', 'rc': 2}
+[29.073118] (-) EventReactorShutdown: {}
