@@ -1,0 +1,313 @@
+[2.970s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.970s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4f7874c9d0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=3, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4f7874c9d0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4f7874cf40>)
+[3.013s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.014s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.014s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rsa2021/comp3431-team-neo/starter_code'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.086s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.086s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.086s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.087s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.093s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.094s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.094s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.095s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.095s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['ignore', 'ignore_ament_install']
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'ignore'
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'ignore_ament_install'
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['colcon_pkg']
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'colcon_pkg'
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['colcon_meta']
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'colcon_meta'
+[3.097s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['ros']
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'ros'
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['cmake', 'python']
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'cmake'
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'python'
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extensions ['python_setup_py']
+[3.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa) by extension 'python_setup_py'
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extensions ['ignore', 'ignore_ament_install']
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extension 'ignore'
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extension 'ignore_ament_install'
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extensions ['colcon_pkg']
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extension 'colcon_pkg'
+[3.100s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extensions ['colcon_meta']
+[3.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extension 'colcon_meta'
+[3.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extensions ['ros']
+[3.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/comp3431_starter) by extension 'ros'
+[3.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comp3431-rsa/comp3431_starter' with type 'ros.ament_cmake' and name 'comp3431_starter'
+[3.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[3.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extension 'ignore'
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extension 'ignore_ament_install'
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extensions ['colcon_pkg']
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extension 'colcon_pkg'
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extensions ['colcon_meta']
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extension 'colcon_meta'
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extensions ['ros']
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/point_pubsub) by extension 'ros'
+[3.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comp3431-rsa/point_pubsub' with type 'ros.ament_cmake' and name 'point_pubsub'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['ignore', 'ignore_ament_install']
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'ignore'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'ignore_ament_install'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['colcon_pkg']
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'colcon_pkg'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['colcon_meta']
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'colcon_meta'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['ros']
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'ros'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['cmake', 'python']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'cmake'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'python'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extensions ['python_setup_py']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros) by extension 'python_setup_py'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extensions ['ignore', 'ignore_ament_install']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extension 'ignore'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extension 'ignore_ament_install'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extensions ['colcon_pkg']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extension 'colcon_pkg'
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extensions ['colcon_meta']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extension 'colcon_meta'
+[3.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extensions ['ros']
+[3.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros) by extension 'ros'
+[3.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comp3431-rsa/zbar_ros/zbar_ros' with type 'ros.ament_cmake' and name 'zbar_ros'
+[3.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extension 'ignore'
+[3.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extension 'ignore_ament_install'
+[3.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extensions ['colcon_pkg']
+[3.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extension 'colcon_pkg'
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extensions ['colcon_meta']
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extension 'colcon_meta'
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extensions ['ros']
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp3431-rsa/zbar_ros/zbar_ros_interfaces) by extension 'ros'
+[3.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comp3431-rsa/zbar_ros/zbar_ros_interfaces' with type 'ros.ament_cmake' and name 'zbar_ros_interfaces'
+[3.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_args' from command line to 'None'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_target' from command line to 'None'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_clean_cache' from command line to 'False'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_clean_first' from command line to 'False'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'cmake_force_configure' from command line to 'False'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'ament_cmake_args' from command line to 'None'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'catkin_cmake_args' from command line to 'None'
+[3.294s] Level 5:colcon.colcon_core.verb:set package 'comp3431_starter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.294s] DEBUG:colcon.colcon_core.verb:Building package 'comp3431_starter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter', 'merge_install': False, 'path': '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/comp3431_starter', 'symlink_install': False, 'test_result_base': None}
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_args' from command line to 'None'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_target' from command line to 'None'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[3.301s] Level 5:colcon.colcon_core.verb:set package 'point_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.301s] DEBUG:colcon.colcon_core.verb:Building package 'point_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub', 'merge_install': False, 'path': '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub', 'symlink_install': False, 'test_result_base': None}
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_target' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[3.314s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.315s] DEBUG:colcon.colcon_core.verb:Building package 'zbar_ros_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces', 'merge_install': False, 'path': '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces', 'symlink_install': False, 'test_result_base': None}
+[3.321s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_args' from command line to 'None'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_target' from command line to 'None'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[3.322s] Level 5:colcon.colcon_core.verb:set package 'zbar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.323s] DEBUG:colcon.colcon_core.verb:Building package 'zbar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros', 'merge_install': False, 'path': '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros', 'symlink_install': False, 'test_result_base': None}
+[3.323s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.332s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces' with build type 'ament_cmake'
+[3.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros_interfaces'
+[3.397s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.398s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.398s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.437s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[3.487s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/comp3431_starter' with build type 'ament_cmake'
+[3.488s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/comp3431_starter'
+[3.527s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.528s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.566s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[3.626s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub' with build type 'ament_cmake'
+[3.627s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub'
+[3.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.640s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.659s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[3.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces -- -j3 -l3
+[3.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter -- -j3 -l3
+[4.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[6.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter -- -j3 -l3
+[6.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[6.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub
+[7.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter
+[7.219s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_pubsub)
+[7.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub
+[7.285s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub' for CMake module files
+[7.288s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub' for CMake config files
+[7.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_pubsub', 'cmake_prefix_path')
+[7.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.ps1'
+[7.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.dsv'
+[7.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.sh'
+[7.342s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib'
+[7.342s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/bin'
+[7.342s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/pkgconfig/point_pubsub.pc'
+[7.343s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/python3.8/site-packages'
+[7.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.ps1'
+[7.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv'
+[7.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.sh'
+[7.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.bash'
+[7.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.zsh'
+[7.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/colcon-core/packages/point_pubsub)
+[7.476s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(comp3431_starter)
+[7.481s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter' for CMake module files
+[7.490s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter' for CMake config files
+[7.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/comp3431_starter
+[7.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('comp3431_starter', 'cmake_prefix_path')
+[7.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.ps1'
+[7.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.dsv'
+[7.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.sh'
+[7.613s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib'
+[7.613s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/bin'
+[7.614s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/pkgconfig/comp3431_starter.pc'
+[7.614s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/python3.8/site-packages'
+[7.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.ps1'
+[7.629s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.dsv'
+[7.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.sh'
+[7.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.bash'
+[7.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.zsh'
+[7.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/colcon-core/packages/comp3431_starter)
+[7.769s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_pubsub)
+[7.770s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub' for CMake module files
+[7.771s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub' for CMake config files
+[7.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_pubsub', 'cmake_prefix_path')
+[7.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.ps1'
+[7.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.dsv'
+[7.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/hook/cmake_prefix_path.sh'
+[7.777s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib'
+[7.777s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/bin'
+[7.777s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/pkgconfig/point_pubsub.pc'
+[7.777s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/python3.8/site-packages'
+[7.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.ps1'
+[7.779s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv'
+[7.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.sh'
+[7.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.bash'
+[7.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.zsh'
+[7.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/colcon-core/packages/point_pubsub)
+[7.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(comp3431_starter)
+[7.900s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter' for CMake module files
+[7.910s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter' for CMake config files
+[7.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('comp3431_starter', 'cmake_prefix_path')
+[7.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.ps1'
+[7.926s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.dsv'
+[7.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/hook/cmake_prefix_path.sh'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/bin'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/pkgconfig/comp3431_starter.pc'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/lib/python3.8/site-packages'
+[7.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.ps1'
+[7.964s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.dsv'
+[7.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.sh'
+[7.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.bash'
+[7.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/comp3431_starter/package.zsh'
+[7.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter/share/colcon-core/packages/comp3431_starter)
+[9.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces -- -j3 -l3
+[10.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces
+[12.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zbar_ros_interfaces)
+[12.273s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces' for CMake module files
+[12.281s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces' for CMake config files
+[12.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros_interfaces
+[12.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'cmake_prefix_path')
+[12.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.ps1'
+[12.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.dsv'
+[12.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.sh'
+[12.330s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib'
+[12.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'ld_library_path_lib')
+[12.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.ps1'
+[12.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.dsv'
+[12.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.sh'
+[12.351s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/bin'
+[12.352s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/pkgconfig/zbar_ros_interfaces.pc'
+[12.354s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages'
+[12.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'pythonpath')
+[12.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.ps1'
+[12.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.dsv'
+[12.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.sh'
+[12.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.ps1'
+[12.368s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.dsv'
+[12.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.sh'
+[12.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.bash'
+[12.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.zsh'
+[12.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/colcon-core/packages/zbar_ros_interfaces)
+[12.871s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zbar_ros_interfaces)
+[12.872s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces' for CMake module files
+[12.874s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces' for CMake config files
+[12.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'cmake_prefix_path')
+[12.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.ps1'
+[12.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.dsv'
+[12.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/cmake_prefix_path.sh'
+[12.884s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib'
+[12.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'ld_library_path_lib')
+[12.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.ps1'
+[12.886s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.dsv'
+[12.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/ld_library_path_lib.sh'
+[12.889s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/bin'
+[12.889s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/pkgconfig/zbar_ros_interfaces.pc'
+[12.889s] Level 1:colcon.colcon_core.environment:checking '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib/python3.8/site-packages'
+[12.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('zbar_ros_interfaces', 'pythonpath')
+[12.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.ps1'
+[12.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.dsv'
+[12.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/hook/pythonpath.sh'
+[12.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.ps1'
+[12.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.dsv'
+[12.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.sh'
+[12.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.bash'
+[12.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/zbar_ros_interfaces/package.zsh'
+[12.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/share/colcon-core/packages/zbar_ros_interfaces)
+[12.917s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros' with build type 'ament_cmake'
+[12.918s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros'
+[12.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.922s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[13.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros': CMAKE_PREFIX_PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros:/home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub:/home/rsa2021/comp3431-team-neo/starter_code/install/comp3431_starter:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/zbar_ros -- -j3 -l3

@@ -1,0 +1,22 @@
+[0.384s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[2.481s] [100%] Built target point_tf
+[2.689s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub -- -j3 -l3
+[3.319s] Invoking command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub
+[3.485s] -- Install configuration: ""
+[3.510s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/lib/point_pubsub/point_tf
+[3.522s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub
+[3.522s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub
+[3.522s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh
+[3.523s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv
+[3.528s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.sh
+[3.535s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/environment/path.dsv
+[3.535s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.bash
+[3.535s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.sh
+[3.538s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.zsh
+[3.538s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/local_setup.dsv
+[3.538s] -- Installing: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.dsv
+[3.554s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub
+[3.554s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake
+[3.554s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake
+[3.554s] -- Up-to-date: /home/rsa2021/comp3431-team-neo/starter_code/install/point_pubsub/share/point_pubsub/package.xml
+[3.584s] Invoked command in '/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub
