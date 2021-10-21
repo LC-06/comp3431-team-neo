@@ -17,7 +17,7 @@ ros2 topic pub /testPoint geometry_msgs/msg/PointStamped  "header:
 
   nanosec: 0
 
- frame_id: 'camera_view'
+ frame_id: 'camera_link'
 
 point:
 
@@ -42,7 +42,12 @@ ros2 interface proto geometry_msgs/msg/PointStamped
 
 ---------------------------------------------------------------------------
 
-5. Run created node
+5. 
+~/comp3431-team-neo/starter_code
+. install/setup.bash 
+
+
+6. Run created node
 
 ros2 run point_pubsub point_tf
 
