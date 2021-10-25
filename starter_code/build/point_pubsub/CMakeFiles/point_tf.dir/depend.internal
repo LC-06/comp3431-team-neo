@@ -362,4 +362,8 @@ CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o
  /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__builder.hpp
  /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__struct.hpp
  /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__traits.hpp
+ /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__builder.hpp
+ /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__struct.hpp
+ /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__traits.hpp
  /opt/ros/foxy/include/visualization_msgs/msg/marker.hpp
+ /opt/ros/foxy/include/visualization_msgs/msg/marker_array.hpp

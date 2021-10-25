@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "visualization_msgs/msg/marker.hpp"
+#include "visualization_msgs/msg/marker_array.hpp"
 #include "geometry_msgs/msg/point_stamped.hpp"
 #include <tf2_ros/transform_listener.h>
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
@@ -21,8 +22,7 @@ public:
   PointTf()
   : Node("PointTf")
   {
-    publisher_ = this->create_publisher<visualization_msgs::msg::Marker>(
-      "visualization/ball", 10);
+    publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/ball", 10);
     // basic publisher
     //timer_ = this->create_wall_timer(500ms, std::bind(&PointTf::timer_callback, this));
     // subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
@@ -57,7 +57,7 @@ private:
 
     marker.header.frame_id = "map";
     marker.ns = "";
-    marker.id = 0;
+    marker.id = counter++;
     marker.type = visualization_msgs::msg::Marker::SPHERE;
     marker.action = visualization_msgs::msg::Marker::ADD;
     marker.pose.position.x = translatedPoint.point.x;
@@ -77,7 +77,8 @@ private:
     marker.lifetime = rclcpp::Duration(0);
     
     publisher_->publish(marker);
-    //return marker;
+    //ma_barcodes.markers.push_back(marker);
+    //publisher_->publish(ma_barcodes);
   }
     
   rclcpp::TimerBase::SharedPtr timer_;
@@ -85,6 +86,8 @@ private:
   rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr subscriber_;
   std::shared_ptr<tf2_ros::Buffer> tf2_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
+  int counter = 0;
+  //visualization_msgs::msg::MarkerArray ma_barcodes;
 };
 
 int main(int argc, char * argv[])

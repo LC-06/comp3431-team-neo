@@ -56,23 +56,27 @@ BarcodeReaderNode::BarcodeReaderNode()
 }
 
 void BarcodeReaderNode::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan){
-  float angle = scan->angle_min;
-  for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
-	{
-		geometry_msgs::msg::Vector3 point;
-		point.x = cos(angle) * *it;
-		point.y = sin(angle) * *it;
-		point.z = 0;
+  // float angle = scan->angle_min;
+  // for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
+	// {
+  //   // 	geometry_msgs::msg::Vector3 point;
+  //   // 	point.x = cos(angle) * *it;
+  //   // 	point.y = sin(angle) * *it;
+  //   // 	point.z = 0;
+  //   // find values inside barcode left right y limits
 
-    // RCLCPP_INFO(this->get_logger(), "HERE %d", point.x);
-    geometry_msgs::msg::PointStamped translatedPoint;
-    translatedPoint.header.frame_id = "camera_link";
-    translatedPoint.point.z = 0;
-    translatedPoint.point.y = 0;
-    translatedPoint.point.z = 0;
-    point_pub_->publish(translatedPoint);
-  }
-  
+  //   // pick x 
+	
+
+  // //   // RCLCPP_INFO(this->get_logger(), "HERE %d", point.x);
+  // //   geometry_msgs::msg::PointStamped translatedPoint;
+  // //   translatedPoint.header.frame_id = "camera_link";
+  // //   translatedPoint.point.z = 0;
+  // //   translatedPoint.point.y = 0;
+  // //   translatedPoint.point.z = 0;
+  // //   // point_pub_->publish(translatedPoint);
+  // }
+  (void) scan;
 }
 
 void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
@@ -122,7 +126,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       // size of image is 1m so scale = distance
       
       // Calculate Scale
-      
+      // Pixel positions / Pixels
       float barcode_scale = abs(symbol.points[0].x - symbol.points[1].x) / IMAGE_WIDTH;
 
       RCLCPP_INFO(get_logger(), "Barcode scaling data: 0: '%f', 1: '%f', '%f'", symbol.points[0].x, symbol.points[1].x, barcode_scale);
@@ -131,21 +135,31 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       geometry_msgs::msg::PointStamped translatedPoint;
 
       // Set frame of point
-      translatedPoint.header.frame_id = "camera_link";
+      translatedPoint.header.frame_id = "camera_rgb_optical_frame";
+      // translatedPoint.header.seq = 0;
 
       // Calculate y coordinate in metres
-      if (image_centre_x >= IMAGE_WIDTH/2){
-        translatedPoint.point.y = image_centre_x * barcode_scale * MARKER_SIZE;
-      }else{
-        translatedPoint.point.y = -1 * image_centre_x * barcode_scale * MARKER_SIZE;
-      }
-      translatedPoint.point.z = image_centre_y * barcode_scale * MARKER_SIZE;
-
-      translatedPoint.point.x = 0.5;
+      // if (image_centre_x >= IMAGE_WIDTH/2){
+      //   translatedPoint.point.y = image_centre_x * barcode_scale * MARKER_SIZE;
+      // }else{
+      //   translatedPoint.point.y = -1 * image_centre_x * barcode_scale * MARKER_SIZE;
+      // }
+      // barcode scale * marker size = how many meters barcode should be in unit length (metres)
+      // (pixels / pixels) * unit length
+      translatedPoint.point.x = ((image_centre_x-(IMAGE_WIDTH/2)) * MARKER_SIZE / IMAGE_WIDTH);
+      translatedPoint.point.y = ((image_centre_y-(IMAGE_HEIGHT/2)) * MARKER_SIZE / IMAGE_WIDTH);
+      //translatedPoint.point.z = 1;
+      //translatedPoint.point.x = ((3.04)/(3.68)) * (abs(symbol.points[0].x - symbol.points[1].x)/ IMAGE_WIDTH) * MARKER_SIZE;
+      // translatedPoint.point.x = ((3.04)/(3.68)) * abs(symbol.points[0].x - symbol.points[1].x);
       
-      point_pub_->publish(translatedPoint);
-
-      RCLCPP_INFO(get_logger(), "  Image Centre: %f, %f", image_centre_x, image_centre_y);
+      // TODO -  improve z distance
+      // Ask about delayed response
+      translatedPoint.point.z = (600)*(MARKER_SIZE/abs(symbol.points[0].x - symbol.points[1].x));
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 100) {
+        point_pub_->publish(translatedPoint);
+      }
+      //point_pub_->publish(translatedPoint);
+      RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
       RCLCPP_INFO(get_logger(), "  Translated point x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
       // publish symbol
       RCLCPP_INFO(get_logger(), "Publishing Symbol");

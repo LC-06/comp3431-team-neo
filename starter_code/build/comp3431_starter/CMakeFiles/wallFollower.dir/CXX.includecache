@@ -38,10 +38,6 @@ tf2_ros/create_timer_ros.h
 wall_follower.h
 -
 
-/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/comp3431_starter/src/wall_follower_node.cpp
-wall_follower.h
--
-
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/builtin_interfaces/msg/detail/duration__struct.hpp

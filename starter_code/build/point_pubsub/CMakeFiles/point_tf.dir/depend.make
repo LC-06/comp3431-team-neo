@@ -361,5 +361,9 @@ CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/inclu
 CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__builder.hpp
 CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__struct.hpp
 CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker__traits.hpp
+CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__builder.hpp
+CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__struct.hpp
+CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__traits.hpp
 CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/marker.hpp
+CMakeFiles/point_tf.dir/src/publisher_member_function.cpp.o: /opt/ros/foxy/include/visualization_msgs/msg/marker_array.hpp
 

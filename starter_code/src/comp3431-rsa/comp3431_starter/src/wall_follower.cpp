@@ -77,7 +77,7 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 		turn = 1;
 		drive = 0;
 	// } else if (XMinFront <= MIN_APPROACH_DIST) {
-	} else if (XMinFront <= 0.28) {
+	} else if (XMinFront <= 0.26) {
 		RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
 		// Blocked side and front, so turn other direction
 		turn = -1;
