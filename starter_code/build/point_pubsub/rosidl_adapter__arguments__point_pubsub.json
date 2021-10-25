@@ -1,0 +1,6 @@
+{
+  "package_name": "point_pubsub",
+  "non_idl_tuples": [
+    "/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/point_pubsub:../zbar_ros/zbar_ros_interfaces/msg/Symbol.msg"
+  ]
+}
