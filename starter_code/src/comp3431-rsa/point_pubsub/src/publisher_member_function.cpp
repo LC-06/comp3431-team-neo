@@ -27,6 +27,7 @@ public:
   {
     // publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("visualization/ball", 10);
     publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/ball", 10);
+    publisher_text_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/text", 10);
     // basic publisher
     // timer_ = this->create_wall_timer(500ms, std::bind(&PointTf::timer_callback, this));
     // subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
@@ -127,7 +128,7 @@ private:
     for(const auto& n : marker_map_) {
         std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id << " " << marker_map_[n.first][1].id <<"\n";
         publisher_->publish(n.second[0]); // marker
-        publisher_->publish(n.second[1]); // marker text
+        publisher_text_->publish(n.second[1]); // marker text
     }
     
     //publisher_->publish(marker);
@@ -138,6 +139,7 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
   // rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr publisher_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_;
+  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_text_;
   rclcpp::Subscription<point_msg_interface::msg::Pointmsg>::SharedPtr subscriber_;
   std::shared_ptr<tf2_ros::Buffer> tf2_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;

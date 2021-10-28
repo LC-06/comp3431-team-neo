@@ -160,7 +160,6 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
           continue;
         }
         std::cout << "Range: " << *it << " angle: " << angle << "\n";
-        
         // if(*it > laser_store_copy.range_max) {
         //   std::cout << "Too big\n";
         //   continue;
@@ -184,7 +183,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
       RCLCPP_INFO(get_logger(), "Publishing Point");
       
-      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 200) {
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 100) {
         point_msg_interface::msg::Pointmsg point_send;
         point_send.point_data = symbol.data.c_str();
         point_send.point = translatedPoint;
