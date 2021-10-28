@@ -66,14 +66,14 @@ private:
     marker.header.frame_id = "map";
     marker.ns = pointStamp->point_data;
 
-    // std::cout << "Finding in map:" << pointStamp->point_data <<"\n";
+    std::cout << "Finding in map:" << pointStamp->point_data <<"\n";
     if (marker_map_.find(pointStamp->point_data) != marker_map_.end()) {
       marker.id = marker_map_[pointStamp->point_data][0].id;
-      // std::cout << "Found\n";
+      std::cout << "Found\n";
     } else {
-      counter = counter + 2;
       marker.id = counter;
-      // std::cout << "Not Found\n";
+      counter++;
+      std::cout << "Not Found\n";
     }
 
     marker.type = visualization_msgs::msg::Marker::CUBE;
@@ -96,9 +96,9 @@ private:
 
     // marker_text info
     marker_text.header.frame_id = "map";
-    marker_text.ns = pointStamp->point_data;
+    marker_text.ns = pointStamp->point_data + "text";
 
-    marker_text.id = marker.id + 1;
+    marker_text.id = marker.id * 10;
 
     marker_text.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
     marker_text.text = pointStamp->point_data;
@@ -123,10 +123,11 @@ private:
     
     marker_map_[pointStamp->point_data] = marker_vector;
 
+    // going through keys in map
     for(const auto& n : marker_map_) {
-        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id <<"\n";
-        publisher_->publish(n.second[0]);
-        publisher_->publish(n.second[1]);
+        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id << " " << marker_map_[n.first][1].id <<"\n";
+        publisher_->publish(n.second[0]); // marker
+        publisher_->publish(n.second[1]); // marker text
     }
     
     //publisher_->publish(marker);
