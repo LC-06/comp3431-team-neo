@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/rsa2021/comp3431-team-neo/starter_code/src/comp3431-rsa/zbar_ros/zbar_ros/include"
+  "/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/include"
   "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include"
   "/opt/ros/foxy/include"
   "/usr/include/opencv4"

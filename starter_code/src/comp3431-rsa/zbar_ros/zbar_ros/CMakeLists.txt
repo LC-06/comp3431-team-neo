@@ -23,6 +23,8 @@ find_package(zbar_ros_interfaces REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(point_msg_interface REQUIRED)  
 
 # Include header files
 include_directories(
@@ -37,7 +39,9 @@ ament_target_dependencies(barcode_reader_node
   cv_bridge
   zbar_ros_interfaces
   geometry_msgs
-  message_filters)
+  message_filters
+  tf2_ros
+  point_msg_interface)
 target_link_libraries(barcode_reader_node zbar)
 
 # Build executable

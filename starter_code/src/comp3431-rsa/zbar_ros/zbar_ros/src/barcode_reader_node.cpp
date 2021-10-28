@@ -39,44 +39,53 @@ BarcodeReaderNode::BarcodeReaderNode()
 {
   scanner_.set_config(zbar::ZBAR_NONE, zbar::ZBAR_CFG_ENABLE, 1);
 
-
+  // barcode_store_ = std::unordered_set<std::string>();
+  // subscribers
   camera_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
     "camera/image_raw", 10, std::bind(&BarcodeReaderNode::imageCb, this, std::placeholders::_1));
+  scanSub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+    "scan", 1, std::bind(&BarcodeReaderNode::callbackScan, this, std::placeholders::_1));
 
-  // barcode_pub_ = this->create_publisher<std_msgs::msg::String>("barcode", 10);
+  // publishers
   barcode_pub_ = this->create_publisher<zbar_ros_interfaces::msg::Symbol>("barcode", 10);
+  point_pub_ = this->create_publisher<point_msg_interface::msg::Pointmsg>("/testPoint", 10);
 
-  scanSub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", 1, std::bind(&BarcodeReaderNode::callbackScan, this, std::placeholders::_1));
+  // message filters
+  //message_filters::Subscriber<StampedStringMsg> string_sub(node, "stamped_string_topic", qos_profile);
+  //message_filters::Subscriber<StampedBooleanMsg> bool_sub(node, "stamped_boolean_topic", qos_profile);
 
-  point_pub_ = this->create_publisher<geometry_msgs::msg::PointStamped>("/testPoint", 10);
-  // laser_sub_.subscribe(this, "scan");
+  // exact time policy
+  //typedef message_filters::sync_policies::ExactTime<StampedStringMsg, StampedBooleanMsg> exact_policy;
+  //message_filters::Synchronizer<exact_policy>syncExact(exact_policy(10), string_sub, bool_sub);
+
+  // register the exact time callback
+  //syncExact.registerCallback(sync_callback);
   // ts = std::make_shared<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>>(laser_sub_, 10);
   // ts.registerCallback(ts_callback);
   // ts->registerCallback(std::bind(&SyncerNode::BarcodeReaderNode, this, std::placeholders::_1, std::placeholders::_2));
 }
 
 void BarcodeReaderNode::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan){
-  // float angle = scan->angle_min;
-  // for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
-	// {
-  //   // 	geometry_msgs::msg::Vector3 point;
-  //   // 	point.x = cos(angle) * *it;
-  //   // 	point.y = sin(angle) * *it;
-  //   // 	point.z = 0;
-  //   // find values inside barcode left right y limits
-
-  //   // pick x 
-	
-
-  // //   // RCLCPP_INFO(this->get_logger(), "HERE %d", point.x);
-  // //   geometry_msgs::msg::PointStamped translatedPoint;
-  // //   translatedPoint.header.frame_id = "camera_link";
-  // //   translatedPoint.point.z = 0;
-  // //   translatedPoint.point.y = 0;
-  // //   translatedPoint.point.z = 0;
-  // //   // point_pub_->publish(translatedPoint);
-  // }
-  (void) scan;
+  float angle = scan->angle_min;
+  for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
+	{
+    geometry_msgs::msg::Vector3 point;
+    point.x = cos(angle) * *it;
+    point.y = sin(angle) * *it;
+    point.z = 0;
+    // find values inside barcode left right y limits
+    // if (fabs(point.y) < ) {
+    //   RCLCPP_INFO(get_logger(), "Laser scan estimate x: %f", point.x);
+    // pick x 
+    // }
+  //   // RCLCPP_INFO(this->get_logger(), "HERE %d", point.x);
+  //   geometry_msgs::msg::PointStamped translatedPoint;
+  //   translatedPoint.header.frame_id = "camera_link";
+  //   translatedPoint.point.z = 0;
+  //   translatedPoint.point.y = 0;
+  //   translatedPoint.point.z = 0;
+  //   // point_pub_->publish(translatedPoint);
+  }
 }
 
 void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
@@ -103,7 +112,6 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       RCLCPP_INFO(
         get_logger(), "Polygon around barcode has %d points", symbol_it->get_location_size());
 
-      
       float image_centre_x = 0;
       float image_centre_y = 0;
       for (zbar::Symbol::PointIterator point_it = symbol_it->point_begin();
@@ -116,18 +124,17 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
         image_centre_x += point.x;
         image_centre_y += point.y;
 
-        RCLCPP_INFO(get_logger(), "  Point: %f, %f", point.x, point.y);
+        // RCLCPP_INFO(get_logger(), "  Point: %f, %f", point.x, point.y);
         symbol.points.push_back(point);
       }
       image_centre_x = image_centre_x/4;
       image_centre_y = image_centre_y/4;
 
-      // image is 640 x 480
-      // size of image is 1m so scale = distance
-      
       // Calculate Scale
       // Pixel positions / Pixels
-      float barcode_scale = abs(symbol.points[0].x - symbol.points[1].x) / IMAGE_WIDTH;
+      // image is 640 x 480
+      // size of image is 1m so scale = distance
+      float barcode_scale = fabs(symbol.points[0].x - symbol.points[1].x) / IMAGE_WIDTH;
 
       RCLCPP_INFO(get_logger(), "Barcode scaling data: 0: '%f', 1: '%f', '%f'", symbol.points[0].x, symbol.points[1].x, barcode_scale);
 
@@ -139,11 +146,6 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       // translatedPoint.header.seq = 0;
 
       // Calculate y coordinate in metres
-      // if (image_centre_x >= IMAGE_WIDTH/2){
-      //   translatedPoint.point.y = image_centre_x * barcode_scale * MARKER_SIZE;
-      // }else{
-      //   translatedPoint.point.y = -1 * image_centre_x * barcode_scale * MARKER_SIZE;
-      // }
       // barcode scale * marker size = how many meters barcode should be in unit length (metres)
       // (pixels / pixels) * unit length
       translatedPoint.point.x = ((image_centre_x-(IMAGE_WIDTH/2)) * MARKER_SIZE / IMAGE_WIDTH);
@@ -154,9 +156,12 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       
       // TODO -  improve z distance
       // Ask about delayed response
-      translatedPoint.point.z = (600)*(MARKER_SIZE/abs(symbol.points[0].x - symbol.points[1].x));
-      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 100) {
-        point_pub_->publish(translatedPoint);
+      translatedPoint.point.z = (600)*(MARKER_SIZE/fabs(symbol.points[0].x - symbol.points[1].x));
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 200) {
+        point_msg_interface::msg::Pointmsg point_send;
+        point_send.point_data = symbol.data.c_str();
+        point_send.point = translatedPoint;
+        point_pub_->publish(point_send);
       }
       //point_pub_->publish(translatedPoint);
       RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);

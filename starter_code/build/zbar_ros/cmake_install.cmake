@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/zbar_ros/barcode_reader")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/zbar_ros/barcode_reader"
-         OLD_RPATH "/opt/ros/foxy/lib:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/zbar_ros/barcode_reader")

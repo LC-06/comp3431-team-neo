@@ -283,7 +283,7 @@ TF2_CPP_HEADERS:FILEPATH=TF2_CPP_HEADERS-NOTFOUND
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/foxy/share/action_msgs/cmake
@@ -443,6 +443,9 @@ pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
+
+//The directory containing a CMake configuration file for point_msg_interface.
+point_msg_interface_DIR:PATH=/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/share/point_msg_interface/cmake
 
 //Value Computed by CMake
 point_pubsub_BINARY_DIR:STATIC=/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub

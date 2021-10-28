@@ -17,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/include"
   "/opt/ros/foxy/include"
   "/usr/include/eigen3"
   )

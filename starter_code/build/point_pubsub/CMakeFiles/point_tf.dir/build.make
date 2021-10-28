@@ -83,6 +83,10 @@ point_tf: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_introspect
 point_tf: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_c.so
 point_tf: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_introspection_cpp.so
 point_tf: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_cpp.so
+point_tf: /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_typesupport_introspection_c.so
+point_tf: /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_typesupport_c.so
+point_tf: /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_typesupport_introspection_cpp.so
+point_tf: /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_typesupport_cpp.so
 point_tf: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_generator_c.so
 point_tf: /opt/ros/foxy/lib/libstatic_transform_broadcaster_node.so
 point_tf: /opt/ros/foxy/lib/libtf2_ros.so
@@ -95,11 +99,6 @@ point_tf: /opt/ros/foxy/lib/libtf2_msgs__rosidl_generator_c.so
 point_tf: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_c.so
 point_tf: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 point_tf: /opt/ros/foxy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
-point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
-point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 point_tf: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 point_tf: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
 point_tf: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
@@ -118,11 +117,6 @@ point_tf: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generat
 point_tf: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 point_tf: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 point_tf: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 point_tf: /opt/ros/foxy/lib/librcl.so
 point_tf: /opt/ros/foxy/lib/librmw_implementation.so
 point_tf: /opt/ros/foxy/lib/librmw.so
@@ -154,6 +148,18 @@ point_tf: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
 point_tf: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_c.so
 point_tf: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 point_tf: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+point_tf: /opt/ros/foxy/lib/liborocos-kdl.so.1.4.0
+point_tf: /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/lib/libpoint_msg_interface__rosidl_generator_c.so
+point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+point_tf: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+point_tf: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 point_tf: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 point_tf: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 point_tf: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -166,7 +172,6 @@ point_tf: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 point_tf: /opt/ros/foxy/lib/librcpputils.so
 point_tf: /opt/ros/foxy/lib/librosidl_runtime_c.so
 point_tf: /opt/ros/foxy/lib/librcutils.so
-point_tf: /opt/ros/foxy/lib/liborocos-kdl.so.1.4.0
 point_tf: CMakeFiles/point_tf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rsa2021/comp3431-team-neo/starter_code/build/point_pubsub/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable point_tf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/point_tf.dir/link.txt --verbose=$(VERBOSE)

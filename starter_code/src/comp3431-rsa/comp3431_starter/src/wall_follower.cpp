@@ -31,7 +31,6 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 	}
 	std::string warning_msg;
 
-
 	float XMaxSide = -INFINITY, XMinFront = INFINITY, angle = scan->angle_min;
 	for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
 	{
@@ -47,11 +46,9 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 				// Point is beside the robot
 				if (point.x > XMaxSide) {
 					// RCLCPP_INFO(this->get_logger(), "xmaxside");
-
 					XMaxSide = point.x;
 				}
 			}
-			
 		}
 
 		// Find min XF of a hit in front of robot (X > 0, abs(Y) <= robot radius, X <= limit)
@@ -61,12 +58,9 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 			if (point.x < XMinFront)
 			{
 				// RCLCPP_INFO(this->get_logger(), "xminfront");
-
 				XMinFront = point.x;
 			}
-			
 		}
-
 	}
 
 	float turn, drive;
@@ -77,7 +71,7 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 		turn = 1;
 		drive = 0;
 	// } else if (XMinFront <= MIN_APPROACH_DIST) {
-	} else if (XMinFront <= 0.26) {
+	} else if (XMinFront <= 0.28) {
 		RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
 		// Blocked side and front, so turn other direction
 		turn = -1;
@@ -101,9 +95,6 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 		turn2 = CLIP_0_1(turn2);
 
 		turn = turn1 - turn2;
-		// turn = 0;
-
-		// drive = drive1 * drive2
 		drive = drive1 * drive2;
 	}
 

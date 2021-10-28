@@ -15,7 +15,7 @@
 #include <tf2_ros/create_timer_ros.h>
 
 
-// const std::string BASE_FRAME = std::string{"base_link"};
+const std::string BASE_FRAME = std::string{"base_link"};
 //const double MAX_SIDE_LIMIT = 0.50;
 //const double MIN_APPROACH_DIST = 0.30;
 //const double MAX_APPROACH_DIST = 0.50;

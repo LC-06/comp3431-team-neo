@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3 
+CXX_INCLUDES = -isystem /home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/include -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3 
 

@@ -24,6 +24,7 @@ find_package(visualization_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(point_msg_interface REQUIRED)  
 
 find_file(TF2_CPP_HEADERS
   NAMES tf2_geometry_msgs.hpp
@@ -37,7 +38,7 @@ find_file(TF2_CPP_HEADERS
 # find_package(<dependency> REQUIRED)
 
 add_executable(point_tf src/publisher_member_function.cpp)
-ament_target_dependencies(point_tf rclcpp std_msgs visualization_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs)
+ament_target_dependencies(point_tf rclcpp std_msgs visualization_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs point_msg_interface)
 
 install(TARGETS
   point_tf

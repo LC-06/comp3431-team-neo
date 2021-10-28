@@ -36,10 +36,13 @@
 #include "sensor_msgs/msg/image.hpp"
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include "zbar_ros_interfaces/msg/symbol.hpp"
-#include <message_filters/subscriber.h>
 #include "geometry_msgs/msg/point_stamped.hpp"
+#include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
+#include <tf2_ros/message_filter.h>
 #include <geometry_msgs/msg/vector3.hpp>
+#include <unordered_set>
+#include "point_msg_interface/msg/pointmsg.hpp"
 
 #define IMAGE_WIDTH 640
 #define IMAGE_HEIGHT 480
@@ -54,17 +57,21 @@ private:
   void imageCb(sensor_msgs::msg::Image::ConstSharedPtr msg);
 
   rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr camera_sub_;
-  rclcpp::Publisher<zbar_ros_interfaces::msg::Symbol>::SharedPtr barcode_pub_;
-  rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr point_pub_;
-  zbar::ImageScanner scanner_;
-
   rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scanSub_;
+
+  rclcpp::Publisher<zbar_ros_interfaces::msg::Symbol>::SharedPtr barcode_pub_;
+  rclcpp::Publisher<point_msg_interface::msg::Pointmsg>::SharedPtr point_pub_;
+  
+  zbar::ImageScanner scanner_;
 
   void callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan);
   
   // message_filters::Subscriber<zbar_ros_interfaces::msg::Symbol> zbar_sub_;
-  // message_filters::Subscriber<sensor_msgs::msg::LaserScan> laser_sub_;
-  // std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
+  message_filters::Subscriber<sensor_msgs::msg::LaserScan> laser_sub_;
+  //std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
+  std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
+
+  std::unordered_set<std::string> barcode_store_;
 };
 
 #endif  // ZBAR_ROS__BARCODE_READER_NODE_HPP_

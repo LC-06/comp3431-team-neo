@@ -21,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/foxy/include"
   "/usr/include/opencv4"
   "/home/rsa2021/comp3431-team-neo/starter_code/install/zbar_ros_interfaces/include"
+  "/home/rsa2021/comp3431-team-neo/starter_code/install/point_msg_interface/include"
   )
 
 # Targets to which this target links.
