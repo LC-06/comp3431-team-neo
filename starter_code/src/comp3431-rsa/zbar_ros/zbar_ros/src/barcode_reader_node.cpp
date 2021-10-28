@@ -33,11 +33,12 @@
 #include "zbar_ros/barcode_reader_node.hpp"
 #include "cv_bridge/cv_bridge.h"
 
-
 BarcodeReaderNode::BarcodeReaderNode()
 : Node("BarcodeReader")
 {
   scanner_.set_config(zbar::ZBAR_NONE, zbar::ZBAR_CFG_ENABLE, 1);
+
+  laser_store_ = sensor_msgs::msg::LaserScan();
 
   // barcode_store_ = std::unordered_set<std::string>();
   // subscribers
@@ -66,31 +67,12 @@ BarcodeReaderNode::BarcodeReaderNode()
 }
 
 void BarcodeReaderNode::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan){
-  float angle = scan->angle_min;
-  for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
-	{
-    geometry_msgs::msg::Vector3 point;
-    point.x = cos(angle) * *it;
-    point.y = sin(angle) * *it;
-    point.z = 0;
-    // find values inside barcode left right y limits
-    // if (fabs(point.y) < ) {
-    //   RCLCPP_INFO(get_logger(), "Laser scan estimate x: %f", point.x);
-    // pick x 
-    // }
-  //   // RCLCPP_INFO(this->get_logger(), "HERE %d", point.x);
-  //   geometry_msgs::msg::PointStamped translatedPoint;
-  //   translatedPoint.header.frame_id = "camera_link";
-  //   translatedPoint.point.z = 0;
-  //   translatedPoint.point.y = 0;
-  //   translatedPoint.point.z = 0;
-  //   // point_pub_->publish(translatedPoint);
-  }
+  laser_store_ = *scan;
 }
 
 void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
 {
-  RCLCPP_INFO(get_logger(), "Image received on subscribed topic");
+  // RCLCPP_INFO(get_logger(), "Image received on subscribed topic");
 
   cv_bridge::CvImageConstPtr cv_image;
   cv_image = cv_bridge::toCvShare(image, "mono8");
@@ -107,10 +89,10 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       zbar_ros_interfaces::msg::Symbol symbol;
 
       symbol.data = symbol_it->get_data();
-      RCLCPP_INFO(get_logger(), "Barcode detected with data: '%s'", symbol.data.c_str());
+      // RCLCPP_INFO(get_logger(), "Barcode detected with data: '%s'", symbol.data.c_str());
 
-      RCLCPP_INFO(
-        get_logger(), "Polygon around barcode has %d points", symbol_it->get_location_size());
+      // RCLCPP_INFO(
+      //   get_logger(), "Polygon around barcode has %d points", symbol_it->get_location_size());
 
       float image_centre_x = 0;
       float image_centre_y = 0;
@@ -156,22 +138,66 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       
       // TODO -  improve z distance
       // Ask about delayed response
-      translatedPoint.point.z = (600)*(MARKER_SIZE/fabs(symbol.points[0].x - symbol.points[1].x));
-      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 200) {
-        point_msg_interface::msg::Pointmsg point_send;
-        point_send.point_data = symbol.data.c_str();
-        point_send.point = translatedPoint;
-        point_pub_->publish(point_send);
-      }
-      //point_pub_->publish(translatedPoint);
+      // translatedPoint.point.z = (600)*(MARKER_SIZE/fabs(symbol.points[0].x - symbol.points[1].x));
+
+      // auto laser_store_copy = laser_store_;
+      // auto midPoint = (abs(symbol.points[0].x - symbol.points[1].x))/2;
+      // auto index = (int)((std::min(symbol.points[0].x, symbol.points[1].x) + midPoint)/IMAGE_WIDTH * laser_store_copy.ranges.size());
+      // translatedPoint.point.z = laser_store_copy.ranges[index];
       RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
-      RCLCPP_INFO(get_logger(), "  Translated point x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
+      RCLCPP_INFO(get_logger(), "  Point in robot frame x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
+      translatedPoint.point.z = -1;
+      auto laser_store_copy = laser_store_;
+      float begin_angle = M_PI/4.0;
+      float end_angle = 2*M_PI - M_PI/4.0;
+      int threshold = 0.1;
+      int laser_offset = 0.1;
+      float angle = laser_store_copy.angle_min; // 0 - forwards
+      // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
+      // int end_index = (int)(end_angle/(laser_store_copy.angle_increment));
+      for(auto it = laser_store_copy.ranges.begin(); it != laser_store_copy.ranges.end(); ++it, angle += laser_store_copy.angle_increment){
+        if(angle > begin_angle && angle < end_angle){
+          continue;
+        }
+        std::cout << "Range: " << *it << " angle: " << angle << "\n";
+        // if(*it > laser_store_copy.range_max) {
+        //   std::cout << "Too big\n";
+        //   continue;
+        // }
+        auto x = cos(angle) * *it;
+        auto y = sin(angle) * *it;
+        //RCLCPP_INFO(get_logger(), "Points x: %f, y: %f, angle: %f", x, y, angle);
+        std::cout << "The y: " << y << " The x: " << x << " translated x: " << translatedPoint.point.x << " angle: " << angle << "\n";
+        if (fabs(y - translatedPoint.point.x) < threshold){
+          translatedPoint.point.z = x + laser_offset;
+          break;
+        }
+        // Need to consider offset between camera and laser scan probably
+      }
+
+      // Check if value was updated
+      if (translatedPoint.point.z == -1){
+        RCLCPP_INFO(get_logger(), "No suitable distance found");
+        return;
+      }
+      RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
+      RCLCPP_INFO(get_logger(), "Publishing Point");
+      
+      // if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 200) {
+      point_msg_interface::msg::Pointmsg point_send;
+      point_send.point_data = symbol.data.c_str();
+      point_send.point = translatedPoint;
+      point_pub_->publish(point_send);
+      // }
+      //point_pub_->publish(translatedPoint);
+      // RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
+      // RCLCPP_INFO(get_logger(), "  Point in robot frame x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
       // publish symbol
       RCLCPP_INFO(get_logger(), "Publishing Symbol");
       barcode_pub_->publish(symbol);
     }
   } else {
-    RCLCPP_INFO(get_logger(), "No barcode detected in image");
+  //  RCLCPP_INFO(get_logger(), "No barcode detected in image");
   }
 
   zbar_image.set_data(NULL, 0);

@@ -7,7 +7,7 @@
 
 WallFollower::WallFollower():Node("wall_follower") 
 {
-	RCLCPP_INFO(this->get_logger(), "I AM STARTING NOW");
+	//RCLCPP_INFO(this->get_logger(), "I AM STARTING NOW");
 	scanSub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", 1, std::bind(&WallFollower::callbackScan, this, std::placeholders::_1));
 
 	commandSub_ = this->create_subscription<std_msgs::msg::String>("cmd", 1, std::bind(&WallFollower::callbackControl, this, std::placeholders::_1));
@@ -66,13 +66,13 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 	float turn, drive;
 
 	if (XMaxSide == -INFINITY) {
-		RCLCPP_INFO(this->get_logger(), "1_Could not find wall, I'm looking, please don't get mad!!");
+		//RCLCPP_INFO(this->get_logger(), "1_Could not find wall, I'm looking, please don't get mad!!");
 		// No hits beside robot, so turn that direction
 		turn = 1;
 		drive = 0;
 	// } else if (XMinFront <= MIN_APPROACH_DIST) {
 	} else if (XMinFront <= 0.28) {
-		RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
+		//RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
 		// Blocked side and front, so turn other direction
 		turn = -1;
 		drive = 0;
@@ -116,15 +116,15 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 
 void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr command)
 {
-	RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
+	//RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
 	
 	std::string message = std::string{command->data};
 	if(message == "start") {
-		RCLCPP_INFO(this->get_logger(), "Alright, let's get this show on the road!!!");
+		//RCLCPP_INFO(this->get_logger(), "Alright, let's get this show on the road!!!");
 		paused = false;
 	}
 	else if(message == "stop") {
-		RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
+		//RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
 		paused = true;
 	}
 

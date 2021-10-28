@@ -14,7 +14,7 @@
 #include <unordered_map>
 
 
-#define VISUALISATION_BALL_DIAMETER 0.5  // m
+#define VISUALISATION_BALL_DIAMETER 0.2  // m
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -41,7 +41,7 @@ public:
 
     tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
 
-    marker_map_  = std::unordered_map<std::string, visualization_msgs::msg::Marker>();
+    marker_map_  = std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>>();
   }
 
 private:
@@ -49,9 +49,10 @@ private:
   void convert(const point_msg_interface::msg::Pointmsg::SharedPtr pointStamp)
   {
     visualization_msgs::msg::Marker marker;
+    visualization_msgs::msg::Marker marker_text;
 
     // Check if subscriber is being run
-    RCLCPP_INFO(this->get_logger(), "Subscriber: Point");
+    // RCLCPP_INFO(this->get_logger(), "Subscriber: Point");
 
     geometry_msgs::msg::PointStamped translatedPoint;
     try {
@@ -60,19 +61,22 @@ private:
       RCLCPP_INFO(
         this->get_logger(), "Could not transform");
     }
-    // need to publish only once if unique
+
+    // marker info
     marker.header.frame_id = "map";
     marker.ns = pointStamp->point_data;
-    std::cout << "Finding in map:" << pointStamp->point_data <<"\n";
+
+    // std::cout << "Finding in map:" << pointStamp->point_data <<"\n";
     if (marker_map_.find(pointStamp->point_data) != marker_map_.end()) {
-      marker.id = marker_map_[pointStamp->point_data].id;
-      std::cout << "Found\n";
+      marker.id = marker_map_[pointStamp->point_data][0].id;
+      // std::cout << "Found\n";
     } else {
-      marker.id = counter++;
-      std::cout << "Not Found\n";
+      counter = counter + 2;
+      marker.id = counter;
+      // std::cout << "Not Found\n";
     }
 
-    marker.type = visualization_msgs::msg::Marker::SPHERE;
+    marker.type = visualization_msgs::msg::Marker::CUBE;
     marker.action = visualization_msgs::msg::Marker::ADD;
     marker.pose.position.x = translatedPoint.point.x;
     marker.pose.position.y = translatedPoint.point.y;
@@ -89,12 +93,40 @@ private:
     marker.color.g = 0.0;
     marker.color.b = 0.0;
     marker.lifetime = rclcpp::Duration(0);
-    
-    marker_map_[pointStamp->point_data] = marker;
 
-    for( const auto& n : marker_map_ ) {
-        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first].id <<"\n";
-        publisher_->publish(n.second);
+    // marker_text info
+    marker_text.header.frame_id = "map";
+    marker_text.ns = pointStamp->point_data;
+
+    marker_text.id = marker.id + 1;
+
+    marker_text.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
+    marker_text.text = pointStamp->point_data;
+    marker_text.action = visualization_msgs::msg::Marker::ADD;
+    marker_text.pose.position.x = translatedPoint.point.x;
+    marker_text.pose.position.y = translatedPoint.point.y;
+    marker_text.pose.position.z = translatedPoint.point.z + 0.3;
+    marker_text.pose.orientation.x = 0.0;
+    marker_text.pose.orientation.y = 0.0;
+    marker_text.pose.orientation.z = 0.0;
+    marker_text.pose.orientation.w = 1.0;
+    marker_text.scale.x = VISUALISATION_BALL_DIAMETER;
+    marker_text.scale.y = VISUALISATION_BALL_DIAMETER;
+    marker_text.scale.z = VISUALISATION_BALL_DIAMETER;
+    marker_text.color.a = 1.0;
+    marker_text.color.r = 0.0;
+    marker_text.color.g = 0.0;
+    marker_text.color.b = 0.0;
+    marker_text.lifetime = rclcpp::Duration(0);
+
+    auto marker_vector = std::vector<visualization_msgs::msg::Marker>{marker, marker_text};
+    
+    marker_map_[pointStamp->point_data] = marker_vector;
+
+    for(const auto& n : marker_map_) {
+        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id <<"\n";
+        publisher_->publish(n.second[0]);
+        publisher_->publish(n.second[1]);
     }
     
     //publisher_->publish(marker);
@@ -110,7 +142,7 @@ private:
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
   int counter = 0;
   visualization_msgs::msg::MarkerArray ma_barcodes;
-  std::unordered_map<std::string, visualization_msgs::msg::Marker> marker_map_;
+  std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>> marker_map_;
 };
 
 int main(int argc, char * argv[])

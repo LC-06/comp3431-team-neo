@@ -43,6 +43,7 @@
 #include <geometry_msgs/msg/vector3.hpp>
 #include <unordered_set>
 #include "point_msg_interface/msg/pointmsg.hpp"
+# define M_PI           3.14159265358979323846  /* pi */
 
 #define IMAGE_WIDTH 640
 #define IMAGE_HEIGHT 480
@@ -67,11 +68,13 @@ private:
   void callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan);
   
   // message_filters::Subscriber<zbar_ros_interfaces::msg::Symbol> zbar_sub_;
-  message_filters::Subscriber<sensor_msgs::msg::LaserScan> laser_sub_;
+  // message_filters::Subscriber<sensor_msgs::msg::LaserScan> laser_sub_;
   //std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
-  std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
+  //std::shared_ptr<message_filters::TimeSynchronizer<zbar_ros_interfaces::msg::Symbol, sensor_msgs::msg::LaserScan>> ts;
 
   std::unordered_set<std::string> barcode_store_;
+  sensor_msgs::msg::LaserScan laser_store_;
+
 };
 
 #endif  // ZBAR_ROS__BARCODE_READER_NODE_HPP_
