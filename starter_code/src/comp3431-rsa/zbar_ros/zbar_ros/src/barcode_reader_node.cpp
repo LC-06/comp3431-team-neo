@@ -117,8 +117,9 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       // image is 640 x 480
       // size of image is 1m so scale = distance
       float barcode_scale = fabs(symbol.points[0].x - symbol.points[1].x) / IMAGE_WIDTH;
+      (void) barcode_scale;
 
-      RCLCPP_INFO(get_logger(), "Barcode scaling data: 0: '%f', 1: '%f', '%f'", symbol.points[0].x, symbol.points[1].x, barcode_scale);
+      //a RCLCPP_INFO(get_logger(), "Barcode scaling data: 0: '%f', 1: '%f', '%f'", symbol.points[0].x, symbol.points[1].x, barcode_scale);
 
       // Create a point
       geometry_msgs::msg::PointStamped translatedPoint;
@@ -132,57 +133,23 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       // (pixels / pixels) * unit length
       translatedPoint.point.x = ((image_centre_x-(IMAGE_WIDTH/2)) * MARKER_SIZE / IMAGE_WIDTH);
       translatedPoint.point.y = ((image_centre_y-(IMAGE_HEIGHT/2)) * MARKER_SIZE / IMAGE_WIDTH);
-      //translatedPoint.point.z = 1;
-      //translatedPoint.point.x = ((3.04)/(3.68)) * (abs(symbol.points[0].x - symbol.points[1].x)/ IMAGE_WIDTH) * MARKER_SIZE;
-      // translatedPoint.point.x = ((3.04)/(3.68)) * abs(symbol.points[0].x - symbol.points[1].x);
-      
-      // TODO -  improve z distance
-      // Ask about delayed response
-      // translatedPoint.point.z = (600)*(MARKER_SIZE/fabs(symbol.points[0].x - symbol.points[1].x));
 
-      // auto laser_store_copy = laser_store_;
-      // auto midPoint = (abs(symbol.points[0].x - symbol.points[1].x))/2;
-      // auto index = (int)((std::min(symbol.points[0].x, symbol.points[1].x) + midPoint)/IMAGE_WIDTH * laser_store_copy.ranges.size());
-      // translatedPoint.point.z = laser_store_copy.ranges[index];
-      RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
-      RCLCPP_INFO(get_logger(), "  Point in robot frame x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
-      translatedPoint.point.z = -1;
       auto laser_store_copy = laser_store_;
-      float begin_angle = M_PI/4.0;
-      float end_angle = 2*M_PI - M_PI/4.0;
-      int threshold = 0.1;
-      int laser_offset = 0.1;
-      float angle = laser_store_copy.angle_min; // 0 - forwards
-      // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
-      // int end_index = (int)(end_angle/(laser_store_copy.angle_increment));
-      for(auto it = laser_store_copy.ranges.begin(); it != laser_store_copy.ranges.end(); ++it, angle += laser_store_copy.angle_increment){
-        if(angle > begin_angle && angle < end_angle){
-          continue;
-        }
-        std::cout << "Range: " << *it << " angle: " << angle << "\n";
-        // if(*it > laser_store_copy.range_max) {
-        //   std::cout << "Too big\n";
-        //   continue;
-        // }
-        auto x = cos(angle) * *it;
-        auto y = sin(angle) * *it;
-        //RCLCPP_INFO(get_logger(), "Points x: %f, y: %f, angle: %f", x, y, angle);
-        std::cout << "The y: " << y << " The x: " << x << " translated x: " << translatedPoint.point.x << " angle: " << angle << "\n";
-        if (fabs(y - translatedPoint.point.x) < threshold){
-          translatedPoint.point.z = x + laser_offset;
-          break;
-        }
-        // Need to consider offset between camera and laser scan probably
+      int RHS_index = 344;
+
+      auto midPoint = (abs(symbol.points[0].x - symbol.points[1].x))/2;
+      auto index = (int)((std::min(symbol.points[0].x, symbol.points[1].x) + midPoint)/IMAGE_WIDTH * 30);
+      if (index >= 15) {
+        index += RHS_index;
+      }
+      translatedPoint.point.z = laser_store_copy.ranges[index];
+      if (translatedPoint.point.z < laser_store_copy.range_min || translatedPoint.point.z > laser_store_copy.range_max) {
+        continue;
       }
 
-      // Check if value was updated
-      if (translatedPoint.point.z == -1){
-        RCLCPP_INFO(get_logger(), "No suitable distance found");
-        return;
-      }
-      RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
-      RCLCPP_INFO(get_logger(), "Publishing Point");
-      
+      //a RCLCPP_INFO(get_logger(), "Publishing Point");
+      RCLCPP_INFO(get_logger(), "Publishing Point distance: %f", translatedPoint.point.z);
+
       // if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 200) {
       point_msg_interface::msg::Pointmsg point_send;
       point_send.point_data = symbol.data.c_str();

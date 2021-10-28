@@ -123,11 +123,11 @@ private:
     
     marker_map_[pointStamp->point_data] = marker_vector;
 
-    for(const auto& n : marker_map_) {
-        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id <<"\n";
-        publisher_->publish(n.second[0]);
-        publisher_->publish(n.second[1]);
-    }
+//    for(const auto& n : marker_map_) {
+  //      std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id <<"\n";
+    publisher_->publish(marker_vector[0]);
+    publisher_->publish(marker_vector[1]);
+    //}
     
     //publisher_->publish(marker);
     // ma_barcodes.markers.push_back(marker);
