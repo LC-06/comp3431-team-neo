@@ -43,7 +43,7 @@
 #include <geometry_msgs/msg/vector3.hpp>
 #include <unordered_set>
 #include "point_msg_interface/msg/pointmsg.hpp"
-# define M_PI           3.14159265358979323846  /* pi */
+# define M_PI 3.14159265358979323846  /* pi */
 
 #define IMAGE_WIDTH 640
 #define IMAGE_HEIGHT 480

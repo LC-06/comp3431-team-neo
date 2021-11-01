@@ -27,7 +27,7 @@ public:
   {
     // publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("visualization/ball", 10);
     publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/ball", 10);
-    publisher_text_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/text", 10);
+    //publisher_text_ = this->create_publisher<visualization_msgs::msg::Marker>("visualization/text", 10);
     // basic publisher
     // timer_ = this->create_wall_timer(500ms, std::bind(&PointTf::timer_callback, this));
     // subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
@@ -43,6 +43,11 @@ public:
     tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
 
     marker_map_  = std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>>();
+
+    marker_colour = std::unordered_map<std::string, std::string>{{"apple","#FF0000"},
+        {"car","#00FF00"},
+        {"banana","#0000FF"},
+        {"orange","#0000FF"}};
   }
 
 private:
@@ -125,11 +130,11 @@ private:
     marker_map_[pointStamp->point_data] = marker_vector;
 
     // going through keys in map
-    for(const auto& n : marker_map_) {
-        std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id << " " << marker_map_[n.first][1].id <<"\n";
-        publisher_->publish(n.second[0]); // marker
-        publisher_text_->publish(n.second[1]); // marker text
-    }
+    //for(const auto& n : marker_map_) {
+        //std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id << " " << marker_map_[n.first][1].id <<"\n";
+    publisher_->publish(marker); // marker
+    publisher_->publish(marker_text); // marker text
+    //}
     
     //publisher_->publish(marker);
     // ma_barcodes.markers.push_back(marker);
@@ -139,13 +144,14 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
   // rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr publisher_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_;
-  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_text_;
+  // rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_text_;
   rclcpp::Subscription<point_msg_interface::msg::Pointmsg>::SharedPtr subscriber_;
   std::shared_ptr<tf2_ros::Buffer> tf2_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
   int counter = 0;
   visualization_msgs::msg::MarkerArray ma_barcodes;
   std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>> marker_map_;
+  std::unordered_map<std::string, std::string> marker_colour;
 };
 
 int main(int argc, char * argv[])
