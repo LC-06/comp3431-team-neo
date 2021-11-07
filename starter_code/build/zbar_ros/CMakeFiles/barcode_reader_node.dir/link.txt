@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbarcode_reader_node.a  CMakeFiles/barcode_reader_node.dir/src/barcode_reader_node.cpp.o
-/usr/bin/ranlib libbarcode_reader_node.a

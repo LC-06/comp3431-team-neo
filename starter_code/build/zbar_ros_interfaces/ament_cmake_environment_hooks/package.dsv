@@ -1,4 +1,0 @@
-source;share/zbar_ros_interfaces/local_setup.bash
-source;share/zbar_ros_interfaces/local_setup.dsv
-source;share/zbar_ros_interfaces/local_setup.sh
-source;share/zbar_ros_interfaces/local_setup.zsh
