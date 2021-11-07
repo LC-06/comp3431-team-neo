@@ -1,0 +1,10 @@
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/install/strip.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/install/local.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/install.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/list_install_components.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/rebuild_cache.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/edit_cache.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/test.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/point_tf.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/point_pubsub_uninstall.dir
+/home/rsa2021/comp3431-team-neo/build/point_pubsub/CMakeFiles/uninstall.dir

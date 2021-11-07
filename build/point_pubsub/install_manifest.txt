@@ -1,0 +1,16 @@
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/lib/point_pubsub/point_tf
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/ament_index/resource_index/package_run_dependencies/point_pubsub
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/ament_index/resource_index/parent_prefix_path/point_pubsub
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.sh
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/environment/ament_prefix_path.dsv
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/environment/path.sh
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/environment/path.dsv
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/local_setup.bash
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/local_setup.sh
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/local_setup.zsh
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/local_setup.dsv
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/package.dsv
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/ament_index/resource_index/packages/point_pubsub
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig.cmake
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/cmake/point_pubsubConfig-version.cmake
+/home/rsa2021/comp3431-team-neo/install/point_pubsub/share/point_pubsub/package.xml
