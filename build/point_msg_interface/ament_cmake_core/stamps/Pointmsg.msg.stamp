@@ -1,2 +1,0 @@
-string point_data
-geometry_msgs/PointStamped point
