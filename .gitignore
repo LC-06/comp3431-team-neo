@@ -1,5 +1,3 @@
-./starter_code/build
-./starter_code/log
-*.log
-./build
-./log
+**/build/
+**/log/
+**/install/
