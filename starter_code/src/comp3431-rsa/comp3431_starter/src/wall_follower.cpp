@@ -117,8 +117,10 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		paused = false;
 	}
 	else if(message == "stop") {
-		//RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
+		RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
 		paused = true;
+		RCLCPP_INFO(this->get_logger(), "Shutting Down...");
+		rclcpp::shutdown();
 	}
 
 }
