@@ -1,8 +1,3 @@
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h>
 #include <wall_follower.h>
 
 
@@ -127,39 +122,6 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		t.linear.x = t.linear.y = t.linear.z = 0;
 		t.angular.x = t.angular.y = t.angular.z = 0;
 		twistPub_->publish(t);
-
-		// int pid, status;
-		// if (pid = fork()) {
-		// 	// pid != 0: this is the parent process (i.e. our process)
-		// 	waitpid(pid, &status, 0); // wait for the child to exit
-		// } else {
-		// 	/* pid == 0: this is the child process. now let's load the
-		// 		"ls" program into this process and run it */
-
-		// 	// Save the map
-		// 	//system("ros2 run nav2_map_server map_saver_cli -f map_house1");
-		// 	const char executable[] = "ros2";
-		// 	const char arg1[] = "run";
-		// 	const char arg2[] = "nav2_map_server";
-		// 	const char arg3[] = "map_saver_cli";
-		// 	const char arg4[] = "-f";
-		// 	const char arg5[] = "map_house1";
-
-		// 	// load it. there are more exec__ functions, try 'man 3 exec'
-		// 	// execl takes the arguments as parameters. execv takes them as an array
-		// 	// this is execl though, so:
-		// 	//      exec         argv[0]  argv[1] end
-		// 	execl(executable, executable, arg1, arg2, arg3, arg4, arg5, NULL);
-
-		// 	/* exec does not return unless the program couldn't be started. 
-		// 		when the child process stops, the waitpid() above will return.
-		// 	*/
-		// }
-		// //system("ros2 run nav2_map_server map_saver_cli -f map_house1");
-		// RCLCPP_INFO(this->get_logger(), "Shutting Down...");
-		// // rclcpp::on_shutdown([] () {
-		// // 	system("ros2 run nav2_map_server map_saver_cli -f map_house1");
-		// // });
 		rclcpp::shutdown();
 	}
 	
