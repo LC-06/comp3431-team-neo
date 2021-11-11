@@ -124,5 +124,4 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		twistPub_->publish(t);
 		rclcpp::shutdown();
 	}
-	
 }
