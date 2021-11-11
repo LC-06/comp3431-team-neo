@@ -1,5 +1,6 @@
 #include <chrono>
 #include <memory>
+#include <cstdlib>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
@@ -12,7 +13,7 @@
 #include <tf2_ros/buffer.h>
 #include <unordered_set>
 #include <unordered_map>
-
+#include "comp3431_interfaces/srv/map_info.hpp"
 
 #define VISUALISATION_BALL_DIAMETER 0.2  // m
 
@@ -37,17 +38,14 @@ public:
     //   });
 
     subscriber_ = this->create_subscription<point_msg_interface::msg::Pointmsg>("/testPoint", 1, std::bind(&PointTf::convert, this, std::placeholders::_1));
+    
+    commandSub_ = this->create_subscription<std_msgs::msg::String>("cmd", 1, std::bind(&PointTf::callbackControl, this, std::placeholders::_1));
 
     tf2_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
 
     tf2_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf2_buffer_);
 
     marker_map_  = std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>>();
-
-    marker_colour = std::unordered_map<std::string, std::string>{{"apple","#FF0000"},
-        {"car","#00FF00"},
-        {"banana","#0000FF"},
-        {"orange","#0000FF"}};
   }
 
 private:
@@ -140,18 +138,45 @@ private:
     // ma_barcodes.markers.push_back(marker);
     // publisher_->publish(ma_barcodes);
   }
-    
+
+  void callbackControl(const std_msgs::msg::String::SharedPtr command) {
+    //RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
+    std::string message = std::string{command->data};
+    if(message == "stop") {
+      RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");
+      int send_marker_counter = 0;
+      for(const auto& n : marker_map_) {
+        std::cout << send_marker_counter << "\n";
+        comp3431_interfaces::msg::QRCodeBlock oneMarker;
+        oneMarker.text = n.first; // data
+        oneMarker.pose.position.x = marker_map_[n.first][0].pose.position.x;
+        oneMarker.pose.position.y = marker_map_[n.first][0].pose.position.y;
+        oneMarker.pose.position.z = marker_map_[n.first][0].pose.position.z;
+        std::cout << oneMarker.text << " " << oneMarker.pose.position.z << std::endl;
+        // send_markers_.blocks[send_marker_counter] = oneMarker;
+        send_marker_counter++;
+        // std::cout << send_markers_.blocks[send_marker_counter-1].text << std::endl;
+      }
+
+      //while(wait for action)
+      // send marker_map_
+      // Then shutdown
+      //rclcpp::shutdown();
+    }
+}
+  
   rclcpp::TimerBase::SharedPtr timer_;
   // rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr publisher_;
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_;
   // rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr publisher_text_;
   rclcpp::Subscription<point_msg_interface::msg::Pointmsg>::SharedPtr subscriber_;
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr commandSub_;
   std::shared_ptr<tf2_ros::Buffer> tf2_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf2_listener_;
   int counter = 0;
   visualization_msgs::msg::MarkerArray ma_barcodes;
   std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>> marker_map_;
-  std::unordered_map<std::string, std::string> marker_colour;
+  comp3431_interfaces::srv::MapInfo::Request send_markers_;  
 };
 
 int main(int argc, char * argv[])
