@@ -1,4 +1,3 @@
-
 #include <wall_follower.h>
 
 
@@ -119,8 +118,13 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		paused = false;
 	}
 	else if(message == "stop") {
-		//RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
+		RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
 		paused = true;
+		geometry_msgs::msg::Twist t;
+		t.linear.x = t.linear.y = t.linear.z = 0;
+		t.angular.x = t.angular.y = t.angular.z = 0;
+		twistPub_->publish(t);
+		rclcpp::shutdown();
 	}
-
+	
 }
