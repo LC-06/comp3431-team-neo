@@ -1,3 +1,0 @@
-New Marker Published:
-1;study orange;-4.79235;-0.974805;0.0264136
-0;storage-room;-5.53161;2.84074;0.0278472
