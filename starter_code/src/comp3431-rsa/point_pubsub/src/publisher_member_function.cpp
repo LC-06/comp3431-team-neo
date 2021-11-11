@@ -12,12 +12,14 @@
 #include <tf2_ros/buffer.h>
 #include <unordered_set>
 #include <unordered_map>
+#include <fstream>
 
 
 #define VISUALISATION_BALL_DIAMETER 0.2  // m
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
+
 
 class PointTf : public rclcpp::Node
 {
@@ -50,15 +52,42 @@ public:
         {"orange","#0000FF"}};
   }
 
+  struct MarkerInfo {
+    int id;
+    std::string description;
+    float marker_pos_x;
+    float marker_pos_y;
+    float marker_pos_z;
+  };
 private:
-    
+  /*
+  * Write the member variables to stream objects
+  */
+  friend std::ostream & operator << (std::ostream &out, MarkerInfo & obj)
+  {
+      out << obj.id << ";" << obj.description << ";" << obj.marker_pos_x << ";" << obj.marker_pos_y << ";"<< obj.marker_pos_z <<std::endl;
+      return out;
+  }
+  friend std::istream & operator >> (std::istream &in,  MarkerInfo &obj)
+  {
+      in >> obj.id;
+      in >> obj.description;
+      in >> obj.marker_pos_x;
+      in >> obj.marker_pos_y;
+      in >> obj.marker_pos_z;
+
+      return in;
+  }
   void convert(const point_msg_interface::msg::Pointmsg::SharedPtr pointStamp)
   {
+    //Empty file if starting program for first time
+    if (counter == 0) {
+      std::ofstream myfile;
+      myfile.open ("marker_coords.txt");
+      myfile.close();
+    }
     visualization_msgs::msg::Marker marker;
     visualization_msgs::msg::Marker marker_text;
-
-    // Check if subscriber is being run
-    // RCLCPP_INFO(this->get_logger(), "Subscriber: Point");
 
     geometry_msgs::msg::PointStamped translatedPoint;
     try {
@@ -71,10 +100,11 @@ private:
     // marker info
     marker.header.frame_id = "map";
     marker.ns = pointStamp->point_data;
-
+    int current_marker_id = counter;
     std::cout << "Finding in map:" << pointStamp->point_data <<"\n";
     if (marker_map_.find(pointStamp->point_data) != marker_map_.end()) {
       marker.id = marker_map_[pointStamp->point_data][0].id;
+      current_marker_id = marker_map_[pointStamp->point_data][0].id;
       std::cout << "Found\n";
     } else {
       marker.id = counter;
@@ -130,15 +160,36 @@ private:
     marker_map_[pointStamp->point_data] = marker_vector;
 
     // going through keys in map
-    //for(const auto& n : marker_map_) {
-        //std::cout << "Key:[" << n.first << "] "<< marker_map_.size() << " id: " << marker_map_[n.first][0].id << " " << marker_map_[n.first][1].id <<"\n";
     publisher_->publish(marker); // marker
     publisher_->publish(marker_text); // marker text
-    //}
     
-    //publisher_->publish(marker);
-    // ma_barcodes.markers.push_back(marker);
-    // publisher_->publish(ma_barcodes);
+    // Write marker info to file
+    std::ofstream myfile;
+    myfile.open ("marker_coords.txt");
+    myfile << "New Marker Published:\n";
+
+    MarkerInfo marker_data;
+    marker_data.description = pointStamp->point_data;
+    marker_data.id = current_marker_id;
+    marker_data.marker_pos_x = translatedPoint.point.x;
+    marker_data.marker_pos_y = translatedPoint.point.y;
+    marker_data.marker_pos_z = translatedPoint.point.z;
+    marker_info[marker.id] = marker_data;
+
+    for ( auto &info : marker_info ) {
+      myfile <<  info.second;
+    }
+
+    myfile.close();
+
+    // Reading from file
+    std::string line;
+    std::ifstream ifs("marker_coords.txt");
+    while(std::getline(ifs, line))
+    {
+      std::cout << "line: " << line << std::endl;
+    }
+
   }
     
   rclcpp::TimerBase::SharedPtr timer_;
@@ -152,6 +203,7 @@ private:
   visualization_msgs::msg::MarkerArray ma_barcodes;
   std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>> marker_map_;
   std::unordered_map<std::string, std::string> marker_colour;
+  std::unordered_map<int, MarkerInfo> marker_info;
 };
 
 int main(int argc, char * argv[])
