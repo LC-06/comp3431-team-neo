@@ -59,14 +59,17 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 		float turn, drive;
 		// turn left when you cannotfind wall to follow
 		if (XMaxSide == -INFINITY) {
-			RCLCPP_INFO(this->get_logger(), "turning LEFT");
+			std::cout << "turning LEFT\n";
+			//RCLCPP_INFO(this->get_logger(), "turning LEFT");
 			// No hits beside robot, so turn left
 			turn = 1;
 			drive = 0;
 		// } else if (XMinFront <= MIN_APPROACH_DIST) {
 		// } else if (XMinFront <= 0.28) {
-		} else if (XMinFront <= 0.5) {
-			RCLCPP_INFO(this->get_logger(), "turning RIGHT");
+		} else if (XMinFront <= 0.27) {
+			std::cout << "turning RIGHT\n";
+
+			// RCLCPP_INFO(this->get_logger(), "turning RIGHT");
 			// Blocked side and front, so turn right
 			turn = -1;
 			drive = 0;
