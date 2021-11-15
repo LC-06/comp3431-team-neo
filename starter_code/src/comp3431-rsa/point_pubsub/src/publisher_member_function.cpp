@@ -142,7 +142,7 @@ private:
     //RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
     std::string message = std::string{command->data};
     std::cout << "\nhello\nhello\n";
-    if(message == "pause") {
+    if(message == "stop") {
       // std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
       RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");
       int send_marker_counter = 0;
@@ -168,8 +168,9 @@ private:
         }
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");
       }
-
+      std::cout << "line171\n";
       auto result = client->async_send_request(request);
+      std::cout << "line173\n";
       // Wait for the result.
       if (rclcpp::spin_until_future_complete(node, result) ==
         rclcpp::FutureReturnCode::SUCCESS)
