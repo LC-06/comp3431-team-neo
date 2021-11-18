@@ -10,7 +10,7 @@
 void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Request> request,
           std::shared_ptr<comp3431_interfaces::srv::MapInfo::Response>      response)
 {
-    std::cout << "\n\n\n\n\n\n" << std::endl;
+    std::cout << "in startPlanner\n";
     response->res = 1;
     // should probably change to reside within FF-X once we know it works and receive goal from action
     std::string problemPath = "problem.pddl";
@@ -114,6 +114,7 @@ void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Reque
 
     file << ")" << std::endl;
     file.close();
+    std::cout << "successfully generated domain file!\n";
 }
 
 int main(int argc, char **argv)

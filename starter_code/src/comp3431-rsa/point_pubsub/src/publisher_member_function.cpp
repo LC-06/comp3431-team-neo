@@ -141,26 +141,27 @@ private:
   void callbackControl(const std_msgs::msg::String::SharedPtr command) {
     //RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
     std::string message = std::string{command->data};
-    std::cout << "\nhello\nhello\n";
+    auto request = std::make_shared<comp3431_interfaces::srv::MapInfo::Request>();
+    std::cout << "hello\n";
     if(message == "stop") {
       // std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
       RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");
-      int send_marker_counter = 0;
+      int counter = 0;
       for(const auto& n : marker_map_) {
-        // std::cout << send_marker_counter << "\n";
+        std::cout << counter << "\n";
         comp3431_interfaces::msg::QRCodeBlock oneMarker;
         oneMarker.text = n.first; // data
         oneMarker.pose.position.x = marker_map_[n.first][0].pose.position.x;
         oneMarker.pose.position.y = marker_map_[n.first][0].pose.position.y;
         oneMarker.pose.position.z = marker_map_[n.first][0].pose.position.z;
         // std::cout << oneMarker.text << " " << oneMarker.pose.position.z << std::endl;
-        send_markers_.blocks[send_marker_counter] = oneMarker;
-        send_marker_counter++;
-        // std::cout << send_markers_.blocks[send_marker_counter-1].text << std::endl;
+        //send_markers_.blocks[send_marker_counter] = oneMarker;
+        request->blocks[counter] = oneMarker;
+        std::cout << "after storing it to request\n";
+        counter++;
       }
-
-      auto request = std::make_shared<comp3431_interfaces::srv::MapInfo::Request>();
-      request->blocks = send_markers_.blocks;
+      std::cout << "here!!!\n";
+      //request->blocks = send_markers_.blocks;
        while (!client->wait_for_service(1s)) {
         if (!rclcpp::ok()) {
           RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
@@ -185,7 +186,7 @@ private:
       // Then shutdown
       //rclcpp::shutdown();
     }
-}
+  }
   
   rclcpp::TimerBase::SharedPtr timer_;
   // rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr publisher_;
@@ -198,7 +199,6 @@ private:
   int counter = 0;
   visualization_msgs::msg::MarkerArray ma_barcodes;
   std::unordered_map<std::string, std::vector<visualization_msgs::msg::Marker>> marker_map_;
-  comp3431_interfaces::srv::MapInfo::Request send_markers_;  
 
   //Client node
   std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
