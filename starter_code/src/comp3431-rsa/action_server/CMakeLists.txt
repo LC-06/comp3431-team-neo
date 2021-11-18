@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(service_node)
+project(action_server)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -15,14 +15,19 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-
-
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(comp3431_interfaces REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
+add_executable(action_server src/action_server.cpp)
+ament_target_dependencies(action_server rclcpp comp3431_interfaces rclcpp_action rclcpp_components) 
+
+install(TARGETS
+  action_server
+	DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -36,15 +41,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-include_directories(
-	include/service_node
-)
-add_executable(service_node src/service_member_function.cpp)
-ament_target_dependencies(service_node rclcpp comp3431_interfaces rclcpp_action rclcpp_components) 
-
-install(TARGETS
-  service_node
-	DESTINATION lib/${PROJECT_NAME}
-)
-
-
