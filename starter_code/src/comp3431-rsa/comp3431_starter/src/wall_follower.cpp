@@ -16,10 +16,10 @@ WallFollower::WallFollower():Node("wall_follower")  {
 
 void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
 	if(paused) {
-		geometry_msgs::msg::Twist t;
-		t.linear.x = t.linear.y = t.linear.z = 0;
-		t.angular.x = t.angular.y = t.angular.z = 0;
-		twistPub_->publish(t);
+		// geometry_msgs::msg::Twist t;
+		// t.linear.x = t.linear.y = t.linear.z = 0;
+		// t.angular.x = t.angular.y = t.angular.z = 0;
+		// twistPub_->publish(t);
 		stopped = true;
 		return;
 	}
@@ -122,6 +122,7 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		t.linear.x = t.linear.y = t.linear.z = 0;
 		t.angular.x = t.angular.y = t.angular.z = 0;
 		twistPub_->publish(t);
-		rclcpp::shutdown();
+		//rclcpp::shutdown();
+		system("./helper_scripts/save_map.sh");
 	}
 }
