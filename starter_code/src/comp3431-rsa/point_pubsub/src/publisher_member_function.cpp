@@ -150,20 +150,22 @@ private:
       // std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
       RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");
       int counter = 0;
+      request->blocks = std::vector<comp3431_interfaces::msg::QRCodeBlock>{};
       for(const auto& n : marker_map_) {
         std::cout << counter << "\n";
         comp3431_interfaces::msg::QRCodeBlock oneMarker;
         oneMarker.text = n.first; // data
-        oneMarker.pose.position.x = marker_map_[n.first][0].pose.position.x;
-        oneMarker.pose.position.y = marker_map_[n.first][0].pose.position.y;
-        oneMarker.pose.position.z = marker_map_[n.first][0].pose.position.z;
+        // std::cout << "n.second" << n.second[0].pose.position.x << std::endl;
+        oneMarker.pose.position.x = n.second[0].pose.position.x;
+        oneMarker.pose.position.y = n.second[0].pose.position.y;
+        oneMarker.pose.position.z = n.second[0].pose.position.z;
         // std::cout << oneMarker.text << " " << oneMarker.pose.position.z << std::endl;
         //send_markers_.blocks[send_marker_counter] = oneMarker;
-        request->blocks[counter] = oneMarker;
+        request->blocks.push_back(oneMarker);
         std::cout << "after storing it to request\n";
         counter++;
       }
-      std::cout << "here!!!\n";
+      std::cout << "out of loop!!!\n";
       //request->blocks = send_markers_.blocks;
        while (!client->wait_for_service(1s)) {
         if (!rclcpp::ok()) {
@@ -172,9 +174,8 @@ private:
         }
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");
       }
-      std::cout << "line171\n";
       auto result = client->async_send_request(request);
-      std::cout << "line173\n";
+      std::cout << "async_send_request finished\n";
       // Wait for the result.
       if (rclcpp::spin_until_future_complete(node, result) ==
         rclcpp::FutureReturnCode::SUCCESS)
@@ -216,3 +217,4 @@ int main(int argc, char * argv[])
   rclcpp::shutdown();
   return 0;
 }
+    
