@@ -21,7 +21,7 @@ void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Reque
     file << "  (:objects" << std::endl;
     file << "    turtlebot - robot" << std::endl;
     // is initial room, the room outside house? or just sample in sample-problem.pddl
-    // file << " initial-room - room" << std::endl;
+    file << " initial-room - room" << std::endl;
 
     auto objects = std::vector<std::string>{};
     auto rooms = std::vector<std::string>{};
@@ -67,7 +67,7 @@ void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Reque
 
           index++;
         }
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\n %s", marker.text );
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request\n %s", marker.text.c_str() );
     }
 
     // Add rooms to objects section
