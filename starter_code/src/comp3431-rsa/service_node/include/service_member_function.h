@@ -12,15 +12,17 @@
 class Planner : public rclcpp::Node
 {
 public:
-  Planner()
-  : Node("set_map_info_server")
+  Planner(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
+  : Node("set_map_info_server", options)
   {
     service_ = this->create_service<comp3431_interfaces::srv::MapInfo>("set_map_info", std::bind(&Planner::startPlanner,
     this, std::placeholders::_1, std::placeholders::_2));
 
     // Action Private Variables
-    action_goal_server_ =
-      rclcpp_action::create_server<comp3431_interfaces::action::MoveObjectToRoom>(this, "move_object_to_room",
+    this->action_goal_server_ =
+      rclcpp_action::create_server<comp3431_interfaces::action::MoveObjectToRoom>(
+        this,
+        "move_object_to_room",
         std::bind(&Planner::handle_goal, this, std::placeholders::_1, std::placeholders::_2),
         std::bind(&Planner::handle_cancel, this, std::placeholders::_1),
         std::bind(&Planner::handle_accepted, this, std::placeholders::_1));
@@ -138,7 +140,7 @@ private:
     std::cout << "successfully generated domain file!\n";
   }
 
-  rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID &uuid, std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Goal> goal)
+  rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID &uuid, std::shared_ptr<const comp3431_interfaces::action::MoveObjectToRoom::Goal> goal)
   {
     // Goal section
     std::cout << "Received goal request with object: " << goal->object << "\n";
@@ -159,12 +161,29 @@ private:
   {
     using namespace std::placeholders;
     // this needs to return quickly to avoid blocking the executor, so spin up a new thread
-    //std::thread{std::bind(&FibonacciActionServer::execute, this, _1), goal_handle}.detach();
     std::cout << "handled accepted\n";
-    (void)goal_handle;
+    std::thread{std::bind(&Planner::execute, this, _1), goal_handle}.detach();
     return;
   }
 
+  void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<comp3431_interfaces::action::MoveObjectToRoom>> goal_handle)
+  {
+    RCLCPP_INFO(this->get_logger(), "Executing goal");
+    rclcpp::Rate loop_rate(1);
+    const auto goal = goal_handle->get_goal();
+    auto feedback = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Feedback>();
+    auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
+    RCLCPP_INFO(this->get_logger(), "here1");
+    goal_handle->succeed(result);
+    RCLCPP_INFO(this->get_logger(), "here2");
+    goal_handle->publish_feedback(feedback);
+    RCLCPP_INFO(this->get_logger(), "here3");
+    if (rclcpp::ok()) {
+      goal_handle->succeed(result);
+      RCLCPP_INFO(this->get_logger(), "Goal succeeded");
+    }
+  }
+  
   rclcpp::Service<comp3431_interfaces::srv::MapInfo>::SharedPtr service_;
   rclcpp_action::Server<comp3431_interfaces::action::MoveObjectToRoom>::SharedPtr action_goal_server_;
 };

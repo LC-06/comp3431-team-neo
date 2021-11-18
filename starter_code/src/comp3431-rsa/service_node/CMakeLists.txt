@@ -37,14 +37,14 @@ endif()
 
 ament_package()
 include_directories(
-	include/service_node
+	include/
 )
 add_executable(service_node src/service_member_function.cpp)
 ament_target_dependencies(service_node rclcpp comp3431_interfaces rclcpp_action rclcpp_components) 
+
 
 install(TARGETS
   service_node
 	DESTINATION lib/${PROJECT_NAME}
 )
-
 
