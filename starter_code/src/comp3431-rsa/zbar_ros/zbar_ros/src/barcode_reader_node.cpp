@@ -151,7 +151,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       auto laser_store_copy = laser_store_;
       float begin_angle = M_PI/4.0;
       float end_angle = 2*M_PI - M_PI/4.0;
-      float threshold = 0.02;
+      float threshold = 0.75;
       int laser_offset = 0.1;
       float angle = laser_store_copy.angle_min; // 0 - forwards
       // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
@@ -172,8 +172,8 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
         if (fabs(y - translatedPoint.point.x) < threshold) {
           if (fabs(translatedPoint.point.z) > x + laser_offset){
             // If it finds and object which is closer, update it
-            translatedPoint.point.z = x;
-            //translatedPoint.point.z = x + laser_offset;
+            //translatedPoint.point.z = x;
+            translatedPoint.point.z = x + laser_offset;
           }
           //break;
         }
@@ -187,12 +187,12 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
       RCLCPP_INFO(get_logger(), "Publishing Point");
       
-      // if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 100) {
-      //   point_msg_interface::msg::Pointmsg point_send;
-      //   point_send.point_data = symbol.data.c_str();
-      //   point_send.point = translatedPoint;
-      //   point_pub_->publish(point_send);
-      // }
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 150) {
+        point_msg_interface::msg::Pointmsg point_send;
+        point_send.point_data = symbol.data.c_str();
+        point_send.point = translatedPoint;
+        point_pub_->publish(point_send);
+      }
 
       //point_pub_->publish(translatedPoint);
       // RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
