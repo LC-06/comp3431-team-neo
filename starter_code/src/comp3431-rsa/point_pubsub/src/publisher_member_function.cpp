@@ -141,11 +141,8 @@ private:
   void callbackControl(const std_msgs::msg::String::SharedPtr command) {
     //RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
     std::string message = std::string{command->data};
-<<<<<<< HEAD
-=======
     auto request = std::make_shared<comp3431_interfaces::srv::MapInfo::Request>();
     std::cout << "hello\n";
->>>>>>> 9be828e313e20becb773ae6092eb1a453cb9ce75
     if(message == "stop") {
       // std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
       RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");

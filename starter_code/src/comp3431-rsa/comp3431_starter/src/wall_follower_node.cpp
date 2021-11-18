@@ -13,7 +13,6 @@ int main(int argc, char** argv)
 
 	rclcpp::spin(std::make_shared<WallFollower>());
 	rclcpp::shutdown();
-	// system("./helper_scripts/save_map.sh");
 	return 0;
 
 }

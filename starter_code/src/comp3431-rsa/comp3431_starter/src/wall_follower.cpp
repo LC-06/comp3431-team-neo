@@ -123,6 +123,5 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		t.angular.x = t.angular.y = t.angular.z = 0;
 		twistPub_->publish(t);
 		//rclcpp::shutdown();
-		system("./helper_scripts/save_map.sh");
 	}
 }
