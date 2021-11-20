@@ -9,6 +9,11 @@
 #include <fstream>
 #include "rclcpp_action/rclcpp_action.hpp"
 
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <queue>
+
 class Planner : public rclcpp::Node
 {
 public:
@@ -146,6 +151,10 @@ private:
     std::cout << "Received goal request with object: " << goal->object << "\n";
     std::cout << "Received goal request with room: " << goal->room << std::endl;
     (void)uuid;
+
+    std::cout << "Calling FF planner..." << std::endl;
+    std::cout << "Finished calling FF planner" << planner_call() << std::endl;
+
     return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
   }
 
@@ -183,7 +192,83 @@ private:
       RCLCPP_INFO(this->get_logger(), "Goal succeeded");
     }
   }
-  
+
+  // TODO: Store steps extracted from solution.txt somewhere
+  int planner_call(void) {
+    int pid, status;
+
+    pid = fork();
+    if (pid) {
+        // pid != 0: this is the parent process (i.e. our process)
+        waitpid(pid, &status, 0); // wait for the child to exit
+    } else {
+      /* pid == 0: this is the child process. now let's load the
+
+      exec does not return unless the program couldn't be started. 
+          when the child process stops, the waitpid() above will return.
+      */
+
+      // execl("/bin/sh", "sh", "/home/rsa2021/comp3431-team-neo/FF-X/test.sh", NULL);
+      int fd = open("./solution.txt", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
+      dup2(fd, 1);
+      dup2(fd, 2);
+      close(fd);
+
+      const char executable[] = "./FF-X/ff";
+      execl(executable, executable, "-o", "./FF-X/domain.pddl", "-f", "./sample-problem.pddl", NULL);
+    }
+
+    std::string line;
+    std::ifstream planFile("./solution.txt");
+    std::queue<std::vector<std::string>> steps;
+
+    std::cout << "\n-----------Generated Plan-----------\n";
+    bool firstStepFound = false;
+    if (planFile.is_open()) {
+      while (std::getline(planFile, line) ) {
+        if (line.substr(0, 4) == "step") {
+          firstStepFound = true;
+        }
+
+        if (firstStepFound) {
+          auto columnIndex = line.find(":");
+
+          // Check if we couldn't find a column. If there is none, we've reached end of steps
+          if (columnIndex == std::string::npos) {
+            break;
+          }
+
+          int startIndex = columnIndex + 2;  // +2 to skip ": "
+          std::vector<std::string> split = splitString(line.substr(startIndex, line.back()));
+          for (const auto &element : split) {
+            std::cout << element << " ";
+          }
+          std::cout << "\n";
+          steps.push(split);
+        }
+      }
+      planFile.close();
+    }
+    std::cout << "---------End Generated Plan---------\n";
+
+    return status; // this is the parent process again.
+  }
+
+  std::vector<std::string> splitString(std::string data)
+  {
+    std::vector<std::string> dataSplit;
+    std::istringstream ss(data);
+    std::string token;
+    while (std::getline(ss, token, ' ')) {
+      // Convert to lower case
+      std::transform(
+        token.begin(), token.end(), token.begin(),
+        [](unsigned char c) {return std::tolower(c);});
+      dataSplit.push_back(token);
+    }
+    return dataSplit;
+  }
+
   rclcpp::Service<comp3431_interfaces::srv::MapInfo>::SharedPtr service_;
   rclcpp_action::Server<comp3431_interfaces::action::MoveObjectToRoom>::SharedPtr action_goal_server_;
 };
