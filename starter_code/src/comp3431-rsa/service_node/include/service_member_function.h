@@ -42,7 +42,7 @@ private:
     std::cout << "in startPlanner\n";
     response->res = 1;
     // should probably change to reside within FF-X once we know it works and receive goal from action
-    std::string problemPath = "problem.pddl";
+    std::string problemPath = "problem-init.pddl";
     std::ofstream file;
     file.open(problemPath);
     file << "(define (problem moveitemtoroom)" << std::endl;
@@ -152,6 +152,28 @@ private:
     std::cout << "Received goal request with room: " << goal->room << std::endl;
     (void)uuid;
 
+    {
+      // copy problem-init.pddl to problem.pddl
+      std::string line;
+      std::ifstream infile("problem-init.pddl");
+      std::ofstream outfile("./problem.pddl");
+      while (std::getline(infile, line)) {
+        outfile << line << std::endl;
+      }
+      infile.close();
+      outfile.close();
+
+      // open in append instead of overwrite mode to append goal to problem.pddl
+      outfile.open("./problem.pddl", std::ios_base::app);
+      outfile << "  (:goal" << std::endl;
+      //std::string goal = "(in apple living-room)";
+      outfile << "    (in " << goal->object << " " << goal->room << ")" << std::endl;
+      outfile << "  )" << std::endl;
+      outfile << ")" << std::endl;
+      outfile.close();
+      std::cout << "Added goal to problem.pddl file";
+    }
+
     std::cout << "Calling FF planner..." << std::endl;
     std::cout << "Finished calling FF planner" << planner_call() << std::endl;
 
@@ -215,7 +237,7 @@ private:
       close(fd);
 
       const char executable[] = "./FF-X/ff";
-      execl(executable, executable, "-o", "./FF-X/domain.pddl", "-f", "./sample-problem.pddl", NULL);
+      execl(executable, executable, "-o", "./FF-X/domain.pddl", "-f", "./problem.pddl", NULL);
     }
 
     std::string line;

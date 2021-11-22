@@ -15,7 +15,3 @@
     (hand_empty turtlebot)
   )
 
-  (:goal
-    (in grape living-room)
-  )
-)

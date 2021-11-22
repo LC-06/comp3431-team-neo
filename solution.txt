@@ -17,9 +17,9 @@ Cueing down from goal distance:    4 into depth [1]
 ff: found legal plan as follows
 
 step    0: MOVE TURTLEBOT INITIAL-ROOM KITCHEN
-        1: PICK TURTLEBOT KITCHEN APPLE
+        1: PICK TURTLEBOT KITCHEN GRAPE
         2: MOVE TURTLEBOT KITCHEN LIVING-ROOM
-        3: PLACE TURTLEBOT LIVING-ROOM APPLE
+        3: PLACE TURTLEBOT LIVING-ROOM GRAPE
      
 
 time spent:    0.00 seconds instantiating 21 easy, 0 hard action templates
@@ -32,6 +32,10 @@ time spent:    0.00 seconds instantiating 21 easy, 0 hard action templates
 
 
 Can't open output file!
+
+
+
+ file!
 
 
 
