@@ -1,72 +1,85 @@
+
 #include <wall_follower.h>
 
 
-#define CLIP_0_1(X) ((X) < 0?0:(X)>1?1:(X))
+#define CLIP_0_1(X)         ((X) < 0?0:(X)>1?1:(X))
 
 
-WallFollower::WallFollower():Node("wall_follower")  {
-	//RCLCPP_INFO(this->get_logger(), "I AM STARTING NOW");
+WallFollower::WallFollower():Node("wall_follower") 
+{
+	RCLCPP_INFO(this->get_logger(), "I AM STARTING NOW");
 	scanSub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", 1, std::bind(&WallFollower::callbackScan, this, std::placeholders::_1));
+
 	commandSub_ = this->create_subscription<std_msgs::msg::String>("cmd", 1, std::bind(&WallFollower::callbackControl, this, std::placeholders::_1));
-	
+
 	twistPub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 1);
+
 	paused = true;
 }
 
 
-void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
-	if(paused) {
-		// geometry_msgs::msg::Twist t;
-		// t.linear.x = t.linear.y = t.linear.z = 0;
-		// t.angular.x = t.angular.y = t.angular.z = 0;
-		// twistPub_->publish(t);
+void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr scan)
+{
+	//std::cout << "Hi\n";
+	if(paused){
+		geometry_msgs::msg::Twist t;
+		t.linear.x = t.linear.y = t.linear.z = 0;
+		t.angular.x = t.angular.y = t.angular.z = 0;
+		twistPub_->publish(t);
 		stopped = true;
 		return;
 	}
+	std::string warning_msg;
 
-	float XMaxSide = -INFINITY;
-	//float YMaxSide = -INFINITY;
-	float XMinFront = INFINITY;
-	float angle = scan->angle_min;
-	for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment) {
+
+	float XMaxSide = -INFINITY, XMinFront = INFINITY, angle = scan->angle_min;
+	for(auto it = scan->ranges.begin(); it != scan->ranges.end(); ++it, angle += scan->angle_increment)
+	{
 		geometry_msgs::msg::Vector3 point;
 		point.x = cos(angle) * *it;
 		point.y = sin(angle) * *it;
 		point.z = 0;
 		// if (fabs(point.x) <= ROBOT_RADIUS && fabs(point.y) <= MAX_SIDE_LIMIT) 
-		if (fabs(point.x) <= 0.6 && fabs(point.y) <= MAX_SIDE_LIMIT) {
-			if ((side == LEFT && point.y > 0) || (side == RIGHT && point.y < 0)) {
+		if (fabs(point.x) <= 0.60 && fabs(point.y) <= MAX_SIDE_LIMIT) 
+		{
+			if ((side == LEFT && point.y > 0) || (side == RIGHT && point.y < 0)) 
+			{
 				// Point is beside the robot
 				if (point.x > XMaxSide) {
-					// RCLCPP_INFO(this->get_logger(), "xmaxside");
+					RCLCPP_INFO(this->get_logger(), "xmaxside");
+
 					XMaxSide = point.x;
-					//YMaxSide = point.y;
 				}
 			}
+			
 		}
 
 		// Find min XF of a hit in front of robot (X > 0, abs(Y) <= robot radius, X <= limit)
-		if (point.x > 0 && point.x <= MAX_APPROACH_DIST && fabs(point.y) <= ROBOT_RADIUS) {
+		if (point.x > 0 && point.x <= MAX_APPROACH_DIST && fabs(point.y) <= ROBOT_RADIUS) 
+		{
 			// Point is in front of the robot
-			if (point.x < XMinFront) {
-				// RCLCPP_INFO(this->get_logger(), "xminfront");
+			if (point.x < XMinFront)
+			{
+				RCLCPP_INFO(this->get_logger(), "xminfront");
+
 				XMinFront = point.x;
 			}
+			
 		}
+
 	}
 
 	float turn, drive;
-	// turn left when you cannotfind wall to follow
+
 	if (XMaxSide == -INFINITY) {
-		//RCLCPP_INFO(this->get_logger(), "1_Could not find wall, I'm looking, please don't get mad!!");
-		// No hits beside robot, so turn left
+		RCLCPP_INFO(this->get_logger(), "1_Could not find wall, I'm looking, please don't get mad!!");
+		// No hits beside robot, so turn that direction
 		turn = 1;
 		drive = 0;
 	// } else if (XMinFront <= MIN_APPROACH_DIST) {
-	// } else if (XMinFront <= 0.28) {
 	} else if (XMinFront <= 0.27) {
-		//RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
-		// Blocked side and front, so turn right
+		RCLCPP_INFO(this->get_logger(), "2_Could not find wall, I'm looking, please don't get mad!!");
+		// Blocked side and front, so turn other direction
 		turn = -1;
 		drive = 0;
 	} else {
@@ -88,6 +101,9 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 		turn2 = CLIP_0_1(turn2);
 
 		turn = turn1 - turn2;
+		// turn = 0;
+
+		// drive = drive1 * drive2
 		drive = drive1 * drive2;
 	}
 
@@ -107,21 +123,18 @@ void WallFollower::callbackScan(const sensor_msgs::msg::LaserScan::SharedPtr sca
 	stopped = false;
 }
 
-void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr command) {
-	//RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
+void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr command)
+{
+	RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
 	
 	std::string message = std::string{command->data};
 	if(message == "start") {
-		//RCLCPP_INFO(this->get_logger(), "Alright, let's get this show on the road!!!");
+		RCLCPP_INFO(this->get_logger(), "Alright, let's get this show on the road!!!");
 		paused = false;
 	}
 	else if(message == "stop") {
 		RCLCPP_INFO(this->get_logger(), "Stopping, don't forget to save that lovely map or it'll be lost forever!!!");
 		paused = true;
-		geometry_msgs::msg::Twist t;
-		t.linear.x = t.linear.y = t.linear.z = 0;
-		t.angular.x = t.angular.y = t.angular.z = 0;
-		twistPub_->publish(t);
-		//rclcpp::shutdown();
 	}
+
 }

@@ -7,11 +7,11 @@
 #include <vector>
 #include <fstream>
 
-void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Request> request,
-          std::shared_ptr<comp3431_interfaces::srv::MapInfo::Response>      response)
-{
+// void startPlanner(const std::shared_ptr<comp3431_interfaces::srv::MapInfo::Request> request,
+//           std::shared_ptr<comp3431_interfaces::srv::MapInfo::Response>      response)
+// {
 
-}
+// }
 
 int main(int argc, char **argv)
 {

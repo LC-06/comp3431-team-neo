@@ -3,15 +3,14 @@
   (:objects
     turtlebot - robot
  initial-room - room
-    living-room - room
-    kitchen - room
-    snickers grape  - item
+    study - room
+    storage-room - room
+    orange  - item
   )
 
   (:init
     (at turtlebot initial-room)
-    (in grape kitchen)
-    (in snickers living-room)
+    (in orange study)
     (hand_empty turtlebot)
   )
 
