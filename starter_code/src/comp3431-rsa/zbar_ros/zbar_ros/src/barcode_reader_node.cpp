@@ -151,7 +151,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       auto laser_store_copy = laser_store_;
       float begin_angle = M_PI/4.0;
       float end_angle = 2*M_PI - M_PI/4.0;
-      float threshold = 0.5;
+      float threshold = 0.25;
       int laser_offset = 0.1;
       float angle = laser_store_copy.angle_min; // 0 - forwards
       // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
@@ -187,7 +187,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
       RCLCPP_INFO(get_logger(), "Publishing Point");
       
-      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 160) {
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 170) {
         point_msg_interface::msg::Pointmsg point_send;
         point_send.point_data = symbol.data.c_str();
         point_send.point = translatedPoint;

@@ -56,7 +56,7 @@ private:
     std::cout << "in startPlanner\n";
     response->res = 1;
     // should probably change to reside within FF-X once we know it works and receive goal from action
-    std::string problemPath = "problem-init.pddl";
+    std::string problemPath = "problem.pddl";
     std::ofstream file;
     file.open(problemPath);
     file << "(define (problem moveitemtoroom)" << std::endl;
