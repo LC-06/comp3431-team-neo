@@ -64,6 +64,12 @@ private:
       // auto pos_x = marker.pose.position.x;
       // auto pos_y = marker.pose.position.y;
       // auto pos_z = marker.pose.position.z;
+      std::vector<double> temp_vector;
+      temp_vector.push_back(marker.pose.position.x);
+      temp_vector.push_back(marker.pose.position.y);
+      temp_vector.push_back(marker.pose.position.z);
+      // std::cout<<"Map "<< marker.text << "array length " << temp_vector.size()<<"\n";
+      // std::cout<<"x: "<< nav2_marker_map[marker.text].at(0) << "\n";
 
       auto words = std::vector<std::string>{};
       // Split string into vector of words
@@ -92,6 +98,9 @@ private:
         {
           rooms.push_back(*itr);
           room_name = *itr;
+
+          // add to map of marker data for nav2
+          nav2_marker_map[room_name] = temp_vector;
         }
         else
         {
@@ -142,7 +151,7 @@ private:
     // file << "  )" << std::endl;
     // file << ")" << std::endl;
     file.close();
-    std::cout << "successfully generated domain file!\n";
+    std::cout << "successfully generated problem file!\n";
   }
 
   rclcpp_action::GoalResponse handle_goal(const rclcpp_action::GoalUUID &uuid, std::shared_ptr<const comp3431_interfaces::action::MoveObjectToRoom::Goal> goal)
@@ -175,7 +184,7 @@ private:
     }
 
     std::cout << "Calling FF planner..." << std::endl;
-    std::cout << "Finished calling FF planner" << planner_call() << std::endl;
+    //std::cout << "Finished calling FF planner" << planner_call() << std::endl;
 
     return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
   }
@@ -193,27 +202,35 @@ private:
     using namespace std::placeholders;
     // this needs to return quickly to avoid blocking the executor, so spin up a new thread
     std::cout << "handled accepted\n";
+    (void)goal_handle;
     std::thread{std::bind(&Planner::execute, this, _1), goal_handle}.detach();
+    auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
+    //goal_handle->succeed(result);
     return;
   }
 
   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<comp3431_interfaces::action::MoveObjectToRoom>> goal_handle)
   {
-    RCLCPP_INFO(this->get_logger(), "Executing goal");
-    rclcpp::Rate loop_rate(1);
-    const auto goal = goal_handle->get_goal();
-    auto feedback = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Feedback>();
-    auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
-    RCLCPP_INFO(this->get_logger(), "here1");
-    goal_handle->succeed(result);
-    RCLCPP_INFO(this->get_logger(), "here2");
-    goal_handle->publish_feedback(feedback);
-    RCLCPP_INFO(this->get_logger(), "here3");
-    if (rclcpp::ok()) {
-      goal_handle->succeed(result);
-      RCLCPP_INFO(this->get_logger(), "Goal succeeded");
-    }
+    std::cout << "Finished calling FF planner" << planner_call() << std::endl;
+    (void)goal_handle;
+    
+    // RCLCPP_INFO(this->get_logger(), "Executing goal");
+    // rclcpp::Rate loop_rate(1);
+    // const auto goal = goal_handle->get_goal();
+    // auto feedback = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Feedback>();
+    // auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
+    // RCLCPP_INFO(this->get_logger(), "here1");
+    // // goal_handle->succeed(result);
+    // // RCLCPP_INFO(this->get_logger(), "here2");
+    // goal_handle->publish_feedback(feedback);
+    // RCLCPP_INFO(this->get_logger(), "here3");
+    // if (rclcpp::ok()) {
+    //   goal_handle->succeed(result);
+    //   RCLCPP_INFO(this->get_logger(), "Goal succeeded");
+    // }
+    //goal_handle->_succeed();
   }
+  
 
   // TODO: Store steps extracted from solution.txt somewhere
   int planner_call(void) {
@@ -273,6 +290,21 @@ private:
     }
     std::cout << "---------End Generated Plan---------\n";
 
+    // Process the parsed solution
+    while(!steps.empty()){
+      auto command = steps.front();
+      if(command[0] == "move"){
+        std::cout<<"Move\n";
+        std::cout<<nav2_marker_map["study"].at(0)<<"\n";
+      }else if(command[0] == "pick"){
+        std::cout<<"Pick: Item: "<< command[3] << " Room: "<< command[2]<< "\n";
+      }else{
+        //place
+        std::cout<<"Place: Item: "<< command[3] << " Room: "<< command[2]<< "\n";
+      }
+      steps.pop();
+    }
+
     return status; // this is the parent process again.
   }
 
@@ -293,4 +325,5 @@ private:
 
   rclcpp::Service<comp3431_interfaces::srv::MapInfo>::SharedPtr service_;
   rclcpp_action::Server<comp3431_interfaces::action::MoveObjectToRoom>::SharedPtr action_goal_server_;
+  std::map<std::string, std::vector<double>> nav2_marker_map;
 };
