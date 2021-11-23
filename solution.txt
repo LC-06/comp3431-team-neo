@@ -7,9 +7,11 @@ problem 'MOVEITEMTOROOM' defined
  ... done.
 
 
+unknown constant SNICKERS in literal IN. check input files
 
-Cueing down from goal distance:    4 into depth [1]
-                                   3            [1]
+TEM
+
+                       3            [1]
                                    2            [1]
                                    1            [1]
                                    0            

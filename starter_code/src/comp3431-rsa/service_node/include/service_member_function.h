@@ -15,9 +15,6 @@
 #include <sys/wait.h>
 #include <queue>
 #include <thread>
-#include <mutex> 
-#include <condition_variable>
-
 
 using NavigateToPose = nav2_msgs::action::NavigateToPose;
 using GoalHandleNavigateToPose = rclcpp_action::ClientGoalHandle<NavigateToPose>;
@@ -41,7 +38,7 @@ public:
         std::bind(&Planner::handle_accepted, this, std::placeholders::_1));
 
     // Nav2 client
-    this->nav2_client  = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "goal_navigator");
+    this->nav2_client  = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
 
     // Flag for Nav2 Commands
     ready = false;
@@ -267,7 +264,7 @@ private:
       std::cout << "IN CHILD \n";
 
       // execl("/bin/sh", "sh", "/home/rsa2021/comp3431-team-neo/FF-X/test.sh", NULL);
-      int fd = open("./solution.txt", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
+      int fd = open("./solution.txt", std::ios::trunc);
       dup2(fd, 1);
       dup2(fd, 2);
       close(fd);
@@ -356,9 +353,10 @@ private:
   void sendGoal(double x, double y) {
 
     std::cout<< "starting send goal\n";
-    // while (!this->nav2_client->wait_for_action_server()) {
-    //   RCLCPP_INFO(get_logger(), "Waiting for action server...");
-    // }
+    if (!this->nav2_client->wait_for_action_server()) {
+      RCLCPP_ERROR(this->get_logger(), "Action server not available after waiting");
+      //rclcpp::shutdown();
+    }
     std::cout<< "adding goal\n";
     //Goal
     auto goal_msg = NavigateToPose::Goal();
@@ -366,19 +364,20 @@ private:
     goal_msg.pose.header.frame_id = "map";
 
     goal_msg.pose.pose.position.x = x;
-    goal_msg.pose.pose.position.y = y;
+    goal_msg.pose.pose.position.y = y-0.05;
     goal_msg.pose.pose.orientation.x = 0.0;
     goal_msg.pose.pose.orientation.y = 0.0;
     goal_msg.pose.pose.orientation.w = 1.0;
     goal_msg.pose.pose.orientation.z = 0.0;
-
+    std::cout<< "here 1\n";
     //Feedback
     auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
     send_goal_options.feedback_callback = std::bind(&Planner::feedbackCallback, this, std::placeholders::_1, std::placeholders::_2);
     send_goal_options.result_callback = std::bind(&Planner::resultCallback, this, std::placeholders::_1);
-    
+    std::cout<< "here 2\n";
     //Goal
     nav2_client->async_send_goal(goal_msg, send_goal_options);
+    std::cout<< "here 3\n";
   }
 
   //feedback
