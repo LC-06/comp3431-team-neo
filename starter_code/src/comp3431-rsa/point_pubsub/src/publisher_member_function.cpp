@@ -142,7 +142,7 @@ private:
     //RCLCPP_INFO(this->get_logger(), "Recieved %s message.\n", command->data.c_str());
     std::string message = std::string{command->data};
     auto request = std::make_shared<comp3431_interfaces::srv::MapInfo::Request>();
-    std::cout << "hello\n";
+    //std::cout << "hello\n";
     if(message == "stop") {
       // std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("set_map_info_client");
       RCLCPP_INFO(this->get_logger(), "Point_pubsub(client) sending to server marker data");

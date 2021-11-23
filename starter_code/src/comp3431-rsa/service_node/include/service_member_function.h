@@ -8,11 +8,19 @@
 #include <vector>
 #include <fstream>
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "nav2_msgs/action/navigate_to_pose.hpp"
 
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/wait.h>
 #include <queue>
+#include <thread>
+#include <mutex> 
+#include <condition_variable>
+
+
+using NavigateToPose = nav2_msgs::action::NavigateToPose;
+using GoalHandleNavigateToPose = rclcpp_action::ClientGoalHandle<NavigateToPose>;
 
 class Planner : public rclcpp::Node
 {
@@ -23,7 +31,7 @@ public:
     service_ = this->create_service<comp3431_interfaces::srv::MapInfo>("set_map_info", std::bind(&Planner::startPlanner,
     this, std::placeholders::_1, std::placeholders::_2));
 
-    // Action Private Variables
+    // Action for interaction with terminal
     this->action_goal_server_ =
       rclcpp_action::create_server<comp3431_interfaces::action::MoveObjectToRoom>(
         this,
@@ -31,6 +39,12 @@ public:
         std::bind(&Planner::handle_goal, this, std::placeholders::_1, std::placeholders::_2),
         std::bind(&Planner::handle_cancel, this, std::placeholders::_1),
         std::bind(&Planner::handle_accepted, this, std::placeholders::_1));
+
+    // Nav2 client
+    this->nav2_client  = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "goal_navigator");
+
+    // Flag for Nav2 Commands
+    ready = false;
 
     RCLCPP_INFO(this->get_logger(), "Ready to receiveQRBlockData.");
   }
@@ -295,7 +309,13 @@ private:
       auto command = steps.front();
       if(command[0] == "move"){
         std::cout<<"Move\n";
-        std::cout<<nav2_marker_map["study"].at(0)<<"\n";
+        std::cout<<nav2_marker_map[command[2]].at(0)<<"\n";
+
+        sendGoal(nav2_marker_map[command[2]].at(0),nav2_marker_map[command[2]].at(1));
+        // wait for nav2 to get to goal
+        while(!ready);
+        ready = false;
+
       }else if(command[0] == "pick"){
         std::cout<<"Pick: Item: "<< command[3] << " Room: "<< command[2]<< "\n";
       }else{
@@ -323,7 +343,61 @@ private:
     return dataSplit;
   }
 
+  // https://qiita.com/porizou1/items/cb9382bb2955c144d168
+  void sendGoal(double x, double y) {
+    while (!this->nav2_client->wait_for_action_server()) {
+      RCLCPP_INFO(get_logger(), "Waiting for action server...");
+    }
+
+    //Goal
+    auto goal_msg = NavigateToPose::Goal();
+    goal_msg.pose.header.stamp = this->now();
+    goal_msg.pose.header.frame_id = "map";
+
+    goal_msg.pose.pose.position.x = x;
+    goal_msg.pose.pose.position.y = y;
+    goal_msg.pose.pose.orientation.x = 0.0;
+    goal_msg.pose.pose.orientation.y = 0.0;
+    goal_msg.pose.pose.orientation.w = 1.0;
+    goal_msg.pose.pose.orientation.z = 0.0;
+
+    //Feedback
+    auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
+    send_goal_options.feedback_callback = std::bind(&Planner::feedbackCallback, this, std::placeholders::_1, std::placeholders::_2);
+    send_goal_options.result_callback = std::bind(&Planner::resultCallback, this, std::placeholders::_1);
+    
+    //Goal
+    nav2_client->async_send_goal(goal_msg, send_goal_options);
+  }
+
+  //feedback
+  void feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
+  {
+    RCLCPP_INFO(get_logger(), "Distance remaininf = %f", feedback->distance_remaining);
+  }
+  //result
+  void resultCallback(const GoalHandleNavigateToPose::WrappedResult & result)
+  {
+    switch (result.code) {
+      case rclcpp_action::ResultCode::SUCCEEDED:
+        RCLCPP_INFO(get_logger(), "Success!!!");
+        this->ready = true;
+        break;
+      case rclcpp_action::ResultCode::ABORTED:
+        RCLCPP_ERROR(get_logger(), "Goal was aborted");
+        return;
+      case rclcpp_action::ResultCode::CANCELED:
+        RCLCPP_ERROR(get_logger(), "Goal was canceled");
+        return;
+      default:
+        RCLCPP_ERROR(get_logger(), "Unknown result code");
+        return;
+    }
+  }
+
   rclcpp::Service<comp3431_interfaces::srv::MapInfo>::SharedPtr service_;
   rclcpp_action::Server<comp3431_interfaces::action::MoveObjectToRoom>::SharedPtr action_goal_server_;
   std::map<std::string, std::vector<double>> nav2_marker_map;
+  rclcpp_action::Client<NavigateToPose>::SharedPtr nav2_client;
+  bool ready;
 };

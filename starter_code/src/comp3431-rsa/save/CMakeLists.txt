@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(service_node)
+project(save)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -15,15 +15,34 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-
-
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(comp3431_interfaces REQUIRED)
-find_package(rclcpp_action REQUIRED)
-find_package(rclcpp_components REQUIRED)
-find_package(nav2_msgs REQUIRED)
+find_package(nav2_map_server REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Include hpp files
+include_directories(
+  include
+)
+
+# Build saving executable
+add_executable(save
+  src/node_save.cpp
+  src/saving_node.cpp)
+ament_target_dependencies(save
+  rclcpp
+  nav2_map_server
+  nav_msgs
+  std_msgs)
+
+target_include_directories(save PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+install(TARGETS save
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -37,15 +56,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-include_directories(
-	include/
-)
-add_executable(service_node src/service_member_function.cpp)
-ament_target_dependencies(service_node rclcpp comp3431_interfaces rclcpp_action rclcpp_components nav2_msgs) 
-
-
-install(TARGETS
-  service_node
-	DESTINATION lib/${PROJECT_NAME}
-)
-
