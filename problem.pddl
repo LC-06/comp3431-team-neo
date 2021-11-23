@@ -5,7 +5,7 @@
  initial-room - room
     study - room
     storage-room - room
-    orange  - item
+    orange - item
   )
 
   (:init
@@ -15,6 +15,6 @@
   )
 
   (:goal
-    (in snickers kitchen)
+    (in orange storage-room)
   )
 )

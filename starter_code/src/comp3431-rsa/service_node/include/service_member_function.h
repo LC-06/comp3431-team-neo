@@ -56,7 +56,7 @@ private:
     std::cout << "in startPlanner\n";
     response->res = 1;
     // should probably change to reside within FF-X once we know it works and receive goal from action
-    std::string problemPath = "problem.pddl";
+    std::string problemPath = "problem-init.pddl";
     std::ofstream file;
     file.open(problemPath);
     file << "(define (problem moveitemtoroom)" << std::endl;
@@ -115,6 +115,9 @@ private:
 
           // add to map of marker data for nav2
           nav2_marker_map[room_name] = temp_vector;
+          std::cout<<"|"<<room_name<<"|"<<"\n";
+          std::cout<<nav2_marker_map[room_name].at(0)<<"\n";
+          std::cout<<nav2_marker_map[room_name].at(1)<<"\n";
         }
         else
         {
@@ -139,7 +142,7 @@ private:
     }
     
     if (!objects_string.empty()){
-      std::string objects_line = "    " + objects_string + " - item";
+      std::string objects_line = "    " + objects_string + "- item";
       file << objects_line << std::endl;
     }
 
@@ -254,12 +257,14 @@ private:
     if (pid) {
         // pid != 0: this is the parent process (i.e. our process)
         waitpid(pid, &status, 0); // wait for the child to exit
+        std::cout << "parent \n";
     } else {
       /* pid == 0: this is the child process. now let's load the
 
       exec does not return unless the program couldn't be started. 
           when the child process stops, the waitpid() above will return.
       */
+      std::cout << "IN CHILD \n";
 
       // execl("/bin/sh", "sh", "/home/rsa2021/comp3431-team-neo/FF-X/test.sh", NULL);
       int fd = open("./solution.txt", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
@@ -269,6 +274,7 @@ private:
 
       const char executable[] = "./FF-X/ff";
       execl(executable, executable, "-o", "./FF-X/domain.pddl", "-f", "./problem.pddl", NULL);
+      std::cout << "excel failed \n";
     }
 
     std::string line;
@@ -309,9 +315,12 @@ private:
       auto command = steps.front();
       if(command[0] == "move"){
         std::cout<<"Move\n";
-        std::cout<<nav2_marker_map[command[2]].at(0)<<"\n";
+        std::cout<<"Command 2: " << command[2]<<"\n";
+        std::cout<<" Command 3: " << command[3]<<"\n";
 
-        sendGoal(nav2_marker_map[command[2]].at(0),nav2_marker_map[command[2]].at(1));
+        // x[0] and y[1] sent of the goal marker room
+        std::thread{std::bind(&Planner::sendGoal, this, std::placeholders::_1, std::placeholders::_2), nav2_marker_map[command[3]].at(0), nav2_marker_map[command[3]].at(1)}.detach();
+        //sendGoal(nav2_marker_map[command[3]].at(0),nav2_marker_map[command[3]].at(1));
         // wait for nav2 to get to goal
         while(!ready);
         ready = false;
@@ -345,10 +354,12 @@ private:
 
   // https://qiita.com/porizou1/items/cb9382bb2955c144d168
   void sendGoal(double x, double y) {
-    while (!this->nav2_client->wait_for_action_server()) {
-      RCLCPP_INFO(get_logger(), "Waiting for action server...");
-    }
 
+    std::cout<< "starting send goal\n";
+    // while (!this->nav2_client->wait_for_action_server()) {
+    //   RCLCPP_INFO(get_logger(), "Waiting for action server...");
+    // }
+    std::cout<< "adding goal\n";
     //Goal
     auto goal_msg = NavigateToPose::Goal();
     goal_msg.pose.header.stamp = this->now();
@@ -373,7 +384,7 @@ private:
   //feedback
   void feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
   {
-    RCLCPP_INFO(get_logger(), "Distance remaininf = %f", feedback->distance_remaining);
+    RCLCPP_INFO(get_logger(), "Distance remaining = %f", feedback->distance_remaining);
   }
   //result
   void resultCallback(const GoalHandleNavigateToPose::WrappedResult & result)

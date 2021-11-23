@@ -5,7 +5,7 @@
  initial-room - room
     study - room
     storage-room - room
-    orange  - item
+    orange - item
   )
 
   (:init
