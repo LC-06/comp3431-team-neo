@@ -226,7 +226,7 @@ private:
   void execute(const std::shared_ptr<rclcpp_action::ServerGoalHandle<comp3431_interfaces::action::MoveObjectToRoom>> goal_handle)
   {
     std::cout << "Finished calling FF planner" << planner_call() << std::endl;
-    (void)goal_handle;
+    goal_handle->succeed(std::make_shared<comp3431_interfaces::action::MoveObjectToRoom::Result>());
     
     // RCLCPP_INFO(this->get_logger(), "Executing goal");
     // rclcpp::Rate loop_rate(1);
@@ -254,15 +254,12 @@ private:
     if (pid) {
         // pid != 0: this is the parent process (i.e. our process)
         waitpid(pid, &status, 0); // wait for the child to exit
-        std::cout << "parent \n";
     } else {
       /* pid == 0: this is the child process. now let's load the
 
       exec does not return unless the program couldn't be started. 
           when the child process stops, the waitpid() above will return.
       */
-      std::cout << "IN CHILD \n";
-
       // execl("/bin/sh", "sh", "/home/rsa2021/comp3431-team-neo/FF-X/test.sh", NULL);
       int fd = open("./solution.txt", std::ios::trunc);
       dup2(fd, 1);
@@ -352,12 +349,12 @@ private:
   // https://qiita.com/porizou1/items/cb9382bb2955c144d168
   void sendGoal(double x, double y) {
 
-    std::cout<< "starting send goal\n";
+    std::cout<< "Starting to send goal\n";
     if (!this->nav2_client->wait_for_action_server()) {
       RCLCPP_ERROR(this->get_logger(), "Action server not available after waiting");
       //rclcpp::shutdown();
     }
-    std::cout<< "adding goal\n";
+    std::cout<< "Setting the goal\n";
     //Goal
     auto goal_msg = NavigateToPose::Goal();
     goal_msg.pose.header.stamp = this->now();
@@ -369,25 +366,27 @@ private:
     goal_msg.pose.pose.orientation.y = 0.0;
     goal_msg.pose.pose.orientation.w = 1.0;
     goal_msg.pose.pose.orientation.z = 0.0;
-    std::cout<< "here 1\n";
+    //std::cout<< "here 1\n";
     //Feedback
     auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
     send_goal_options.feedback_callback = std::bind(&Planner::feedbackCallback, this, std::placeholders::_1, std::placeholders::_2);
     send_goal_options.result_callback = std::bind(&Planner::resultCallback, this, std::placeholders::_1);
-    std::cout<< "here 2\n";
+    //std::cout<< "here 2\n";
     //Goal
     nav2_client->async_send_goal(goal_msg, send_goal_options);
-    std::cout<< "here 3\n";
+    //std::cout<< "here 3\n";
   }
 
   //feedback
   void feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
   {
-    RCLCPP_INFO(get_logger(), "Distance remaining = %f", feedback->distance_remaining);
+    (void) feedback;
+    //RCLCPP_INFO(get_logger(), "Distance remaining = %f", feedback->distance_remaining);
   }
   //result
   void resultCallback(const GoalHandleNavigateToPose::WrappedResult & result)
   {
+    this->ready = true;
     switch (result.code) {
       case rclcpp_action::ResultCode::SUCCEEDED:
         RCLCPP_INFO(get_logger(), "Success!!!");

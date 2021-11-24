@@ -7,11 +7,9 @@ problem 'MOVEITEMTOROOM' defined
  ... done.
 
 
-unknown constant SNICKERS in literal IN. check input files
 
-TEM
-
-                       3            [1]
+Cueing down from goal distance:    4 into depth [1]
+                                   3            [1]
                                    2            [1]
                                    1            [1]
                                    0            
@@ -34,6 +32,8 @@ time spent:    0.00 seconds instantiating 15 easy, 0 hard action templates
 
 
 Can't open output file!
+
+
 
 
 

@@ -151,7 +151,7 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       auto laser_store_copy = laser_store_;
       float begin_angle = M_PI/4.0;
       float end_angle = 2*M_PI - M_PI/4.0;
-      float threshold = 0.1;
+      float threshold = 0.5;
       int laser_offset = 0.1;
       float angle = laser_store_copy.angle_min; // 0 - forwards
       // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
