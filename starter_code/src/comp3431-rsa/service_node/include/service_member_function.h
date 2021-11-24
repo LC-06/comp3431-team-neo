@@ -218,8 +218,8 @@ private:
     std::cout << "handled accepted\n";
     (void)goal_handle;
     std::thread{std::bind(&Planner::execute, this, _1), goal_handle}.detach();
-    auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
-    //goal_handle->succeed(result);
+    // auto result = std::shared_ptr<comp3431_interfaces::action::MoveObjectToRoom::Result>();
+    // //goal_handle->succeed(result);
     return;
   }
 
@@ -309,8 +309,6 @@ private:
       auto command = steps.front();
       if(command[0] == "move"){
         std::cout<<"Move\n";
-        std::cout<<"Command 2: " << command[2]<<"\n";
-        std::cout<<" Command 3: " << command[3]<<"\n";
 
         // x[0] and y[1] sent of the goal marker room
         std::thread{std::bind(&Planner::sendGoal, this, std::placeholders::_1, std::placeholders::_2), nav2_marker_map[command[3]].at(0), nav2_marker_map[command[3]].at(1)}.detach();
