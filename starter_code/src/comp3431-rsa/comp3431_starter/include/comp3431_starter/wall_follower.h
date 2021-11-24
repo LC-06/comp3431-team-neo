@@ -24,11 +24,11 @@ const std::string BASE_FRAME = std::string{"base_link"};
 //const double MAX_TURN = 1.0;
 
 const double MAX_SIDE_LIMIT = 0.60;
-const double MIN_APPROACH_DIST = 0.59;
-const double MAX_APPROACH_DIST = 0.60;
+const double MIN_APPROACH_DIST = 0.60;
+const double MAX_APPROACH_DIST = 0.62;
 const double ROBOT_RADIUS = 0.20;
-const double MAX_SPEED = 0.15;
-const double MAX_TURN = 1.90;
+const double MAX_SPEED = 0.09;
+const double MAX_TURN = 2.50;
 
 class WallFollower : public rclcpp::Node
 {
