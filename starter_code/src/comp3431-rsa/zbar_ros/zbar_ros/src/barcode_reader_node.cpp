@@ -146,11 +146,12 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
       // translatedPoint.point.z = laser_store_copy.ranges[index];
       RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
       RCLCPP_INFO(get_logger(), "  Point in robot frame x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);
-      translatedPoint.point.z = -1;
+      // Just set to some large negative number
+      translatedPoint.point.z = 100;
       auto laser_store_copy = laser_store_;
       float begin_angle = M_PI/4.0;
       float end_angle = 2*M_PI - M_PI/4.0;
-      float threshold = 0.02;
+      float threshold = 0.55;
       int laser_offset = 0.1;
       float angle = laser_store_copy.angle_min; // 0 - forwards
       // int begin_index = (int)(begin_angle/(laser_store_copy.angle_increment));
@@ -169,26 +170,34 @@ void BarcodeReaderNode::imageCb(sensor_msgs::msg::Image::ConstSharedPtr image)
         //RCLCPP_INFO(get_logger(), "Points x: %f, y: %f, angle: %f", x, y, angle);
         std::cout << "The y: " << y << " The x: " << x << " translated x: " << translatedPoint.point.x << " angle: " << angle << "\n";
         if (fabs(y - translatedPoint.point.x) < threshold) {
-          translatedPoint.point.z = x + laser_offset;
-          break;
+          if (fabs(translatedPoint.point.z) > fabs(x + laser_offset)){
+            // If it finds and object which is closer, update it
+            //translatedPoint.point.z = x;
+            translatedPoint.point.z = x + laser_offset;
+          }
+          //break;
         }
-        // Need to consider offset between camera and laser scan probably
       }
 
       // Check if value was updated
-      if (translatedPoint.point.z == -1){
+      if (translatedPoint.point.z == 100){
         RCLCPP_INFO(get_logger(), "No suitable distance found");
         return;
       }
       RCLCPP_INFO(get_logger(), "Found z: %f, angle: %f", translatedPoint.point.z, angle);
       RCLCPP_INFO(get_logger(), "Publishing Point");
       
-      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 100) {
+      if (abs((image_centre_x-(IMAGE_HEIGHT/2))) < 140) {
         point_msg_interface::msg::Pointmsg point_send;
         point_send.point_data = symbol.data.c_str();
         point_send.point = translatedPoint;
         point_pub_->publish(point_send);
       }
+      // point_msg_interface::msg::Pointmsg point_send;
+      // point_send.point_data = symbol.data.c_str();
+      // point_send.point = translatedPoint;
+      // point_pub_->publish(point_send);
+
       //point_pub_->publish(translatedPoint);
       // RCLCPP_INFO(get_logger(), "Data:%s || Image Centre: %f, %f",symbol.data.c_str(), image_centre_x, image_centre_y);
       // RCLCPP_INFO(get_logger(), "  Point in robot frame x,y,z: %f, %f, %f", translatedPoint.point.x, translatedPoint.point.y, translatedPoint.point.z);

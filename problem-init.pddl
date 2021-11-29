@@ -19,7 +19,3 @@
     (hand_empty turtlebot)
   )
 
-  (:goal
-    (in orange storage-room)
-  )
-)

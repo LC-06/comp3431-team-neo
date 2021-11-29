@@ -2,24 +2,20 @@
   (:domain turtlebot3-domain)
   (:objects
     turtlebot - robot
- initial-room - room
-    pantry - room
+    initial-room - room
     living-room - room
     kitchen - room
-    study - room
-    storage-room - room
-    fanta apple orange - item
+    apple banana - item
   )
 
   (:init
     (at turtlebot initial-room)
     (in apple kitchen)
-    (in fanta kitchen)
-    (in orange study)
+    (in banana living-room)
     (hand_empty turtlebot)
   )
 
   (:goal
-    (in orange storage-room)
+    (in apple living-room)
   )
 )

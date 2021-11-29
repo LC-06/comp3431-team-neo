@@ -122,6 +122,6 @@ void WallFollower::callbackControl(const std_msgs::msg::String::SharedPtr comman
 		t.linear.x = t.linear.y = t.linear.z = 0;
 		t.angular.x = t.angular.y = t.angular.z = 0;
 		twistPub_->publish(t);
-		rclcpp::shutdown();
+		//rclcpp::shutdown();
 	}
 }
